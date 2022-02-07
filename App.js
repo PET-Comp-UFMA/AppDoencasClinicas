@@ -16,9 +16,6 @@ const Stack = createNativeStackNavigator();
 import TelaPrincipal from '@screens/TelaPrincipal';
 import TelaTeste from '@screens/TelaTeste';
 
-
-
-
 const App: () => Node = () => {
   
 
@@ -28,12 +25,13 @@ const App: () => Node = () => {
 
       <Stack.Screen 
         name = 'Principal'
-        components = {TelaPrincipal}
+        component = {TelaPrincipal}
       />
+
 
       <Stack.Screen 
         name = 'Teste'
-        components = {TelaTeste}
+        component = {TelaTeste}
       />
 
       </Stack.Navigator>

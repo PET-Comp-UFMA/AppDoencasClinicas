@@ -2,10 +2,16 @@ import React, {Component} from 'react';
 import {
     View,
     StyleSheet,
-    Button,
+    TouchableOpacity,
+    Text,
+    Alert,
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+function alerta(){
+    alert('oii');
+}
 
 export default function TelaPrincipal({ navigation })  {
     
@@ -14,10 +20,12 @@ export default function TelaPrincipal({ navigation })  {
                 <Text>
                     Tela Principal
                 </Text>
-                <Button 
-                    title='Tela de Teste'
-                    onPress={ () => navigation.navigate('Teste')}
-                />
+                <TouchableOpacity 
+                    style = {styles.botao}
+                    onPress = { () => navigation.navigate('Teste') }
+                >
+                    <Text>Tela de Teste</Text>
+                </TouchableOpacity>
             </View>
         );
 }
@@ -27,5 +35,9 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+    },
+    botao: {
+        backgroundColor: '#CCC',
+        padding: 10,
     }
 });
