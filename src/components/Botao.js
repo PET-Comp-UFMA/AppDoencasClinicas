@@ -34,8 +34,10 @@ export default class Botao extends Component {
 
 const styles = StyleSheet.create({
     container:{
+        flexDirection: 'column',
         width: '100%',
         alignItems: 'center',
+        alignSelf: 'flex-end',
     },
     botao: {
         
