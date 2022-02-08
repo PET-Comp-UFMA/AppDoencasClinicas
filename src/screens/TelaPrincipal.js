@@ -9,9 +9,7 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-function alerta(){
-    alert('oii');
-}
+import Botao from '@components/Botao';
 
 export default function TelaPrincipal({ navigation })  {
     
@@ -26,6 +24,8 @@ export default function TelaPrincipal({ navigation })  {
                 >
                     <Text>Tela de Teste</Text>
                 </TouchableOpacity>
+
+                
             </View>
         );
 }
