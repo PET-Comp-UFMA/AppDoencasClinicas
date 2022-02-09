@@ -11,10 +11,10 @@ export default class Botao extends Component {
     constructor(props){
         super(props);
 
-        var titulo = this.props.title;
-        titulo = titulo.toUpperCase();
 
-        this.state = { title: titulo }
+        this.state = { 
+            title: this.props.title
+        }
     }
     
     render(){
@@ -37,19 +37,23 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         width: '100%',
         alignItems: 'center',
-        alignSelf: 'flex-end',
+        justifyContent: "center",
+        alignSelf: 'flex-end'
     },
+
     botao: {
-        
         backgroundColor: "#59998D",
         borderRadius: 15,
         borderWidth: 0,
-        height: 45,
-        width: '80%',
-        margin: 15,
+        height: 55,
+        width: "88%",
+        marginHorizontal: 15,
+        marginVertical: 8,
+        alignContent: "center",
         justifyContent: 'center',
 
     },
+
     titulo: {
         color: "#FFF",
         fontSize: 18,
