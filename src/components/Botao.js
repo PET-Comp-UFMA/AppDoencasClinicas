@@ -14,7 +14,7 @@ export default class Botao extends Component {
         var titulo = this.props.title;
         titulo = titulo.toUpperCase();
 
-        this.setState = { title: titulo }
+        this.state = { title: titulo }
     }
     
     render(){
@@ -24,7 +24,7 @@ export default class Botao extends Component {
                     style={styles.botao}
                     onPress = {this.props.onPress}>
                     <Text style={styles.titulo}>
-                        {this.setState.title}
+                        {this.state.title}
                     </Text>
                 </TouchableOpacity>
             </View>
