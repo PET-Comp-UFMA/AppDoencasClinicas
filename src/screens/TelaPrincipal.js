@@ -9,8 +9,8 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Botao from '@components/Botao';
-import Tabela from '@components/Tabela';
+import Botao from '../components/Botao';
+import Tabela from '../components/Tabela';
 
 
 export default function TelaPrincipal({ navigation })  {
