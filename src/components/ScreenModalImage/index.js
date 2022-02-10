@@ -68,8 +68,9 @@ const styles = StyleSheet.create({
     },
 
     tituloModal: {
-        fontSize: 22,
-        fontWeight: "bold"
+        fontSize: 22,   
+        color: "#fff",
+        fontFamily: "Mulish-Bold"
     },
 
     imageModal: {

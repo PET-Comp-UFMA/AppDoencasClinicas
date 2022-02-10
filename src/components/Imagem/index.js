@@ -27,8 +27,6 @@ export default class Imagem extends Component{
         });
     }
 
-
-
     render(){
         return(
             <View style={styles.container}>
@@ -46,7 +44,7 @@ export default class Imagem extends Component{
                         <ScreenModalImage 
                             source={this.props.source}
                             toggleModal={this.toggleModal}
-                            title={this.props.title ? this.props.title : "Titulo"}
+                            title={this.props.title ? this.props.title : "Título"}
                         />
 
                     </Modal>
