@@ -8,6 +8,8 @@ import {
     TouchableOpacity
 } from "react-native"
 
+import Fechar from 'icons/close.svg';
+
 export default class ScreenModalImage extends Component{
 
     render() {
@@ -15,10 +17,7 @@ export default class ScreenModalImage extends Component{
         return(
             <View style={styles.viewModal}>
                 <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
-                    <Image 
-                        style={styles.iconCloseModal} 
-                        source={require("../../assets/icons/close.png")}
-                    />
+                    <Fechar height={50} width={50} marginTop={3} marginRight={5} stroke={'#59998D'} />
                 </TouchableOpacity>
 
                 <View style={{alignItems: "center", justifyContent: "center", flex: 1}}>

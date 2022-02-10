@@ -1,8 +1,8 @@
 import React from 'react';
 import {Component} from 'react/cjs/react.production.min';
-import {View, TouchableOpacity, Text, StyleSheet} from 'react-native';
+import {View, TouchableOpacity, Text} from 'react-native';
 
-import {useNavigation, useRoute} from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 
 import Seta from 'icons/left.svg';
 
