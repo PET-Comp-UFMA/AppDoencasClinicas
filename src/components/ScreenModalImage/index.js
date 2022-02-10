@@ -63,18 +63,18 @@ const styles = StyleSheet.create({
     viewTituloModal:{
         alignItems: "center",
         justifyContent: "center",
-        width: 340,
-        height: 60,
+        width: 345,
+        height: 45,
         backgroundColor: "#59998D"
     },
 
     tituloModal: {
-        fontSize: 28,
+        fontSize: 22,
         fontWeight: "bold"
     },
 
     imageModal: {
-        width: 340,
-        height: 340
+        width: 345,
+        height: 345
     }
 });
