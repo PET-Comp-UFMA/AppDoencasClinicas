@@ -11,7 +11,7 @@ import {
 export default class ScreenModalImage extends Component{
 
     render() {
-        
+
         return(
             <View style={styles.viewModal}>
                 <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
@@ -54,7 +54,10 @@ const styles = StyleSheet.create({
     },
 
     iconCloseModal: {
-        width: 60, height: 60
+        marginTop: 3,
+        marginRight: 5,
+        width: 50, 
+        height: 50
     },
 
     viewTituloModal:{
