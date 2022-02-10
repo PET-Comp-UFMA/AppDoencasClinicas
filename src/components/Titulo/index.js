@@ -52,6 +52,7 @@ class Titulo extends Component {
               color: 'black',
               fontSize: 30,
               textAlign: 'center',
+              color: '#323F4B',
               fontFamily: 'Mulish-Bold',
               textAlignVertical: 'center',
             }}>
