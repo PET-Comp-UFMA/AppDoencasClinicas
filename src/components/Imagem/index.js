@@ -5,8 +5,10 @@ import {
     StyleSheet,
     Modal,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
 } from "react-native"
+
+import ScreenModalImage from "../ScreenModalImage";
 
 export default class Imagem extends Component{
 
@@ -20,7 +22,6 @@ export default class Imagem extends Component{
     }
 
     toggleModal(){
-        
         this.setState({
             visible: !this.state.visible
         });
@@ -36,18 +37,18 @@ export default class Imagem extends Component{
                         source={this.props.source}
                         style={styles.imagem}
                     />
-                    <Modal visible={this.state.visible} animationType="slide" transparent={true}>
-                        <View style={styles.viewModal}>
-                            <TouchableOpacity style={styles.buttonCloseModal}>
-                                <Image style={{width: 60, height: 60}} source={require("../../assets/icons/close.png")}/>
-                            </TouchableOpacity>
-                            <View style={{alignItems: "center", justifyContent: "center", flex: 1}}>
-                                <View style={{alignItems: "center", justifyContent: "center", width: 340, height: 60,backgroundColor: "#59998D"}}>
-                                    <Text style={{fontSize: 28}}>Titulo</Text>
-                                </View>
-                                <Image source={require("../../assets/images/F001.png")} style={{width: 340, height: 340}}/>
-                            </View>
-                        </View>
+                    <Modal 
+                        visible={this.state.visible} 
+                        animationType={this.props.animation ? this.props.animation : "fade"} 
+                        transparent={this.props.transparent ? this.props.transparent : true}
+                    >
+                       
+                        <ScreenModalImage 
+                            source={this.props.source}
+                            toggleModal={this.toggleModal}
+                            title={this.props.title ? this.props.title : "Titulo"}
+                        />
+
                     </Modal>
                 </TouchableOpacity>
             </View>
@@ -65,19 +66,6 @@ const styles = StyleSheet.create({
     imagem: {
         width: 300,
         height: 300
-    },
-
-    viewModal: {
-        flex: 1,
-        backgroundColor: "rgba(0, 0, 0, 0.7)"
-    },
-
-    textClose: {
-        fontSize: 40
-    },
-
-    buttonCloseModal: {
-        flexDirection: "row",
-        justifyContent: "flex-end"
     }
+
 });
