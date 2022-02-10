@@ -21,4 +21,4 @@ Componentes:
     
       source={require(<Diretório da imagem>)}
       toggleModal=<Função para alterar a visibilidade do modal> (function)
-      title=<Titulo da Imagem do modal>  (string)           default: "titulo"
+      title=<Titulo da Imagem do modal>  (string)           default: "Titulo"
