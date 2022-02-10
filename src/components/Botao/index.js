@@ -1,5 +1,4 @@
-import React from "react";
-import { Component } from "react/cjs/react.production.min";
+import React,{ Component } from "react";
 import {
     View,
     TouchableOpacity,
@@ -42,21 +41,21 @@ const styles = StyleSheet.create({
     },
 
     botao: {
-        backgroundColor: "#59998D",
-        borderRadius: 15,
-        borderWidth: 0,
-        height: 55,
+        height: 62,
         width: "88%",
         marginHorizontal: 15,
         marginVertical: 8,
-        alignContent: "center",
+        borderRadius: 28,
+        
+        alignItems: "center",
         justifyContent: 'center',
-
+        backgroundColor: "#59998D",
     },
 
     titulo: {
         color: "#FFF",
         fontSize: 18,
         textAlign: 'center',
+        letterSpacing: 0.5
     }
 });
