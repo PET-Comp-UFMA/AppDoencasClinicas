@@ -43,23 +43,28 @@ const styles = StyleSheet.create({
         paddingTop: 30, 
     },
     border: { 
-        borderWidth: 1, 
+        borderWidth: 2, 
         borderColor: '#59998D', 
     },
     head: { 
         height: 30, 
         backgroundColor: '#59998D', 
         alignContent: 'center', 
-        borderTopStartRadius: 5, 
-        borderTopEndRadius: 5,
+        borderTopStartRadius: 19, 
+        borderTopEndRadius: 19,
     },
     data: {
-        borderBottomStartRadius: 5, 
-        borderBottomEndRadius: 5,
+        borderTopStartRadius: 19, 
+        borderTopEndRadius: 19,
+        borderBottomStartRadius: 19, 
+        borderBottomEndRadius: 19,
+        
     },
     textHead: { 
         fontSize: 12, 
-        margin: 6 
+        margin: 6,
+        alignSelf: 'center',
+        color: '#FFFFFF'
     },
     text: { 
         margin: 6 
