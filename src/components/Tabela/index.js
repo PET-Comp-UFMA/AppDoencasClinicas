@@ -43,7 +43,7 @@ export default class Tabela extends Component {
             <View style={styles.container}>
                 <Table borderStyle={styles.border} style={estiloDados}>
                     {headRow}
-                    <Rows data={state.tableData} textStyle={styles.text} />
+                    <Rows data={state.tableData} textStyle={styles.textData} />
                 </Table>
             </View>
         )
@@ -80,6 +80,13 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         color: '#FFFFFF',
         fontFamily: "Mulish-Bold",
+    },
+    textData: { 
+        fontSize: 12, 
+        margin: 6,
+        alignSelf: 'center',
+        color: 'black',
+        fontFamily: "Mulish-Regular",
     },
     text: { 
         margin: 6 
