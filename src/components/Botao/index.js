@@ -10,9 +10,9 @@ export default class Botao extends Component {
     constructor(props){
         super(props);
 
-
+        var titulo = this.props.title;
         this.state = { 
-            title: this.props.title
+            title: titulo.toUpperCase()
         }
     }
     
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
         color: "#FFF",
         fontSize: 18,
         textAlign: 'center',
-        letterSpacing: 0.5
-    }
+        letterSpacing: 0.5,
+        fontFamily: "Mulish-Bold"
+    },
 });

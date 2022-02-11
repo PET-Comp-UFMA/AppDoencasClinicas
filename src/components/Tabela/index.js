@@ -13,22 +13,36 @@ export default class Tabela extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tableHead: ['Head', 'Head2', 'Head3'],
+            tableHead: ['Headd', 'Head2',],
             tableData: [
-                ['1', '2', '3', ],
-                ['a', 'b', 'c',],
-                ['1', '2', '456\n789', ],
-                ['a', 'b', 'c', ]
+                ['1', '2', ],
+                ['a', 'b', ],
+                ['1', '2', ],
+                ['a', 'b', ]
             ]
         }
     }
 
     render() {
         const state = this.state;
+       
+        let headRow;
+        let dataRow;
+        let estiloDados;
+        if (state.tableHead){
+            headRow = <Row data={state.tableHead} style={styles.head} textStyle={styles.textHead} />;
+            dataRow = <Rows data={state.tableData} textStyle={styles.text} />;
+            estiloDados = styles.data;
+        }
+        else {
+            headRow = <Row style={styles.head} textStyle={styles.textHead} />;
+            dataRow = <Rows data={state.tableData} textStyle={styles.text} />;
+            estiloDados = null;
+        }
         return (
             <View style={styles.container}>
-                <Table borderStyle={styles.border} style={styles.data}>
-                    <Row data={state.tableHead} style={styles.head} textStyle={styles.textHead} />
+                <Table borderStyle={styles.border} style={estiloDados}>
+                    {headRow}
                     <Rows data={state.tableData} textStyle={styles.text} />
                 </Table>
             </View>
@@ -43,30 +57,34 @@ const styles = StyleSheet.create({
         paddingTop: 22.5, 
     },
     border: { 
-        borderWidth: 2, 
+        borderWidth: 1, 
         borderColor: '#59998D', 
     },
     head: { 
         height: 30, 
         backgroundColor: '#59998D', 
         alignContent: 'center', 
-        borderTopStartRadius: 19, 
-        borderTopEndRadius: 19,
+        borderTopStartRadius: 10, 
+        borderTopEndRadius: 10,
+        borderColor: '#FFF'
+        
     },
     data: {
-        borderTopStartRadius: 19, 
-        borderTopEndRadius: 19,
-        borderBottomStartRadius: 19, 
-        borderBottomEndRadius: 19,
-        
+        borderTopRightRadius: 10, 
+        borderTopLeftRadius: 10,
+        borderTopStartRadius: 10,
     },
     textHead: { 
         fontSize: 12, 
         margin: 6,
         alignSelf: 'center',
-        color: '#FFFFFF'
+        color: '#FFFFFF',
+        fontFamily: "Mulish-Bold",
     },
     text: { 
         margin: 6 
+    },
+    vazio: {
+
     }
 });
