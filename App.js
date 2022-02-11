@@ -2,7 +2,16 @@ import React from 'react';
 import type Node from 'react';
 import { NavigationContainer }      from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
- 
+
+
+// Configuração de texto
+import Text          from 'react-native';
+Text.defaultProps       = Text.defaultProps || {}
+Text.defaultProps.style =  { 
+  color: 'red',
+  fontFamily: 'Mulish-Regular',
+  fontSize: 12
+}
 
 // Telas
 import TelaPrincipal from '@screens/TelaPrincipal';

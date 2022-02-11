@@ -14,6 +14,17 @@ import Tabela from '@components/Tabela';
 import Tabela2 from '@components/Tabela2';
 import Imagem from '@components/Imagem';
 
+// Configuração de texto
+Text.defaultProps       = Text.defaultProps || {}
+Text.defaultProps.style =  { 
+  color: '#00172E',
+  fontFamily: 'Mulish-Regular',
+  fontSize: 21,
+  marginHorizontal: 20,
+  textAlign: 'center'
+}
+
+
 
 export default function TelaPrincipal({ navigation })  {
     
@@ -55,7 +66,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: '#BDBDBD',
+        backgroundColor: 'white',
         flexDirection: 'column',
         justifyContent: 'space-between',
     },
