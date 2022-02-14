@@ -16,6 +16,7 @@ Text.defaultProps.style =  {
 // Telas
 import TelaPrincipal from '@screens/TelaPrincipal';
 import TelaTeste     from '@screens/TelaTeste';
+import T1 from            '@screens/1-Inicio';
 
 // Componentes
 import Titulo        from '@components/Titulo';
@@ -26,12 +27,17 @@ const Stack = createNativeStackNavigator();
 const App: () => Node = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName = 'Principal' 
+      <Stack.Navigator initialRouteName = '1-Inicio' 
         screenOptions={{
           headerTitle: (props) => <Titulo {...props}/>,
           headerBackVisible: "no"
         }}> 
        
+       <Stack.Screen 
+          name      = '1-Inicio'
+          component = {T1}
+          options   = {{ title: "Início" }}/>
+
         <Stack.Screen 
           name      = 'Principal'
           component = {TelaPrincipal}
