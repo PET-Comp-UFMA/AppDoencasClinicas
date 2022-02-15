@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-between',
         backgroundColor: 'white',
-        paddingTop: 10
+        paddingTop: 15
     },
     containerBotao: {
         marginTop: 30,

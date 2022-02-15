@@ -27,7 +27,7 @@ export default function T3({ navigation })  {
                     />
                     <Botao
                         title = "ÚLCERA"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('025-UlceraAnogenital') }
                     />
                     <Botao
                         title = "VERRUGA ANOGENITAL"
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         flexDirection   : 'column',
         justifyContent  : 'space-between',
         backgroundColor : 'white',
-        paddingTop      : 10
+        paddingTop      : 15
     },
     containerBotao: {
         marginTop       : 30,
