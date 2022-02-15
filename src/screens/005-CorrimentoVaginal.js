@@ -23,8 +23,8 @@ export default function T5({ navigation })  {
                         <Text>Podendo ou não haver:</Text>
                         <Text>Disuria, dispareunia, hiperenia, edema, vulvar, fissuras e maceração da vulva, placas brancas ou braço-acinzentadas, recobrindo a vagina e o colo uterino(quando realizado exame especular)</Text>
                         
-                        <Imagem source={require("@images/F002.png")} title={"F002 - Corrimento Vaginal"} number={"F002"}/>
-                        <Imagem source={require("@images/F003.png")} title={"F003 - Corrimento Vaginal"} number={"F003"}/>
+                        <Imagem source={require("@images/F002.png")} title={"Corrimento Vaginal"} number={"F002"}/>
+                        <Imagem source={require("@images/F003.png")} title={"Corrimento Vaginal"} number={"F003"}/>
                     </View>
 
                 </ScrollView>
