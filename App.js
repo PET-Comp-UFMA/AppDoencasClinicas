@@ -10,6 +10,7 @@ import Titulo from '@components/Titulo';
 import T001 from '@screens/001-Inicio';
 import T002 from '@screens/002-ManejoClinico';
 import T003 from '@screens/003-AnamneseEExameFisico';
+import T004 from '@screens/004-CorrimentoVaginalOuUretral';
 
 import T102 from '@screens/102-TiraDuvidas';
 
@@ -46,9 +47,17 @@ const App: () => Node = () => {
           options={{ title: "Anamnese e Exame Físico" }} />
 
         <Stack.Screen
+          name='003-Corrimento Vaginal ou Uretral'
+          component={T004}
+          options={{ title: "Corrimento Vaginal ou Uretral" }} />
+
+        <Stack.Screen
           name='102-Tira Duvidas'
           component={T102}
           options={{ title: "Tira Dúvidas" }} />
+
+
+
 
       </Stack.Navigator>
     </NavigationContainer>

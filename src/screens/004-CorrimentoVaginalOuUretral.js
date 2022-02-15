@@ -10,39 +10,23 @@ import {
 import Botao from '@components/Botao';
 
 
-export default function T3({ navigation })  {
+export default function T4({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Aqui você irá reconhecer os sinais e sintomas apresentados pelo paciente ou colhidos durante o exame físico, além de poder integrar a oferta dos testes rápidos ao seu atendimento. Escolha uma opção:</Text>
+                        <Text>O paciente está apresentando algum tipo de corrimento vaginal?</Text>
                     </View>
 
                 </ScrollView>
 
                 <View style = {styles.containerBotao}>
                     <Botao
-                        title = "CORRIMENTO VAGINAL OU URETRAL"
-                        onPress = { () => navigation.navigate('003-Corrimento Vaginal ou Uretral') }
-                    />
-                    <Botao
-                        title = "ÚLCERA"
+                        title = "SIM"
                         onPress = { () => navigation.navigate('') }
                     />
                     <Botao
-                        title = "VERRUGA ANOGENITAL"
-                        onPress = { () => navigation.navigate('') }
-                    />
-                    <Botao
-                        title = "SÍFILIS"
-                        onPress = { () => navigation.navigate('') }
-                    />
-                    <Botao
-                        title = "HIV"
-                        onPress = { () => navigation.navigate('') }
-                    />
-                    <Botao
-                        title = "HEPATITES B E C"
+                        title = "NÃO"
                         onPress = { () => navigation.navigate('') }
                     />
                 </View>
