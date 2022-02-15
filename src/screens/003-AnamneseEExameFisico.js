@@ -10,7 +10,7 @@ import {
 import Botao from '@components/Botao';
 
 
-export default function T2({ navigation })  {
+export default function T3({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
@@ -22,11 +22,27 @@ export default function T2({ navigation })  {
 
                 <View style = {styles.containerBotao}>
                     <Botao
-                        title = "ANAMNESE E EXAME FÍSICO"
-                        onPress = { () => navigation.navigate('003-Anamnese e Exame Fisico') }
+                        title = "CORRIMENTO VAGINAL OU URETRAL"
+                        onPress = { () => navigation.navigate('') }
                     />
                     <Botao
-                        title = "TESTES RÁPIDOS"
+                        title = "ÚLCERA"
+                        onPress = { () => navigation.navigate('') }
+                    />
+                    <Botao
+                        title = "VERRUGA ANOGENITAL"
+                        onPress = { () => navigation.navigate('') }
+                    />
+                    <Botao
+                        title = "SÍFILIS"
+                        onPress = { () => navigation.navigate('') }
+                    />
+                    <Botao
+                        title = "HIV"
+                        onPress = { () => navigation.navigate('') }
+                    />
+                    <Botao
+                        title = "HEPATITES B E C"
                         onPress = { () => navigation.navigate('') }
                     />
                 </View>

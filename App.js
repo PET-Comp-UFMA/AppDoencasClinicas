@@ -5,10 +5,9 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 
 // Telas
-import TelaPrincipal from '@screens/TelaPrincipal';
-import TelaTeste     from '@screens/TelaTeste';
 import T001          from '@screens/001-Inicio';
 import T002          from '@screens/002-ManejoClinico';
+import T003          from '@screens/003-AnamneseEExameFisico';
 
 // Componentes
 import Titulo        from '@components/Titulo';
@@ -35,6 +34,11 @@ const App: () => Node = () => {
           name      = '002-Manejo Clinico'
           component = {T002}
           options   = {{ title: "Manejo Clínico" }}/>
+
+        <Stack.Screen 
+          name      = '003-Anamnese e Exame Fisico'
+          component = {T003}
+          options   = {{ title: "Anamnese e Exame Físico" }}/>
 
       </Stack.Navigator>
     </NavigationContainer>
