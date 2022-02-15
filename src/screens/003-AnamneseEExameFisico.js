@@ -23,7 +23,7 @@ export default function T3({ navigation })  {
                 <View style = {styles.containerBotao}>
                     <Botao
                         title = "CORRIMENTO VAGINAL OU URETRAL"
-                        onPress = { () => navigation.navigate('003-Corrimento Vaginal ou Uretral') }
+                        onPress = { () => navigation.navigate('004-Corrimento Vaginal ou Uretral') }
                     />
                     <Botao
                         title = "ÚLCERA"

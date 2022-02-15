@@ -9,6 +9,7 @@ import T001          from '@screens/001-Inicio';
 import T002          from '@screens/002-ManejoClinico';
 import T003          from '@screens/003-AnamneseEExameFisico';
 import T004          from '@screens/004-CorrimentoVaginalOuUretral';
+import T005          from '@screens/005-CorrimentoVaginal';
 
 // Componentes
 import Titulo        from '@components/Titulo';
@@ -42,9 +43,14 @@ const App: () => Node = () => {
           options   = {{ title: "Anamnese e Exame Físico" }}/>
 
         <Stack.Screen 
-          name      = '003-Corrimento Vaginal ou Uretral'
+          name      = '004-Corrimento Vaginal ou Uretral'
           component = {T004}
           options   = {{ title: "Corrimento Vaginal ou Uretral" }}/>
+
+        <Stack.Screen 
+          name      = '005-Corrimento Vaginal'
+          component = {T005}
+          options   = {{ title: "Corrimento Vaginal" }}/>
 
 
       </Stack.Navigator>
