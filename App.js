@@ -8,6 +8,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import T001          from '@screens/001-Inicio';
 import T002          from '@screens/002-ManejoClinico';
 import T003          from '@screens/003-AnamneseEExameFisico';
+import T004          from '@screens/004-CorrimentoVaginalOuUretral';
 
 // Componentes
 import Titulo        from '@components/Titulo';
@@ -39,6 +40,12 @@ const App: () => Node = () => {
           name      = '003-Anamnese e Exame Fisico'
           component = {T003}
           options   = {{ title: "Anamnese e Exame Físico" }}/>
+
+        <Stack.Screen 
+          name      = '003-Corrimento Vaginal ou Uretral'
+          component = {T004}
+          options   = {{ title: "Corrimento Vaginal ou Uretral" }}/>
+
 
       </Stack.Navigator>
     </NavigationContainer>
