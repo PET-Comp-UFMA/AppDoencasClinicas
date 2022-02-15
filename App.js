@@ -4,19 +4,11 @@ import { NavigationContainer }      from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 
-// Configuração de texto
-import Text          from 'react-native';
-Text.defaultProps       = Text.defaultProps || {}
-Text.defaultProps.style =  { 
-  color: 'red',
-  fontFamily: 'Mulish-Regular',
-  fontSize: 12
-}
-
 // Telas
 import TelaPrincipal from '@screens/TelaPrincipal';
 import TelaTeste     from '@screens/TelaTeste';
-import T1 from            '@screens/1-Inicio';
+import T1            from '@screens/001-Inicio';
+import T2            from '@screens/002-ManejoClinico';
 
 // Componentes
 import Titulo        from '@components/Titulo';
@@ -27,31 +19,26 @@ const Stack = createNativeStackNavigator();
 const App: () => Node = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName = '1-Inicio' 
+      <Stack.Navigator initialRouteName = '001-Inicio' 
         screenOptions={{
           headerTitle: (props) => <Titulo {...props}/>,
           headerBackVisible: "no"
         }}> 
        
        <Stack.Screen 
-          name      = '1-Inicio'
+          name      = '001-Inicio'
           component = {T1}
-          options   = {{ title: "Início" }}/>
+          options   = {{ title: "Início" ,
+                         headerShown: false}}/>
 
         <Stack.Screen 
-          name      = 'Principal'
-          component = {TelaPrincipal}
-          options   = {{ title: "Tela Principal" }}/>
- 
-        <Stack.Screen 
-          name      = 'Teste'
-          component = {TelaTeste}
-          options   = {{ title: "Tela Teste" }}/>
- 
+          name      = '002-Manejo Clinico'
+          component = {T2}
+          options   = {{ title: "Manejo Clínico" }}/>
+
       </Stack.Navigator>
     </NavigationContainer>
   ); 
 };
  
 export default App;
- 
