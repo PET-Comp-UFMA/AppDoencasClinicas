@@ -34,7 +34,7 @@ export default class ScreenModalImage extends Component{
                 </View>
             </View>
         )
-    }
+    }j
 }
 
 const styles = StyleSheet.create({
