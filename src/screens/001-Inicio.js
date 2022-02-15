@@ -10,6 +10,8 @@ import {
 
 import Botao from '@components/Botao';
 
+import Logo from 'icons/Logo.svg';
+
 // Configuração de texto para as próximas telas
 Text.defaultProps       = Text.defaultProps || {}
 Text.defaultProps.style =  { 
@@ -25,10 +27,7 @@ export default function T1({ navigation })  {
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>   
                     <View>
-                        <Image 
-                            source={require("@images/Logo.png")}
-                            style={styles.imagem}
-                        />
+                        <Logo height={300} stroke={''} />
                     </View>
 
                     <View>
@@ -74,11 +73,5 @@ const styles = StyleSheet.create({
         fontSize        : 30,
         marginHorizontal: 20,
         textAlign       : 'center'
-    },
-    imagem: {
-        alignSelf       : 'center',
-        marginTop       : 30,
-        width           : 300,
-        height          : 300
     }
 });
