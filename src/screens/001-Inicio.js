@@ -43,7 +43,7 @@ export default function T1({ navigation })  {
                         />
                         <Botao
                             title = "Tira Dúvidas"
-                            onPress = { () => navigation.navigate('') }
+                            onPress = { () => navigation.navigate('102-Tira Duvidas') }
                         />
                         <Botao
                             title = "Sobre"
