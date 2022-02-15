@@ -39,7 +39,7 @@ export default function T1({ navigation })  {
                     <View style = {styles.containerBotao}>
                         <Botao
                             title = "Manejo Clínico"
-                            onPress = { () => navigation.navigate('2-Manejo Clinico') }
+                            onPress = { () => navigation.navigate('002-Manejo Clinico') }
                         />
                         <Botao
                             title = "Tira Dúvidas"

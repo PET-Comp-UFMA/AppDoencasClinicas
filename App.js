@@ -7,8 +7,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // Telas
 import TelaPrincipal from '@screens/TelaPrincipal';
 import TelaTeste     from '@screens/TelaTeste';
-import T1            from '@screens/001-Inicio';
-import T2            from '@screens/002-ManejoClinico';
+import T001          from '@screens/001-Inicio';
+import T002          from '@screens/002-ManejoClinico';
 
 // Componentes
 import Titulo        from '@components/Titulo';
@@ -27,13 +27,13 @@ const App: () => Node = () => {
        
        <Stack.Screen 
           name      = '001-Inicio'
-          component = {T1}
+          component = {T001}
           options   = {{ title: "Início" ,
                          headerShown: false}}/>
 
         <Stack.Screen 
           name      = '002-Manejo Clinico'
-          component = {T2}
+          component = {T002}
           options   = {{ title: "Manejo Clínico" }}/>
 
       </Stack.Navigator>
