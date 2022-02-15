@@ -13,9 +13,6 @@ import T005          from '@screens/005-CorrimentoVaginal';
 import T102          from '@screens/102-TiraDuvidas';
 
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 // Componentes
 import Titulo from '@components/Titulo';
 
