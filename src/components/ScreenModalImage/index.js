@@ -15,7 +15,6 @@ import Fechar from 'icons/close.svg';
 export default class ScreenModalImage extends Component{
 
     render() {
-        console.log(this.props  )
         return(
             <View style={styles.viewModal}>
                 <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
