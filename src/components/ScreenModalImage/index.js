@@ -5,15 +5,17 @@ import {
     StyleSheet,
     Modal,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
+    ImageBackground
 } from "react-native"
+
 
 import Fechar from 'icons/close.svg';
 
 export default class ScreenModalImage extends Component{
 
     render() {
-
+        console.log(this.props  )
         return(
             <View style={styles.viewModal}>
                 <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
@@ -26,10 +28,20 @@ export default class ScreenModalImage extends Component{
                     <Text style={styles.tituloModal}>{this.props.title}</Text>
                 </View>
 
-                <Image 
-                    source={this.props.source} 
-                    style={styles.imageModal}
-                />
+                <ImageBackground
+                    source={this.props.source}
+                    style={styles.image}>
+                        <View style={styles.textbg}>
+                            <ImageBackground
+                                style={styles.image} 
+                                source={this.props.source}
+                                blurRadius={10}>
+                                    <View style={styles.textbg}>
+                                        <Text style={styles.text}>{this.props.number}</Text>
+                                    </View>
+                            </ImageBackground>
+                        </View>
+                </ImageBackground>
 
                 </View>
             </View>
@@ -39,42 +51,49 @@ export default class ScreenModalImage extends Component{
 
 const styles = StyleSheet.create({
     viewModal: {
-        flex: 1,
-        backgroundColor: "rgba(0, 0, 0, 0.7)"
+        flex              : 1,
+        backgroundColor   : "rgba(0, 0, 0, 0.7)"
     },
-
     textClose: {
-        fontSize: 40
+        fontSize          : 40
     },
-
-    buttonCloseModal: {
-        flexDirection: "row",
-        justifyContent: "flex-end"
+    buttonCloseModal      : {
+        flexDirection     : "row",
+        justifyContent    : "flex-end"
     },
-
     iconCloseModal: {
-        marginTop: 3,
-        marginRight: 5,
-        width: 50, 
-        height: 50
+        marginTop         : 3,
+        marginRight       : 5,
+        width             : 50, 
+        height            : 50
     },
-
     viewTituloModal:{
-        alignItems: "center",
-        justifyContent: "center",
-        width: 345,
-        height: 45,
-        backgroundColor: "#59998D"
+        alignItems        : "center",
+        justifyContent    : "center",
+        width             : 345,
+        height            : 45,
+        backgroundColor   : "#59998D"
     },
-
     tituloModal: {
-        fontSize: 22,   
-        color: "#fff",
-        fontFamily: "Mulish-Bold"
+        fontSize          : 22,   
+        color             : "#fff",
+        fontFamily        : "Mulish-Bold"
     },
-
-    imageModal: {
-        width: 345,
-        height: 345
+    image: {
+        width             : 345,
+        height            : 345
+    },
+    text: {
+        fontSize          : 24,
+        fontFamily        : 'Mulish-Bold',
+        color             : 'white',
+        textAlign         : 'center',
+        width             : 165,
+    },
+    textbg: {
+        overflow          : "hidden",
+        width             : 165,
+        height            : 39,
+        backgroundColor   : 'rgba(0, 0, 0, 0.4)'
     }
 });

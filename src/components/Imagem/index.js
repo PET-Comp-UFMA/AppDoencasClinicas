@@ -6,6 +6,7 @@ import {
     Modal,
     Text,
     TouchableOpacity,
+    ImageBackground
 } from "react-native"
 
 import ScreenModalImage from "../ScreenModalImage";
@@ -31,10 +32,20 @@ export default class Imagem extends Component{
         return(
             <View style={styles.container}>
                 <TouchableOpacity onPress={this.toggleModal}>
-                    <Image 
-                        source={this.props.source}
-                        style={styles.imagem}
-                    />
+                <ImageBackground
+                    source={this.props.source}
+                    style={styles.image}>
+                        <View style={styles.textbg}>
+                            <ImageBackground
+                                style={styles.image} 
+                                source={this.props.source}
+                                blurRadius={10}>
+                                    <View style={styles.textbg}>
+                                        <Text style={styles.text}>{this.props.number}</Text>
+                                    </View>
+                            </ImageBackground>
+                        </View>
+                </ImageBackground>
                     <Modal 
                         visible={this.state.visible} 
                         animationType={this.props.animation ? this.props.animation : "fade"} 
@@ -45,6 +56,7 @@ export default class Imagem extends Component{
                             source={this.props.source}
                             toggleModal={this.toggleModal}
                             title={this.props.title ? this.props.title : "Título"}
+                            number={this.props.number ? this.props.number : "F000"}
                         />
 
                     </Modal>
@@ -56,14 +68,25 @@ export default class Imagem extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: 22.5
+        justifyContent    : "center",
+        alignItems        : "center",
+        marginTop         : 22.5
     },
-
-    imagem: {
-        width: 300,
-        height: 300
+    image: {
+        width             : 300,
+        height            : 300
+    },
+    text: {
+        fontSize          : 24,
+        fontFamily        : 'Mulish-Bold',
+        color             : 'white',
+        textAlign         : 'center',
+        width             : 165,
+    },
+    textbg: {
+        overflow          : "hidden",
+        width             : 165,
+        height            : 39,
+        backgroundColor   : 'rgba(0, 0, 0, 0.4)'
     }
-
 });
