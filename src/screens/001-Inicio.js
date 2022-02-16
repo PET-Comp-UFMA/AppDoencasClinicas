@@ -22,7 +22,7 @@ Text.defaultProps.style =  {
   textAlign         : 'center'
 }
 
-export default function T1({ navigation })  {
+export default function T001({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>   

@@ -4,7 +4,7 @@ import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 import Botao from "../components/Botao";
 import Imagem from "../components/Imagem";
 
-export default function T26() {
+export default function T026() {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>

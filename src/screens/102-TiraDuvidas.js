@@ -10,7 +10,7 @@ import Botao from '@components/Botao';
 import Bold from '@components/Bold';
 
 
-export default function T2({ navigation }) {
+export default function T102({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>

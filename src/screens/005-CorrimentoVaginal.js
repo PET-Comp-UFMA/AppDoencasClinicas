@@ -12,7 +12,7 @@ import Botao from '@components/Botao';
 import Imagem from '@components/Imagem';
 
 
-export default function T5({ navigation })  {
+export default function T005({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>

@@ -3,7 +3,7 @@ import { View, Text, SafeAreaView, StyleSheet} from "react-native";
 
 import Botao from '@components/Botao';
 
-export default function T25({navigation}) {
+export default function T025({navigation}) {
     return (
         <SafeAreaView style={styles.container}>
 
