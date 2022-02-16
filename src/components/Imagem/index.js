@@ -1,92 +1,92 @@
 import React, { Component } from "react";
 import {
-    Image,
-    View,
-    StyleSheet,
-    Modal,
-    Text,
-    TouchableOpacity,
-    ImageBackground
+  Image,
+  View,
+  StyleSheet,
+  Modal,
+  Text,
+  TouchableOpacity,
+  ImageBackground
 } from "react-native"
 
 import ScreenModalImage from "../ScreenModalImage";
 
-export default class Imagem extends Component{
+export default class Imagem extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            visible: false
-        }
-
-        this.toggleModal = this.toggleModal.bind(this)
+  constructor(props) {
+    super(props);
+    this.state = {
+      visible: false
     }
 
-    toggleModal(){
-        this.setState({
-            visible: !this.state.visible
-        });
-    }
+    this.toggleModal = this.toggleModal.bind(this)
+  }
 
-    render(){
-        return(
-            <View style={styles.container}>
-                <TouchableOpacity onPress={this.toggleModal}>
-                <ImageBackground
-                    source={this.props.source}
-                    style={styles.image}>
-                        <View style={styles.textbg}>
-                            <ImageBackground
-                                style={styles.image} 
-                                source={this.props.source}
-                                blurRadius={10}>
-                                    <View style={styles.textbg}>
-                                        <Text style={styles.text}>{this.props.number}</Text>
-                                    </View>
-                            </ImageBackground>
-                        </View>
-                </ImageBackground>
-                    <Modal 
-                        visible={this.state.visible} 
-                        animationType={this.props.animation ? this.props.animation : "fade"} 
-                        transparent={this.props.transparent ? this.props.transparent : true}
-                    >
-                       
-                        <ScreenModalImage 
-                            source={this.props.source}
-                            toggleModal={this.toggleModal}
-                            title={this.props.title ? this.props.title : "Título"}
-                            number={this.props.number ? this.props.number : "F000"}
-                        />
+  toggleModal() {
+    this.setState({
+      visible: !this.state.visible
+    });
+  }
 
-                    </Modal>
-                </TouchableOpacity>
+  render() {
+    return (
+      <View style={styles.container}>
+        <TouchableOpacity onPress={this.toggleModal}>
+          <ImageBackground
+            source={this.props.source}
+            style={styles.image}>
+            <View style={styles.textbg}>
+              <ImageBackground
+                style={styles.image}
+                source={this.props.source}
+                blurRadius={50}>
+                <View style={styles.textbg}>
+                  <Text style={styles.text}>{this.props.number}</Text>
+                </View>
+              </ImageBackground>
             </View>
-        );
-    };
+          </ImageBackground>
+          <Modal
+            visible={this.state.visible}
+            animationType={this.props.animation ? this.props.animation : "fade"}
+            transparent={this.props.transparent ? this.props.transparent : true}
+          >
+
+            <ScreenModalImage
+              source={this.props.source}
+              toggleModal={this.toggleModal}
+              title={this.props.title ? this.props.title : "Título"}
+              number={this.props.number ? this.props.number : "F000"}
+            />
+
+          </Modal>
+        </TouchableOpacity>
+      </View>
+    );
+  };
 };
 
 const styles = StyleSheet.create({
-    container: {
-        justifyContent    : "center",
-        alignItems        : "center",
-        marginTop         : 22.5
-    },
-    image: {
-        width             : 300,
-        height            : 300
-    },
-    text: {
-        fontSize          : 24,
-        fontFamily        : 'Mulish-Bold',
-        color             : 'white',
-        textAlign         : 'center',
-        width             : 165,
-    },
-    textbg: {
-        overflow          : "hidden",
-        width             : 165,
-        height            : 39,
-        backgroundColor   : 'rgba(0, 0, 0, 0.4)'
-    }
+  container: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22.5
+  },
+  image: {
+    width: 300,
+    height: 300
+  },
+  text: {
+    fontSize: 24,
+    fontFamily: 'Mulish-Bold',
+    color: 'white',
+    textAlign: 'center',
+    width: 165,
+  },
+  textbg: {
+    overflow: "hidden",
+    width: 165,
+    height: 39,
+    backgroundColor: 'rgba(0, 0, 0, 0.4)'
+  }
 });
