@@ -7,6 +7,7 @@ import {
     Text,
 } from 'react-native';
 import Botao from '@components/Botao';
+import Bold from '@components/Bold';
 
 
 export default function T2({ navigation }) {
@@ -14,7 +15,7 @@ export default function T2({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Text>Você está na seção de Tira Dúvidas.</Text>
+                    <Text>Você <Bold>está na </Bold>seção de Tira Dúvidas.</Text>
                     <Text>Aqui você encontrará informações mais objetivas acercas das IST.</Text>
                     <Text>Escolha uma opção:</Text>
                 </View>
@@ -65,7 +66,8 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-between',
         backgroundColor: 'white',
-        paddingTop: 15
+        paddingTop: 15,
+        width: '100%'
     },
     containerBotao: {
         marginTop: 30,
