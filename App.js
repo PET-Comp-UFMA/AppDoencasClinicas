@@ -15,6 +15,7 @@ import T103          from '@screens/103-CandidiaseVulvovaginal';
 import T104          from '@screens/104-VaginoseBacteriana';
 import T105          from '@screens/105-Tricomoniase';
 import T106          from '@screens/106-ClamidiaeGonorreia';
+import T107          from '@screens/107-LinfogranulamaVenereo';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 
@@ -93,6 +94,11 @@ const App: () => Node = () => {
           options={{ title: "Clamídia e Gonorreia" }} />
 
         <Stack.Screen
+          name='107-LinfogranulamaVenereo'
+          component={T107}
+          options={{ title: "Linfogranulama Venéreo (LGV)" }} />
+
+        <Stack.Screen
           name='025-UlceraAnogenital'
           component={T025}
           options={{ title: "Úlcera Anogenital" }} />
@@ -109,3 +115,4 @@ const App: () => Node = () => {
 };
 
 export default App;
+
