@@ -11,6 +11,7 @@ import T003          from '@screens/003-AnamneseEExameFisico';
 import T004          from '@screens/004-CorrimentoVaginalOuUretral';
 import T005          from '@screens/005-CorrimentoVaginal';
 import T102          from '@screens/102-TiraDuvidas';
+import T103          from '@screens/103-CandidiaseVulvovaginal';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 
@@ -67,6 +68,11 @@ const App: () => Node = () => {
           name='102-Tira Duvidas'
           component={T102}
           options={{ title: "Tira Dúvidas" }} />
+          
+        <Stack.Screen
+          name='103-CandidiaseVulvovaginal'
+          component={T103}
+          options={{ title: "Candidíase Vulvovaginal" }} />
 
         <Stack.Screen
           name='025-UlceraAnogenital'

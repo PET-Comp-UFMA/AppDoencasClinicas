@@ -21,7 +21,10 @@ export default function T102({ navigation }) {
                 </View>
 
                 <View style={styles.containerBotao}>
-                    
+                    <Botao
+                        title="CORRIMENTO VAGINAL OU URETRAL"
+                        onPress={() => navigation.navigate('103-CandidiaseVulvovaginal')}
+                    />
                     <Botao
                         title="VERRUGA ANOGENITAL"
                         onPress={() => navigation.navigate('')}
