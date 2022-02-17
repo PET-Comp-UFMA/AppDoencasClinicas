@@ -16,6 +16,7 @@ import T104          from '@screens/104-VaginoseBacteriana';
 import T105          from '@screens/105-Tricomoniase';
 import T106          from '@screens/106-ClamidiaeGonorreia';
 import T107          from '@screens/107-LinfogranulamaVenereo';
+import T108          from '@screens/108-Cancroide';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 
@@ -97,6 +98,11 @@ const App: () => Node = () => {
           name='107-LinfogranulamaVenereo'
           component={T107}
           options={{ title: "Linfogranulama Venéreo (LGV)" }} />
+
+        <Stack.Screen
+          name='108-Cancroide'
+          component={T108}
+          options={{ title: "Cancroide" }} />
 
         <Stack.Screen
           name='025-UlceraAnogenital'
