@@ -3,7 +3,8 @@ import {
     View,
     TouchableOpacity,
     Text,
-    StyleSheet
+    StyleSheet,
+    Dimensions,
 } from "react-native";
 
 export default class Botao extends Component {
@@ -34,7 +35,7 @@ export default class Botao extends Component {
 const styles = StyleSheet.create({
     container:{
         flexDirection: 'column',
-        width: '100%',
+        width: Dimensions.get('window').width,
         alignItems: 'center',
         justifyContent: "center",
         alignSelf: 'flex-end'

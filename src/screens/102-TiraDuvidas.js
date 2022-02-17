@@ -21,10 +21,7 @@ export default function T102({ navigation }) {
                 </View>
 
                 <View style={styles.containerBotao}>
-                    <Botao
-                        title="CORRIMENTO VAGINAL OU URETRAL"
-                        onPress={() => navigation.navigate('')}
-                    />
+                    
                     <Botao
                         title="VERRUGA ANOGENITAL"
                         onPress={() => navigation.navigate('')}
@@ -70,6 +67,7 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     containerBotao: {
+        alignSelf: 'flex-start',
         marginTop: 30,
         width: '100%'
     },
