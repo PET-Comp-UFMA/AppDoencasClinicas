@@ -13,6 +13,7 @@ import T005          from '@screens/005-CorrimentoVaginal';
 import T102          from '@screens/102-TiraDuvidas';
 import T103          from '@screens/103-CandidiaseVulvovaginal';
 import T104          from '@screens/104-VaginoseBacteriana';
+import T105          from '@screens/105-Tricomoniase';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 
@@ -79,6 +80,11 @@ const App: () => Node = () => {
           name='104-VaginoseBacteriana'
           component={T104}
           options={{ title: "Vaginose Bacteriana" }} />
+        
+        <Stack.Screen
+          name='105-Tricomoniase'
+          component={T105}
+          options={{ title: "Tricomoníase" }} />
 
         <Stack.Screen
           name='025-UlceraAnogenital'
