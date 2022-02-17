@@ -23,13 +23,20 @@ export default function T103({ navigation }) {
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F004.png")} title={"Acompanhamento"} />
-                    <Imagem source={require("@images/F005.png")} title={"Acompanhamento"} />
-                    <Imagem source={require("@images/F006.png")} title={"Acompanhamento"} />
+                    <Imagem source={require("@images/F004.png")} title={"Acompanhamento"} number={"F004"}/>
+                    <Imagem source={require("@images/F005.png")} title={"Acompanhamento"} number={"F005"}/>
+                    <Imagem source={require("@images/F006.png")} title={"Acompanhamento"} number={"F006"}/>
                 </View>
 
                 <View>
                     <Parag><Bold>Por se tratar de uma infecção endógena do trato reprodutivo, não é considerada uma IST.</Bold></Parag>
+                </View>
+
+                <View style={styles.containerBotao}>
+                    <Botao
+                        title="Próximo"
+                        onPress={() => navigation.navigate('105-Tricomoniase')}
+                    />
                 </View>
 
             </ScrollView>
