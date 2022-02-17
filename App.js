@@ -18,6 +18,7 @@ import T106          from '@screens/106-ClamidiaeGonorreia';
 import T107          from '@screens/107-LinfogranulamaVenereo';
 import T108          from '@screens/108-Cancroide';
 import T109          from '@screens/109-HerpesGenital';
+import T110          from '@screens/110-Donovanose';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 
@@ -109,6 +110,11 @@ const App: () => Node = () => {
           name='109-HerpesGenital'
           component={T109}
           options={{ title: "Herpes Genital" }} />
+
+        <Stack.Screen
+          name='110-Donovanose'
+          component={T110}
+          options={{ title: "Donovanose" }} />
 
         <Stack.Screen
           name='025-UlceraAnogenital'
