@@ -33,7 +33,7 @@ export default function T007({ navigation })  {
                 <View style = {styles.containerBotao}>
                     <Botao
                         title = "FINALIZAR"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.popToTop() }
                     />
                 </View>
             </SafeAreaView>
