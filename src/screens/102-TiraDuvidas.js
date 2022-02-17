@@ -70,7 +70,6 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     containerBotao: {
-        alignSelf: 'flex-start',
         marginTop: 30,
         width: '100%'
     },

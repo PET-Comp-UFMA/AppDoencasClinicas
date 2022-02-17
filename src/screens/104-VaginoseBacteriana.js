@@ -4,7 +4,6 @@ import {
     StyleSheet,
     SafeAreaView,
     ScrollView,
-    Text,
 } from 'react-native';
 import Bold from '@components/Bold';
 import Imagem from '@components/Imagem';
@@ -17,26 +16,22 @@ export default function T103({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag><Bold>Agente causador:</Bold> fungo Candida albicans é o agente etiológico em 80% a 92% dos casos, podendo o restante ser devido às espécies não albicans (glabarta, tropicalis, krusei, parapsilosis) e Saccharomyces ceravisae.</Parag>
-                    <Parag><Bold>Período de incubação:</Bold> desconhecido.</Parag>
-                    <Parag><Bold>Manifestações clínicas:</Bold> prurido, ardência, corrimento geralmente grumoso, sem odor, dispareunia de introito vaginal e disúria externa.</Parag>
-                    <Parag><Bold>Diagnóstico diferencial:</Bold> líquen escleroso, vulvovestibulite, dermatite vulvar, vulvodínea, vaginite citolítica, vaginite inflamatória descamativa, formas atípicas de herpes genital e reações de hipersensibilidade.</Parag>
+                    <Parag><Bold>Agente causador:</Bold> múltiplos agentes, com predomínio de Gardnerella vaginalis.</Parag>
+                    <Parag><Bold>Período de incubação:</Bold> 2 a 21 dias.</Parag>
+                    <Parag><Bold>Manifestações clínicas:</Bold> corrimento vaginal fétido, branco-acinzentado, de aspecto fluido ou cremoso, algumoas vezes brilhoso.</Parag>
+                    <Parag><Bold>Diagnóstico diferencial:</Bold> tricomoníase.</Parag>
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F003.png")} title={"Acompanhamento"} />
+                    <Imagem source={require("@images/F004.png")} title={"Acompanhamento"} />
+                    <Imagem source={require("@images/F005.png")} title={"Acompanhamento"} />
+                    <Imagem source={require("@images/F006.png")} title={"Acompanhamento"} />
                 </View>
 
                 <View>
                     <Parag><Bold>Por se tratar de uma infecção endógena do trato reprodutivo, não é considerada uma IST.</Bold></Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="Próximo"
-                        onPress={() => navigation.navigate('104-VaginoseBacteriana')}
-                    />
-                </View>
             </ScrollView>
 
 
