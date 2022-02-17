@@ -13,13 +13,8 @@ export default class Tabela extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            tableHead: ['Headd', 'Head2',],
-            tableData: [
-                ['1', '2', ],
-                ['a', 'b', ],
-                ['1', '2', ],
-                ['a', 'b', ]
-            ]
+            tableHead: props.tableHead,
+            tableData: props.tableData
         }
     }
 
