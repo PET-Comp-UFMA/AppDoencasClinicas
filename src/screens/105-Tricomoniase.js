@@ -29,7 +29,7 @@ export default function T103({ navigation }) {
                 </View>
 
                 <View>
-                    <Parag><Bold>Por se tratar de uma infecção endógena do trato reprodutivo, não é considerada uma IST.</Bold></Parag>
+                    <Parag><Bold>A parceira sexual deve ser investigada e tratada.</Bold></Parag>
                 </View>
 
                 <View style={styles.containerBotao}>
