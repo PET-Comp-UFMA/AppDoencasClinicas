@@ -12,19 +12,12 @@ import Botao from '@components/Botao';
 import Imagem from '@components/Imagem';
 
 
-export default function T005({ navigation })  {
+export default function T010({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Esse corrimento vaginal apresenta as seguintes características:{"\n"}</Text>
-                        <Text>Corrimento branco, grumoso e com aspecto de leite talhado</Text>
-                        <Text>Pluorido vulvovaginal{"\n"}</Text>
-                        <Text>Podendo ou não haver:</Text>
-                        <Text>Disuria, dispareunia, hiperenia, edema, vulvar, fissuras e maceração da vulva, placas brancas ou braço-acinzentadas, recobrindo a vagina e o colo uterino(quando realizado exame especular)</Text>
-                        
-                        <Imagem source={require("@images/F002.png")} title={"Corrimento Vaginal"} number={"F002"}/>
-                        <Imagem source={require("@images/F003.png")} title={"Corrimento Vaginal"} number={"F003"}/>
+                        <Text>Esses sintomas são recorrentes(4 ou mais episódios por ano)?</Text>
                     </View>
 
                 </ScrollView>
@@ -32,11 +25,11 @@ export default function T005({ navigation })  {
                 <View style = {styles.containerBotao}>
                     <Botao
                         title = "SIM"
-                        onPress = { () => navigation.navigate('006-Corrimento Vaginal') }
+                        onPress = { () => navigation.navigate('') }
                     />
                     <Botao
                         title = "NÃO"
-                        onPress = { () => navigation.navigate('009-Corrimento Vaginal') }
+                        onPress = { () => navigation.navigate('') }
                     />
                 </View>
             </SafeAreaView>
