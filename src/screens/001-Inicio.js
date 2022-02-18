@@ -19,7 +19,8 @@ Text.defaultProps.style =  {
   fontFamily        : 'Mulish-Regular',
   fontSize          : 21,
   marginHorizontal  : 20,
-  textAlign         : 'center'
+  textAlign         : 'center',
+  lineHeight        : 35       
 }
 
 export default function T001({ navigation })  {
