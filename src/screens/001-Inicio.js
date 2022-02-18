@@ -17,9 +17,10 @@ Text.defaultProps       = Text.defaultProps || {}
 Text.defaultProps.style =  { 
   color             : '#00172E',
   fontFamily        : 'Mulish-Regular',
-  fontSize          : 21,
+  fontSize          : 22,
   marginHorizontal  : 20,
-  textAlign         : 'center'
+  textAlign         : 'center',
+  lineHeight        : 35       
 }
 
 export default function T001({ navigation })  {

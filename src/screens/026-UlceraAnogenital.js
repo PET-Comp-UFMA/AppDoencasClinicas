@@ -12,31 +12,31 @@ export default function T026({navigation}) {
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>
                 <Text>
-                Os seguintes sintomas estão{"\n"}
+                Os seguintes sintomas estão
                 associados?{"\n\n"}
 
-                pápula, pústula ou exulceração indolor,{"\n"}
+                pápula, pústula ou exulceração indolor,
                 que desaparece sem deixar sequela.{"\n"}
 
-                Homem: sulco coronal, frênulo e{"\n"}
+                Homem: sulco coronal, frênulo e
                 prepúcio{"\n"}
 
-                Mulher: parede vaginal posterior, colo{"\n"}
-                uterino, fúrcula e outras partes da{"\n"}
+                Mulher: parede vaginal posterior, colo
+                uterino, fúrcula e outras partes da
                 genitália externa{"\n\n"}
 
 
-                Comprometimento ganglionar evolui{"\n"}
-                com supuração e fistulização por{"\n"}
-                orifícios múltiplos, que correspondem a{"\n"}
-                linfonodos individualizados,{"\n"}
-                parcialmente fundidos em uma grande{"\n"}
+                Comprometimento ganglionar evolui
+                com supuração e fistulização por
+                orifícios múltiplos, que correspondem a
+                linfonodos individualizados,
+                parcialmente fundidos em uma grande
                 massa.{"\n\n"}
             
 
-                Podem ocorrer sintomas gerais, como{"\n"}
-                febre, mal-estar, anorexia,{"\n"}
-                emagrecimento, artralgia, sudorese{"\n"}
+                Podem ocorrer sintomas gerais, como
+                febre, mal-estar, anorexia,
+                emagrecimento, artralgia, sudorese
                 noturna e meningismo.{"\n"}
 
                 </Text>
@@ -47,8 +47,8 @@ export default function T026({navigation}) {
                 <Imagem source={require("@images/F015.png")} title={"Acompanhamento"} number={"F015"}/>
 
                 <Text>
-                Considerar consulta médica para{"\n"}
-                diagnóstico diferencial para{"\n"}
+                Considerar consulta médica para
+                diagnóstico diferencial para
                 linfogranuloma venéreo.{"\n\n"}
 
 

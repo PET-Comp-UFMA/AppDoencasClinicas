@@ -5,28 +5,33 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 // Telas
-import T001 from '@screens/001-Inicio';
-import T002 from '@screens/002-ManejoClinico';
-import T003 from '@screens/003-AnamneseEExameFisico';
-import T004 from '@screens/004-CorrimentoVaginalOuUretral';
-import T005 from '@screens/005-CorrimentoVaginal';
-import T006 from '@screens/006-CorrimentoVaginal';
-import T007 from '@screens/007-CorrimentoVaginal';
-import T008 from '@screens/008-CorrimentoVaginal';
-import T102 from '@screens/102-TiraDuvidas';
-import T103 from '@screens/103-CandidiaseVulvovaginal';
-import T104 from '@screens/104-VaginoseBacteriana';
-import T105 from '@screens/105-Tricomoniase';
-import T106 from '@screens/106-ClamidiaeGonorreia';
-import T107 from '@screens/107-LinfogranulamaVenereo';
-import T108 from '@screens/108-Cancroide';
-import T109 from '@screens/109-HerpesGenital';
-import T110 from '@screens/110-Donovanose';
-import T111 from '@screens/111-CondilomaAcuminado';
-import T112 from '@screens/112-Sifilis';
-import T025 from '@screens/025-UlceraAnogenital';
-import T026 from '@screens/026-UlceraAnogenital';
-import T027 from '@screens/027-UlceraAnogenital'
+import T001          from '@screens/001-Inicio';
+import T002          from '@screens/002-ManejoClinico';
+import T003          from '@screens/003-AnamneseEExameFisico';
+import T004          from '@screens/004-CorrimentoVaginalOuUretral';
+import T005          from '@screens/005-CorrimentoVaginal';
+import T006          from '@screens/006-CorrimentoVaginal';
+import T007          from '@screens/007-CorrimentoVaginal';
+import T008          from '@screens/008-CorrimentoVaginal';
+import T009          from '@screens/009-CorrimentoVaginal';
+import T010          from '@screens/010-CorrimentoVaginal';
+import T011          from '@screens/011-CorrimentoVaginal';
+import T012          from '@screens/012-CorrimentoVaginal';
+import T013          from '@screens/013-CorrimentoVaginal';
+import T102          from '@screens/102-TiraDuvidas';
+import T103          from '@screens/103-CandidiaseVulvovaginal';
+import T104          from '@screens/104-VaginoseBacteriana';
+import T105          from '@screens/105-Tricomoniase';
+import T106          from '@screens/106-ClamidiaeGonorreia';
+import T107          from '@screens/107-LinfogranulamaVenereo';
+import T108          from '@screens/108-Cancroide';
+import T109          from '@screens/109-HerpesGenital';
+import T110          from '@screens/110-Donovanose';
+import T111          from '@screens/111-CondilomaAcuminado';
+import T112          from '@screens/112-Sifilis';
+import T025          from '@screens/025-UlceraAnogenital';
+import T026          from '@screens/026-UlceraAnogenital';
+import T027          from '@screens/027-UlceraAnogenital'
 
 
 // Componentes
@@ -91,6 +96,31 @@ const App: () => Node = () => {
           name='008-Corrimento Vaginal'
           component={T008}
           options={{ title: "Corrimento Vaginal" }} />
+
+        <Stack.Screen 
+          name      = '009-Corrimento Vaginal'
+          component = {T009}
+          options   = {{ title: "Corrimento Vaginal" }}/>
+
+        <Stack.Screen 
+          name      = '010-Corrimento Vaginal'
+          component = {T010}
+          options   = {{ title: "Corrimento Vaginal" }}/>
+
+        <Stack.Screen 
+          name      = '011-Corrimento Vaginal'
+          component = {T011}
+          options   = {{ title: "Corrimento Vaginal" }}/>
+
+        <Stack.Screen 
+          name      = '012-Corrimento Vaginal'
+          component = {T012}
+          options   = {{ title: "Corrimento Vaginal" }}/>
+
+        <Stack.Screen 
+          name      = '013-Corrimento Vaginal'
+          component = {T013}
+          options   = {{ title: "Corrimento Vaginal" }}/>
 
         <Stack.Screen
           name='102-TiraDuvidas'
