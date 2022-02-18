@@ -31,11 +31,11 @@ export default function T102({ navigation }) {
                     />
                     <Botao
                         title="VERRUGA ANOGENITAL"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('111-CondilomaAcuminado')}
                     />
                     <Botao
                         title="SÍFILIS"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('112-Sifilis')}
                     />
                     <Botao
                         title="HIV"

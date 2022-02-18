@@ -16,29 +16,23 @@ export default function T110 ({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag><Bold>Agente causador:</Bold> bactéria Klebsiella granulomatis.</Parag>
-                    <Parag><Bold>Período de incubação:</Bold> 3 dias a 6 meses.</Parag>
-                    <Parag><Bold>Manifestações clínicas:</Bold> ulceração de borda plana ou hipertrófica, bem delimitada, com fundo granuloso, de aspecto vermelho vivo e de sangramento fácil. Acomete preferencialmente pele e mucosas das regiões genitais, perianais e inguinais.</Parag>
-                    <Parag><Bold>Diagnóstico diferencial:</Bold> sífilis, cancroide, tuberculose cutânea, amebíase cutânea, neoplasias ulceradas, leishmaniose tegumentar americana e outras doenças cutâneas ulcerativas e granulomatosas.</Parag>
+                    <Parag><Bold>Agente causador:</Bold> HPV (sigla em inglês para papilomavírus humano).</Parag>
+                    <Parag><Bold>Período de incubação:</Bold> aproximadamente entre 2 e 8 meses, mas pode demorar até 20 anos.</Parag>
+                    <Parag><Bold>Manifestações clínicas:</Bold> lesões polimórficas, sendo as lesões pontiagudas denominadas condiloma acuminado. Costumam ser únicas ou múltiplas, achatadas ou papulosas, mas sempre papilomatosas. Superfície apresenta-se fosca, aveludada ou semelhante à da couve-flor. Apresentam-se da cor da pele, eritematosas ou hiperpigmentadas. Em geral são assintomáticas, mas podem ser pruriginosas, dolorosas, friáveis ou sangrantes.</Parag>
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F016.png")} title={""} number={"F016"}/>
-                    <Imagem source={require("@images/F017.png")} title={""} number={"F017"}/>
-                    <Imagem source={require("@images/F018.png")} title={""} number={"F018"}/>
+                    <Imagem source={require("@images/F025.png")} title={""} number={"F025"}/>
+                    <Imagem source={require("@images/F026.png")} title={""} number={"F026"}/>
+                    <Imagem source={require("@images/F027.png")} title={""} number={"F027"}/>
                 </View>
 
                 <View>
                     <Parag>Caso tenha concluído, clique em <Bold>FINALIZAR</Bold>, e será direcionado ao menu principal.</Parag>
                     <Parag>Ou, se preferir, clique na seta para a <Bold>ESQUERDA</Bold> para relembrar algumas informações.</Parag>
-                    <Parag>Ou ainda você poderá clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção.</Parag>
                 </View>
 
                 <View style={styles.containerBotao}>
-                    <Botao
-                        title="Tira Dúvidas"
-                        onPress={() => navigation.navigate('102-TiraDuvidas')}
-                    />
                     <Botao
                         title="Finalizar"
                         onPress={() => navigation.navigate('001-Inicio')}
