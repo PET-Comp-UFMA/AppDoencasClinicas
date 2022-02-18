@@ -29,7 +29,7 @@ export default function T006({ navigation })  {
                     />
                     <Botao
                         title = "NÃO"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('008-Corrimento Vaginal') }
                     />
                 </View>
             </SafeAreaView>
