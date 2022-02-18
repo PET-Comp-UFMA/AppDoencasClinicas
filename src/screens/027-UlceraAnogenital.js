@@ -9,7 +9,7 @@ export default function T27({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
         
-        <ScrollView style={{zIndex: 1}}>
+        <ScrollView>
             <View style={{marginBottom: -25}}>
                 <Text style={[styles.textPreTable, styles.textFonte]}>Sendo assim, você poderá considerar o tratamento medicamentoso conforme ilustra abaixo.{"\n"}</Text>
             </View>
