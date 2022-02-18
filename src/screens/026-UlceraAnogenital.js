@@ -65,7 +65,7 @@ export default function T026({navigation}) {
                 <Botao
                     title="NÃO"
                     onPress={() => navigation.navigate()}
-                />
+                />  
             </View>
         </SafeAreaView>
     )

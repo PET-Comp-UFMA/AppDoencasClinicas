@@ -1,0 +1,54 @@
+import React from "react";
+import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
+
+import Botao from "../components/Botao";
+import Imagem from "../components/Imagem";
+
+
+export default function T026({navigation}) {
+
+
+    return (
+        <SafeAreaView style={styles.container}>
+            <ScrollView showsVerticalScrollIndicator={true}>
+                <Text>
+                Seu paciente apresenta ulceração de borda plana ou hipertrófica, bem delimitada, com fundo granuloso, de aspecto vermelho vivo e de sangramento fácil nas regiões de dobras e região perianal?
+                </Text>
+
+               
+                <Imagem source={require("@images/F016.png")} title={"Acompanhamento"} number={"F016"}/>
+                <Imagem source={require("@images/F017.png")} title={"Acompanhamento"} number={"F017"}/>
+                <Imagem source={require("@images/F018.png")} title={"Acompanhamento"} number={"F018"}/>
+
+            </ScrollView>
+
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="SIM"
+                    onPress={() => navigation.navigate()}
+                />
+                
+                <Botao
+                    title="NÃO"
+                    onPress={() => navigation.navigate()}
+                />  
+            </View>
+        </SafeAreaView>
+    )
+}
+const styles = StyleSheet.create({
+    container: {
+        flex            : 1,
+        alignItems      : 'center',
+        justifyContent  : 'center',
+        flexDirection   : 'column',
+        justifyContent  : 'space-between',
+        backgroundColor : 'white',
+        paddingTop      : 15,
+    },
+
+    containerBotao: {
+        marginTop       :  30,
+        width           : '100%'
+    },
+});

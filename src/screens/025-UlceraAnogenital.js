@@ -20,7 +20,7 @@ export default function T025({navigation}) {
                 
                 <Botao
                     title="NÃO"
-                    onPress={() => navigation.navigate()}
+                    onPress={() => navigation.navigate("028-UlceraAnogenital")}
                 />
             </View>
 
@@ -36,10 +36,11 @@ const styles = StyleSheet.create({
         flexDirection   : 'column',
         justifyContent  : 'space-between',
         backgroundColor : 'white',
-        paddingTop      : 15
+        paddingTop      : 15,
     },
 
     containerBotao: {
+        marginTop       :  30,
         width           : '100%'
     },
 });
