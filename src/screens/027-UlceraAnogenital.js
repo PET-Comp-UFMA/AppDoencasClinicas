@@ -3,12 +3,13 @@ import { View, SafeAreaView, ScrollView, StyleSheet, Text } from "react-native";
 
 import Tabela from "../components/Tabela";
 import Bold from "../components/Bold";
+import Botao from '../components/Botao';
 
-export default function T27() {
+export default function T27({navigation}) {
   return (
     <SafeAreaView style={styles.container}>
         
-        <ScrollView>
+        <ScrollView style={{zIndex: 1}}>
             <View style={{marginBottom: -25}}>
                 <Text style={[styles.textPreTable, styles.textFonte]}>Sendo assim, você poderá considerar o tratamento medicamentoso conforme ilustra abaixo.{"\n"}</Text>
             </View>
@@ -21,7 +22,7 @@ export default function T27() {
                 o tratamento deve ser realizado com
                 os mesmos medicamentos do
                 casoíndice. Se a parceria for
-                assintomática, recomendase um dos
+                assintomática, recomenda-se um dos
                 tratamentos abaixo:{"\n"}
 
                 <Bold>Azitromicina</Bold> 500mg, 2 comprimidos,
@@ -47,7 +48,12 @@ export default function T27() {
                 genital. 
             </Text>
         </ScrollView>
-        
+        <View style={styles.containerBotao}>
+            <Botao 
+                title="Finalizar"
+                onPress={() => navigation.navigate("001-Inicio")}
+            />
+        </View>
     </SafeAreaView>
   )
 }
@@ -58,6 +64,7 @@ const styles = StyleSheet.create({
         justifyContent  : 'center',
         flexDirection   : 'column',
         justifyContent  : 'space-between',
+        alignItems      : "center",
         backgroundColor : 'white',
         paddingTop      : 15,
         paddingHorizontal: 16,
@@ -84,6 +91,13 @@ const styles = StyleSheet.create({
         marginTop: -20
     },
 
+    textHead: {
+        color: "#fff",
+        fontWeight: "bold",
+        textAlign: "center",
+        fontSize: 18
+    },
+
     textData: { 
         fontSize: 16, 
         margin: 6,
@@ -92,11 +106,8 @@ const styles = StyleSheet.create({
         fontFamily: "Mulish-Regular",
     },
 
-    textHead: {
-        color: "#fff",
-        fontWeight: "bold",
-        textAlign: "center",
-        fontSize: 18
+    containerBotao: {
+        marginTop       :  30,
     }
 })
 
