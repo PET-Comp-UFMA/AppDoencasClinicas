@@ -9,7 +9,7 @@ export default function T27() {
     <SafeAreaView style={styles.container}>
         
         <ScrollView>
-            <View style={[styles.textFonte, {marginBottom: -25}]}>
+            <View style={{marginBottom: -25}}>
                 <Text style={styles.textPreTable}>Sendo assim, você poderá considerar o tratamento medicamentoso conforme ilustra abaixo.{"\n"}</Text>
             </View>
             
@@ -64,12 +64,11 @@ const styles = StyleSheet.create({
     },
 
     textFonte: {
-        alignSelf: 'center',
         color: 'black',
         fontFamily: "Mulish-Regular",
         fontSize: 22,
         color: "#000",
-        lineHeight: 37,
+        lineHeight: 35,
         textAlign: "center"
     },
 
