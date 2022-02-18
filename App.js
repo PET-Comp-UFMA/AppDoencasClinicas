@@ -23,6 +23,7 @@ import T109          from '@screens/109-HerpesGenital';
 import T110          from '@screens/110-Donovanose';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
+import T027          from '@screens/027-UlceraAnogenital'
 
 
 // Componentes
@@ -137,6 +138,11 @@ const App: () => Node = () => {
         <Stack.Screen
           name='026-UlceraAnogenital'
           component={T026}
+          options={{ title: "Úlcera Anogenital" }} />
+        
+        <Stack.Screen
+          name='027-UlceraAnogenital'
+          component={T027}
           options={{ title: "Úlcera Anogenital" }} />
 
 

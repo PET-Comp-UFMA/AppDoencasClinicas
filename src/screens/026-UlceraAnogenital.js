@@ -4,7 +4,10 @@ import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 import Botao from "../components/Botao";
 import Imagem from "../components/Imagem";
 
-export default function T026() {
+
+export default function T026({navigation}) {
+
+
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>
@@ -39,9 +42,9 @@ export default function T026() {
                 </Text>
 
                
-                <Imagem source={require("@images/F013.png")} title={"Acompanhamento"}/>
-                <Imagem source={require("@images/F014.png")} title={"Acompanhamento"}/>
-                <Imagem source={require("@images/F015.png")} title={"Acompanhamento"}/>
+                <Imagem source={require("@images/F013.png")} title={"Acompanhamento"} number={"F013"}/>
+                <Imagem source={require("@images/F014.png")} title={"Acompanhamento"} number={"F014"}/>
+                <Imagem source={require("@images/F015.png")} title={"Acompanhamento"} number={"F015"}/>
 
                 <Text>
                 Considerar consulta médica para{"\n"}
@@ -56,7 +59,7 @@ export default function T026() {
             <View style={styles.containerBotao}>
                 <Botao
                     title="SIM"
-                    onPress={() => navigation.navigate()}
+                    onPress={() => navigation.navigate("027-UlceraAnogenital")}
                 />
                 
                 <Botao
