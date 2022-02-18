@@ -25,11 +25,11 @@ export default function T010({ navigation })  {
                 <View style = {styles.containerBotao}>
                     <Botao
                         title = "SIM"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('011-Corrimento Vaginal') }
                     />
                     <Botao
                         title = "NÃO"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('012-Corrimento Vaginal') }
                     />
                 </View>
             </SafeAreaView>
