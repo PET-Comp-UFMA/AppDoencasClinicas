@@ -98,14 +98,7 @@ const styles = StyleSheet.create({
 });
 
 
-const tableHead = [
-    "a",
-    "b",
-];
 
-
-
-/*
 const tableHead = [
     <Text style={styles.textHead}>Classificação</Text>,
     <Text style={styles.textHead}>Subclassificação</Text>,
@@ -174,4 +167,3 @@ const tableData = [
     ],
 
 ];
-*/
