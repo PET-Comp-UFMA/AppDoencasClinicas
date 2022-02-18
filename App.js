@@ -1,7 +1,7 @@
 import React from 'react';
 import type Node from 'react';
-import { NavigationContainer }      from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 // Telas
@@ -28,6 +28,7 @@ import T108          from '@screens/108-Cancroide';
 import T109          from '@screens/109-HerpesGenital';
 import T110          from '@screens/110-Donovanose';
 import T111          from '@screens/111-CondilomaAcuminado';
+import T112          from '@screens/112-Sifilis';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 import T027          from '@screens/027-UlceraAnogenital'
@@ -71,30 +72,30 @@ const App: () => Node = () => {
           component={T004}
           options={{ title: "Corrimento Vaginal ou Uretral" }} />
 
-        <Stack.Screen 
-          name      = '004-Corrimento Vaginal ou Uretral'
-          component = {T004}
-          options   = {{ title: "Corrimento Vaginal ou Uretral" }}/>
+        <Stack.Screen
+          name='004-Corrimento Vaginal ou Uretral'
+          component={T004}
+          options={{ title: "Corrimento Vaginal ou Uretral" }} />
 
-        <Stack.Screen 
-          name      = '005-Corrimento Vaginal'
-          component = {T005}
-          options   = {{ title: "Corrimento Vaginal" }}/>
+        <Stack.Screen
+          name='005-Corrimento Vaginal'
+          component={T005}
+          options={{ title: "Corrimento Vaginal" }} />
 
-        <Stack.Screen 
-          name      = '006-Corrimento Vaginal'
-          component = {T006}
-          options   = {{ title: "Corrimento Vaginal" }}/>
+        <Stack.Screen
+          name='006-Corrimento Vaginal'
+          component={T006}
+          options={{ title: "Corrimento Vaginal" }} />
 
-        <Stack.Screen 
-          name      = '007-Corrimento Vaginal'
-          component = {T007}
-          options   = {{ title: "Corrimento Vaginal" }}/>
+        <Stack.Screen
+          name='007-Corrimento Vaginal'
+          component={T007}
+          options={{ title: "Corrimento Vaginal" }} />
 
-        <Stack.Screen 
-          name      = '008-Corrimento Vaginal'
-          component = {T008}
-          options   = {{ title: "Corrimento Vaginal" }}/>
+        <Stack.Screen
+          name='008-Corrimento Vaginal'
+          component={T008}
+          options={{ title: "Corrimento Vaginal" }} />
 
         <Stack.Screen 
           name      = '009-Corrimento Vaginal'
@@ -125,17 +126,17 @@ const App: () => Node = () => {
           name='102-TiraDuvidas'
           component={T102}
           options={{ title: "Tira Dúvidas" }} />
-          
+
         <Stack.Screen
           name='103-CandidiaseVulvovaginal'
           component={T103}
           options={{ title: "Candidíase Vulvovaginal" }} />
-        
+
         <Stack.Screen
           name='104-VaginoseBacteriana'
           component={T104}
           options={{ title: "Vaginose Bacteriana" }} />
-        
+
         <Stack.Screen
           name='105-Tricomoniase'
           component={T105}
@@ -172,6 +173,11 @@ const App: () => Node = () => {
           options={{ title: "Condiloma Acuminado" }} />
 
         <Stack.Screen
+          name='112-Sifilis'
+          component={T112}
+          options={{ title: "Sífilis" }} />
+
+        <Stack.Screen
           name='025-UlceraAnogenital'
           component={T025}
           options={{ title: "Úlcera Anogenital" }} />
@@ -180,7 +186,7 @@ const App: () => Node = () => {
           name='026-UlceraAnogenital'
           component={T026}
           options={{ title: "Úlcera Anogenital" }} />
-        
+
         <Stack.Screen
           name='027-UlceraAnogenital'
           component={T027}
