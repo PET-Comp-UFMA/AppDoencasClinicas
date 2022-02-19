@@ -31,8 +31,9 @@ import T111          from '@screens/111-CondilomaAcuminado';
 import T112          from '@screens/112-Sifilis';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
-import T027          from '@screens/027-UlceraAnogenital'
-import T028          from '@screens/028-UlceraAnogenital'
+import T027          from '@screens/027-UlceraAnogenital';
+import T028          from '@screens/028-UlceraAnogenital';
+import T029          from '@screens/029-CorrimentoUretral';
 
 
 
@@ -198,6 +199,11 @@ const App: () => Node = () => {
           name='028-UlceraAnogenital'
           component={T028}
           options={{ title: "Úlcera Anogenital" }} />
+        
+        <Stack.Screen
+          name='029-CorrimentoUretral'
+          component={T029}
+          options={{ title: "Corrimento Uretral" }} />
 
 
       </Stack.Navigator>
