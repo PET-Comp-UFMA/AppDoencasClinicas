@@ -47,7 +47,7 @@ export default function T102({ navigation }) {
                     />
                     <Botao
                         title="USO DE PRESERVARTIVOS"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('115-Preservativos')}
                     />
                     <Botao
                         title="VIOLÊNCIA SEXUAL"

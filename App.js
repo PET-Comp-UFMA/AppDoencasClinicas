@@ -30,6 +30,7 @@ import T110          from '@screens/110-Donovanose';
 import T111          from '@screens/111-CondilomaAcuminado';
 import T112          from '@screens/112-Sifilis';
 import T114          from '@screens/114-HepatiteBeC';
+import T115          from '@screens/115-Preservativos';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 import T027          from '@screens/027-UlceraAnogenital';
@@ -185,6 +186,11 @@ const App: () => Node = () => {
           name='114-HepatiteBeC'
           component={T114}
           options={{ title: "Hepatite B e C" }} />
+        
+        <Stack.Screen
+          name='115-Preservativos'
+          component={T115}
+          options={{ title: "Preservativos" }} />
 
         <Stack.Screen
           name='025-UlceraAnogenital'
