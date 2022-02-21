@@ -4,46 +4,29 @@ import {
     StyleSheet,
     SafeAreaView,
     ScrollView,
+    Text,
 } from 'react-native';
 import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 import Botao from '@components/Botao';
+import Tabela from '@components/Tabela';
 
-export default function T117 ({ navigation }) {
+export default function T120 ({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
 
                 <View>
-                    <Parag>A profilaxia das IST não virais está indicada nas situações de exposição com risco de transmissão, independentemente da presença ou gravidade das lesões físicas e idade.</Parag>
-                    <Parag>Gonorreia, sífilis, infecção por clamídia, tricomoníase e cancroide podem ser prevenidos com o uso de medicamentos de reconhecida eficácia.</Parag>
-                    <Parag>Algumas IST virais, como as infecções por HSV e HPV, ainda não possuem profilaxias específicas.</Parag>
-                    <Parag>Diferentemente do que ocorre na profilaxia pós-exposição (PEP) da infecção pelo HIV, a prevenção das IST não virais pode ser eventualmente postergada, em função das condições de adesão, mas se recomenda a sua realização imediata, sempre que possível. </Parag>
+                    <Parag>De acordo com o Decreto-Lei nº 2.848, de 7 de dezembro de 1940, artigo 128, inciso II do Código Penal brasileiro314, o abortamento é permitido quando a gravidez resulta de estupro, risco de morte da gestante ou anencefalia.</Parag>
+                    <Parag>O método mais adequado para a anticoncepção de emergência consiste na utilização de levonorgestrel.</Parag>
                     <Parag>Você poderá escolher uma das opções abaixo. E ainda, clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção, ou em <Bold>FINALIZAR</Bold> e ser direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
-                
+
+                <View>
+                    <Tabela tableData={tableData} tableHead={tableHead}></Tabela>
+                </View>
 
                 <View style={styles.containerBotao}>
-                    <Botao
-                        title="PROFILAXIA DAS IST EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('')}
-                    />
-                    <Botao
-                        title="PROFILAXIA DA HEPATITE B EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('119-ProfilaxiadasHepatiteB')}
-                    />
-                    <Botao
-                        title="PROFILAXIA DA INFECÇÃO PELO HIV EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('120-ProfilaxiadainfecçãoporHIV')}
-                    />
-                    <Botao
-                        title="PREVENÇÃO DA GRAVIDEZ EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('121-PrevencaodaGravidez')}
-                    />
-                    <Botao
-                        title="NOTIFICANDO A VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('')}
-                    />
                     <Botao
                         title="Tira Dúvidas"
                         onPress={() => navigation.navigate('102-TiraDuvidas')}
@@ -52,7 +35,6 @@ export default function T117 ({ navigation }) {
                         title="Finalizar"
                         onPress={() => navigation.navigate('001-Inicio')}
                     />
-
                 </View>
 
             </ScrollView>
@@ -109,5 +91,29 @@ const styles = StyleSheet.create({
     }
 });
 
+const tableHead = [
+    <Text style={styles.textHead}>Apresentação</Text>,
+    <Text style={styles.textHead}>Posologia</Text>,
+]
+const tableData = [
+    [
+        <Text style={styles.textTitle}>
+            Comprimidos de 0,75mg (cartela com 2 comprimidos) e 1,5mg de levornogestrel (cartela com 1 comprimido)
+        </Text> ,
+        
+        <Text style={styles.textData}>
+            <Bold>1ª opção:</Bold> comprimido de 1,5mg VO ou 2 comprimidos de 0,75mg, dose única, até 5 dias após a relação sexual
+        </Text>,
+    ],
+
+    [
+
+        <Text style={styles.textData}>
+            <Bold>2ª opção:</Bold> 1 comprimido de 0,75mg, VO de 12/12 horas, no total de 2 comprimidos, até 5 dias após a relação sexual
+        </Text>,
+    ],
+
+
+];
 
 
