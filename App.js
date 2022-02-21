@@ -36,6 +36,7 @@ import T117          from '@screens/117-ProfilaxiadasIST';
 import T119          from '@screens/119-ProfilaxiadasHepatiteB';
 import T120          from '@screens/120-ProfilaxiadainfecçãoporHIV';
 import T121          from '@screens/121-PrevencaodaGravidez';
+import T122          from '@screens/122-NotificandoaViolenciaSexual';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 import T027          from '@screens/027-UlceraAnogenital';
@@ -221,6 +222,11 @@ const App: () => Node = () => {
           name='121-PrevencaodaGravidez'
           component={T121}
           options={{ title: "Prevenção da Gravidez" }} />
+
+        <Stack.Screen
+          name='122-NotificandoaViolenciaSexual'
+          component={T122}
+          options={{ title: "Notificando a Violência Sexual" }} />
 
         <Stack.Screen
           name='025-UlceraAnogenital'

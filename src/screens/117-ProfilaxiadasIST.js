@@ -42,7 +42,7 @@ export default function T117 ({ navigation }) {
                     />
                     <Botao
                         title="NOTIFICANDO A VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('122-NotificandoaViolenciaSexual')}
                     />
                     <Botao
                         title="Tira Dúvidas"
