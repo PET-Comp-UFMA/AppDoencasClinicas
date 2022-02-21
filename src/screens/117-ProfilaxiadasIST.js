@@ -34,7 +34,7 @@ export default function T117 ({ navigation }) {
                     />
                     <Botao
                         title="PROFILAXIA DA INFECÇÃO PELO HIV EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('120-ProfilaxiadainfecçãoporHIV')}
                     />
                     <Botao
                         title="PREVENÇÃO DA GRAVIDEZ EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"

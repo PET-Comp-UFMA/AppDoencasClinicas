@@ -10,15 +10,16 @@ import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 import Botao from '@components/Botao';
 
-export default function T119 ({ navigation }) {
+export default function T120 ({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
 
                 <View>
-                    <Parag>Se a vítima não for vacinada ou estiver com vacinação incompleta contra hepatite B, deve-se vacinar ou completar a vacinação.</Parag>
-                    <Parag>Não se recomenda o uso rotineiro de IGHAHB, exceto se a vítima for suscetível e o responsável pela violência seja HBsAg reagente ou pertencente a um grupo de risco (pessoas que usam drogas, por exemplo).</Parag>
-                    <Parag>Quando indicada, a IGHAHB deve ser aplicada o mais precocemente possível – até, no máximo, 14 dias após a exposição.</Parag>
+                    <Parag>A Profilaxia Pós-Exposição (PEP) de risco à infecção pelo HIV consiste no uso de antirretrovirais, por 28 dias, para reduzir o risco de adquirir essa infecção</Parag>
+                    <Parag>O atendimento após a exposição ao HIV é uma urgência. A PEP deve ser iniciada o mais precocemente possível, tendo como limite as 72 horas subsequentes à exposição.</Parag>
+                    <Parag>Nos casos em que o atendimento ocorrer após 72 horas da exposição, a PEP não está mais indicada.</Parag>
+                    <Parag>Mais informações sobre a Profilaxia Pós-Exposição ao HIV, ir para a tela 129.</Parag>
                     <Parag>Você poderá escolher uma das opções abaixo. E ainda, clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção, ou em <Bold>FINALIZAR</Bold> e ser direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 
