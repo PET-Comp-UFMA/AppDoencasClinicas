@@ -51,7 +51,7 @@ export default function T102({ navigation }) {
                     />
                     <Botao
                         title="VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('116-EntendendoViolenciaSexual')}
                     />
                 </View>
 
