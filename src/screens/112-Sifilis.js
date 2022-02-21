@@ -12,7 +12,7 @@ import Parag from '@components/Parag';
 import Botao from '@components/Botao';
 import Tabela from '@components/Tabela';
 
-export default function T110 ({ navigation }) {
+export default function T112 ({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>

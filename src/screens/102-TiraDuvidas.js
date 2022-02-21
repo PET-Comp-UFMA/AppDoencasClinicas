@@ -43,7 +43,7 @@ export default function T102({ navigation }) {
                     />
                     <Botao
                         title="HEPATITE B E C"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('114-HepatiteBeC')}
                     />
                     <Botao
                         title="USO DE PRESERVARTIVOS"
