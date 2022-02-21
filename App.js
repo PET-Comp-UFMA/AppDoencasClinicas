@@ -33,6 +33,7 @@ import T114          from '@screens/114-HepatiteBeC';
 import T115          from '@screens/115-Preservativos';
 import T116          from '@screens/116-EntendendoViolenciaSexual';
 import T117          from '@screens/117-ProfilaxiadasIST';
+import T119          from '@screens/119-ProfilaxiadasHepatiteB';
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 import T027          from '@screens/027-UlceraAnogenital';
@@ -203,6 +204,11 @@ const App: () => Node = () => {
           name='117-ProfilaxiadasIST'
           component={T117}
           options={{ title: "Profilaxia das IST" }} />
+
+        <Stack.Screen
+          name='119-ProfilaxiadasHepatiteB'
+          component={T119}
+          options={{ title: "Profilaxia da Hepatite B" }} />
 
         <Stack.Screen
           name='025-UlceraAnogenital'
