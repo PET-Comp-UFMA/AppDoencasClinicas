@@ -34,14 +34,14 @@ export default function T114 ({ navigation }) {
                     <Parag>Investigação inicial da infecção pelo HBV utilizando TR-HBsAg.</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("@images/F036.svg")} title={""} number={"F036"}/>
+                    <Imagem source={require("@images/F037.png")} title={""} number={"F036"}/>
                 </View>
 
                 <View>
                     <Parag>Investigação o inicial da infecção pelo vírus da hepatite C (HCV) utilizando testes rápidos.</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("@images/F037.svg")} title={""} number={"F037"}/>
+                    <Imagem source={require("@images/F038.png")} title={""} number={"F037"}/>
                 </View>
 
                 <View>
