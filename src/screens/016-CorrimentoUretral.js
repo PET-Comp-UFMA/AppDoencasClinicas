@@ -12,19 +12,17 @@ import Botao from '@components/Botao';
 import Imagem from '@components/Imagem';
 
 
-export default function T013({ navigation })  {
+export default function T016({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Esse corrimento vaginal apresenta as seguintes características:{"\n"}</Text>
-                        <Text>Corrimento abundante, amarelado ou amarelo esverdeado e por vezes acizentado, bolhoso{"\n"}</Text>
-                        <Text>Podendo haver:</Text>
-                        <Text>Plurido vulvar, disúria e hiperemia da mucosa</Text>
+                        <Text>Se não é corrimento vaginal, pode ser uretral.</Text>
+                        <Text>Existe corrimento uretral mucopurulento, com volume variável, associado a dor uretral (independenteda micção), disúria, estrangúria, plurido uretral e eritema de meato uretral?</Text>
                         
-                        <Imagem source={require("@images/F007.png")} title={"Corrimento Vaginal"} number={"F007"}/>
-                        <Imagem source={require("@images/F008.png")} title={"Corrimento Vaginal"} number={"F008"}/>
-                        <Imagem source={require("@images/F009.png")} title={"Corrimento Vaginal"} number={"F009"}/>
+                        <Imagem source={require("@images/F010.png")} title={"Corrimento Uretral"} number={"F010"}/>
+                        <Imagem source={require("@images/F011.png")} title={"Corrimento Uretral"} number={"F011"}/>
+                        <Imagem source={require("@images/F012.png")} title={"Corrimento Uretral"} number={"F012"}/>
                     </View>
 
                 </ScrollView>
@@ -32,11 +30,11 @@ export default function T013({ navigation })  {
                 <View style = {styles.containerBotao}>
                     <Botao
                         title = "SIM"
-                        onPress = { () => navigation.navigate('014-Corrimento Vaginal') }
+                        onPress = { () => navigation.navigate('') }
                     />
                     <Botao
                         title = "NÃO"
-                        onPress = { () => navigation.navigate('023-Corrimento Vaginal') }
+                        onPress = { () => navigation.navigate('') }
                     />
                 </View>
             </SafeAreaView>

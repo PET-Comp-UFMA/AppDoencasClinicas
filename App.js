@@ -18,6 +18,10 @@ import T010          from '@screens/010-CorrimentoVaginal';
 import T011          from '@screens/011-CorrimentoVaginal';
 import T012          from '@screens/012-CorrimentoVaginal';
 import T013          from '@screens/013-CorrimentoVaginal';
+import T014          from '@screens/014-CorrimentoVaginal';
+import T015          from '@screens/015-CorrimentoUretral';
+import T016          from '@screens/016-CorrimentoUretral';
+import T023          from '@screens/023-CorrimentoVaginal';
 import T102          from '@screens/102-TiraDuvidas';
 import T103          from '@screens/103-CandidiaseVulvovaginal';
 import T104          from '@screens/104-VaginoseBacteriana';
@@ -135,6 +139,26 @@ const App: () => Node = () => {
           component = {T013}
           options   = {{ title: "Corrimento Vaginal" }}/>
 
+        <Stack.Screen 
+          name      = '014-Corrimento Vaginal'
+          component = {T014}
+          options   = {{ title: "Corrimento Vaginal" }}/>
+
+        <Stack.Screen 
+          name      = '015-Corrimento Uretral'
+          component = {T015}
+          options   = {{ title: "Corrimento Uretral" }}/>
+
+        <Stack.Screen 
+          name      = '016-Corrimento Uretral'
+          component = {T016}
+          options   = {{ title: "Corrimento Uretral" }}/>
+
+        <Stack.Screen 
+          name      = '023-Corrimento Vaginal'
+          component = {T023}
+          options   = {{ title: "Corrimento Vaginal" }}/>
+        
         <Stack.Screen
           name='102-TiraDuvidas'
           component={T102}
