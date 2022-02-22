@@ -19,11 +19,14 @@ export default function T121 ({ navigation }) {
                 <View>
                     <Parag>De acordo com o Decreto-Lei nº 2.848, de 7 de dezembro de 1940, artigo 128, inciso II do Código Penal brasileiro314, o abortamento é permitido quando a gravidez resulta de estupro, risco de morte da gestante ou anencefalia.</Parag>
                     <Parag>O método mais adequado para a anticoncepção de emergência consiste na utilização de levonorgestrel.</Parag>
-                    <Parag>Você poderá escolher uma das opções abaixo. E ainda, clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção, ou em <Bold>FINALIZAR</Bold> e ser direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 
                 <View>
                     <Tabela tableData={tableData} tableHead={tableHead}></Tabela>
+                </View>
+
+                <View>
+                <Parag>Você poderá escolher uma das opções abaixo. E ainda, clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção, ou em <Bold>FINALIZAR</Bold> e ser direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 
                 <View style={styles.containerBotao}>
