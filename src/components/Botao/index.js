@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
 
     titulo: {
         color: "#FFF",
-        fontSize: 18,
+        fontSize: 16,
         textAlign: 'center',
         letterSpacing: 0.5,
         fontFamily: "Mulish-Bold"
