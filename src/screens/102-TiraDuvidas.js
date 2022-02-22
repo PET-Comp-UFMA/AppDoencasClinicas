@@ -39,7 +39,7 @@ export default function T102({ navigation }) {
                     />
                     <Botao
                         title="HIV"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('113-HIV')}
                     />
                     <Botao
                         title="HEPATITE B E C"

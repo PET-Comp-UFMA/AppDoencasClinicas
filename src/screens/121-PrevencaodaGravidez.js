@@ -11,7 +11,7 @@ import Parag from '@components/Parag';
 import Botao from '@components/Botao';
 import Tabela from '@components/Tabela';
 
-export default function T120 ({ navigation }) {
+export default function T121 ({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
