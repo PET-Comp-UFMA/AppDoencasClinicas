@@ -393,27 +393,27 @@ const App: () => Node = () => {
         <Stack.Screen
           name='030-UlceraAnogenital'
           component={T030}
-          options={{ title: "Ulcera Anogenital" }} />
+          options={{ title: "Úlcera Anogenital" }} />
         
         <Stack.Screen
           name='031-UlceraAnogenital'
           component={T031}
-          options={{ title: "Ulcera Anogenital" }} />
+          options={{ title: "Úlcera Anogenital" }} />
         
         <Stack.Screen
           name='032-UlceraAnogenital'
           component={T032}
-          options={{ title: "Ulcera Anogenital" }} />
+          options={{ title: "Úlcera Anogenital" }} />
         
         <Stack.Screen
           name='033-UlceraAnogenital'
           component={T033}
-          options={{ title: "Ulcera Anogenital" }} />
+          options={{ title: "Úlcera Anogenital" }} />
         
         <Stack.Screen
           name='034-UlceraAnogenital'
           component={T034}
-          options={{ title: "" }} />
+          options={{ title: "Úlcera Anogenital" }} />
 
 
       </Stack.Navigator>

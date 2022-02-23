@@ -1,8 +1,8 @@
 import React from "react";
-import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
+import { SafeAreaView, View, Text, StyleSheet } from "react-native";
 
 import Botao from "../components/Botao";
-import Imagem from "../components/Imagem";
+import Bold from "../components/Bold";
 
 
 export default function T034({navigation}) {
@@ -10,10 +10,12 @@ export default function T034({navigation}) {
 
     return (
         <SafeAreaView style={styles.container}>
-           
+            
+            <View  style={{marginTop: 20}}>
                 <Text>
-                Como seu paciente não apresenta nenhua dessas queixas, clique em MENU PRINCIPAL e você será direcionado ao iínicio, ou em ANAMNESE E EXAME FÍSICO para voltar para o menu dessa seção.
+                Como seu paciente não apresenta nenhuma dessas queixas, clique em <Bold>MENU PRINCIPAL</Bold> e você será direcionado ao iínicio, ou em <Bold>ANAMNESE E EXAME FÍSICO</Bold> para voltar para o menu dessa seção.
                 </Text>
+            </View>
 
 
             <View style={styles.containerBotao}>
@@ -34,15 +36,12 @@ const styles = StyleSheet.create({
     container: {
         flex            : 1,
         alignItems      : 'center',
-        justifyContent  : 'center',
+        justifyContent  : 'space-between',
         flexDirection   : 'column',
-        backgroundColor : 'white',
-        paddingTop      : 15,
+        backgroundColor : 'white'
     },
 
-    containerBotao: {
-        marginTop:  60,     
-        marginBottom       :  100,     
+    containerBotao: {   
         width           : '100%'
     },
 });
