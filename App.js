@@ -22,7 +22,11 @@ import T014          from '@screens/Corrimento Vaginal ou Uretral/014-Corrimento
 import T015          from '@screens/Corrimento Vaginal ou Uretral/015-CorrimentoUretral';
 import T016          from '@screens/Corrimento Vaginal ou Uretral/016-CorrimentoUretral';
 import T017          from '@screens/Corrimento Vaginal ou Uretral/017-CorrimentoUretral';
+import T018          from '@screens/Corrimento Vaginal ou Uretral/018-CorrimentoUretral';
+import T019          from '@screens/Corrimento Vaginal ou Uretral/019-CorrimentoUretral';
 import T023          from '@screens/Corrimento Vaginal ou Uretral/023-CorrimentoVaginal';
+import T024          from '@screens/Corrimento Vaginal ou Uretral/024-CorrimentoUretral';
+
 
 
 import T063          from '@screens/TestesRapidos/063-TestesRapidos';
@@ -186,8 +190,23 @@ const App: () => Node = () => {
           options   = {{ title: "Corrimento Uretral" }}/>
 
         <Stack.Screen 
+          name      = '018-Corrimento Uretral'
+          component = {T018}
+          options   = {{ title: "Corrimento Uretral" }}/>
+
+        <Stack.Screen 
+          name      = '019-Corrimento Uretral'
+          component = {T019}
+          options   = {{ title: "Corrimento Uretral" }}/>
+
+        <Stack.Screen 
           name      = '023-Corrimento Vaginal'
           component = {T023}
+          options   = {{ title: "Corrimento Vaginal" }}/>
+        
+        <Stack.Screen 
+          name      = '024-Corrimento Uretral'
+          component = {T024}
           options   = {{ title: "Corrimento Vaginal" }}/>
 
         <Stack.Screen 

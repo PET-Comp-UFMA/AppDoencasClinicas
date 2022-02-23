@@ -34,7 +34,7 @@ export default function T016({ navigation })  {
                     />
                     <Botao
                         title = "NÃO"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('024-Corrimento Uretral') }
                     />
                 </View>
             </SafeAreaView>

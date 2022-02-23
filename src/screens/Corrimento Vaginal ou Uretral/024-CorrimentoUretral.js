@@ -12,24 +12,24 @@ import Botao from '@components/Botao';
 import Imagem from '@components/Imagem';
 
 
-export default function T017({ navigation })  {
+export default function T024({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Considerar cervitite. Recomenda-se coletar material para microscopia. Está disponível?</Text>
+                        <Text>Já que seu paciente não apresenta corrimento vaginal e/ou uretral, mas existem queixas semelhantes. Considere encaminhá-lo para atendimento médico.</Text>
                     </View>
 
                 </ScrollView>
 
                 <View style = {styles.containerBotao}>
                     <Botao
-                        title = "SIM"
-                        onPress = { () => navigation.navigate('018-Corrimento Uretral') }
+                        title = "MENU PRINCIPAL"
+                        onPress = { () => navigation.popToTop() }
                     />
                     <Botao
-                        title = "NÃO"
-                        onPress = { () => navigation.navigate('019-Corrimento Uretral') }
+                        title = "ANAMNESE E EXAME FÍSICO"
+                        onPress = { () => navigation.navigate('003-Anamnese e Exame Fisico') }
                     />
                 </View>
             </SafeAreaView>
