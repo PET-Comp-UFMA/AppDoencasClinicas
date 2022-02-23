@@ -70,6 +70,8 @@ import T029          from '@screens/029-UlceraAnogenital';
 import T030          from "@screens/030-UlceraAnogenital";
 import T031          from "@screens/031-UlceraAnogenital";
 import T032          from "@screens/032-UlceraAnogenital";
+import T033          from "@screens/033-UlceraAnogenital";
+import T034          from "@screens/034-UlceraAnogenital";
 
 
 // Componentes
@@ -389,6 +391,16 @@ const App: () => Node = () => {
           name='032-UlceraAnogenital'
           component={T032}
           options={{ title: "Ulcera Anogenital" }} />
+        
+        <Stack.Screen
+          name='033-UlceraAnogenital'
+          component={T033}
+          options={{ title: "Ulcera Anogenital" }} />
+        
+        <Stack.Screen
+          name='034-UlceraAnogenital'
+          component={T034}
+          options={{ title: "" }} />
 
 
       </Stack.Navigator>
