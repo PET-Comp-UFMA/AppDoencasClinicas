@@ -13,7 +13,7 @@ export default function T034({navigation}) {
             
             <View  style={{marginTop: 20}}>
                 <Text>
-                Como seu paciente não apresenta nenhuma dessas queixas, clique em <Bold>MENU PRINCIPAL</Bold> e você será direcionado ao iínicio, ou em <Bold>ANAMNESE E EXAME FÍSICO</Bold> para voltar para o menu dessa seção.
+                Como seu paciente não apresenta nenhuma dessas queixas, clique em <Bold>MENU PRINCIPAL</Bold> e você será direcionado ao ínicio, ou em <Bold>ANAMNESE E EXAME FÍSICO</Bold> para voltar para o menu dessa seção.
                 </Text>
             </View>
 
