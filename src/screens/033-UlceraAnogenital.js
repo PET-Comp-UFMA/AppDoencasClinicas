@@ -110,7 +110,7 @@ const tableData = [[
         <Bold>Ceftriaxona</Bold> 250mg, IM,
         dose única
         <Bold>{"\n\n"}OU{"\n\n"}</Bold>
-       <Bold> Ciprofloxacinoa</Bold> 500mg, 1
+       <Bold>Ciprofloxacinoa</Bold> 500mg, 1
         comprimido, VO, 2x/ dia,
         por 3 dias
     </Text>
