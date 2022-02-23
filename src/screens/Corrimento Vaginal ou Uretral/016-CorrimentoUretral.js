@@ -30,7 +30,7 @@ export default function T016({ navigation })  {
                 <View style = {styles.containerBotao}>
                     <Botao
                         title = "SIM"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('017-Corrimento Uretral') }
                     />
                     <Botao
                         title = "NÃO"
