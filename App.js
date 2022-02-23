@@ -23,28 +23,45 @@ import T015          from '@screens/015-CorrimentoUretral';
 import T016          from '@screens/016-CorrimentoUretral';
 import T017          from '@screens/017-CorrimentoUretral';
 import T023          from '@screens/023-CorrimentoVaginal';
-import T063          from '@screens/063-TestesRapidos';
-import T102          from '@screens/102-TiraDuvidas';
-import T103          from '@screens/103-CandidiaseVulvovaginal';
-import T104          from '@screens/104-VaginoseBacteriana';
-import T105          from '@screens/105-Tricomoniase';
-import T106          from '@screens/106-ClamidiaeGonorreia';
-import T107          from '@screens/107-LinfogranulamaVenereo';
-import T108          from '@screens/108-Cancroide';
-import T109          from '@screens/109-HerpesGenital';
-import T110          from '@screens/110-Donovanose';
-import T111          from '@screens/111-CondilomaAcuminado';
-import T112          from '@screens/112-Sifilis';
-import T113          from '@screens/113-HIV';
-import T114          from '@screens/114-HepatiteBeC';
-import T115          from '@screens/115-Preservativos';
-import T116          from '@screens/116-EntendendoViolenciaSexual';
-import T117          from '@screens/117-ProfilaxiadasIST';
-import T118          from '@screens/118-ProfilaxiadasIST';
-import T119          from '@screens/119-ProfilaxiadasHepatiteB';
-import T120          from '@screens/120-ProfilaxiadainfecçãoporHIV';
-import T121          from '@screens/121-PrevencaodaGravidez';
-import T122          from '@screens/122-NotificandoaViolenciaSexual';
+
+
+import T063          from '@screens/TestesRapidos/063-TestesRapidos';
+
+import T064          from '@screens/TestesRapidos/Sifilis/064-TesteRapidoSifilis';
+import T065          from '@screens/TestesRapidos/Sifilis/065-TesteRapidoSifilis';
+import T066          from '@screens/TestesRapidos/Sifilis/066-RetesteSifilis';
+import T067          from '@screens/TestesRapidos/Sifilis/067-RetesteSifilis';
+import T068          from '@screens/TestesRapidos/Sifilis/068-RetesteSifilis';
+import T069          from '@screens/TestesRapidos/Sifilis/069-TesteRapidoSifilis';
+import T070          from '@screens/TestesRapidos/Sifilis/070-RetesteSifilis';
+import T071          from '@screens/TestesRapidos/Sifilis/071-RetesteSifilis';
+
+import T072          from '@screens/TestesRapidos/072-Aconselhamento';
+import T073          from '@screens/TestesRapidos/073-Indisponivel';
+import T074          from '@screens/TestesRapidos/074-TesteNaoReagente';
+
+import T102          from '@screens/TiraDuvidas/102-TiraDuvidas';
+import T103          from '@screens/TiraDuvidas/103-CandidiaseVulvovaginal';
+import T104          from '@screens/TiraDuvidas/104-VaginoseBacteriana';
+import T105          from '@screens/TiraDuvidas/105-Tricomoniase';
+import T106          from '@screens/TiraDuvidas/106-ClamidiaeGonorreia';
+import T107          from '@screens/TiraDuvidas/107-LinfogranulamaVenereo';
+import T108          from '@screens/TiraDuvidas/108-Cancroide';
+import T109          from '@screens/TiraDuvidas/109-HerpesGenital';
+import T110          from '@screens/TiraDuvidas/110-Donovanose';
+import T111          from '@screens/TiraDuvidas/111-CondilomaAcuminado';
+import T112          from '@screens/TiraDuvidas/112-Sifilis';
+import T113          from '@screens/TiraDuvidas/113-HIV';
+import T114          from '@screens/TiraDuvidas/114-HepatiteBeC';
+import T115          from '@screens/TiraDuvidas/115-Preservativos';
+import T116          from '@screens/TiraDuvidas/116-EntendendoViolenciaSexual';
+import T117          from '@screens/TiraDuvidas/117-ProfilaxiadasIST';
+import T118          from '@screens/TiraDuvidas/118-ProfilaxiadasIST';
+import T119          from '@screens/TiraDuvidas/119-ProfilaxiadasHepatiteB';
+import T120          from '@screens/TiraDuvidas/120-ProfilaxiadainfecçãoporHIV';
+import T121          from '@screens/TiraDuvidas/121-PrevencaodaGravidez';
+import T122          from '@screens/TiraDuvidas/122-NotificandoaViolenciaSexual';
+
 import T025          from '@screens/025-UlceraAnogenital';
 import T026          from '@screens/026-UlceraAnogenital';
 import T027          from '@screens/027-UlceraAnogenital';
@@ -170,6 +187,61 @@ const App: () => Node = () => {
           name      = '063-TestesRapidos'
           component = {T063}
           options   = {{ title: "Testes Rápidos" }}/>
+        
+        <Stack.Screen 
+          name      = '064-TesteRapidoSifilis'
+          component = {T064}
+          options   = {{ title: "Teste Rápido Sífilis" }}/>
+
+        <Stack.Screen 
+          name      = '065-TesteRapidoSifilis'
+          component = {T065}
+          options   = {{ title: "Teste Rápido Sífilis" }}/>
+
+        <Stack.Screen 
+          name      = '066-RetesteSifilis'
+          component = {T066}
+          options   = {{ title: "Reteste Sífilis" }}/>
+
+        <Stack.Screen 
+          name      = '067-RetesteSifilis'
+          component = {T067}
+          options   = {{ title: "Reteste Sífilis" }}/>
+
+        <Stack.Screen 
+          name      = '068-RetesteSifilis'
+          component = {T068}
+          options   = {{ title: "Reteste Sífilis" }}/>
+
+        <Stack.Screen 
+          name      = '069-TesteRapidoSifilis'
+          component = {T069}
+          options   = {{ title: "Teste Rápido Sífilis" }}/>
+
+        <Stack.Screen 
+          name      = '070-RetesteSifilis'
+          component = {T070}
+          options   = {{ title: "Reteste Sífilis" }}/>
+        
+        <Stack.Screen 
+          name      = '071-RetesteSifilis'
+          component = {T071}
+          options   = {{ title: "Reteste Sífilis" }}/>
+
+        <Stack.Screen 
+          name      = '072-Aconselhamento'
+          component = {T072}
+          options   = {{ title: "Aconselhamento" }}/>
+
+        <Stack.Screen 
+          name      = '073-Indisponivel'
+          component = {T073}
+          options   = {{ title: "Indisponível" }}/>
+
+        <Stack.Screen 
+          name      = '074-TesteNaoReagente'
+          component = {T074}
+          options   = {{ title: "Teste Não Reagente" }}/>
         
         <Stack.Screen
           name='102-TiraDuvidas'
