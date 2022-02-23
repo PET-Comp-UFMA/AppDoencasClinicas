@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#59998D"
   },
   tituloModal: {
-    fontSize: 22,
+    fontSize: 20,
     color: "#fff",
     fontFamily: "Mulish-Bold"
   },
