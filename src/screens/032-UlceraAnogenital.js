@@ -5,32 +5,29 @@ import Botao from "../components/Botao";
 import Imagem from "../components/Imagem";
 
 
-export default function T026({navigation}) {
+export default function T032({navigation}) {
 
 
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>
                 <Text>
-                Seu paciente apresenta ulceração de borda plana ou hipertrófica, bem delimitada, com fundo granuloso, de aspecto vermelho vivo e de sangramento fácil nas regiões de dobras e região perianal?
+                O(a) usuário(a) apresenta lesões dolorosas, geralmente múltiplas, com borda irregular, apresentando contornos eritemato-edematosos e fundo heterogêneo, recoberto por exsudato necrótico, amarelado, com odor fétido?
                 </Text>
-
-               
-                <Imagem source={require("@images/F016.png")} title={"Acompanhamento"} number={"F016"}/>
-                <Imagem source={require("@images/F017.png")} title={"Acompanhamento"} number={"F017"}/>
-                <Imagem source={require("@images/F018.png")} title={"Acompanhamento"} number={"F018"}/>
-
+                <Imagem source={require("@images/F022.png")} title={"Acompanhamento"} number={"F022"}/>
+                <Imagem source={require("@images/F023.png")} title={"Acompanhamento"} number={"F023"}/>
+                <Imagem source={require("@images/F024.png")} title={"Acompanhamento"} number={"F024"}/>
             </ScrollView>
 
             <View style={styles.containerBotao}>
                 <Botao
                     title="SIM"
-                    onPress={() => navigation.navigate("030-UlceraAnogenital")}
+                    onPress={() => navigation.navigate("")}
                 />
                 
                 <Botao
                     title="NÃO"
-                    onPress={() => navigation.navigate("029-UlceraAnogenital")}
+                    onPress={() => navigation.navigate("")}
                 />  
             </View>
         </SafeAreaView>
