@@ -22,7 +22,7 @@ export default function T032({navigation}) {
             <View style={styles.containerBotao}>
                 <Botao
                     title="SIM"
-                    onPress={() => navigation.navigate("031-UlceraAnogenital")}
+                    onPress={() => navigation.navigate("033-UlceraAnogenital")}
                 />
                 
                 <Botao
