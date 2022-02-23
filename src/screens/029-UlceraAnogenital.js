@@ -12,24 +12,26 @@ export default function T029({navigation}) {
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>
                 <Text>
-                O(a) usuário(a) apresenta lesões eritemato-papulosas de um a três milímetros de diâmetro, que rapidamente evoluíram para vesículas sobre base eritematosa, muito dolorosas e de localização variável na região genital?
-
+                O(a) usuário(a) apresenta lesões eritemato-papulosas de um a três milímetros de diâmetro, que
+                rapidamente evoluíram para vesículas sobre base eritematosa, muito dolorosas e de localização
+                variável na região genital?
                 </Text>
 
                
                 <Imagem source={require("@images/F019.png")} title={"Acompanhamento"} number={"F019"}/>
                 <Imagem source={require("@images/F020.png")} title={"Acompanhamento"} number={"F020"}/>
+                <Imagem source={require("@images/F021.png")} title={"Acompanhamento"} number={"F021"}/>
             </ScrollView>
 
             <View style={styles.containerBotao}>
                 <Botao
                     title="SIM"
-                    onPress={() => navigation.navigate("")}
+                    onPress={() => navigation.navigate("031-UlceraAnogenital")}
                 />
                 
                 <Botao
                     title="NÃO"
-                    onPress={() => navigation.navigate("")}
+                    onPress={() => navigation.navigate("032-UlceraAnogenital")}
                 />  
             </View>
         </SafeAreaView>
