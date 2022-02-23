@@ -49,6 +49,10 @@ export default function T001({ navigation })  {
                             title = "Sobre"
                             onPress = { () => navigation.navigate('') }
                         />
+                        <Botao
+                            title = "(Debug) Testes Rápidos"
+                            onPress = { () => navigation.navigate('063-TestesRapidos') }
+                        />
                     </View>
                 </ScrollView>
             </SafeAreaView>
