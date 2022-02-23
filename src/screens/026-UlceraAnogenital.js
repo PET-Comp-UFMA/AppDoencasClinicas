@@ -64,7 +64,7 @@ export default function T026({navigation}) {
                 
                 <Botao
                     title="NÃO"
-                    onPress={() => navigation.navigate("029-CorrimentoUretral")}
+                    onPress={() => navigation.navigate("028-UlceraAnogenital")}
                 />  
             </View>
         </SafeAreaView>

@@ -25,12 +25,12 @@ export default function T026({navigation}) {
             <View style={styles.containerBotao}>
                 <Botao
                     title="SIM"
-                    onPress={() => navigation.navigate()}
+                    onPress={() => navigation.navigate("030-UlceraAnogenital")}
                 />
                 
                 <Botao
                     title="NÃO"
-                    onPress={() => navigation.navigate()}
+                    onPress={() => navigation.navigate("029-UlceraAnogenital")}
                 />  
             </View>
         </SafeAreaView>
