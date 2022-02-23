@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     textFonte: {
         color: 'black',
         fontFamily: "Mulish-Regular",
-        fontSize: 22,
+        fontSize: 20,
         color: "#000",
         lineHeight: 35,
         textAlign: "center",
