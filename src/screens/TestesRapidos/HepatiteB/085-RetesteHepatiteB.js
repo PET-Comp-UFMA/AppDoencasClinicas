@@ -11,37 +11,29 @@ import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 
 
-export default function T063({ navigation }) {
+export default function T085({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                   <Parag>Escolha uma opção, sabendo que cada teste será registrado individualmente. Em caso de dúvidas clique em <Bold>INTERPRETAÇÃO DOS RESULTADOS.</Bold> Em caso de não realização do(s) teste(s), clique em <Bold>RECUSOU FAZER O TESTE.</Bold></Parag>
+                   <Parag>Nesta etapa o teste teve resultado: <Bold>REAGENTE</Bold> ou <Bold>INVÁLIDO</Bold>. Considere realizar um <Bold>RETESTE</Bold>.</Parag>
                 </View>
 
                 <View style={styles.containerBotao}>
                     <Botao
-                        title="SÍFILIS"
-                        onPress={() => navigation.navigate('064-TesteRapidoSifilis')}
-                    />
-                    <Botao
-                        title="HIV"
+                        title="RETESTE"
                         onPress={() => navigation.navigate('')}
                     />
                     <Botao
-                        title="HEPATITE B"
-                        onPress={() => navigation.navigate('084-TesteRapidoHepatiteB')}
-                    />
-                    <Botao
-                        title="HEPATITE C"
+                        title="NÃO REALIZAR RETESTE"
                         onPress={() => navigation.navigate('')}
                     />
                     <Botao
-                        title="INTERPRETAÇÃO DOS RESULTADOS"
+                        title="PACIENTE RECUSOU RETESTE"
                         onPress={() => navigation.navigate('')}
                     />
                     <Botao
-                        title="RECUSOU FAZER O TESTE"
+                        title="INDISPONÍVEL"
                         onPress={() => navigation.navigate('')}
                     />
                 </View>

@@ -40,6 +40,9 @@ import T072          from '@screens/TestesRapidos/072-Aconselhamento';
 import T073          from '@screens/TestesRapidos/073-Indisponivel';
 import T074          from '@screens/TestesRapidos/074-TesteNaoReagente';
 
+import T084          from '@screens/TestesRapidos/HepatiteB/084-TesteRapidoHepatiteB';
+import T085          from '@screens/TestesRapidos/HepatiteB/085-RetesteHepatiteB';
+
 import T102          from '@screens/TiraDuvidas/102-TiraDuvidas';
 import T103          from '@screens/TiraDuvidas/103-CandidiaseVulvovaginal';
 import T104          from '@screens/TiraDuvidas/104-VaginoseBacteriana';
@@ -243,6 +246,16 @@ const App: () => Node = () => {
           component = {T074}
           options   = {{ title: "Teste Não Reagente" }}/>
         
+        <Stack.Screen 
+          name = '084-TesteRapidoHepatiteB'
+          component = {T084}
+          options = {{ title: "Teste Rápido Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '085-RetesteHepatiteB'
+          component = {T085}
+          options = {{ title: "Teste Rápido Hepatite B"}} />
+
         <Stack.Screen
           name='102-TiraDuvidas'
           component={T102}
