@@ -22,7 +22,7 @@ export default function T063({ navigation }) {
                 <View style={styles.containerBotao}>
                     <Botao
                         title="SÍFILIS"
-                        onPress={() => navigation.navigate('064-TestesRapidosSifilis')}
+                        onPress={() => navigation.navigate('064-TesteRapidoSifilis')}
                     />
                     <Botao
                         title="HIV"
