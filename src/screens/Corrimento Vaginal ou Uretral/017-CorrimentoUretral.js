@@ -12,17 +12,12 @@ import Botao from '@components/Botao';
 import Imagem from '@components/Imagem';
 
 
-export default function T016({ navigation })  {
+export default function T017({ navigation })  {
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Se não é corrimento vaginal, pode ser uretral.</Text>
-                        <Text>Existe corrimento uretral mucopurulento, com volume variável, associado a dor uretral (independenteda micção), disúria, estrangúria, plurido uretral e eritema de meato uretral?</Text>
-                        
-                        <Imagem source={require("@images/F010.png")} title={"Corrimento Uretral"} number={"F010"}/>
-                        <Imagem source={require("@images/F011.png")} title={"Corrimento Uretral"} number={"F011"}/>
-                        <Imagem source={require("@images/F012.png")} title={"Corrimento Uretral"} number={"F012"}/>
+                        <Text>Considerar cervitite. Recomenda-se coletar material para microscopia. Está disponível?</Text>
                     </View>
 
                 </ScrollView>
@@ -30,11 +25,11 @@ export default function T016({ navigation })  {
                 <View style = {styles.containerBotao}>
                     <Botao
                         title = "SIM"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('018-Corrimento Uretral') }
                     />
                     <Botao
                         title = "NÃO"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('019-Corrimento Uretral') }
                     />
                 </View>
             </SafeAreaView>

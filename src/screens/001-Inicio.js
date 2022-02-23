@@ -17,7 +17,7 @@ Text.defaultProps       = Text.defaultProps || {}
 Text.defaultProps.style =  { 
   color             : '#00172E',
   fontFamily        : 'Mulish-Regular',
-  fontSize          : 22,
+  fontSize          : 20,
   marginHorizontal  : 20,
   textAlign         : 'center',
   lineHeight        : 35       
