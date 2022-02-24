@@ -1,12 +1,11 @@
 import React,{ Component } from "react";
-import {
-    Text,
-} from "react-native";
+import { Text } from "react-native";
 
-export default class Bold extends Component {
+
+export default class Bold extends Component {  
     render(){
         return(
-            <Text style={{fontFamily: 'Mulish-Bold', fontWeight: '500'}}>{this.props.children}</Text>
+            <Text style={{fontFamily: 'Mulish_Bold', fontWeight: '500'}}>{this.props.children}</Text>
         );
     }
 };

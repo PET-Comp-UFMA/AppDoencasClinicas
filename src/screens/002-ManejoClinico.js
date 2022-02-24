@@ -9,14 +9,19 @@ import {
 } from 'react-native';
 import Botao from '@components/Botao';
 
+import Seta from './../assets/icons/left.svg';
 
 export default function T002({ navigation })  {
-        return(
+
+    console.log(<Seta width={120} height={40} />)
+    return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
-                    <View>
-                        <Text>Aqui você irá reconhecer os sinais e sintomas apresentados pelo paciente ou colhidos durante o exame físico, além de poder integrar a oferta dos testes rápidos ao seu atendimento. Escolha uma opção:</Text>
-                    </View>
+
+
+                <View>
+                    <Text>Aqui você irá reconhecer os sinais e sintomas apresentados pelo paciente ou colhidos durante o exame físico, além de poder integrar a oferta dos testes rápidos ao seu atendimento. Escolha uma opção:</Text>
+                </View>
 
                 </ScrollView>
 

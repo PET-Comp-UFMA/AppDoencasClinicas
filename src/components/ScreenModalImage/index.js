@@ -7,10 +7,10 @@ import {
   Text,
   TouchableOpacity,
   ImageBackground
-} from "react-native"
+} from "react-native";
 
 
-import Fechar from 'icons/close.svg';
+import Fechar from '@icons/close.svg';
 
 export default class ScreenModalImage extends Component {
 
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   tituloModal: {
     fontSize: 20,
     color: "#fff",
-    fontFamily: "Mulish-Bold"
+    fontFamily: "Mulish_Bold"
   },
   image: {
     width: 345,
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 24,
-    fontFamily: 'Mulish-Bold',
+    fontFamily: 'Mulish_Bold',
     color: 'white',
     textAlign: 'center',
     width: 165,

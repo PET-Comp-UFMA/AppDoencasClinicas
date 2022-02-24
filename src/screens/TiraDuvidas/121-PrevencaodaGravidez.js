@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         margin: 6,
         alignSelf: 'center',
         color: 'black',
-        fontFamily: "Mulish-Regular",
+        fontFamily: "Mulish_Regular",
     },
 
     tabela: {
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
         margin: 6,
         textAlign: 'left',
         color: 'black',
-        fontFamily: "Mulish-Regular",
+        fontFamily: "Mulish_Regular",
     },
 
     textHead: {

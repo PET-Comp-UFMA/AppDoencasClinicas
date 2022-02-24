@@ -18,7 +18,7 @@ import Imagem from '@components/Imagem';
 Text.defaultProps       = Text.defaultProps || {}
 Text.defaultProps.style =  { 
   color: '#00172E',
-  fontFamily: 'Mulish-Regular',
+  fontFamily: 'Mulish_Regular',
   fontSize: 21,
   marginHorizontal: 20,
   textAlign: 'center'

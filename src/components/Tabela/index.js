@@ -8,7 +8,42 @@ import {
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
 
 
+export default class Tabela extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            tableHead: props.tableHead,
+            tableData: props.tableData
+        }
+    }
+    render(){
+        const state = this.state;
 
+        let headRow;
+        let dataRow;
+        let estiloDados;
+        if (state.tableHead){
+            headRow = <Row data={state.tableHead} style={styles.head}/>;
+            dataRow = <Rows data={state.tableData} />;
+            estiloDados = styles.data;
+        }
+        else {
+            headRow = <Row style={styles.head}  />;
+            dataRow = <Rows data={state.tableData}   />;
+            estiloDados = null;
+        }
+
+        return (
+            <View style={styles.container}>
+                <Table borderStyle={styles.border} style={estiloDados}>
+                {headRow}
+                </Table>
+            </View>
+        );
+    }
+}
+
+/*
 export default class Tabela extends Component {
     constructor(props) {
         super(props);
@@ -43,13 +78,15 @@ export default class Tabela extends Component {
             </View>
         )
     }
-}
+}*/
 
 const styles = StyleSheet.create({
     container: { 
-        flex: 1, 
-        padding: 16, 
-        paddingTop: 22.5, 
+        //flex: 1, 
+        //padding: 16, 
+        //paddingTop: 22.5, 
+        height:300,
+        width:200
     },
     border: { 
         borderWidth: 1, 
@@ -74,14 +111,14 @@ const styles = StyleSheet.create({
         margin: 6,
         alignSelf: 'center',
         color: '#FFFFFF',
-        fontFamily: "Mulish-Bold",
+        //fontFamily: "Mulish_Bold",
     },
     textData: { 
         fontSize: 12, 
         margin: 6,
         alignSelf: 'center',
         color: 'black',
-        fontFamily: "Mulish-Regular",
+        //fontFamily: "Mulish_Regular",
     },
     text: { 
         margin: 6 

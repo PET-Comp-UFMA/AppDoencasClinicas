@@ -10,13 +10,13 @@ import {
 
 import Botao from '@components/Botao';
 
-import Logo from 'icons/Logo.svg';
+import Logo from '@icons/Logo.svg';
 
 // Configuração de texto para as próximas telas
 Text.defaultProps       = Text.defaultProps || {}
 Text.defaultProps.style =  { 
   color             : '#00172E',
-  fontFamily        : 'Mulish-Regular',
+  fontFamily        : 'Mulish_Regular',
   fontSize          : 20,
   marginHorizontal  : 20,
   textAlign         : 'center',
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     },
     titulo: {
         color           : '#111F4A',
-        fontFamily      : 'Mulish-Bold',
+        fontFamily      : 'Mulish_Bold',
         fontSize        : 30,
         marginHorizontal: 20,
         textAlign       : 'center'

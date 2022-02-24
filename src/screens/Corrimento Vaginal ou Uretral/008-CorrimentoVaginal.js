@@ -59,14 +59,14 @@ const styles = StyleSheet.create({
         margin: 6,
         alignSelf: 'center',
         color: 'black',
-        fontFamily: "Mulish-Regular",
+        fontFamily: "Mulish_Regular",
     },
     textTitle: { 
         fontSize: 16, 
         margin: 6,
         alignSelf: 'center',
         color: 'black',
-        fontFamily: "Mulish-Regular",
+        fontFamily: "Mulish_Regular",
     },
 });
 

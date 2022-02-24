@@ -58,6 +58,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         textAlign: 'center',
         letterSpacing: 0.5,
-        fontFamily: "Mulish-Bold"
+        fontFamily: "Mulish_Bold"
     },
 });

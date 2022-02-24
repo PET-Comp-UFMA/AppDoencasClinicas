@@ -9,6 +9,7 @@ import {
   ImageBackground
 } from "react-native"
 
+
 import ScreenModalImage from "../ScreenModalImage";
 
 export default class Imagem extends Component {
@@ -32,6 +33,7 @@ export default class Imagem extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={this.toggleModal}>
+
           <ImageBackground
             source={this.props.source}
             style={styles.image}>
@@ -46,6 +48,8 @@ export default class Imagem extends Component {
               </ImageBackground>
             </View>
           </ImageBackground>
+
+          
           <Modal
             visible={this.state.visible}
             animationType={this.props.animation ? this.props.animation : "fade"}
@@ -78,7 +82,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 24,
-    fontFamily: 'Mulish-Bold',
+    fontFamily: 'Mulish_Bold',
     color: 'white',
     textAlign: 'center',
     width: 165,

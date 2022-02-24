@@ -1,7 +1,21 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import type Node from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Bold from './src/components/Bold';
+import Botao from './src/components/Botao';
+import Imagem from './src/components/Imagem';
+import Tabela from './src/components/Tabela';
+import Titulo from './src/components/Titulo';
+
+import AppLoading from 'expo-app-loading';
+import {
+  useFonts,
+  Mulish_400Regular as Mulish_Regular,
+  Mulish_700Bold as Mulish_Bold
+} from '@expo-google-fonts/mulish';
 
 
 // Telas
@@ -95,23 +109,29 @@ import T032          from "@screens/032-UlceraAnogenital";
 import T033          from "@screens/033-UlceraAnogenital";
 import T034          from "@screens/034-UlceraAnogenital";
 
-
-// Componentes
-import Titulo from '@components/Titulo';
-
-
 const Stack = createNativeStackNavigator();
 
-const App: () => Node = () => {
+export default function App() {
+
+  let [fontsLoaded] = useFonts({
+    Mulish_Regular,
+    Mulish_Bold
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
+
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='001-Inicio'
-        screenOptions={{
-          headerTitle: (props) => <Titulo {...props} />,
-          headerBackVisible: "no"
-        }}>
+          <Stack.Navigator initialRouteName='001-Inicio'
+          screenOptions={{
+            headerTitle: (props) => <Titulo {...props}/>,
+            headerBackVisible: "no"
+          }}>
 
-        <Stack.Screen
+<Stack.Screen
           name='001-Inicio'
           component={T001}
           options={{
@@ -518,12 +538,20 @@ const App: () => Node = () => {
           name='034-UlceraAnogenital'
           component={T034}
           options={{ title: "Úlcera Anogenital" }} />
+          </Stack.Navigator>
 
+          <StatusBar style="auto" // Ícones da barra de status do sistema
+          />
 
-      </Stack.Navigator>
     </NavigationContainer>
   );
-};
+}
 
-export default App;
-
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

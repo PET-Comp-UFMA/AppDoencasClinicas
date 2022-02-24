@@ -1,5 +1,5 @@
 import React from 'react';
-import {Component} from 'react/cjs/react.production.min';
+import {Component} from 'react';
 
 import {View, 
     TouchableOpacity, 
@@ -9,7 +9,7 @@ import {View,
 
 import {useNavigation} from '@react-navigation/native';
 
-import Seta from 'icons/left.svg';
+import Seta from '@icons/left.svg';
 
 class Titulo extends Component {
     constructor(props) {
@@ -43,7 +43,6 @@ class Titulo extends Component {
 
         return (
             <View style={styles.view} >
-
                 {backbutton}
                 <View
                     flex={0.85} // Por algum motivo o react tem uma borda no header
@@ -60,7 +59,8 @@ class Titulo extends Component {
 export default function (props) {
     const navigation = useNavigation();
 
-    return <Titulo {...props} navigation={navigation} />;
+    return <Titulo {...props} navigation={navigation} />
+
 }
 
 const styles = StyleSheet.create({
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
         fontSize          : 30,
         textAlign         : 'center',
         color             : '#323F4B',
-        fontFamily        : 'Mulish-Bold',
+        fontFamily        : 'Mulish_Bold',
         textAlignVertical : 'center'
     }
 });

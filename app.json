@@ -1,8 +1,10 @@
 {
-  "name": "AppDoencasClinicas",
-  "displayName": "AppDoencasClinicas",
-  "packageopts": {
-    "config": "metro.config.js",
-    "sourceExts": ["js", "jsx", "ts", "tsx", "svg"]
+  "expo": {
+    "name": "AppDoencasClinicas",
+    "slug": "AppDoencasClinicas",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
