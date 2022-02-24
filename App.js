@@ -46,6 +46,21 @@ import T074          from '@screens/TestesRapidos/074-TesteNaoReagente';
 
 import T084          from '@screens/TestesRapidos/HepatiteB/084-TesteRapidoHepatiteB';
 import T085          from '@screens/TestesRapidos/HepatiteB/085-RetesteHepatiteB';
+import T086          from '@screens/TestesRapidos/HepatiteB/086-RetesteHepatiteB';
+import T087          from '@screens/TestesRapidos/HepatiteB/087-RetesteHepatiteB';
+import T088          from '@screens/TestesRapidos/HepatiteB/088-RetesteHepatiteB';
+import T089          from '@screens/TestesRapidos/HepatiteB/089-RetesteHepatiteB';
+import T090          from '@screens/TestesRapidos/HepatiteB/090-RetesteHepatiteB';
+import T091          from '@screens/TestesRapidos/HepatiteB/091-RetesteHepatiteB';
+
+import T092          from '@screens/TestesRapidos/HepatiteC/092-TesteRapidoHepatiteC';
+import T093          from '@screens/TestesRapidos/HepatiteC/093-RetesteHepatiteC';
+import T094          from '@screens/TestesRapidos/HepatiteC/094-RetesteHepatiteC';
+import T095          from '@screens/TestesRapidos/HepatiteC/095-RetesteHepatiteC';
+import T096          from '@screens/TestesRapidos/HepatiteC/096-RetesteHepatiteC';
+import T097          from '@screens/TestesRapidos/HepatiteC/097-RetesteHepatiteC';
+import T098          from '@screens/TestesRapidos/HepatiteC/098-RetesteHepatiteC';
+import T099          from '@screens/TestesRapidos/HepatiteC/099-RetesteHepatiteC';
 
 import T102          from '@screens/TiraDuvidas/102-TiraDuvidas';
 import T103          from '@screens/TiraDuvidas/103-CandidiaseVulvovaginal';
@@ -278,6 +293,76 @@ const App: () => Node = () => {
           name = '085-RetesteHepatiteB'
           component = {T085}
           options = {{ title: "Teste Rápido Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '086-RetesteHepatiteB'
+          component = {T086}
+          options = {{ title: "Reteste Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '087-RetesteHepatiteB'
+          component = {T087}
+          options = {{ title: "Reteste Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '088-RetesteHepatiteB'
+          component = {T088}
+          options = {{ title: "Reteste Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '089-RetesteHepatiteB'
+          component = {T089}
+          options = {{ title: "Reteste Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '090-RetesteHepatiteB'
+          component = {T090}
+          options = {{ title: "Reteste Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '091-RetesteHepatiteB'
+          component = {T091}
+          options = {{ title: "Reteste Hepatite B"}} />
+
+        <Stack.Screen 
+          name = '092-TesteRapidoHepatiteC'
+          component = {T092}
+          options = {{ title: "Teste Rápido Hepatite C"}} />
+
+        <Stack.Screen 
+          name = '093-RetesteHepatiteC'
+          component = {T093}
+          options = {{ title: "Reteste Hepatite C"}} />
+
+        <Stack.Screen 
+          name = '094-RetesteHepatiteC'
+          component = {T094}
+          options = {{ title: "Reteste Hepatite C"}} />
+
+        <Stack.Screen 
+          name = '095-RetesteHepatiteC'
+          component = {T095}
+          options = {{ title: "Reteste Hepatite C"}} />
+
+        <Stack.Screen 
+          name = '096-RetesteHepatiteC'
+          component = {T096}
+          options = {{ title: "Reteste Hepatite C"}} />
+
+        <Stack.Screen 
+          name = '097-RetesteHepatiteC'
+          component = {T097}
+          options = {{ title: "Reteste Hepatite C"}} />
+
+        <Stack.Screen 
+          name = '098-RetesteHepatiteC'
+          component = {T098}
+          options = {{ title: "Reteste Hepatite C"}} />
+
+        <Stack.Screen 
+          name = '099-RetesteHepatiteC'
+          component = {T099}
+          options = {{ title: "Reteste Hepatite C"}} />
 
         <Stack.Screen
           name='102-TiraDuvidas'

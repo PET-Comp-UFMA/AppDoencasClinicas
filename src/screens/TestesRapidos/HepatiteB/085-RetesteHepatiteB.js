@@ -22,19 +22,19 @@ export default function T085({ navigation }) {
                 <View style={styles.containerBotao}>
                     <Botao
                         title="RETESTE"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('086-RetesteHepatiteB')}
                     />
                     <Botao
                         title="NÃO REALIZAR RETESTE"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('089-RetesteHepatiteB')}
                     />
                     <Botao
                         title="PACIENTE RECUSOU RETESTE"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('088-RetesteHepatiteB')}
                     />
                     <Botao
                         title="INDISPONÍVEL"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('090-RetesteHepatiteB')}
                     />
                 </View>
 

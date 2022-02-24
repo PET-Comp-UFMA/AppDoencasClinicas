@@ -11,34 +11,23 @@ import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 
 
-export default function T084({ navigation }) {
+export default function T087({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                   <Parag>Qual foi o resultado?</Parag>
+                   <Parag>Reteste foi <Bold>REAGENTE</Bold>. Clique em <Bold>MANEJO CLÍNICO</Bold>, e você será direcionado para as possíveis soluções.</Parag>
+                   <Parag> Se o paciente se recusar em prosseguir o manejo, aconselhe sobre a importância do tratamento, se ainda sim não concordar, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Notifique todo o processo.</Parag>
                 </View>
 
                 <View style={styles.containerBotao}>
                     <Botao
-                        title="Reagente"
-                        onPress={() => navigation.navigate('085-RetesteHepatiteB')}
+                        title="MANEJO CLÍNICO"
+                        onPress={() => navigation.navigate('002-Manejo Clinico')}
                     />
                     <Botao
-                        title="NÃO REAGENTE"
-                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
-                    />
-                    <Botao
-                        title="INVÁLIDO"
-                        onPress={() => navigation.navigate('085-RetesteHepatiteB')}
-                    />
-                    <Botao
-                        title="INDISPONÍVEL"
-                        onPress={() => navigation.navigate('073-Indisponivel')}
-                    />
-                    <Botao
-                        title="RECUSOU FAZER"
-                        onPress={() => navigation.navigate('072-Aconselhamento')}
+                        title="FINALIZAR"
+                        onPress={() => navigation.navigate('')}
                     />
                 </View>
 

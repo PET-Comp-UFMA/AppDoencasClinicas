@@ -11,37 +11,26 @@ import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 
 
-export default function T063({ navigation }) {
+export default function T096({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                   <Parag>Escolha uma opção, sabendo que cada teste será registrado individualmente. Em caso de dúvidas clique em <Bold>INTERPRETAÇÃO DOS RESULTADOS.</Bold> Em caso de não realização do(s) teste(s), clique em <Bold>RECUSOU FAZER O TESTE.</Bold></Parag>
+                   <Parag>Se seu paciente não concordou realizar o <Bold>RETESTE</Bold> após teste reagente, aconselhe-o. E se ele aceitar após aconselhamento, clique em <Bold>REALIZAR RETESTE</Bold>.</Parag>
+                    <Parag>Se não for esse o caso, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 
                 <View style={styles.containerBotao}>
                     <Botao
-                        title="SÍFILIS"
-                        onPress={() => navigation.navigate('064-TesteRapidoSifilis')}
+                        title="ACONSELHAMENTO"
+                        onPress={() => navigation.navigate('072-Aconselhamento')}
                     />
                     <Botao
-                        title="HIV"
-                        onPress={() => navigation.navigate('')}
+                        title="REALIZAR RETESTE"
+                        onPress={() => navigation.navigate('094-RetesteHepatiteC')}
                     />
                     <Botao
-                        title="HEPATITE B"
-                        onPress={() => navigation.navigate('084-TesteRapidoHepatiteB')}
-                    />
-                    <Botao
-                        title="HEPATITE C"
-                        onPress={() => navigation.navigate('092-TesteRapidoHepatiteC')}
-                    />
-                    <Botao
-                        title="INTERPRETAÇÃO DOS RESULTADOS"
-                        onPress={() => navigation.navigate('')}
-                    />
-                    <Botao
-                        title="RECUSOU FAZER O TESTE"
+                        title="FINALIZAR"
                         onPress={() => navigation.navigate('')}
                     />
                 </View>

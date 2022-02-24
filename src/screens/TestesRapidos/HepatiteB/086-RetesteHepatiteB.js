@@ -11,34 +11,22 @@ import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 
 
-export default function T084({ navigation }) {
+export default function T086({ navigation }) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                   <Parag>Qual foi o resultado?</Parag>
+                   <Parag>Repita o procedimento para realizar o teste novamente. Conforme o resultado, escolha uma opção. <Bold>OBS.:</Bold> Caso o resultado seja <Bold>INVÁLIDO</Bold>, repita e notifique.</Parag>
                 </View>
 
                 <View style={styles.containerBotao}>
                     <Botao
-                        title="Reagente"
-                        onPress={() => navigation.navigate('085-RetesteHepatiteB')}
+                        title="RETESTE REAGENTE"
+                        onPress={() => navigation.navigate('087-RetesteHepatiteB')}
                     />
                     <Botao
-                        title="NÃO REAGENTE"
-                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
-                    />
-                    <Botao
-                        title="INVÁLIDO"
-                        onPress={() => navigation.navigate('085-RetesteHepatiteB')}
-                    />
-                    <Botao
-                        title="INDISPONÍVEL"
-                        onPress={() => navigation.navigate('073-Indisponivel')}
-                    />
-                    <Botao
-                        title="RECUSOU FAZER"
-                        onPress={() => navigation.navigate('072-Aconselhamento')}
+                        title="RETESTE NÃO REAGENTE"
+                        onPress={() => navigation.navigate('091-RetesteHepatiteB')}
                     />
                 </View>
 
