@@ -1,23 +1,32 @@
 import React, { Component } from "react";
 import {
-  Image,
   View,
   StyleSheet,
-  Modal,
   Text,
   TouchableOpacity,
   ImageBackground
 } from "react-native";
+import { setStatusBarBackgroundColor, setStatusBarStyle} from 'expo-status-bar';
 
 
 import Fechar from '@icons/close.svg';
 
+import { BlurView } from 'expo-blur';
+
+
 export default class ScreenModalImage extends Component {
 
   render() {
+    this.toggleModal = () => { // Corrige a barra de status
+      setStatusBarStyle("dark");  
+      this.props.toggleModal();  
+    };
+
+    setStatusBarStyle("light");
+
     return (
-      <View style={styles.viewModal}>
-        <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
+      <BlurView intensity={100} tint="dark" style={styles.viewModal}>
+        <TouchableOpacity style={styles.buttonCloseModal} onPress={this.toggleModal}>
           <Fechar height={50} width={50} marginTop={3} marginRight={5} stroke={'#59998D'} />
         </TouchableOpacity>
 
@@ -43,7 +52,7 @@ export default class ScreenModalImage extends Component {
           </ImageBackground>
 
         </View>
-      </View>
+      </BlurView>      
     )
   }
 }
@@ -51,7 +60,8 @@ export default class ScreenModalImage extends Component {
 const styles = StyleSheet.create({
   viewModal: {
     flex: 1,
-    backgroundColor: "rgba(0, 0, 0, 0.7)"
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    color: 'black'
   },
   textClose: {
     fontSize: 40

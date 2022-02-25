@@ -54,6 +54,8 @@ export default class Imagem extends Component {
             visible={this.state.visible}
             animationType={this.props.animation ? this.props.animation : "fade"}
             transparent={this.props.transparent ? this.props.transparent : true}
+            hardwareAccelerated={true}
+            statusBarTranslucent={true}
           >
 
             <ScreenModalImage
