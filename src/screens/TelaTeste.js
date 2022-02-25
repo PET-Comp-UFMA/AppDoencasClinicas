@@ -14,6 +14,19 @@ import Botao from '@components/Botao';
 import Tabela from '@components/Tabela';
 
 export default function TelaPrincipal({ navigation }) {
+        // Atualiza as cores se o modo noturno estiver ligado
+        const { colors } = useTheme();
+
+        // Configuração de texto para as próximas telas
+        Text.defaultProps       = Text.defaultProps || {}
+        Text.defaultProps.style =  { 
+              color             : colors.text,
+              fontFamily        : 'Mulish_Regular',
+              fontSize          : 20,
+              marginHorizontal  : 20,
+              textAlign         : 'center',
+              lineHeight        : 35
+        }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -44,7 +57,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        backgroundColor: 'white',
+        
         flexDirection: 'column',
         justifyContent: 'space-between',
     },

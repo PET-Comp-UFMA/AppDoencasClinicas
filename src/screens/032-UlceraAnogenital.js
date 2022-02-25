@@ -3,6 +3,7 @@ import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 
 import Botao from "../components/Botao";
 import Imagem from "../components/Imagem";
+import { useTheme } from '@react-navigation/native';
 
 
 export default function T032({navigation}) {

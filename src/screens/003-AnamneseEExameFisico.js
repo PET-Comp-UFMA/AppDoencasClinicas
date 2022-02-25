@@ -8,6 +8,7 @@ import {
     Text,
 } from 'react-native';
 import Botao from '@components/Botao';
+import { useTheme } from '@react-navigation/native';
 
 
 export default function T003({ navigation })  {

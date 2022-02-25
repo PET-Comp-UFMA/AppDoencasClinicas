@@ -113,7 +113,7 @@ import T122 from '@screens/TiraDuvidas/122-NotificandoaViolenciaSexual';
 const darkTheme = {
 	dark: true,
 	colors: {
-		primary: 'rgb(255, 45, 85)',
+		primary: 'white',
 		background: '#121212',
 		card: 'rgb(255, 255, 255)',
 		text: 'rgb(255, 255, 255)',
@@ -124,7 +124,7 @@ const darkTheme = {
 const lightTheme = {
 	dark: false,
 	colors: {
-		primary: 'rgb(255, 45, 85)',
+		primary: 'gray',
 		background: 'rgb(255, 255, 255)',
 		card: 'rgb(255, 255, 255)',
 		text: '#00172E',

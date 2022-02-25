@@ -26,28 +26,28 @@ class Titulo extends Component {
         this.titulo        = titulo;
 
         this.setState      = {title: titulo};
+        
+    }
+
+    render() {
 
         // Título da tela
         this.titulostyle = StyleSheet.create({
             titulo: {
-                fontSize          : 30,
-                textAlign         : 'center',
-                color             : '#323F4B',
-                fontFamily        : 'Mulish_Bold',
-                textAlignVertical : 'center',
-                color             : props.colors.text
-            }});
-
-    }
-
-    render() {
+                        fontSize          : 28,
+                        textAlign         : 'center',
+                        color             : '#323F4B',
+                        fontFamily        : 'Mulish_Bold',
+                        textAlignVertical : 'center',
+                        color             : this.props.colors.text
+                    }});
 
         let backbutton;
         // Verifica se pode voltar
         if (this.navigation.canGoBack()) {
             backbutton = (
                 <TouchableOpacity onPress={this.navigation.goBack}>
-                    <Seta height={25} stroke={'grey'} />
+                    <Seta height={25} stroke={this.props.colors.primary}/>
                 </TouchableOpacity>
             );
         } else {

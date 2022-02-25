@@ -3,7 +3,7 @@ import { SafeAreaView, View, Text, StyleSheet } from "react-native";
 
 import Botao from "../components/Botao";
 import Bold from "../components/Bold";
-
+import { useTheme } from '@react-navigation/native';
 
 export default function T034({navigation}) {
 

@@ -5,6 +5,7 @@ import Botao from "../components/Botao";
 import Imagem from "../components/Imagem";
 import Bold from "../components/Bold";
 import Tabela from "../components/Tabela";
+import { useTheme } from '@react-navigation/native';
 
 export default function T033({navigation}) {
 
