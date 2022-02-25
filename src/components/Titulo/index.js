@@ -9,7 +9,11 @@ import {View,
 
 import {useNavigation} from '@react-navigation/native';
 
+import { useTheme } from '@react-navigation/native';
+
 import Seta from '@icons/left.svg';
+
+
 
 class Titulo extends Component {
     constructor(props) {
@@ -22,9 +26,22 @@ class Titulo extends Component {
         this.titulo        = titulo;
 
         this.setState      = {title: titulo};
+
+        // Título da tela
+        this.titulostyle = StyleSheet.create({
+            titulo: {
+                fontSize          : 30,
+                textAlign         : 'center',
+                color             : '#323F4B',
+                fontFamily        : 'Mulish_Bold',
+                textAlignVertical : 'center',
+                color             : props.colors.text
+            }});
+
     }
 
     render() {
+
         let backbutton;
         // Verifica se pode voltar
         if (this.navigation.canGoBack()) {
@@ -41,13 +58,14 @@ class Titulo extends Component {
             );
         }
 
+
         return (
             <View style={styles.view} >
                 {backbutton}
                 <View
                     flex={0.85} // Por algum motivo o react tem uma borda no header
                 >
-                    <Text style={styles.text}>    
+                    <Text style={this.titulostyle.titulo}>    
                         {this.titulo}
                     </Text>
                 </View>
@@ -59,7 +77,9 @@ class Titulo extends Component {
 export default function (props) {
     const navigation = useNavigation();
 
-    return <Titulo {...props} navigation={navigation} />
+    const { colors } = useTheme();
+
+    return <Titulo {...props} navigation={navigation} colors={colors}/>
 
 }
 

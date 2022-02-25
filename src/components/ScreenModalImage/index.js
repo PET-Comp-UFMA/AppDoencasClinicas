@@ -17,17 +17,11 @@ import { BlurView } from 'expo-blur';
 export default class ScreenModalImage extends Component {
 
   render() {
-    this.toggleModal = () => { // Corrige a barra de status
-      setStatusBarStyle("dark");  
-      this.props.toggleModal();  
-    };
-
-    setStatusBarStyle("light");
 
     return (
       <BlurView intensity={100} tint="dark" style={styles.viewModal}>
-        <TouchableOpacity style={styles.buttonCloseModal} onPress={this.toggleModal}>
-          <Fechar height={50} width={50} marginTop={3} marginRight={5} stroke={'#59998D'} />
+        <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
+          <Fechar height={50} width={50} marginTop={25} marginRight={5} stroke={'#59998D'} />
         </TouchableOpacity>
 
         <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>

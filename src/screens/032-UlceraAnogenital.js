@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
         justifyContent  : 'center',
         flexDirection   : 'column',
         justifyContent  : 'space-between',
-        backgroundColor : 'white',
         paddingTop      : 15,
     },
 

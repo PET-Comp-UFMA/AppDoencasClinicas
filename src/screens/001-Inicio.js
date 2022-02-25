@@ -12,18 +12,37 @@ import Botao from '@components/Botao';
 
 import Logo from '@icons/Logo.svg';
 
-// Configuração de texto para as próximas telas
-Text.defaultProps       = Text.defaultProps || {}
-Text.defaultProps.style =  { 
-  color             : '#00172E',
-  fontFamily        : 'Mulish_Regular',
-  fontSize          : 20,
-  marginHorizontal  : 20,
-  textAlign         : 'center',
-  lineHeight        : 35       
-}
+import { useTheme } from '@react-navigation/native';
+import Bold from '@components/Bold'
 
-export default function T001({ navigation })  {
+
+
+
+
+export default function T001({ navigation })  {  
+    const { colors } = useTheme();
+
+	// Configuração de texto para as próximas telas
+	Text.defaultProps       = Text.defaultProps || {}
+	Text.defaultProps.style =  { 
+  		color             : colors.text,
+  		fontFamily        : 'Mulish_Regular',
+  		fontSize          : 20,
+  		marginHorizontal  : 20,
+  		textAlign         : 'center',
+  		lineHeight        : 35
+	}
+
+    // Título da tela
+    const titulo = StyleSheet.create({
+        titulo: {
+            fontSize        : 35,
+            marginHorizontal: 20,
+            textAlign       : 'center',
+            color           : colors.text
+        }});
+    
+    
         return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>   
@@ -32,8 +51,8 @@ export default function T001({ navigation })  {
                     </View>
 
                     <View>
-                        <Text style={styles.titulo}>Bem Vindo</Text>
-                        <Text>Colega enfermeiro, escolha uma das opções abaixo:</Text>
+                        <Text style={titulo.titulo}><Bold>Bem Vindo</Bold></Text>
+                        <Text>Colega enfermeiro, escolha uma das opções  abaixo:</Text>
                     </View>
 
                     <View style = {styles.containerBotao}>
@@ -66,17 +85,9 @@ const styles = StyleSheet.create({
         justifyContent  : 'center',
         flexDirection   : 'column',
         justifyContent  : 'space-between',
-        backgroundColor : 'white',
     },
     containerBotao: {
         marginTop       : 30,
         width           : '100%'
-    },
-    titulo: {
-        color           : '#111F4A',
-        fontFamily      : 'Mulish_Bold',
-        fontSize        : 30,
-        marginHorizontal: 20,
-        textAlign       : 'center'
     }
 });
