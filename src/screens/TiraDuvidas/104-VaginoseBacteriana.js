@@ -4,6 +4,7 @@ import {
     StyleSheet,
     SafeAreaView,
     ScrollView,
+    Text
 } from 'react-native';
 import Bold from '@components/Bold';
 import Imagem from '@components/Imagem';
