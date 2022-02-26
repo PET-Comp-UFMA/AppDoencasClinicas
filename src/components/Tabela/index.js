@@ -45,7 +45,7 @@ class Tabela extends Component {
             <View style={styles.container}>
                 <Table borderStyle={styles.border} style={estiloDados}>
                     {headRow}
-                    <Rows data={state.tableData} textStyle={textstyle.data} />
+                    <Rows data={state.tableData} textStyle={textstyle.data}/>
                 </Table>
             </View>
         );
@@ -64,10 +64,14 @@ const styles = StyleSheet.create({
         flex: 1, 
         padding: 16, 
         paddingTop: 22.5, 
+        backgroundColor: 'white' // Lib não aplica modificações no texto. Veja https://github.com/Gil2015/react-native-table-component/issues/145
+    },
+    TableText: {
+        margin: 10
     },
     border: { 
         borderWidth: 1, 
-        borderColor: '#59998D', 
+        borderColor: '#59998D'
     },
     head: { 
         height: 30, 
