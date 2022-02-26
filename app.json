@@ -4,8 +4,16 @@
     "slug": "AppDoencasClinicas",
     "userInterfaceStyle": "automatic",
     "version": "1.0.0",
+    "icon": "./src/assets/icons/Icon.png",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.petcompufma.appdoencasclinicas",
+      "versionCode": 1
+    },
+    "ios": {
+      "bundleIdentifier": "com.petcompufma.appdoencasclinicas"
+    }
   }
 }
