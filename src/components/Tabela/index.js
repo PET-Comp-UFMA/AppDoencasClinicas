@@ -6,9 +6,10 @@ import {
     StyleSheet,
 } from 'react-native';
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
+import { useTheme } from '@react-navigation/native';
 
 
-export default class Tabela extends Component {
+class Tabela extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,75 +19,51 @@ export default class Tabela extends Component {
     }
     render(){
         const state = this.state;
-
+        
         let headRow;
-        let dataRow;
         let estiloDados;
         if (state.tableHead){
             headRow = <Row data={state.tableHead} style={styles.head}/>;
-            dataRow = <Rows data={state.tableData} />;
-            estiloDados = styles.data;
         }
         else {
             headRow = <Row style={styles.head}  />;
-            dataRow = <Rows data={state.tableData}   />;
             estiloDados = null;
         }
+
+        
+        const textstyle = StyleSheet.create({
+            data: {
+                fontSize: 12, 
+                margin: 6,
+                alignSelf: 'center',
+                color: this.props.colors.text,
+                fontFamily: "Mulish_Regular",
+            }
+        })
 
         return (
             <View style={styles.container}>
                 <Table borderStyle={styles.border} style={estiloDados}>
-                {headRow}
+                    {headRow}
+                    <Rows data={state.tableData} textStyle={textstyle.data} />
                 </Table>
             </View>
         );
     }
 }
 
-/*
-export default class Tabela extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            tableHead: props.tableHead,
-            tableData: props.tableData
-        }
-    }
+export default function (props) {
+    const { colors } = useTheme();
 
-    render() {
-        const state = this.state;
-       
-        let headRow;
-        let dataRow;
-        let estiloDados;
-        if (state.tableHead){
-            headRow = <Row data={state.tableHead} style={styles.head} textStyle={styles.textHead} />;
-            dataRow = <Rows data={state.tableData} textStyle={styles.text} />;
-            estiloDados = styles.data;
-        }
-        else {
-            headRow = <Row style={styles.head} textStyle={styles.textHead} />;
-            dataRow = <Rows data={state.tableData} textStyle={styles.text} />;
-            estiloDados = null;
-        }
-        return (
-            <View style={styles.container}>
-                <Table borderStyle={styles.border} style={estiloDados}>
-                    {headRow}
-                    <Rows data={state.tableData} textStyle={styles.textData} />
-                </Table>
-            </View>
-        )
-    }
-}*/
+    return <Tabela {...props} colors={colors}/>
+
+}
 
 const styles = StyleSheet.create({
     container: { 
-        //flex: 1, 
-        //padding: 16, 
-        //paddingTop: 22.5, 
-        height:300,
-        width:200
+        flex: 1, 
+        padding: 16, 
+        paddingTop: 22.5, 
     },
     border: { 
         borderWidth: 1, 
@@ -111,14 +88,14 @@ const styles = StyleSheet.create({
         margin: 6,
         alignSelf: 'center',
         color: '#FFFFFF',
-        //fontFamily: "Mulish_Bold",
+        fontFamily: "Mulish_Bold",
     },
     textData: { 
         fontSize: 12, 
         margin: 6,
         alignSelf: 'center',
         color: 'black',
-        //fontFamily: "Mulish_Regular",
+        fontFamily: "Mulish_Regular",
     },
     text: { 
         margin: 6 
