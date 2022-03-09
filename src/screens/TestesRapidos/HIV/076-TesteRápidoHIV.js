@@ -10,7 +10,7 @@ import Botao from '@components/Botao';
 import Parag from '@components/Parag';
 import { useTheme } from '@react-navigation/native';
 
-export default function T064({ navigation }) {
+export default function T076({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -34,7 +34,7 @@ export default function T064({ navigation }) {
                 <View style={styles.containerBotao}>
                     <Botao
                         title="Reagente"
-                        onPress={() => navigation.navigate('065-TesteRapidoSifilis')}
+                        onPress={() => navigation.navigate('077-TesteRapidoHIV')}
                     />
                     <Botao
                         title="NÃO REAGENTE"
@@ -42,7 +42,7 @@ export default function T064({ navigation }) {
                     />
                     <Botao
                         title="INVÁLIDO"
-                        onPress={() => navigation.navigate('065-TesteRapidoSifilis')}
+                        onPress={() => navigation.navigate('077-TesteRapidoHIV')}
                     />
                     <Botao
                         title="INDISPONÍVEL"
