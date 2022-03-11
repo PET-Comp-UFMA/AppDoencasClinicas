@@ -20,7 +20,10 @@ class Tabela extends Component {
         // Texto opcional
         let Head;
         if (this.props.tableHead) {
-            Head = (<DataTable.Header style={styles.border}>
+            Head = (<DataTable.Header 
+                        style={styles.border}
+                        key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais
+                    >
                         {this.tableHead}
                     </DataTable.Header>)
         }
@@ -29,7 +32,7 @@ class Tabela extends Component {
         for ( var numObjeto in this.props.tableHead ) {
             this.tableHead.push(
                 <View
-                    key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais
+                    key={Math.random().toString(36)}
                     style={styles.tableHead}
                 >
                     <Text style={styles.tableHeadText}>{this.props.tableHead[numObjeto].props.children}</Text>
@@ -60,14 +63,20 @@ class Tabela extends Component {
                 if (!Head && numLinha == 0) {    
                     if (numObjeto == 0) {
                         dataLinha.push(
-                            <View flex={5} style={styles.tableDataFirstLeft}>
+                            <View flex={5} 
+                                style={styles.tableDataFirstLeft}
+                                key={Math.random().toString(36)}
+                                >
                                 <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
                         )
                         continue
                     } else if (numObjeto == this.props.tableData[numLinha].length - 1) {
                         dataLinha.push(
-                            <View flex={5} style={styles.tableDataFirstRight}>
+                            <View flex={5} 
+                                style={styles.tableDataFirstRight}
+                                key={Math.random().toString(36)}
+                                >
                                 <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
                         )
@@ -80,7 +89,10 @@ class Tabela extends Component {
                     // Esquerda
                     if (numObjeto == 0) { 
                         dataLinha.push(
-                            <View flex={5} style={styles.tableDataLastLeft}>
+                            <View flex={5} 
+                                style={styles.tableDataLastLeft}
+                                key={Math.random().toString(36)}
+                                >
                                 <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
                         )
@@ -88,7 +100,10 @@ class Tabela extends Component {
                     // Direita
                     } else if (numObjeto == this.props.tableData[numLinha].length - 1) {
                         dataLinha.push(
-                            <View flex={5} style={styles.tableDataLastRight}>
+                            <View flex={5} 
+                                style={styles.tableDataLastRight}
+                                key={Math.random().toString(36)}
+                                >
                                 <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
                         )
@@ -96,7 +111,10 @@ class Tabela extends Component {
                     // Centro e/ou qualquer outra
                     } else {
                         dataLinha.push(
-                            <View flex={5} style={styles.tableData}>
+                            <View flex={5} 
+                                style={styles.tableData}
+                                key={Math.random().toString(36)}
+                                >
                                 <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
                         )
@@ -105,7 +123,10 @@ class Tabela extends Component {
                 }
                 else {
                     dataLinha.push(
-                        <View flex={5} style={styles.tableData}>
+                        <View flex={5} 
+                            style={styles.tableData}
+                            key={Math.random().toString(36)}
+                            >
                             <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                         </View>
                     )
