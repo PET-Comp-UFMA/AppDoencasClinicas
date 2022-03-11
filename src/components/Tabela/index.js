@@ -12,16 +12,18 @@ import { DataTable } from 'react-native-paper';
 class Tabela extends Component {
     constructor(props) {
         super(props);
-        this.tableHead = [];
-        this.tableData = [];
     }
     render() {
+
+        // Limpa o array antes de adicionar
+        this.tableHead = [];
+        this.tableData = [];
 
         // Texto opcional
         let Head;
         if (this.props.tableHead) {
             Head = (<DataTable.Header 
-                        style={styles.border}
+                        style={styles.header}
                         key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais
                     >
                         {this.tableHead}
@@ -33,7 +35,7 @@ class Tabela extends Component {
             this.tableHead.push(
                 <View
                     key={Math.random().toString(36)}
-                    style={styles.tableHead}
+                    style={styles.container}
                 >
                     <Text style={styles.tableHeadText}>{this.props.tableHead[numObjeto].props.children}</Text>
                 </View>
@@ -52,119 +54,68 @@ class Tabela extends Component {
                         textAlignVertical: 'center'
                     }});
 
+        
         // Arrumar todas as colunas
+        
         for ( var numLinha in this.props.tableData) {
             var dataLinha = [];
 
             // Bota os objetos na linha
             for( var numObjeto in this.props.tableData[numLinha] ) {
 
-                // Se o título está vazio, botar borda na primeira linha da data
-                if (!Head && numLinha == 0) {    
-                    if (numObjeto == 0) {
-                        dataLinha.push(
-                            <View flex={5} 
-                                style={styles.tableDataFirstLeft}
-                                key={Math.random().toString(36)}
-                                >
-                                <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
-                            </View>
-                        )
-                        continue
-                    } else if (numObjeto == this.props.tableData[numLinha].length - 1) {
-                        dataLinha.push(
-                            <View flex={5} 
-                                style={styles.tableDataFirstRight}
-                                key={Math.random().toString(36)}
-                                >
-                                <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
-                            </View>
-                        )
-                        continue
+                let style = [styles.tableData]
+
+
+                // Objeto da esquerda
+                if (numObjeto == 0) {
+                    // Se só tiver uma linha
+                    if (this.props.tableData.length == 1) {
+                        style.push(styles.borderBottomLeft)
+                        // Se não tiver cabeçalho
+                        if (numLinha == 0 && !Head) {
+                            style.push(styles.borderTopLeft)
+                        }
+                    // Se tiver mais que uma linha, essa for a primeira e não tiver cabeçalho
+                    } else if (numLinha == 0 && !Head) {
+                        style.push(styles.borderTopLeft)
+                    
+                    // Se essa for a última linha
+                    } else if (numLinha == this.props.tableData.length - 1) {
+                        style.push(styles.borderBottomLeft)
+                    }
+                // Objeto da direita
+                } else if (numObjeto == this.props.tableData[numLinha].length - 1) {
+                    if (this.props.tableData.length == 1) {
+                        style.push(styles.borderBottomRight)
+                        if (numLinha == 0 && !Head) {
+                            style.push(styles.borderTopRight)
+                        }
+                    } else if (numLinha == 0 && !Head) {
+                        style.push(styles.borderTopRight)
+                    
+                    // Se essa for a última linha
+                    } else if (numLinha == this.props.tableData.length - 1) {
+                        style.push(styles.borderBottomRight)
                     }
                 }
                 
-                // ultima linha
-                if (numLinha == this.props.tableData.length - 1) {
-                    // Esquerda
-                    if (numObjeto == 0) { 
-                        dataLinha.push(
-                            <View flex={5} 
-                                style={styles.tableDataLastLeft}
+                dataLinha.push(
+                    <View flex={5} 
+                                style={style}
                                 key={Math.random().toString(36)}
                                 >
                                 <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
-                        )
-                        continue
-                    // Direita
-                    } else if (numObjeto == this.props.tableData[numLinha].length - 1) {
-                        dataLinha.push(
-                            <View flex={5} 
-                                style={styles.tableDataLastRight}
-                                key={Math.random().toString(36)}
-                                >
-                                <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
-                            </View>
-                        )
-                        continue
-                    // Centro e/ou qualquer outra
-                    } else {
-                        dataLinha.push(
-                            <View flex={5} 
-                                style={styles.tableData}
-                                key={Math.random().toString(36)}
-                                >
-                                <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
-                            </View>
-                        )
-                        continue
-                    }
-                }
-                else {
-                    dataLinha.push(
-                        <View flex={5} 
-                            style={styles.tableData}
-                            key={Math.random().toString(36)}
-                            >
-                            <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
-                        </View>
-                    )
-                }
-            }
-
-            
-            // Bota a linha na lista
-            if (!Head && numLinha == 0) {
-                this.tableData.push(
-                    <DataTable.Row
-                        key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais
-                        style={styles.tableRowFirst}
-                    >
-                        {dataLinha}
-                    </DataTable.Row>
-                )
-            }
-            else if (numLinha == this.props.tableData.length - 1) {
-                this.tableData.push(
-                    <DataTable.Row
-                        key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais
-                        style={styles.tableRowLast}
-                    >
-                        {dataLinha}
-                    </DataTable.Row>
-                )
-            } else {
-                this.tableData.push(
-                    <DataTable.Row
-                        key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais
-                        style={styles.tableRow}
-                    >
-                        {dataLinha}
-                    </DataTable.Row>
                 )
             }
 
+            this.tableData.push(
+                <DataTable.Row
+                    key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais   
+                >
+                    {dataLinha}
+                </DataTable.Row>
+            )
         }
 
         return (
@@ -190,15 +141,12 @@ const styles = StyleSheet.create({
     container: {
         flex:1
     },
-    tableHead: {
-        flex:1,
-    },
-    border: {
+    header: {
         backgroundColor: '#59998D',
-        borderTopRightRadius: 10,
-        borderTopLeftRadius: 10,  
         marginHorizontal:16,
-        paddingHorizontal: 0
+        paddingHorizontal: 0,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10
     },
     tableHeadText: {
         fontSize: 12, 
@@ -213,46 +161,22 @@ const styles = StyleSheet.create({
         borderWidth: 1, 
         borderColor: '#59998D',
     },
-    tableDataFirstLeft: {
-        borderWidth: 1, 
-        borderColor: '#59998D',
-        borderTopLeftRadius: 10,
-    },
-    tableDataFirstRight: {
-        borderWidth: 1, 
-        borderColor: '#59998D',
-        borderTopRightRadius: 10,
-    },
-    tableDataLastLeft: {
-        borderWidth: 1, 
-        borderColor: '#59998D',
-        borderBottomLeftRadius: 10    
-    },
-    tableDataLastRight: {
-        borderWidth: 1, 
-        borderColor: '#59998D',
-        borderBottomRightRadius: 10
-    },
     tableRow: {
         marginHorizontal:16,
         paddingHorizontal:0,
         borderWidth: 1, 
         borderColor: '#59998D',
     },
-    tableRowFirst: {
-        marginHorizontal:16,
-        paddingHorizontal:0,
-        borderWidth: 1, 
-        borderColor: '#59998D',
-        borderTopRightRadius: 10,
-        borderTopLeftRadius: 10,  
+    borderTopLeft: {
+        borderTopLeftRadius: 10
     },
-    tableRowLast: {
-        marginHorizontal:16,
-        paddingHorizontal:0,
-        borderWidth: 1, 
-        borderColor: '#59998D',
-        borderBottomRightRadius: 10,
-        borderBottomLeftRadius: 10,  
+    borderTopRight: {
+        borderTopRightRadius: 10
+    },
+    borderBottomLeft: {
+        borderBottomLeftRadius: 10
+    },
+    borderBottomRight: {
+        borderBottomRightRadius: 10
     }
 })
