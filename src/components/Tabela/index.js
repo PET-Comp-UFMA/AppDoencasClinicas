@@ -22,7 +22,7 @@ class Tabela extends Component {
         // Texto opcional
         let Head;
         if (this.props.tableHead) {
-            Head = (<DataTable.Header 
+            Head = (<DataTable.Header
                         style={styles.header}
                         key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais
                     >
@@ -110,7 +110,7 @@ class Tabela extends Component {
             }
 
             this.tableData.push(
-                <DataTable.Row
+                <DataTable.Row style={{borderBottomWidth: 0}}
                     key={Math.random().toString(36)} // Gera uma chave aleatória para cada objeto. Evita chaves iguais   
                 >
                     {dataLinha}
@@ -146,7 +146,8 @@ const styles = StyleSheet.create({
         marginHorizontal:16,
         paddingHorizontal: 0,
         borderTopLeftRadius: 10,
-        borderTopRightRadius: 10
+        borderTopRightRadius: 10,
+        borderBottomColor: "#59998D"
     },
     tableHeadText: {
         fontSize: 12, 
@@ -160,6 +161,7 @@ const styles = StyleSheet.create({
     tableData: {
         borderWidth: 1, 
         borderColor: '#59998D',
+        
     },
     tableRow: {
         marginHorizontal:16,
