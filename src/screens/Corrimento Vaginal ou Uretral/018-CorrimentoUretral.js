@@ -37,6 +37,7 @@ export default function T018({ navigation })  {
                         <Text>Na ausência de diplococos gramnegativos intracelulares, tratar Chlamydia trachomatis (clamídia). Na presença de diplococos gramnegativos intracelulares, tratr Chlamydia trachomatis (clamídia) e Neisseria gonorrhoeae (gonorréia) </Text>
                         
                         <Tabela tableHead={tableHead_Chlamydia} tableData={tableData_Chlamydia}></Tabela>
+                        <Text>{}</Text>
                         <Tabela tableHead={tableHead_Neisseria} tableData={tableData_Neisseria}></Tabela>
                         
                         <Text><Bold>Buscar parceira sexual.</Bold></Text>
@@ -83,14 +84,14 @@ const styles = StyleSheet.create({
     },
 });
 
-const tableHead_Chlamydia = ['Chlamydia trachomatis (clamídia)']
+const tableHead_Chlamydia = [<Text>Chlamydia trachomatis (clamídia)</Text>]
 const tableData_Chlamydia = [[<Text style={styles.textTitle}><Bold>Infecção por clamídia</Bold></Text>,
     <Text style={styles.textData}><Bold>Azitromicina</Bold> 500mg, 2 comprimidos, VO, dose única{"\n"}
     <Bold>OU{"\n"}</Bold>
     <Bold>Doxiciclina</Bold> 100mg, VO, 2x/dia, por 7 dias (exceto gestantes){"\n"}
     </Text>]];
 
-const tableHead_Neisseria = ['Neisseria gonorrhoeae']
+const tableHead_Neisseria = [<Text>Neisseria gonorrhoeae</Text>]
 const tableData_Neisseria = [[<Text style={styles.textTitle}><Bold>Infecção gonocócica NÃO complicada (uretra, colo de útero, reto e faringe)</Bold></Text>,
     <Text style={styles.textData}><Bold>Ceftriaxoma</Bold> 500mg, dose única{"\n"}
     <Bold>MAIS{"\n"}</Bold>

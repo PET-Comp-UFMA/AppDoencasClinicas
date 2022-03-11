@@ -37,7 +37,7 @@ export default function T103({ navigation }) {
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F003.png")} title={"Acompanhamento"} />
+                    <Imagem source={require("@images/F003.png")} title={"Acompanhamento"} number={"F003"}/>
                 </View>
 
                 <View>

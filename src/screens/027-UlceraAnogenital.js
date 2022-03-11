@@ -25,12 +25,12 @@ export default function T27({navigation}) {
         
         <ScrollView>
             <View style={{marginBottom: -25}}>
-                <Text style={[styles.textPreTable, styles.textFonte]}>Sendo assim, você poderá considerar o tratamento medicamentoso conforme ilustra abaixo.{"\n"}</Text>
+                <Text>Sendo assim, você poderá considerar o tratamento medicamentoso conforme ilustra abaixo.{"\n"}</Text>
             </View>
             
             <Tabela tableHead={tableHead} tableData={tableData}/>
             
-            <Text style={styles.textFonte}>
+            <Text>
                 As parcerias sexuais devem ser 
                 tratadas. Se a parceria for sintomática,
                 o tratamento deve ser realizado com
