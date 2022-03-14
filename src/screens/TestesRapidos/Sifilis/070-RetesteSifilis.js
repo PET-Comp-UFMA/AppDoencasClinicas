@@ -9,8 +9,11 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
+import Parag from '@components/Parag';
+import Bold from '@components/Bold';
+import Botao from '@components/Botao';
 
-export default function TelaPrincipal({ navigation }) {
+export default function T070({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -29,10 +32,20 @@ export default function TelaPrincipal({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View >
+                    <Parag>Se não tem mais material para fazer o <Bold>RETESTE</Bold>, e o paciente concorda em prosseguir, clique em <Bold>MANEJO CLÍNICO</Bold> para prosseguir e será direcionado para as possíveis soluções</Parag>
+                    <Parag>Caso o paciente não concorde em prosseguir, aconselhe-o. Se ele concordar, clique em <Bold>MANEJO CLÍNICO</Bold>, se mesmo assim ele não concordar, não há mais nada a fazer além de sensibilizar, então, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
+                </View>
+                <View style={styles.containerBotao}>
 
-                    <Text>Em desenvolvimento</Text>
-
-
+                    <Botao
+                        title="MANEJO CLÍNICO"
+                        onPress={() => navigation.navigate('002-Manejo Clinico')}
+                    />
+                    <Botao
+                        title="FINALIZAR"
+                        onPress={() => navigation.navigate('')}
+                    />
+                    
                 </View>
             </ScrollView>
         </SafeAreaView>
@@ -45,12 +58,19 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        
+        justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-    },
-    containerBotao: {
+        
+        paddingTop: 15,
         width: '100%'
     },
-    
+    containerBotao: {
+        marginTop: 30,
+        width: '100%'
+    },
+    texto: {
+        marginBottom: 10,
+        
+    },
 });

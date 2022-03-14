@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
         alignItems      : 'center',
         justifyContent  : 'space-between',
         flexDirection   : 'column',
-        backgroundColor : 'white'
     },
 
     containerBotao: {   

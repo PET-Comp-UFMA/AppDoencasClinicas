@@ -19,34 +19,36 @@ export default class ScreenModalImage extends Component {
   render() {
 
     return (
-      <BlurView intensity={100} tint="dark" style={styles.viewModal}>
-        <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
-          <Fechar height={50} width={50} marginTop={25} marginRight={5} stroke={'#59998D'} />
-        </TouchableOpacity>
+      <TouchableOpacity style={styles.viewModal} activeOpacity={2} onPress={this.props.toggleModal}>
+        <BlurView intensity={100} tint="dark" style={styles.viewModal}>
+          <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
+            <Fechar height={50} width={50} marginTop={25} marginRight={5} stroke={'#59998D'} />
+          </TouchableOpacity>
 
-        <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
+          <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
 
-          <View style={styles.viewTituloModal}>
-            <Text style={styles.tituloModal}>{this.props.title}</Text>
-          </View>
-
-          <ImageBackground
-            source={this.props.source}
-            style={styles.image}>
-            <View style={styles.textbg}>
-              <ImageBackground
-                style={styles.image}
-                source={this.props.source}
-                blurRadius={50}>
-                <View style={styles.textbg}>
-                  <Text style={styles.text}>{this.props.number}</Text>
-                </View>
-              </ImageBackground>
+            <View style={styles.viewTituloModal}>
+              <Text style={styles.tituloModal}>{this.props.title}</Text>
             </View>
-          </ImageBackground>
 
-        </View>
-      </BlurView>      
+            <ImageBackground
+              source={this.props.source}
+              style={styles.image}>
+              <View style={styles.textbg}>
+                <ImageBackground
+                  style={styles.image}
+                  source={this.props.source}
+                  blurRadius={50}>
+                  <View style={styles.textbg}>
+                    <Text style={styles.text}>{this.props.number}</Text>
+                  </View>
+                </ImageBackground>
+              </View>
+            </ImageBackground>
+
+          </View>
+        </BlurView>      
+      </TouchableOpacity>
     )
   }
 }

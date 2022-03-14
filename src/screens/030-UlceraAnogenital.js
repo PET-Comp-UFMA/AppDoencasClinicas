@@ -25,30 +25,30 @@ export default function T30({navigation}) {
         
         <ScrollView>
             <View style={{marginBottom: -25}}>
-                <Text style={[styles.textPreTable, styles.textFonte]}>
+                <Text>
                     Considere consulta médica para diagnóstico diferencial para donovanose.
                 </Text>
                
-                <Text style={[styles.textPreTable, styles.textFonte]}>
+                <Text>
                     Caso haja o diagnóstico para donovanose, você poderá considerar o tratamento medicamentoso indicado abaixo.
                 </Text>
             </View>
             
             <Tabela tableHead={tableHead} tableData={tableData}/>
             
-            <Text style={[styles.textFonte, styles.comentarios]}>
+            <Text>
                 Não havendo resposta na aparência da lesão nos primeiros dias de tratamento com ciprofloxacino, recomenda-se adicionar um aminoglicosídeo, como gentamicina 1mg/kg/dia, EV, 3x/dia, por pelo menos três semanas, ou até cicatrização das lesões.
             </Text>
             
-            <Text style={[styles.textFonte, styles.comentarios]}>
+            <Text>
                 Em PVHIV, sugerem-se os mesmos esquemas terapêuticos; o uso de terapia parenteral com a gentamicina deve ser considerado nos casos mais graves.    
             </Text>
             
-            <Text style={[styles.textFonte, styles.comentarios]}>
+            <Text>
                 O critério de cura é o desaparecimento da lesão, não tendo sido relatada infecção congênita. As sequelas da destruição tecidual ou obstrução linfática podem exigir correção cirúrgica.    
             </Text>
             
-            <Text style={[styles.textFonte, styles.comentarios]}>
+            <Text>
                 Devido à baixa infectividade, não é necessário tratar as parcerias sexuais
             </Text>
             

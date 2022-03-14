@@ -28,24 +28,24 @@ export default function T033({navigation}) {
             <ScrollView>
                 
             <View>
-                <Text style={[styles.textFonte]}>
+                <Text >
                     Considere consulta médica para diagnóstico diferencial para cancroide (cancro mole, cancro venéreo ou cancro de Durcrey).{"\n"}
                 </Text>
 
-               <Text style={[styles.textFonte]}>
+               <Text >
                     Caso haja o diagnóstico para cancroide, você poderá considerar o tratamento medicamentoso indicado abaixo.
                </Text>
             </View>
                
             <Tabela tableHead={tableHead} tableData={tableData}/>
             
-            <Text style={[styles.comentarios, styles.textFonte]}>
+            <Text>
                 O tratamento sistêmico deve ser acompanhado de
                 medidas locais de higiene.
                 O tratamento das parcerias sexuais é recomendado,
                 mesmo quando assintomáticas. 
             </Text>
-            <Text style={[styles.comentarios, styles.textFonte]}>• Buscar parceria sexual para orientações{"\n"}</Text>
+            <Text >• Buscar parceria sexual para orientações{"\n"}</Text>
             <Text>Se você já alcançou seu objetivo, clique em <Bold>FINALIZAR</Bold> e retornará para o início.</Text>
             
         </ScrollView>

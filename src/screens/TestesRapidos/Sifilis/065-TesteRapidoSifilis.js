@@ -11,7 +11,7 @@ import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 import { useTheme } from '@react-navigation/native';
 
-export default function T064({ navigation }) {
+export default function T065({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -35,19 +35,19 @@ export default function T064({ navigation }) {
                 <View style={styles.containerBotao}>
                     <Botao
                         title="Reteste"
-                        onPress={() => navigation.navigate('064-TestesRapidosSifilis')}
+                        onPress={() => navigation.navigate('066-RetesteSifilis')}
                     />
                     <Botao
                         title="Não realizar reteste"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('069-TesteRapidoSifilis')}
                     />
                     <Botao
-                        title="Paciebte recusou reteste"
-                        onPress={() => navigation.navigate('')}
+                        title="Paciente recusou reteste"
+                        onPress={() => navigation.navigate('068-RetesteSifilis')}
                     />
                     <Botao
                         title="INDISPONÍVEL"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('070-RetesteSifilis')}
                     />
                     
                 </View>
