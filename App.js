@@ -52,6 +52,8 @@ import T031 from "@screens/031-UlceraAnogenital";
 import T032 from "@screens/032-UlceraAnogenital";
 import T033 from "@screens/033-UlceraAnogenital";
 import T034 from "@screens/034-UlceraAnogenital";
+import T039 from "@screens/VerrugaAnogenital/039-VerrugaAnogenital";
+import T040 from "@screens/VerrugaAnogenital/040-VerrugaAnogenital";
 
 import T063 from '@screens/TestesRapidos/063-TestesRapidos';
 
@@ -66,7 +68,7 @@ import T071 from '@screens/TestesRapidos/Sifilis/071-RetesteSifilis';
 
 import T072 from '@screens/TestesRapidos/072-Aconselhamento';
 import T073 from '@screens/TestesRapidos/073-Indisponivel';
-import T074 from '@screens/TestesRapidos/074-TesteNaoReagente';
+import T074 from '@screens/TestesRapidos/Sifilis/074-TesteNaoReagente';
 
 import T084 from '@screens/TestesRapidos/HepatiteB/084-TesteRapidoHepatiteB';
 import T085 from '@screens/TestesRapidos/HepatiteB/085-RetesteHepatiteB';
@@ -85,6 +87,8 @@ import T096 from '@screens/TestesRapidos/HepatiteC/096-RetesteHepatiteC';
 import T097 from '@screens/TestesRapidos/HepatiteC/097-RetesteHepatiteC';
 import T098 from '@screens/TestesRapidos/HepatiteC/098-RetesteHepatiteC';
 import T099 from '@screens/TestesRapidos/HepatiteC/099-RetesteHepatiteC';
+import T100 from '@screens/TestesRapidos/100-InterpretacaodeResultados';
+import T101 from '@screens/TestesRapidos/101-RecusouTeste';
 
 import T102 from '@screens/TiraDuvidas/102-TiraDuvidas';
 import T103 from '@screens/TiraDuvidas/103-CandidiaseVulvovaginal';
@@ -277,6 +281,16 @@ export default function App() {
 					options   = {{ title: "Corrimento Vaginal" }}/>
 
 				<Stack.Screen 
+					name      = '039-VerrugaAnogenital'
+					component = {T039}
+					options   = {{ title: "Verruga Anogenital" }}/>
+
+				<Stack.Screen 
+					name      = '040-VerrugaAnogenital'
+					component = {T040}
+					options   = {{ title: "Verruga Anogenital" }}/>
+
+				<Stack.Screen 
 					name      = '063-TestesRapidos'
 					component = {T063}
 					options   = {{ title: "Testes Rápidos" }}/>
@@ -416,6 +430,16 @@ export default function App() {
 					component = {T099}
 					options = {{ title: "Reteste Hepatite C"}} />
 
+				<Stack.Screen 
+					name = '100-InterpretacaodeResultados'
+					component = {T100}
+					options = {{ title: "Interpretação de Resultados"}} />
+				
+				<Stack.Screen 
+					name = '101-RecusouTeste'
+					component = {T101}
+					options = {{ title: "Recusou fazer o teste"}} />
+				
 				<Stack.Screen
 					name='102-TiraDuvidas'
 					component={T102}

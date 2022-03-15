@@ -45,7 +45,7 @@ export default function T003({ navigation })  {
                     />
                     <Botao
                         title = "VERRUGA ANOGENITAL"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('039-VerrugaAnogenital') }
                     />
                     <Botao
                         title = "SÍFILIS"

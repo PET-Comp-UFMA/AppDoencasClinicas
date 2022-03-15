@@ -43,7 +43,7 @@ export default function T070({ navigation }) {
                     />
                     <Botao
                         title="FINALIZAR"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('001-Inicio')}
                     />
                     
                 </View>

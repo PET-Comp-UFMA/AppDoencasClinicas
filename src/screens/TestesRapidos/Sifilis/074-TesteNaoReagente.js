@@ -12,6 +12,7 @@ import { useTheme } from '@react-navigation/native';
 import Parag from '@components/Parag';
 import Bold from '@components/Bold';
 import Botao from '@components/Botao';
+import Imagem from "@components/Imagem";
 
 export default function T071({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
@@ -32,21 +33,21 @@ export default function T071({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View >
-                    <Parag>O primeiro teste foi <Bold>REAGENTE</Bold> e o reteste foi <Bold>NÃO REAGENTE</Bold>, avalie a situação e escolha uma opção.</Parag>
+                    <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
                 </View>
-                <View style={styles.containerBotao}>
-
-                    <Botao
-                        title="NÃO REAGENTE, MAS APRESENTA MANIFESTAÇÕES CLÍNICAS"
-                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
-                    />
-                    <Botao
-                        title="NÃO REAGENTE, E NÃO APRESENTA MANIFESTAÇÕES CLÍNICAS"
-                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
-                    />
-                    
+                <Imagem source={require("@images/F029.png")} title={"Acompanhamento"} number={"F029"}/>
+                <View >
+                    <Parag>Mesmo <Bold>NÃO REAGENTE</Bold> e o paciente apresenta manifestações clínicas, é aconselhável soliciar o exame sorológico (VDRL) para maiores esclarecimentos, assim como conversar com profissional médico para decisão de conduta.</Parag>
+                    <Parag>Se foi <Bold>NÃO REAGENTE</Bold> e não exista manifestações clínicas, e posteriomente surjam sintomas, oriente procurar o serviço de saúde. Notifique tudo.</Parag>
+                    <Parag>Clique em <Bold>FINALIZAR</Bold> e será direcionado ao MENU PRINCIPAL.</Parag>
                 </View>
             </ScrollView>
+            <View style={styles.containerBotao}>
+                    <Botao
+                        title="FINALIZAR"
+                        onPress={() => navigation.navigate('001-Inicio')}
+                    />        
+                </View>
         </SafeAreaView>
 
 

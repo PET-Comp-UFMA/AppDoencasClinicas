@@ -7,11 +7,13 @@ import {
     Text,
 } from 'react-native';
 import Botao from '@components/Botao';
-import Bold from '@components/Bold';
 import Parag from '@components/Parag';
 import { useTheme } from '@react-navigation/native';
+import Imagem from '@components/Imagem';
+import Tabela from "@components/Tabela";
+import Bold from '@components/Bold';
 
-export default function T088({ navigation }) {
+export default function T040({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -29,22 +31,18 @@ export default function T088({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                   <Parag>Se seu paciente não concordou realizar o <Bold>RETESTE</Bold> após teste reagente, aconselhe-o. E se ele aceitar após aconselhamento, clique em <Bold>REALIZAR RETESTE</Bold>.</Parag>
-                    <Parag>Se não for esse o caso, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
+                   <Parag>Considerar os seguintes achados: As lesões costumam ser únicas ou múltiplas, achatadas ou papulosas, mas sempre papilomatosas. Superfície apresenta-se fosca, aveludada ou semelhante à da couve-flor. Apresentam-se da cor da pele, eritematosas ou hiperpigmentadas. Em geral são assintomáticas, mas podem ser pruriginosas, dolorosas, friáveis ou sangrantes.</Parag>
+                   <Parag>Caso não haja diagnóstico de HPV, considerar vacinação:</Parag>
                 </View>
-
+                <Tabela tableHead={tableHead} tableData={tableData}/>
                 <View style={styles.containerBotao}>
                     <Botao
-                        title="ACONSELHAMENTO"
-                        onPress={() => navigation.navigate('072-Aconselhamento')}
+                        title="SIM"
+                        onPress={() => navigation.navigate('')}
                     />
                     <Botao
-                        title="REALIZAR RETESTE"
-                        onPress={() => navigation.navigate('086-RetesteHepatiteB')}
-                    />
-                    <Botao
-                        title="FINALIZAR"
-                        onPress={() => navigation.navigate('001-Inicio')}
+                        title="NÃO"
+                        onPress={() => navigation.navigate('')}
                     />
                 </View>
 
@@ -75,3 +73,20 @@ const styles = StyleSheet.create({
         
     },
 });
+
+const tableHead = [
+    <Text style={styles.textHead}>Crianças e Adolescentes</Text>,
+    <Text style={styles.textHead}>PVHIV, Transplantados de orgãos sólidos, de Medula Óssea ou Pacientes Oncológicos</Text>,
+]
+const tableData = [
+[
+    <Text style={styles.textTitle}>
+        <Bold>2 doses (0 e 6 meses)</Bold>
+        
+    </Text>,
+
+    <Text style={styles.textData}>
+        3 doses (0, 2 e 6 meses)
+    </Text>,
+]
+];
