@@ -37,12 +37,12 @@ export default function T091({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao
                     title="NÃO REAGENTE, MAS APRESENTA MANIFESTAÇÕES CLÍNICAS"
-                    onPress={() => navigation.navigate('')}
+                    onPress={() => navigation.navigate('074-TesteNaoReagente')}
                 />
 
                 <Botao
                     title="NÃO REAGENTE, E NÃO APRESENTA MANIFESTAÇÕES CLÍNICASS"
-                    onPress={() => navigation.navigate('')}
+                    onPress={() => navigation.navigate('074-TesteNaoReagente')}
                 />
             </View>
 
