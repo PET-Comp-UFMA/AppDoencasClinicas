@@ -1,11 +1,11 @@
 import React from "react";
 import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 
-import Botao from "../components/Botao";
-import Imagem from "../components/Imagem";
+import Botao from "@components/Botao";
+import Imagem from "@components/Imagem";
 import { useTheme } from '@react-navigation/native';
 
-export default function T029({navigation}) {
+export default function T026({navigation}) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -25,26 +25,25 @@ export default function T029({navigation}) {
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>
                 <Text>
-                O(a) usuário(a) apresenta lesões eritemato-papulosas de um a três milímetros de diâmetro, que
-                rapidamente evoluíram para vesículas sobre base eritematosa, muito dolorosas e de localização
-                variável na região genital?
+                Seu paciente apresenta ulceração de borda plana ou hipertrófica, bem delimitada, com fundo granuloso, de aspecto vermelho vivo e de sangramento fácil nas regiões de dobras e região perianal?
                 </Text>
 
                
-                <Imagem source={require("@images/F019.png")} title={"Acompanhamento"} number={"F019"}/>
-                <Imagem source={require("@images/F020.png")} title={"Acompanhamento"} number={"F020"}/>
-                <Imagem source={require("@images/F021.png")} title={"Acompanhamento"} number={"F021"}/>
+                <Imagem source={require("@images/F016.png")} title={"Acompanhamento"} number={"F016"}/>
+                <Imagem source={require("@images/F017.png")} title={"Acompanhamento"} number={"F017"}/>
+                <Imagem source={require("@images/F018.png")} title={"Acompanhamento"} number={"F018"}/>
+
             </ScrollView>
 
             <View style={styles.containerBotao}>
                 <Botao
                     title="SIM"
-                    onPress={() => navigation.navigate("031-UlceraAnogenital")}
+                    onPress={() => navigation.navigate("030-UlceraAnogenital")}
                 />
                 
                 <Botao
                     title="NÃO"
-                    onPress={() => navigation.navigate("032-UlceraAnogenital")}
+                    onPress={() => navigation.navigate("029-UlceraAnogenital")}
                 />  
             </View>
         </SafeAreaView>
