@@ -38,10 +38,7 @@ export default function T088({ navigation }) {
             </ScrollView>
 
             <View style={styles.containerBotao}>
-                <Botao
-                    title="ACONSELHAMENTO"
-                    onPress={() => navigation.navigate('072-Aconselhamento')}
-                />
+                
                 <Botao
                     title="REALIZAR RETESTE"
                     onPress={() => navigation.navigate('086-RetesteHepatiteB')}
