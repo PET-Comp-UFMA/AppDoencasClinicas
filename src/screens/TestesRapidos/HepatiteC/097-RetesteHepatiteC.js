@@ -32,14 +32,16 @@ export default function T097({ navigation }) {
                    <Parag>Caso não considere realizar o <Bold>RETESTE</Bold>, e o paciente concorde em prosseguir, clique em <Bold>MANEJO CLÍNICO </Bold>para prosseguir e será direcionado para as possíveis soluções.</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
+                
+
+            </ScrollView>
+
+            <View style={styles.containerBotao}>
                     <Botao
                         title="MANEJO CLÍNICO"
                         onPress={() => navigation.navigate('002-Manejo Clinico')}
                     />
                 </View>
-
-            </ScrollView>
 
 
         </SafeAreaView>

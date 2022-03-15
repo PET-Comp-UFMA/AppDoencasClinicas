@@ -34,7 +34,9 @@ export default function T071({ navigation }) {
                 <View >
                     <Parag>O primeiro teste foi <Bold>REAGENTE</Bold> e o reteste foi <Bold>NÃO REAGENTE</Bold>, avalie a situação e escolha uma opção.</Parag>
                 </View>
-                <View style={styles.containerBotao}>
+                
+            </ScrollView>
+            <View style={styles.containerBotao}>
 
                     <Botao
                         title="NÃO REAGENTE, MAS APRESENTA MANIFESTAÇÕES CLÍNICAS"
@@ -46,7 +48,6 @@ export default function T071({ navigation }) {
                     />
                     
                 </View>
-            </ScrollView>
         </SafeAreaView>
 
 

@@ -34,7 +34,10 @@ export default function T067({ navigation }) {
                 <View >
                     <Parag>Reteste foi <Bold>REAGENTE</Bold>. Clique em <Bold>MANEJO CLÍNICO</Bold>, e você será direcionado para as possíveis soluções. </Parag>
                 </View>
-                <View style={styles.containerBotao}>
+                
+            </ScrollView>
+
+            <View style={styles.containerBotao}>
 
                     <Botao
                         title="MANEJO CLÍNICO"
@@ -42,11 +45,10 @@ export default function T067({ navigation }) {
                     />
                     <Botao
                         title="FINALIZAR"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('001-Inicio')}
                     />
                     
-                </View>
-            </ScrollView>
+            </View>
         </SafeAreaView>
 
 

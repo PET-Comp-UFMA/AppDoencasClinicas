@@ -35,7 +35,10 @@ export default function T068({ navigation }) {
                     <Parag>Se seu paciente não concordou realizar o <Bold>RETESTE</Bold> após teste reagente, aconselhe-o. E se ele aceitar após aconselhamento, clique em <Bold>REALIZAR RETESTE</Bold>.</Parag>
                     <Parag>Se não for esse o caso, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
-                <View style={styles.containerBotao}>
+                
+            </ScrollView>
+
+            <View style={styles.containerBotao}>
 
                     <Botao
                         title="ACONSELHAMENTO"
@@ -51,8 +54,7 @@ export default function T068({ navigation }) {
                         onPress={() => navigation.navigate('')}
                     />
                     
-                </View>
-            </ScrollView>
+            </View>
         </SafeAreaView>
 
 

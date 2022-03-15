@@ -13,19 +13,19 @@ import Tabela from '@components/Tabela';
 import { useTheme } from '@react-navigation/native';
 
 export default function T113({ navigation }) {
-        // Atualiza as cores se o modo noturno estiver ligado
-        const { colors } = useTheme();
+    // Atualiza as cores se o modo noturno estiver ligado
+    const { colors } = useTheme();
 
-        // Configuração de texto para as próximas telas
-        Text.defaultProps       = Text.defaultProps || {}
-        Text.defaultProps.style =  { 
-              color             : colors.text,
-              fontFamily        : 'Mulish_Regular',
-              fontSize          : 20,
-              marginHorizontal  : 20,
-              textAlign         : 'center',
-              lineHeight        : 35
-        }
+    // Configuração de texto para as próximas telas
+    Text.defaultProps = Text.defaultProps || {}
+    Text.defaultProps.style = {
+        color: colors.text,
+        fontFamily: 'Mulish_Regular',
+        fontSize: 20,
+        marginHorizontal: 20,
+        textAlign: 'center',
+        lineHeight: 35
+    }
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -47,13 +47,13 @@ export default function T113({ navigation }) {
                     <Parag>Usar preservativo (camisinha) em todas as relações sexuais (vaginal anal e oral).</Parag>
                     <Parag>Não compartilhar seringas, agulhas e outros objetos perfurocortantes não esterilizados com outras pessoas.</Parag>
                     <Parag>Mulheres vivendo com HIV/aids não devem amamentar, e necessitam realizar acompanhamento pré-natal para que sejam tomadas as medidas necessárias à prevenção da transmissão vertical do HIV (da mãe para a criança).</Parag>
-                    
+
                     <Parag><Bold>Diagnóstico</Bold></Parag>
                     <Parag>O diagnóstico do HIV é feito por meio de testes laboratoriais ou testes rápidos. Por isso, ofereça o teste de HIV na sua Unidade de Saúde.</Parag>
                     <Parag><Bold>Lembre-se:</Bold> não é preciso exigir a participação das pessoas em palestras e reuniões antes ou depois do teste. Para realizar o teste, basta o profissional estar preparado para conversar sobre os possíveis resultados e esclarecer as dúvidas.</Parag>
                     <Parag>A infecção pelo HIV ainda não tem cura, mas tem tratamento. Quanto mais cedo uma pessoa for diagnosticada e tratada, melhor estará a condição de seu sistema imunológico e melhor será a qualidade de vida dessa pessoa.</Parag>
                     <Parag><Bold>Atenção:</Bold> a notificação compulsória é obrigatória a todos os profissionais de saúde: médicos, enfermeiros, odontólogos, médicos veterinários, biólogos, biomédicos, farmacêuticos e outros no exercício da profissão, bem como os responsáveis por organizações e estabelecimentos públicos e particulares de saúde e de ensino.</Parag>
-                
+
                     <Parag><Bold>Tratamento</Bold></Parag>
                     <Parag>Ainda não há cura para a infecção pelo HIV, mas há tratamento. Com o uso dos medicamentos antirretrovirais (antes chamados de coquetel), que são disponibilizados gratuitamente pelo SUS, a pessoa pode levar uma vida com qualidade.</Parag>
                     <Parag>Quanto mais cedo for feito o diagnóstico e iniciado o tratamento, melhor será a qualidade de vida da pessoa, e menor será a probabilidade de evolução da infecção para a aids. </Parag>
@@ -66,18 +66,20 @@ export default function T113({ navigation }) {
                     <Parag>Ou ainda você poderá clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção.</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="Tira Dúvidas"
-                        onPress={() => navigation.navigate('102-TiraDuvidas')}
-                    />
-                    <Botao
-                        title="Finalizar"
-                        onPress={() => navigation.navigate('001-Inicio')}
-                    />
-                </View>
+
 
             </ScrollView>
+
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="Tira Dúvidas"
+                    onPress={() => navigation.navigate('102-TiraDuvidas')}
+                />
+                <Botao
+                    title="Finalizar"
+                    onPress={() => navigation.navigate('001-Inicio')}
+                />
+            </View>
 
 
         </SafeAreaView>
@@ -91,7 +93,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+
         paddingTop: 15,
         width: '100%'
     },

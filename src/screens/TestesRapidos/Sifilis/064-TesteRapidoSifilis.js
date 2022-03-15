@@ -31,7 +31,9 @@ export default function T064({ navigation }) {
                    <Parag>Qual foi o resultado?</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
+            </ScrollView>
+
+            <View style={styles.containerBotao}>
                     <Botao
                         title="Reagente"
                         onPress={() => navigation.navigate('065-TesteRapidoSifilis')}
@@ -53,8 +55,6 @@ export default function T064({ navigation }) {
                         onPress={() => navigation.navigate('072-Aconselhamento')}
                     />
                 </View>
-
-            </ScrollView>
 
 
         </SafeAreaView>

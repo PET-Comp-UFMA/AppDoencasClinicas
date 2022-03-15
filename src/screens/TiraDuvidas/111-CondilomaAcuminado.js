@@ -12,20 +12,20 @@ import Parag from '@components/Parag';
 import Botao from '@components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T110 ({ navigation }) {
-        // Atualiza as cores se o modo noturno estiver ligado
-        const { colors } = useTheme();
+export default function T110({ navigation }) {
+    // Atualiza as cores se o modo noturno estiver ligado
+    const { colors } = useTheme();
 
-        // Configuração de texto para as próximas telas
-        Text.defaultProps       = Text.defaultProps || {}
-        Text.defaultProps.style =  { 
-              color             : colors.text,
-              fontFamily        : 'Mulish_Regular',
-              fontSize          : 20,
-              marginHorizontal  : 20,
-              textAlign         : 'center',
-              lineHeight        : 35
-        }
+    // Configuração de texto para as próximas telas
+    Text.defaultProps = Text.defaultProps || {}
+    Text.defaultProps.style = {
+        color: colors.text,
+        fontFamily: 'Mulish_Regular',
+        fontSize: 20,
+        marginHorizontal: 20,
+        textAlign: 'center',
+        lineHeight: 35
+    }
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -36,9 +36,9 @@ export default function T110 ({ navigation }) {
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F025.png")} title={""} number={"F025"}/>
-                    <Imagem source={require("@images/F026.png")} title={""} number={"F026"}/>
-                    <Imagem source={require("@images/F027.png")} title={""} number={"F027"}/>
+                    <Imagem source={require("@images/F025.png")} title={""} number={"F025"} />
+                    <Imagem source={require("@images/F026.png")} title={""} number={"F026"} />
+                    <Imagem source={require("@images/F027.png")} title={""} number={"F027"} />
                 </View>
 
                 <View>
@@ -46,14 +46,16 @@ export default function T110 ({ navigation }) {
                     <Parag>Ou, se preferir, clique na seta para a <Bold>ESQUERDA</Bold> para relembrar algumas informações.</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="Finalizar"
-                        onPress={() => navigation.navigate('001-Inicio')}
-                    />
-                </View>
+
 
             </ScrollView>
+
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="Finalizar"
+                    onPress={() => navigation.navigate('001-Inicio')}
+                />
+            </View>
 
 
         </SafeAreaView>
@@ -67,7 +69,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+
         paddingTop: 15,
         width: '100%'
     },
@@ -77,6 +79,6 @@ const styles = StyleSheet.create({
     },
     texto: {
         marginBottom: 10,
-        
+
     },
 });

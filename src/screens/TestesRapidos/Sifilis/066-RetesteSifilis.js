@@ -33,9 +33,10 @@ export default function T066({ navigation }) {
             <ScrollView>
                 <View >
                     <Parag>Repita o procedimento para realizar o teste novamente. Conforme o resultado, escolha uma opção. <Bold>OBS</Bold>.: Caso o resultado seja <Bold>INVÁLIDO</Bold>, repita e notifique.</Parag>
-                    <Parag>Se o paciente se recusar em prosseguir o manejo, aconselhe sobre a importância do tratamento, se ainda sim não concordar, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Notifique todo o processo.</Parag>
                 </View>
-                <View style={styles.containerBotao}>
+                
+            </ScrollView>
+            <View style={styles.containerBotao}>
 
                     <Botao
                         title="RETESTE REAGENTE"
@@ -47,7 +48,6 @@ export default function T066({ navigation }) {
                     />
                     
                 </View>
-            </ScrollView>
         </SafeAreaView>
 
 

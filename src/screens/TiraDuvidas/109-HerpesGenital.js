@@ -13,19 +13,19 @@ import Botao from '@components/Botao';
 import { useTheme } from '@react-navigation/native';
 
 export default function T109({ navigation }) {
-        // Atualiza as cores se o modo noturno estiver ligado
-        const { colors } = useTheme();
+    // Atualiza as cores se o modo noturno estiver ligado
+    const { colors } = useTheme();
 
-        // Configuração de texto para as próximas telas
-        Text.defaultProps       = Text.defaultProps || {}
-        Text.defaultProps.style =  { 
-              color             : colors.text,
-              fontFamily        : 'Mulish_Regular',
-              fontSize          : 20,
-              marginHorizontal  : 20,
-              textAlign         : 'center',
-              lineHeight        : 35
-        }
+    // Configuração de texto para as próximas telas
+    Text.defaultProps = Text.defaultProps || {}
+    Text.defaultProps.style = {
+        color: colors.text,
+        fontFamily: 'Mulish_Regular',
+        fontSize: 20,
+        marginHorizontal: 20,
+        textAlign: 'center',
+        lineHeight: 35
+    }
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -37,20 +37,22 @@ export default function T109({ navigation }) {
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F019.png")} title={""} number={"F019"}/>
-                    <Imagem source={require("@images/F020.png")} title={""} number={"F020"}/>
-                    <Imagem source={require("@images/F021.png")} title={""} number={"F021"}/>
+                    <Imagem source={require("@images/F019.png")} title={""} number={"F019"} />
+                    <Imagem source={require("@images/F020.png")} title={""} number={"F020"} />
+                    <Imagem source={require("@images/F021.png")} title={""} number={"F021"} />
                 </View>
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="Próximo"
-                        onPress={() => navigation.navigate('110-Donovanose')}
-                    />
-                    
-                </View>
+
 
             </ScrollView>
+
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="Próximo"
+                    onPress={() => navigation.navigate('110-Donovanose')}
+                />
+
+            </View>
 
 
         </SafeAreaView>
@@ -64,7 +66,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+
         paddingTop: 15,
         width: '100%'
     },
@@ -74,6 +76,6 @@ const styles = StyleSheet.create({
     },
     texto: {
         marginBottom: 10,
-        
+
     },
 });

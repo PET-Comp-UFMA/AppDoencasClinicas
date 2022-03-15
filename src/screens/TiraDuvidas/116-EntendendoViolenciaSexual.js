@@ -11,20 +11,20 @@ import Parag from '@components/Parag';
 import Botao from '@components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T116 ({ navigation }) {
-        // Atualiza as cores se o modo noturno estiver ligado
-        const { colors } = useTheme();
+export default function T116({ navigation }) {
+    // Atualiza as cores se o modo noturno estiver ligado
+    const { colors } = useTheme();
 
-        // Configuração de texto para as próximas telas
-        Text.defaultProps       = Text.defaultProps || {}
-        Text.defaultProps.style =  { 
-              color             : colors.text,
-              fontFamily        : 'Mulish_Regular',
-              fontSize          : 20,
-              marginHorizontal  : 20,
-              textAlign         : 'center',
-              lineHeight        : 35
-        }
+    // Configuração de texto para as próximas telas
+    Text.defaultProps = Text.defaultProps || {}
+    Text.defaultProps.style = {
+        color: colors.text,
+        fontFamily: 'Mulish_Regular',
+        fontSize: 20,
+        marginHorizontal: 20,
+        textAlign: 'center',
+        lineHeight: 35
+    }
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -41,16 +41,18 @@ export default function T116 ({ navigation }) {
                     <Parag>Algumas IST virais, como as infecções por HSV e HPV, ainda não possuem profilaxias específicas.</Parag>
                     <Parag>Diferentemente do que ocorre na profilaxia pós-exposição (PEP) da infecção pelo HIV, a prevenção das IST não virais pode ser eventualmente postergada, em função das condições de adesão, mas se recomenda a sua realização imediata, sempre que possível.</Parag>
                 </View>
-                
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="profilaxia das ist"
-                        onPress={() => navigation.navigate('117-ProfilaxiadasIST')}
-                    />
-                </View>
+
+
 
             </ScrollView>
+
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="profilaxia das ist"
+                    onPress={() => navigation.navigate('117-ProfilaxiadasIST')}
+                />
+            </View>
 
 
         </SafeAreaView>
@@ -64,7 +66,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+
         paddingTop: 15,
         width: '100%'
     },
@@ -74,10 +76,10 @@ const styles = StyleSheet.create({
     },
     texto: {
         marginBottom: 10,
-        
+
     },
-    textTitle: { 
-    
+    textTitle: {
+
         margin: 6,
         alignSelf: 'center',
         color: 'black',
@@ -88,8 +90,8 @@ const styles = StyleSheet.create({
         marginTop: -20
     },
 
-    textData: { 
-        fontSize: 16, 
+    textData: {
+        fontSize: 16,
         margin: 6,
         textAlign: 'left',
         color: 'black',
