@@ -13,7 +13,7 @@ import Parag from '@components/Parag';
 import Bold from '@components/Bold';
 import Botao from '@components/Botao';
 
-export default function T068({ navigation }) {
+export default function T081({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -32,20 +32,18 @@ export default function T068({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View >
-                    <Parag>Se seu paciente não concordou realizar o <Bold>RETESTE</Bold> após teste reagente, aconselhe-o. E se ele aceitar após aconselhamento, clique em <Bold>REALIZAR RETESTE</Bold>.</Parag>
-                    <Parag>Se não for esse o caso, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
+                    <Parag>Caso não considere realizar o <Bold>RETESTE</Bold>, e o paciente concorde em prosseguir, clique em <Bold>MANEJO CLÍNICO</Bold> para prosseguir e será direcionado para as possíveis soluções.</Parag>
+                    <Parag>Caso o paciente não concorde em prosseguir, aconselhe-o. Se ele concordar, clique em <Bold>MANEJO CLÍNICO</Bold>, se mesmo assim ele não concordar, não há mais nada a fazer além de sensibilizar, então, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Registre tudo e notifique.</Parag>
                 </View>
                 
             </ScrollView>
 
             <View style={styles.containerBotao}>
 
-                    
                     <Botao
-                        title="REALIZAR RETESTE"
-                        onPress={() => navigation.navigate('079-RetesteHIV')}
+                        title="MANEJO CLÍNICO"
+                        onPress={() => navigation.navigate('072-Aconselhamento')}
                     />
-
                     <Botao
                         title="FINALIZAR"
                         onPress={() => navigation.navigate('001-Inicio')}

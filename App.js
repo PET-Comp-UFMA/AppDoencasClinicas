@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {View} from 'react-native';
+import { View } from 'react-native';
 
 import Titulo from './src/components/Titulo';
 
@@ -10,16 +10,16 @@ import { useTheme } from '@react-navigation/native';
 
 import AppLoading from 'expo-app-loading';
 import {
-  	useFonts,
-  	Mulish_400Regular as Mulish_Regular,
-  	Mulish_700Bold as Mulish_Bold
+	useFonts,
+	Mulish_400Regular as Mulish_Regular,
+	Mulish_700Bold as Mulish_Bold
 } from '@expo-google-fonts/mulish';
 
 import { useColorScheme } from 'react-native';
 
 
 // Telas
-import T001	from '@screens/001-Inicio';
+import T001 from '@screens/001-Inicio';
 import T002 from '@screens/002-ManejoClinico';
 import T003 from '@screens/003-AnamneseEExameFisico';
 
@@ -54,6 +54,16 @@ import T033 from "@screens/033-UlceraAnogenital";
 import T034 from "@screens/034-UlceraAnogenital";
 import T039 from "@screens/VerrugaAnogenital/039-VerrugaAnogenital";
 import T040 from "@screens/VerrugaAnogenital/040-VerrugaAnogenital";
+import T025 from '@screens/Ulcera Anogenital/025-UlceraAnogenital';
+import T026 from '@screens/Ulcera Anogenital/026-UlceraAnogenital';
+import T027 from '@screens/Ulcera Anogenital/027-UlceraAnogenital';
+import T028 from '@screens/Ulcera Anogenital/028-UlceraAnogenital';
+import T029 from '@screens/Ulcera Anogenital/029-UlceraAnogenital';
+import T030 from "@screens/Ulcera Anogenital/030-UlceraAnogenital";
+import T031 from "@screens/Ulcera Anogenital/031-UlceraAnogenital";
+import T032 from "@screens/Ulcera Anogenital/032-UlceraAnogenital";
+import T033 from "@screens/Ulcera Anogenital/033-UlceraAnogenital";
+import T034 from "@screens/Ulcera Anogenital/034-UlceraAnogenital";
 
 import T063 from '@screens/TestesRapidos/063-TestesRapidos';
 
@@ -69,6 +79,15 @@ import T071 from '@screens/TestesRapidos/Sifilis/071-RetesteSifilis';
 import T072 from '@screens/TestesRapidos/072-Aconselhamento';
 import T073 from '@screens/TestesRapidos/073-Indisponivel';
 import T074 from '@screens/TestesRapidos/Sifilis/074-TesteNaoReagente';
+
+import T076 from '@screens/TestesRapidos/HIV/076-TesteRapidoHIV';
+import T077 from '@screens/TestesRapidos/HIV/077-TesteRapidoHIV';
+import T078 from '@screens/TestesRapidos/HIV/078-RetesteHIV';
+import T079 from '@screens/TestesRapidos/HIV/079-RetesteHIV';
+import T080 from '@screens/TestesRapidos/HIV/080-RetestesHIV';
+import T081 from '@screens/TestesRapidos/HIV/081-TesteRapidoHIV';
+import T082 from '@screens/TestesRapidos/HIV/082-RetesteHIV';
+import T083 from '@screens/TestesRapidos/HIV/083-RetesteHIV';
 
 import T084 from '@screens/TestesRapidos/HepatiteB/084-TesteRapidoHepatiteB';
 import T085 from '@screens/TestesRapidos/HepatiteB/085-RetesteHepatiteB';
@@ -147,19 +166,20 @@ export default function App() {
 	const { colors } = useTheme();
 
 	// Carregamento das fontes
-  	let [fontsLoaded] = useFonts({ Mulish_Regular, Mulish_Bold });
+	let [fontsLoaded] = useFonts({ Mulish_Regular, Mulish_Bold });
 	if (!fontsLoaded) { return <AppLoading />; }
-  	return (
-    	<NavigationContainer theme={scheme === 'dark' ? darkTheme : lightTheme}>
-			
+	return (
+		<NavigationContainer theme={scheme === 'dark' ? darkTheme : lightTheme}>
+
 			<View style={{
-				flex: 1, 
-				backgroundColor: scheme === 'dark' ? darkTheme.colors.background : lightTheme.colors.background }
-				}>
-					
+				flex: 1,
+				backgroundColor: scheme === 'dark' ? darkTheme.colors.background : lightTheme.colors.background
+			}
+			}>
+
 				<Stack.Navigator initialRouteName='001-Inicio'
 					screenOptions={{
-						headerTitle: (props) => <Titulo {...props}/>,
+						headerTitle: (props) => <Titulo {...props} />,
 						headerBackVisible: "no",
 						headerStyle: {
 							backgroundColor: scheme === 'dark' ? darkTheme.colors.background : lightTheme.colors.background

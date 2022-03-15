@@ -13,7 +13,7 @@ import Parag from '@components/Parag';
 import Bold from '@components/Bold';
 import Botao from '@components/Botao';
 
-export default function T068({ navigation }) {
+export default function T083({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -32,26 +32,22 @@ export default function T068({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View >
-                    <Parag>Se seu paciente não concordou realizar o <Bold>RETESTE</Bold> após teste reagente, aconselhe-o. E se ele aceitar após aconselhamento, clique em <Bold>REALIZAR RETESTE</Bold>.</Parag>
-                    <Parag>Se não for esse o caso, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
+                    <Parag>O primeiro teste foi <Bold>REAGENTE</Bold> e o reteste foi <Bold>NÃO REAGENTE</Bold>, avalie a situação e escolha uma opção.</Parag>
                 </View>
                 
             </ScrollView>
-
             <View style={styles.containerBotao}>
 
-                    
                     <Botao
-                        title="REALIZAR RETESTE"
-                        onPress={() => navigation.navigate('079-RetesteHIV')}
+                        title="NÃO REAGENTE, MAS APRESENTA MANIFESTAÇÕES CLÍNICAS"
+                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
                     />
-
                     <Botao
-                        title="FINALIZAR"
-                        onPress={() => navigation.navigate('001-Inicio')}
+                        title="NÃO REAGENTE, E NÃO APRESENTA MANIFESTAÇÕES CLÍNICAS"
+                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
                     />
                     
-            </View>
+                </View>
         </SafeAreaView>
 
 
