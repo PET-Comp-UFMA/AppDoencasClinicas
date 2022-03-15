@@ -35,14 +35,16 @@ export default function T040({ navigation }) {
                    <Parag>Caso não haja diagnóstico de HPV, considerar vacinação:</Parag>
                 </View>
                 <Tabela tableHead={tableHead} tableData={tableData}/>
+                <View>
+                <Parag>Considerar consulta médica para diagnóstico diferencial para HPV.</Parag>
+                <Parag>Considere seguir o fluxograma abaixo.</Parag>
+                <Imagem source={require("@images/F028.png")} title={"TITULO"} number={"F028"}/>
+                <Parag>Buscar parceria sexual para investigação.</Parag>
+                </View>
                 <View style={styles.containerBotao}>
                     <Botao
-                        title="SIM"
-                        onPress={() => navigation.navigate('')}
-                    />
-                    <Botao
-                        title="NÃO"
-                        onPress={() => navigation.navigate('')}
+                        title="FINALIZAR"
+                        onPress={() => navigation.navigate('001-Inicio')}
                     />
                 </View>
 
@@ -87,6 +89,24 @@ const tableData = [
 
     <Text style={styles.textData}>
         3 doses (0, 2 e 6 meses)
+    </Text>,
+],
+[
+    <Text style={styles.textTitle}>
+        <Bold>Meninas de 9 a 14 anos</Bold>
+    </Text>,
+
+    <Text style={styles.textData}>
+        Mulheres de 9 a 26 anos
+    </Text>,
+],
+[
+    <Text style={styles.textTitle}>
+        <Bold>Meninos de 11 a 14 anos</Bold>
+    </Text>,
+
+    <Text style={styles.textData}>
+        Homens de 9 a 26 anos
     </Text>,
 ]
 ];

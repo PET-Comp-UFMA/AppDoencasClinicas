@@ -11,20 +11,20 @@ import Parag from '@components/Parag';
 import Botao from '@components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T119 ({ navigation }) {
-        // Atualiza as cores se o modo noturno estiver ligado
-        const { colors } = useTheme();
+export default function T119({ navigation }) {
+    // Atualiza as cores se o modo noturno estiver ligado
+    const { colors } = useTheme();
 
-        // Configuração de texto para as próximas telas
-        Text.defaultProps       = Text.defaultProps || {}
-        Text.defaultProps.style =  { 
-              color             : colors.text,
-              fontFamily        : 'Mulish_Regular',
-              fontSize          : 20,
-              marginHorizontal  : 20,
-              textAlign         : 'center',
-              lineHeight        : 35
-        }
+    // Configuração de texto para as próximas telas
+    Text.defaultProps = Text.defaultProps || {}
+    Text.defaultProps.style = {
+        color: colors.text,
+        fontFamily: 'Mulish_Regular',
+        fontSize: 20,
+        marginHorizontal: 20,
+        textAlign: 'center',
+        lineHeight: 35
+    }
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -36,18 +36,20 @@ export default function T119 ({ navigation }) {
                     <Parag>Você poderá escolher uma das opções abaixo. E ainda, clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção, ou em <Bold>FINALIZAR</Bold> e ser direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="Tira Dúvidas"
-                        onPress={() => navigation.navigate('102-TiraDuvidas')}
-                    />
-                    <Botao
-                        title="Finalizar"
-                        onPress={() => navigation.navigate('001-Inicio')}
-                    />
-                </View>
+
 
             </ScrollView>
+
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="Tira Dúvidas"
+                    onPress={() => navigation.navigate('102-TiraDuvidas')}
+                />
+                <Botao
+                    title="Finalizar"
+                    onPress={() => navigation.navigate('001-Inicio')}
+                />
+            </View>
 
 
         </SafeAreaView>
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+
         paddingTop: 15,
         width: '100%'
     },
@@ -71,10 +73,10 @@ const styles = StyleSheet.create({
     },
     texto: {
         marginBottom: 10,
-        
+
     },
-    textTitle: { 
-    
+    textTitle: {
+
         margin: 6,
         alignSelf: 'center',
         color: 'black',
@@ -85,8 +87,8 @@ const styles = StyleSheet.create({
         marginTop: -20
     },
 
-    textData: { 
-        fontSize: 16, 
+    textData: {
+        fontSize: 16,
         margin: 6,
         textAlign: 'left',
         color: 'black',

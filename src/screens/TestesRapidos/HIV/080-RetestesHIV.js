@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
     View,
     StyleSheet,
+    Text,
     SafeAreaView,
     ScrollView,
-    Text,
 } from 'react-native';
-import Botao from '@components/Botao';
-import Parag from '@components/Parag';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
+import Parag from '@components/Parag';
+import Bold from '@components/Bold';
+import Botao from '@components/Botao';
 
-export default function T064({ navigation }) {
+export default function T068({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -24,40 +27,34 @@ export default function T064({ navigation }) {
               textAlign         : 'center',
               lineHeight        : 35
         }
+
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
-                <View>
-                   <Parag>Qual foi o resultado?</Parag>
+                <View >
+                    <Parag>Se seu paciente não concordou realizar o <Bold>RETESTE</Bold> após teste reagente, aconselhe-o. E se ele aceitar após aconselhamento, clique em <Bold>REALIZAR RETESTE</Bold>.</Parag>
+                    <Parag>Se não for esse o caso, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
-
+                
             </ScrollView>
 
             <View style={styles.containerBotao}>
-                    <Botao
-                        title="Reagente"
-                        onPress={() => navigation.navigate('065-TesteRapidoSifilis')}
-                    />
-                    <Botao
-                        title="NÃO REAGENTE"
-                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
-                    />
-                    <Botao
-                        title="INVÁLIDO"
-                        onPress={() => navigation.navigate('065-TesteRapidoSifilis')}
-                    />
-                    <Botao
-                        title="INDISPONÍVEL"
-                        onPress={() => navigation.navigate('073-Indisponivel')}
-                    />
-                    <Botao
-                        title="RECUSOU FAZER"
-                        onPress={() => navigation.navigate('072-Aconselhamento')}
-                    />
-                </View>
 
+                    
+                    <Botao
+                        title="REALIZAR RETESTE"
+                        onPress={() => navigation.navigate('')}
+                    />
 
+                    <Botao
+                        title="FINALIZAR"
+                        onPress={() => navigation.navigate('')}
+                    />
+                    
+            </View>
         </SafeAreaView>
+
+
     );
 }
 

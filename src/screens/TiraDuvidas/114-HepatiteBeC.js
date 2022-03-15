@@ -13,20 +13,20 @@ import Botao from '@components/Botao';
 import Tabela from '@components/Tabela';
 import { useTheme } from '@react-navigation/native';
 
-export default function T114 ({ navigation }) {
-        // Atualiza as cores se o modo noturno estiver ligado
-        const { colors } = useTheme();
+export default function T114({ navigation }) {
+    // Atualiza as cores se o modo noturno estiver ligado
+    const { colors } = useTheme();
 
-        // Configuração de texto para as próximas telas
-        Text.defaultProps       = Text.defaultProps || {}
-        Text.defaultProps.style =  { 
-              color             : colors.text,
-              fontFamily        : 'Mulish_Regular',
-              fontSize          : 20,
-              marginHorizontal  : 20,
-              textAlign         : 'center',
-              lineHeight        : 35
-        }
+    // Configuração de texto para as próximas telas
+    Text.defaultProps = Text.defaultProps || {}
+    Text.defaultProps.style = {
+        color: colors.text,
+        fontFamily: 'Mulish_Regular',
+        fontSize: 20,
+        marginHorizontal: 20,
+        textAlign: 'center',
+        lineHeight: 35
+    }
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -48,14 +48,14 @@ export default function T114 ({ navigation }) {
                     <Parag>Investigação inicial da infecção pelo HBV utilizando TR-HBsAg.</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("@images/F037.png")} title={""} number={"F036"}/>
+                    <Imagem source={require("@images/F037.png")} title={""} number={"F036"} />
                 </View>
 
                 <View>
                     <Parag>Investigação o inicial da infecção pelo vírus da hepatite C (HCV) utilizando testes rápidos.</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("@images/F038.png")} title={""} number={"F037"}/>
+                    <Imagem source={require("@images/F038.png")} title={""} number={"F037"} />
                 </View>
 
                 <View>
@@ -64,19 +64,19 @@ export default function T114 ({ navigation }) {
                     <Parag>Ou ainda você poderá clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção.</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="Tira Dúvidas"
-                        onPress={() => navigation.navigate('102-TiraDuvidas')}
-                    />
-                    <Botao
-                        title="Finalizar"
-                        onPress={() => navigation.navigate('001-Inicio')}
-                    />
-                </View>
+
 
             </ScrollView>
-
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="Tira Dúvidas"
+                    onPress={() => navigation.navigate('102-TiraDuvidas')}
+                />
+                <Botao
+                    title="Finalizar"
+                    onPress={() => navigation.navigate('001-Inicio')}
+                />
+            </View>
 
         </SafeAreaView>
     );
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+
         paddingTop: 15,
         width: '100%'
     },
@@ -99,10 +99,10 @@ const styles = StyleSheet.create({
     },
     texto: {
         marginBottom: 10,
-        
+
     },
-    textTitle: { 
-        fontSize: 16, 
+    textTitle: {
+        fontSize: 16,
         margin: 6,
         alignSelf: 'center',
         color: 'black',
@@ -113,8 +113,8 @@ const styles = StyleSheet.create({
         marginTop: -20
     },
 
-    textData: { 
-        fontSize: 16, 
+    textData: {
+        fontSize: 16,
         margin: 6,
         textAlign: 'left',
         color: 'black',
@@ -139,8 +139,8 @@ const tableData = [
     [
         <Text style={styles.textTitle}>
             <Bold>HBsAg¹</Bold>
-        </Text> ,
-        
+        </Text>,
+
         <Text style={styles.textData}>
             Sensibilidade: 100%{"\n\n"}
 
@@ -153,7 +153,7 @@ const tableData = [
     ],
 
     [
-        
+
         <Text style={styles.textTitle}>
             <Bold>Anti-HCV²</Bold>
         </Text>,

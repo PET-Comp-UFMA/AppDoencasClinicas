@@ -32,7 +32,11 @@ export default function T065({ navigation }) {
                    <Parag>Nesta etapa o teste teve resultado: <Bold>REAGENTE</Bold> ou <Bold>INVÁLIDO</Bold>. Considere realizar um <Bold>RETESTE</Bold>.</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
+                
+
+            </ScrollView>
+
+            <View style={styles.containerBotao}>
                     <Botao
                         title="Reteste"
                         onPress={() => navigation.navigate('066-RetesteSifilis')}
@@ -51,8 +55,6 @@ export default function T065({ navigation }) {
                     />
                     
                 </View>
-
-            </ScrollView>
 
 
         </SafeAreaView>

@@ -35,7 +35,9 @@ export default function T070({ navigation }) {
                     <Parag>Se não tem mais material para fazer o <Bold>RETESTE</Bold>, e o paciente concorda em prosseguir, clique em <Bold>MANEJO CLÍNICO</Bold> para prosseguir e será direcionado para as possíveis soluções</Parag>
                     <Parag>Caso o paciente não concorde em prosseguir, aconselhe-o. Se ele concordar, clique em <Bold>MANEJO CLÍNICO</Bold>, se mesmo assim ele não concordar, não há mais nada a fazer além de sensibilizar, então, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
-                <View style={styles.containerBotao}>
+                
+            </ScrollView>
+            <View style={styles.containerBotao}>
 
                     <Botao
                         title="MANEJO CLÍNICO"
@@ -47,7 +49,6 @@ export default function T070({ navigation }) {
                     />
                     
                 </View>
-            </ScrollView>
         </SafeAreaView>
 
 

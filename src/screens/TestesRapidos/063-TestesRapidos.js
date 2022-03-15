@@ -33,7 +33,11 @@ export default function T063({ navigation }) {
                    <Parag>Escolha uma opção, sabendo que cada teste será registrado individualmente. Em caso de dúvidas clique em <Bold>INTERPRETAÇÃO DOS RESULTADOS.</Bold> Em caso de não realização do(s) teste(s), clique em <Bold>RECUSOU FAZER O TESTE.</Bold></Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
+                
+
+            </ScrollView>
+
+            <View style={styles.containerBotao}>
                     <Botao
                         title="SÍFILIS"
                         onPress={() => navigation.navigate('064-TesteRapidoSifilis')}
@@ -64,9 +68,6 @@ export default function T063({ navigation }) {
                         onPress={() => navigation.navigate('100-InterpretacaodeResultados')}
                     />
                 </View>
-
-            </ScrollView>
-
 
         </SafeAreaView>
     );
