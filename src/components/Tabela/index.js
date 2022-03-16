@@ -127,7 +127,7 @@ class Tabela extends Component {
         }
 
         return (
-          <View style={styles.container}>
+          <View style={this.props.tableStyle ? [styles.container, this.props.tableStyle] : styles.container}>
               {Head}
               <DataTable>
                 {this.tableData}
