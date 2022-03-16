@@ -130,6 +130,10 @@ import T120 from '@screens/TiraDuvidas/120-ProfilaxiadainfecçãoporHIV';
 import T121 from '@screens/TiraDuvidas/121-PrevencaodaGravidez';
 import T122 from '@screens/TiraDuvidas/122-NotificandoaViolenciaSexual';
 
+import T123 from '@screens/Sobre/123-Sobre';
+import T124 from '@screens/Sobre/124-Idealizadores';
+import T125 from '@screens/Sobre/125-Desenvolvedores';
+import T126 from './src/screens/Sobre/126-Referencias';
 
 // Temas
 const darkTheme = {
@@ -684,6 +688,26 @@ export default function App() {
 						name='034-UlceraAnogenital'
 						component={T034}
 						options={{ title: "Úlcera Anogenital" }} />
+
+					<Stack.Screen
+						name='123-Sobre'
+						component={T123}
+						options={{ title: "Sobre" }} />
+					
+					<Stack.Screen
+						name='124-Idealizadores'
+						component={T124}
+						options={{ title: "Idealizadores" }} />
+
+					<Stack.Screen
+						name='125-Desenvolvedores'
+						component={T125}
+						options={{ title: "Desenvolvedores" }} />
+
+					<Stack.Screen
+						name='126-Referencias'
+						component={T126}
+						options={{ title: "Referências" }} />
 
 				</Stack.Navigator>
 			</View>
