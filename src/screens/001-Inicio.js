@@ -69,8 +69,8 @@ export default function T001({ navigation })  {
                             onPress = { () => navigation.navigate('') }
                         />
                         <Botao
-                            title = "(Debug) Testes Rápidos"
-                            onPress = { () => navigation.navigate('063-TestesRapidos') }
+                            title = "(Debug) hepatite b e c"
+                            onPress = { () => navigation.navigate('060-HepatiteBeC') }
                         />
                     </View>
                 </ScrollView>

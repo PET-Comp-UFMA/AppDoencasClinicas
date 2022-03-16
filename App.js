@@ -55,6 +55,10 @@ import T032 from "@screens/Ulcera Anogenital/032-UlceraAnogenital";
 import T033 from "@screens/Ulcera Anogenital/033-UlceraAnogenital";
 import T034 from "@screens/Ulcera Anogenital/034-UlceraAnogenital";
 
+import T060 from '@screens/Hepatite B e C/060-HepatiteBeC';
+import T061 from '@screens/Hepatite B e C/061-HepatiteBeC';
+import T062 from '@screens/Hepatite B e C/062-HepatiteBeC';
+
 import T063 from '@screens/TestesRapidos/063-TestesRapidos';
 
 import T064 from '@screens/TestesRapidos/Sifilis/064-TesteRapidoSifilis';
@@ -299,6 +303,21 @@ export default function App() {
 						name='040-VerrugaAnogenital'
 						component={T040}
 						options={{ title: "Verruga Anogenital" }} />
+
+					<Stack.Screen
+						name='060-HepatiteBeC'
+						component={T060}
+						options={{ title: "Hepatite B e C" }} />
+
+					<Stack.Screen
+						name='061-HepatiteBeC'
+						component={T061}
+						options={{ title: "Hepatite B e C" }} />
+
+					<Stack.Screen
+						name='062-HepatiteBeC'
+						component={T062}
+						options={{ title: "Hepatite B e C" }} />
 
 					<Stack.Screen
 						name='063-TestesRapidos'
