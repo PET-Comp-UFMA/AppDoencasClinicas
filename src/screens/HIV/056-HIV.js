@@ -6,11 +6,12 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
+
 import Botao from '@components/Botao';
-import Parag from '@components/Parag';
+import Bold from '@components/Bold';
 import { useTheme } from '@react-navigation/native';
 
-export default function T076({ navigation }) {
+export default function T056({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -26,37 +27,31 @@ export default function T076({ navigation }) {
     }
     return (
         <SafeAreaView style={styles.container}>
+
             <ScrollView>
-                <View>
-                    <Parag>Qual foi o resultado?</Parag>
-                </View>
+                    
+                <Text>
+                    Se seu paciente apresenta teste rápido para HIV não reagente, porém apresenta comportamentos de risco, considerar necessidade de PREP, PEP e outras opções.{"\n"}{"\n"}
 
-
+                    Caso ele não apresente comportamentos de risco, pode clicar em <Bold>ACONSELHAMENTO</Bold>.
+                </Text>
 
             </ScrollView>
+
             <View style={styles.containerBotao}>
-                <Botao
-                    title="REAGENTE"
-                    onPress={() => navigation.navigate('077-TesteRapidoHIV')}
+                <Botao 
+                    title="PREP"
+                    onPress={() => {navigation.navigate("057-HIV-PrEP")}}
                 />
-                <Botao
-                    title="NÃO REAGENTE"
-                    onPress={() => navigation.navigate('056-HIV')}
+                <Botao 
+                    title="PEP"
+                    onPress={() => {navigation.navigate("058-HIV-PEP")}}
                 />
-                <Botao
-                    title="INVÁLIDO"
-                    onPress={() => navigation.navigate('077-TesteRapidoHIV')}
-                />
-                <Botao
-                    title="INDISPONÍVEL"
-                    onPress={() => navigation.navigate('073-Indisponivel')}
-                />
-                <Botao
-                    title="RECUSOU FAZER"
-                    onPress={() => navigation.navigate('072-Aconselhamento')}
+                <Botao 
+                    title="ACONSELHAMENTO"
+                    onPress={() => {navigation.navigate("074-TesteNaoReagente")}}
                 />
             </View>
-
         </SafeAreaView>
     );
 }
@@ -72,12 +67,31 @@ const styles = StyleSheet.create({
         paddingTop: 15,
         width: '100%'
     },
+
     containerBotao: {
         marginTop: 30,
         width: '100%'
     },
+
+    tabela: {
+        marginTop: -5,
+        marginBottom: 50
+    },
+    
+    textTitle: { 
+        fontSize: 18, 
+        margin: 6,
+        marginLeft: 20,
+        textAlign: "left",
+        fontFamily: "Mulish_Regular",
+    },
+
     texto: {
         marginBottom: 10,
 
     },
-});
+
+    containerBotao: {
+        marginTop       :  30,
+    }
+})

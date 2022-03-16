@@ -47,7 +47,7 @@ export default function T002({ navigation })  {
                     />
                     <Botao
                         title = "TESTES RÁPIDOS"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('063-TestesRapidos') }
                     />
                 </View>
             </SafeAreaView>

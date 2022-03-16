@@ -60,6 +60,12 @@ import T042 from "@screens/VerrugaAnogenital/042-VerrugaAnogenital";
 import T043 from "@screens/VerrugaAnogenital/043-VerrugaAnogenital";
 import T044 from "@screens/VerrugaAnogenital/044-VerrugaAnogenital";
 
+import T054 from "@screens/HIV/054-HIV";
+import T055 from "@screens/HIV/055-HIV";
+import T056 from "@screens/HIV/056-HIV";
+import T057 from "@screens/HIV/057-HIV-PrEP";
+import T058 from "@screens/HIV/058-HIV-PEP";
+
 import T060 from '@screens/Hepatite B e C/060-HepatiteBeC';
 import T061 from '@screens/Hepatite B e C/061-HepatiteBeC';
 import T062 from '@screens/Hepatite B e C/062-HepatiteBeC';
@@ -708,6 +714,31 @@ export default function App() {
 						name='126-Referencias'
 						component={T126}
 						options={{ title: "Referências" }} />
+
+					<Stack.Screen
+						name='054-HIV'
+						component={T054}
+						options={{ title: "HIV" }} />
+				
+					<Stack.Screen
+						name='055-HIV'
+						component={T055}
+						options={{ title: "HIV" }} />
+				
+					<Stack.Screen
+						name='056-HIV'
+						component={T056}
+						options={{ title: "HIV" }} />
+				
+					<Stack.Screen
+						name='057-HIV-PrEP'
+						component={T057}
+						options={{ title: "HIV - PreP" }} />
+				
+					<Stack.Screen
+						name='058-HIV-PEP'
+						component={T058}
+						options={{ title: "HIV - PEP" }} />
 
 				</Stack.Navigator>
 			</View>
