@@ -104,7 +104,7 @@ class Tabela extends Component {
                                 style={style}
                                 key={Math.random().toString(36)}
                                 >
-                                <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
+                                <Text style={this.cellStyle.cell} onPress={this.props.tableData[numLinha][numObjeto].props.onPress}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
                 )
             }
