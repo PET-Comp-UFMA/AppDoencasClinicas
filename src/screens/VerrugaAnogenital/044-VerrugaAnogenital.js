@@ -33,25 +33,22 @@ export default function Aconselhamento({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
-                </View>
-                <Imagem source={require("@images/F029.png")} title={"Acompanhamento"} number={"F029"} />
-                <View>
-                    <Parag>Caso seu paciente aceite realizar, clique em <Bold>TESTES RÁPIDOS</Bold>.</Parag>
-                    <Parag>Se não, clique em <Bold>FINALIZAR</Bold> e será direcionado ao menu principal.</Parag>
+                    <Parag>Se chegou até aqui é porque seu paciente não apresenta nenhuma dessas queixas, ou mesmo depois do aconselhamento não aceitou realizar os testes rápidos.</Parag>
+                    <Parag>Se ele recusou realizar os testes mesmo com o aconselhamento, não há mais nada a fazer além da sensibilização. Registre tudo!</Parag>
+                    <Parag>Então, clique em <Bold>MENU PRINCIPAL</Bold> e você será direcionado ao iínicio, ou em <Bold>ANAMNESE E EXAME FÍSICO</Bold> para voltar para o menu dessa seção.</Parag>
                 </View>
 
             </ScrollView>
             <View style={styles.containerBotao}>
 
                 <Botao
-                    title="ACEITOU fazer testes rápidos"
-                    onPress={() => navigation.navigate('063-TestesRapidos')}
+                    title="Menu principal"
+                    onPress={() => navigation.navigate('001-Inicio')}
                 />
 
                 <Botao
-                    title="mesmo assim não aceitou realizar os testes rápidos"
-                    onPress={() => navigation.navigate('044-VerrugaAnogenital')}
+                    title="anamnese e exame físico"
+                    onPress={() => navigation.navigate('003-Anamnese e Exame Fisico')}
                 />
 
             </View>

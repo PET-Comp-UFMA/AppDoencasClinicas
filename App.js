@@ -42,8 +42,7 @@ import T019 from '@screens/Corrimento Vaginal ou Uretral/019-CorrimentoUretral';
 import T023 from '@screens/Corrimento Vaginal ou Uretral/023-CorrimentoVaginal';
 import T024 from '@screens/Corrimento Vaginal ou Uretral/024-CorrimentoUretral';
 
-import T039 from "@screens/VerrugaAnogenital/039-VerrugaAnogenital";
-import T040 from "@screens/VerrugaAnogenital/040-VerrugaAnogenital";
+
 import T025 from '@screens/Ulcera Anogenital/025-UlceraAnogenital';
 import T026 from '@screens/Ulcera Anogenital/026-UlceraAnogenital';
 import T027 from '@screens/Ulcera Anogenital/027-UlceraAnogenital';
@@ -54,6 +53,12 @@ import T031 from "@screens/Ulcera Anogenital/031-UlceraAnogenital";
 import T032 from "@screens/Ulcera Anogenital/032-UlceraAnogenital";
 import T033 from "@screens/Ulcera Anogenital/033-UlceraAnogenital";
 import T034 from "@screens/Ulcera Anogenital/034-UlceraAnogenital";
+
+import T039 from "@screens/VerrugaAnogenital/039-VerrugaAnogenital";
+import T040 from "@screens/VerrugaAnogenital/040-VerrugaAnogenital";
+import T042 from "@screens/VerrugaAnogenital/042-VerrugaAnogenital";
+import T043 from "@screens/VerrugaAnogenital/043-VerrugaAnogenital";
+import T044 from "@screens/VerrugaAnogenital/044-VerrugaAnogenital";
 
 import T060 from '@screens/Hepatite B e C/060-HepatiteBeC';
 import T061 from '@screens/Hepatite B e C/061-HepatiteBeC';
@@ -302,6 +307,21 @@ export default function App() {
 					<Stack.Screen
 						name='040-VerrugaAnogenital'
 						component={T040}
+						options={{ title: "Verruga Anogenital" }} />
+
+					<Stack.Screen
+						name='042-VerrugaAnogenital'
+						component={T042}
+						options={{ title: "Verruga Anogenital" }} />
+
+					<Stack.Screen
+						name='043-VerrugaAnogenital'
+						component={T043}
+						options={{ title: "Verruga Anogenital" }} />
+
+					<Stack.Screen
+						name='044-VerrugaAnogenital'
+						component={T044}
 						options={{ title: "Verruga Anogenital" }} />
 
 					<Stack.Screen

@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     View,
     StyleSheet,
-    Text,
+    Image,
     SafeAreaView,
     ScrollView,
+    Text,
+    ColorPropType,
 } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { useTheme } from '@react-navigation/native';
+import Botao from '@components/Botao';
 import Parag from '@components/Parag';
 import Bold from '@components/Bold';
-import Botao from '@components/Botao';
-import Imagem from "@components/Imagem";
+import { useTheme } from '@react-navigation/native';
 
-export default function Aconselhamento({ navigation }) {
+export default function T042({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -28,36 +27,30 @@ export default function Aconselhamento({ navigation }) {
         textAlign: 'center',
         lineHeight: 35
     }
-
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
-                </View>
-                <Imagem source={require("@images/F029.png")} title={"Acompanhamento"} number={"F029"} />
-                <View>
-                    <Parag>Caso seu paciente aceite realizar, clique em <Bold>TESTES RÁPIDOS</Bold>.</Parag>
-                    <Parag>Se não, clique em <Bold>FINALIZAR</Bold> e será direcionado ao menu principal.</Parag>
+                   <Parag>Ofereça ao seu paciente os testes rápidos e para mulheres oferte também o citológico de colo uterino.</Parag>
+                   <Parag>Se seu paciente aceitou realizar os testes. clique em <Bold>ACEITOU REALIZAR OS TESTES</Bold>.</Parag>
+                   <Parag>Caso contrário, clique em <Bold>NÃO ACEITOU REALIZAR OS TESTES</Bold>.</Parag>
                 </View>
 
             </ScrollView>
-            <View style={styles.containerBotao}>
 
+            <View style={styles.containerBotao}>
                 <Botao
                     title="ACEITOU fazer testes rápidos"
                     onPress={() => navigation.navigate('063-TestesRapidos')}
                 />
 
                 <Botao
-                    title="mesmo assim não aceitou realizar os testes rápidos"
-                    onPress={() => navigation.navigate('044-VerrugaAnogenital')}
+                    title="não aceitou fazer os testes rápidos"
+                    onPress={() => navigation.navigate('043-VerrugaAnogenital')}
                 />
 
             </View>
         </SafeAreaView>
-
-
     );
 }
 
@@ -68,16 +61,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-
-        paddingTop: 15,
-        width: '100%'
+        paddingTop: 15
     },
     containerBotao: {
-        marginTop: 30,
+        marginTop: 0,
         width: '100%'
-    },
-    texto: {
-        marginBottom: 10,
-
     },
 });
