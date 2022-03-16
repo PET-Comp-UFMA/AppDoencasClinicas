@@ -1,20 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     View,
     StyleSheet,
-    Text,
     SafeAreaView,
     ScrollView,
+    Text,
 } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { useTheme } from '@react-navigation/native';
-import Parag from '@components/Parag';
-import Bold from '@components/Bold';
 import Botao from '@components/Botao';
-import Imagem from "@components/Imagem";
+import Parag from '@components/Parag';
+import { useTheme } from '@react-navigation/native';
+import Imagem from '@components/Imagem';
 
-export default function Aconselhamento({ navigation }) {
+export default function T039({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -28,35 +25,30 @@ export default function Aconselhamento({ navigation }) {
               textAlign         : 'center',
               lineHeight        : 35
         }
-
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
+                   <Parag>Seu paciente está apresenta verrugas na vulva, genitália e/ou região perianal?</Parag>
                 </View>
-                <Imagem source={require("@images/F029.png")} title={"Acompanhamento"} number={"F029"}/>
-                <View>
-                    <Parag>Caso seu paciente aceite realizar, clique em <Bold>TESTES RÁPIDOS</Bold>.</Parag>
-                    <Parag>Se não, clique em <Bold>FINALIZAR</Bold> e será direcionado ao menu principal.</Parag>
+                <Imagem source={require("@images/F025.png")} title={"Acompanhamento"} number={"F025"}/>
+                <Imagem source={require("@images/F026.png")} title={"Acompanhamento"} number={"F026"}/>
+                <Imagem source={require("@images/F027.png")} title={"Acompanhamento"} number={"F027"}/>
+                <View style={styles.containerBotao}>
+                    <Botao
+                        title="SIM"
+                        onPress={() => navigation.navigate('040-VerrugaAnogenital')}
+                    />
+                    <Botao
+                        title="NÃO"
+                        onPress={() => navigation.navigate('')}
+                    />
                 </View>
 
             </ScrollView>
-            <View style={styles.containerBotao}>
 
-                <Botao
-                    title="REALIZAR TESTE RÁPIDO"
-                    onPress={() => navigation.navigate('')}
-                />
-                <Botao
-                    title="FINALIZAR"
-                    onPress={() => navigation.navigate('001-Inicio')}
-                />
 
-            </View>
         </SafeAreaView>
-
-
     );
 }
 

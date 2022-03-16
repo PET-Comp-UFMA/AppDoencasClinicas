@@ -33,7 +33,20 @@ export default function T088({ navigation }) {
                     <Parag>Se não for esse o caso, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 
-
+                <View style={styles.containerBotao}>
+                    <Botao
+                        title="ACONSELHAMENTO"
+                        onPress={() => navigation.navigate('072-Aconselhamento')}
+                    />
+                    <Botao
+                        title="REALIZAR RETESTE"
+                        onPress={() => navigation.navigate('086-RetesteHepatiteB')}
+                    />
+                    <Botao
+                        title="FINALIZAR"
+                        onPress={() => navigation.navigate('001-Inicio')}
+                    />
+                </View>
 
             </ScrollView>
 

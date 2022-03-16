@@ -62,6 +62,11 @@ export default function T063({ navigation }) {
                         title="RECUSOU FAZER O TESTE"
                         onPress={() => navigation.navigate('')}
                     />
+
+                    <Botao
+                        title="debug -> Interpretaca0"
+                        onPress={() => navigation.navigate('100-InterpretacaodeResultados')}
+                    />
                 </View>
 
         </SafeAreaView>

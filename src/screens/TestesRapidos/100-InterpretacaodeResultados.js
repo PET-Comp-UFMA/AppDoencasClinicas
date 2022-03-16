@@ -14,7 +14,7 @@ import Bold from '@components/Bold';
 import Botao from '@components/Botao';
 import Imagem from "@components/Imagem";
 
-export default function Aconselhamento({ navigation }) {
+export default function T100({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -33,21 +33,30 @@ export default function Aconselhamento({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
+                    <Parag>O teste rápido inclui um sistema de controle interno de migração, representado por um linha coloriada, que aparece na área de controle (C), essa linha confirma que o resultado obtido é válido.</Parag>
+                    <Parag>Cada teste exige uma quantidade “X” de amostra (sangue), de tampão e tempo necessário para a leitura.</Parag>
+                    <Parag>Obedeça o que recomenda cada laboratório.</Parag>
+                    <Parag>Se a linha de controle (C) não aparecer dentro do tempo máximo determiado pelo fabricante, o teste será conseiderdo inválido, mesmo que a linha colorida apareça na área de teste (T).</Parag>
                 </View>
-                <Imagem source={require("@images/F029.png")} title={"Acompanhamento"} number={"F029"}/>
+
                 <View>
-                    <Parag>Caso seu paciente aceite realizar, clique em <Bold>TESTES RÁPIDOS</Bold>.</Parag>
-                    <Parag>Se não, clique em <Bold>FINALIZAR</Bold> e será direcionado ao menu principal.</Parag>
+                    <Imagem source={require("@images/F033.png")} title={"Acompanhamento"} number={"F033"}/>
+                    <Parag>Qualquer intensidade de linha colorida na área de teste é considerado como resultado reagente.</Parag>
+                </View>
+
+                <View>
+                    <Imagem source={require("@images/F034.png")} title={"Acompanhamento"} number={"F034"}/>
+                    <Parag>Quando aparece somente a linha colorida do controle o resultado é não reagente.</Parag>
+                </View>
+
+                <View>
+                <Imagem source={require("@images/F035.png")} title={"Acompanhamento"} number={"F035"}/>
+                <Parag>Caso tenha concluído, clique em <Bold>FINALIZAR</Bold>, e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Ou na seta para a <Bold>ESQUERDA</Bold>, caso precise relembrar algo.</Parag>
                 </View>
 
             </ScrollView>
             <View style={styles.containerBotao}>
 
-                <Botao
-                    title="REALIZAR TESTE RÁPIDO"
-                    onPress={() => navigation.navigate('')}
-                />
                 <Botao
                     title="FINALIZAR"
                     onPress={() => navigation.navigate('001-Inicio')}
@@ -67,7 +76,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+        marginTop:20,
         paddingTop: 15,
         width: '100%'
     },
@@ -77,6 +86,6 @@ const styles = StyleSheet.create({
     },
     texto: {
         marginBottom: 10,
-        
     },
+
 });

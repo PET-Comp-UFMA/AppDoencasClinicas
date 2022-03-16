@@ -14,7 +14,7 @@ import Bold from '@components/Bold';
 import Botao from '@components/Botao';
 import Imagem from "@components/Imagem";
 
-export default function Aconselhamento({ navigation }) {
+export default function T011({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
         const { colors } = useTheme();
 
@@ -36,11 +36,12 @@ export default function Aconselhamento({ navigation }) {
                     <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
                 </View>
                 <Imagem source={require("@images/F029.png")} title={"Acompanhamento"} number={"F029"}/>
+                
                 <View>
+                    <Parag>Aborde pontos mais importantes relacionados à vulnerabilidade em relação às IST.</Parag>
                     <Parag>Caso seu paciente aceite realizar, clique em <Bold>TESTES RÁPIDOS</Bold>.</Parag>
-                    <Parag>Se não, clique em <Bold>FINALIZAR</Bold> e será direcionado ao menu principal.</Parag>
+                    <Parag>Se não, clique em <Bold>FINALIZAR</Bold> e será direcionado ao menu principal. Registre tudo.</Parag>
                 </View>
-
             </ScrollView>
             <View style={styles.containerBotao}>
 
@@ -48,11 +49,11 @@ export default function Aconselhamento({ navigation }) {
                     title="REALIZAR TESTE RÁPIDO"
                     onPress={() => navigation.navigate('')}
                 />
+                
                 <Botao
                     title="FINALIZAR"
                     onPress={() => navigation.navigate('001-Inicio')}
                 />
-
             </View>
         </SafeAreaView>
 
@@ -67,7 +68,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        
+        marginTop:20,
         paddingTop: 15,
         width: '100%'
     },
@@ -77,6 +78,6 @@ const styles = StyleSheet.create({
     },
     texto: {
         marginBottom: 10,
-        
     },
+
 });
