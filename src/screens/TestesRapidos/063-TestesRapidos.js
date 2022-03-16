@@ -44,7 +44,7 @@ export default function T063({ navigation }) {
                     />
                     <Botao
                         title="HIV"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('076-TesteRapidoHIV')}
                     />
                     <Botao
                         title="HEPATITE B"
