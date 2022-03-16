@@ -42,16 +42,6 @@ import T019 from '@screens/Corrimento Vaginal ou Uretral/019-CorrimentoUretral';
 import T023 from '@screens/Corrimento Vaginal ou Uretral/023-CorrimentoVaginal';
 import T024 from '@screens/Corrimento Vaginal ou Uretral/024-CorrimentoUretral';
 
-import T025 from '@screens/025-UlceraAnogenital';
-import T026 from '@screens/026-UlceraAnogenital';
-import T027 from '@screens/027-UlceraAnogenital';
-import T028 from '@screens/028-UlceraAnogenital';
-import T029 from '@screens/029-UlceraAnogenital';
-import T030 from "@screens/030-UlceraAnogenital";
-import T031 from "@screens/031-UlceraAnogenital";
-import T032 from "@screens/032-UlceraAnogenital";
-import T033 from "@screens/033-UlceraAnogenital";
-import T034 from "@screens/034-UlceraAnogenital";
 import T039 from "@screens/VerrugaAnogenital/039-VerrugaAnogenital";
 import T040 from "@screens/VerrugaAnogenital/040-VerrugaAnogenital";
 import T025 from '@screens/Ulcera Anogenital/025-UlceraAnogenital';
