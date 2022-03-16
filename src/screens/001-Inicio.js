@@ -66,7 +66,7 @@ export default function T001({ navigation })  {
                         />
                         <Botao
                             title = "Sobre"
-                            onPress = { () => navigation.navigate('') }
+                            onPress = { () => navigation.navigate('123-Sobre') }
                         />
                         <Botao
                             title = "(Debug) hepatite b e c"

@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import Botao from '@components/Botao';
 
-import Seta from './../assets/icons/left.svg';
+
 
 import { useTheme } from '@react-navigation/native';
 
