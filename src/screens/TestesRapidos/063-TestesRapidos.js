@@ -44,7 +44,7 @@ export default function T063({ navigation }) {
                     />
                     <Botao
                         title="HIV"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('076-TesteRapidoHIV')}
                     />
                     <Botao
                         title="HEPATITE B"
@@ -56,17 +56,13 @@ export default function T063({ navigation }) {
                     />
                     <Botao
                         title="INTERPRETAÇÃO DOS RESULTADOS"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('100-InterpretacaodeResultados')}
                     />
                     <Botao
                         title="RECUSOU FAZER O TESTE"
-                        onPress={() => navigation.navigate('')}
+                        onPress={() => navigation.navigate('101-RecusouTeste')}
                     />
 
-                    <Botao
-                        title="debug -> Interpretaca0"
-                        onPress={() => navigation.navigate('100-InterpretacaodeResultados')}
-                    />
                 </View>
 
         </SafeAreaView>

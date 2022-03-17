@@ -27,23 +27,10 @@ export default class ScreenModalImage extends Component {
 
           <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
 
-            <View style={styles.viewTituloModal}>
-              <Text style={styles.tituloModal}>{this.props.title}</Text>
-            </View>
 
             <ImageBackground
               source={this.props.source}
               style={styles.image}>
-              <View style={styles.textbg}>
-                <ImageBackground
-                  style={styles.image}
-                  source={this.props.source}
-                  blurRadius={50}>
-                  <View style={styles.textbg}>
-                    <Text style={styles.text}>{this.props.number}</Text>
-                  </View>
-                </ImageBackground>
-              </View>
             </ImageBackground>
 
           </View>

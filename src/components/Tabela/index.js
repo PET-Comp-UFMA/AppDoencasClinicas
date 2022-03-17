@@ -65,37 +65,45 @@ class Tabela extends Component {
 
                 let style = [styles.tableData]
 
-
-                // Objeto da esquerda
-                if (numObjeto == 0) {
-                    // Se só tiver uma linha
-                    if (this.props.tableData.length == 1) {
-                        style.push(styles.borderBottomLeft)
-                        // Se não tiver cabeçalho
-                        if (numLinha == 0 && !Head) {
+                if (!this.props.noRoundBorder) {
+                    // Objeto da esquerda
+                    if (numObjeto == 0) {
+                        // Se só tiver uma linha
+                        if (this.props.tableData.length == 1) {
+                            style.push(styles.borderBottomLeft)
+                            // Se não tiver cabeçalho
+                            if (numLinha == 0 && !Head) {
+                                style.push(styles.borderTopLeft)
+                            }
+                        // Se só tiver uma coluna
+                        } else if (this.props.tableData[numLinha].length == 1) {
+                            if (numLinha == 0) {
+                                style.push(styles.borderTopRight, styles.borderTopLeft)
+                            } else if (numLinha == this.props.tableData.length - 1) {
+                                style.push(styles.borderBottomRight, styles.borderBottomLeft)
+                            }
+                        // Se tiver mais que uma linha, essa for a primeira e não tiver cabeçalho
+                        } else if (numLinha == 0 && !Head) {
                             style.push(styles.borderTopLeft)
+                        
+                        // Se essa for a última linha
+                        } else if (numLinha == this.props.tableData.length - 1) {
+                            style.push(styles.borderBottomLeft)
                         }
-                    // Se tiver mais que uma linha, essa for a primeira e não tiver cabeçalho
-                    } else if (numLinha == 0 && !Head) {
-                        style.push(styles.borderTopLeft)
-                    
-                    // Se essa for a última linha
-                    } else if (numLinha == this.props.tableData.length - 1) {
-                        style.push(styles.borderBottomLeft)
-                    }
-                // Objeto da direita
-                } else if (numObjeto == this.props.tableData[numLinha].length - 1) {
-                    if (this.props.tableData.length == 1) {
-                        style.push(styles.borderBottomRight)
-                        if (numLinha == 0 && !Head) {
+                    // Objeto da direita
+                    } else if (numObjeto == this.props.tableData[numLinha].length - 1) {
+                        if (this.props.tableData.length == 1) {
+                            style.push(styles.borderBottomRight)
+                            if (numLinha == 0 && !Head) {
+                                style.push(styles.borderTopRight)
+                            }
+                        } else if (numLinha == 0 && !Head) {
                             style.push(styles.borderTopRight)
+                        
+                        // Se essa for a última linha
+                        } else if (numLinha == this.props.tableData.length - 1) {
+                            style.push(styles.borderBottomRight)
                         }
-                    } else if (numLinha == 0 && !Head) {
-                        style.push(styles.borderTopRight)
-                    
-                    // Se essa for a última linha
-                    } else if (numLinha == this.props.tableData.length - 1) {
-                        style.push(styles.borderBottomRight)
                     }
                 }
                 
@@ -104,7 +112,7 @@ class Tabela extends Component {
                                 style={style}
                                 key={Math.random().toString(36)}
                                 >
-                                <Text style={this.cellStyle.cell}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
+                                <Text style={this.props.customStyle ? [this.cellStyle.cell, this.props.customStyle] : this.cellStyle.cell} onPress={this.props.tableData[numLinha][numObjeto].props.onPress}>{this.props.tableData[numLinha][numObjeto].props.children}</Text>
                             </View>
                 )
             }
@@ -119,7 +127,7 @@ class Tabela extends Component {
         }
 
         return (
-          <View style={styles.container}>
+          <View style={this.props.tableStyle ? [styles.container, this.props.tableStyle] : styles.container}>
               {Head}
               <DataTable>
                 {this.tableData}

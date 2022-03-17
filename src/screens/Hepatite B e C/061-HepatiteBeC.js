@@ -2,16 +2,18 @@ import React from 'react';
 import {
     View,
     StyleSheet,
+    Image,
     SafeAreaView,
     ScrollView,
     Text,
+    ColorPropType,
 } from 'react-native';
 import Botao from '@components/Botao';
 import Parag from '@components/Parag';
+import Bold from '@components/Bold';
 import { useTheme } from '@react-navigation/native';
-import Imagem from '@components/Imagem';
 
-export default function T039({ navigation }) {
+export default function T015({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -29,25 +31,23 @@ export default function T039({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Seu paciente está apresenta verrugas na vulva, genitália e/ou região perianal?</Parag>
-                </View>
-                <Imagem source={require("@images/F025.png")} title={"Acompanhamento"} number={"F025"} />
-                <Imagem source={require("@images/F026.png")} title={"Acompanhamento"} number={"F026"} />
-                <Imagem source={require("@images/F027.png")} title={"Acompanhamento"} number={"F027"} />
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="SIM"
-                        onPress={() => navigation.navigate('040-VerrugaAnogenital')}
-                    />
-                    <Botao
-                        title="NÃO"
-                        onPress={() => navigation.navigate('042-VerrugaAnogenital')}
-                    />
+                    <Parag>Se você chegou aqui, o seu paciente apresentou teste rápido para Hepatite B reagente.</Parag>
+                    <Parag>Considerar consulta médica para solicitação de exames laboratoriais e diagnóstico.</Parag>
+                    <Parag>Realizar aconselhamento sobre prevenção combinada.</Parag>
+                    <Parag>Após diagnóstico, realizar notificação.</Parag>
+                    <Parag>Registre tudo!</Parag>
+                    <Parag>Pronto? Se sim, é só clicar em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 
             </ScrollView>
 
+            <View style={styles.containerBotao}>
+                <Botao
+                    title="Finalizar"
+                    onPress={() => navigation.navigate('001-Inicio')}
+                />
 
+            </View>
         </SafeAreaView>
     );
 }
@@ -59,16 +59,10 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-
-        paddingTop: 15,
-        width: '100%'
+        paddingTop: 15
     },
     containerBotao: {
-        marginTop: 30,
+        marginTop: 0,
         width: '100%'
-    },
-    texto: {
-        marginBottom: 10,
-
     },
 });

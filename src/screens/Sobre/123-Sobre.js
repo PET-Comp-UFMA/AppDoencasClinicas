@@ -10,10 +10,9 @@ import {
 import Botao from '@components/Botao';
 
 
-
 import { useTheme } from '@react-navigation/native';
 
-export default function T002({ navigation })  {
+export default function T123({ navigation })  {
 
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
@@ -35,19 +34,23 @@ export default function T002({ navigation })  {
 
 
                 <View>
-                    <Text>Aqui você irá reconhecer os sinais e sintomas apresentados pelo paciente ou colhidos durante o exame físico, além de poder integrar a oferta dos testes rápidos ao seu atendimento. Escolha uma opção:</Text>
+                    <Text>Nessa seção você poderá conhecer um pouco sobre os idealizadores e desenvolvedores desse aplicativo, assim como as referências utilizadas para o conteúdo apresentado. Escolha uma opção:</Text>
                 </View>
 
                 </ScrollView>
 
                 <View style = {styles.containerBotao}>
                     <Botao
-                        title = "ANAMNESE E EXAME FÍSICO"
-                        onPress = { () => navigation.navigate('003-Anamnese e Exame Fisico') }
+                        title = "IDEALIZADORES DO APLICATIVO"
+                        onPress = { () => navigation.navigate('124-Idealizadores') }
                     />
                     <Botao
-                        title = "TESTES RÁPIDOS"
-                        onPress = { () => navigation.navigate('063-TestesRapidos') }
+                        title = "DESENVOLVEDORES DO APLICATIVO"
+                        onPress = { () => navigation.navigate('125-Desenvolvedores') }
+                    />
+                    <Botao
+                        title = "REFERÊNCIAS"
+                        onPress = { () => navigation.navigate('126-Referencias') }
                     />
                 </View>
             </SafeAreaView>

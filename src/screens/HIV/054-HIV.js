@@ -6,12 +6,12 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Botao from '@components/Botao';
-import Parag from '@components/Parag';
-import { useTheme } from '@react-navigation/native';
-import Imagem from '@components/Imagem';
 
-export default function T039({ navigation }) {
+import Botao from '@components/Botao';
+import Bold from '@components/Bold';
+import { useTheme } from '@react-navigation/native';
+
+export default function T054({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -27,27 +27,26 @@ export default function T039({ navigation }) {
     }
     return (
         <SafeAreaView style={styles.container}>
-            <ScrollView>
-                <View>
-                    <Parag>Seu paciente está apresenta verrugas na vulva, genitália e/ou região perianal?</Parag>
-                </View>
-                <Imagem source={require("@images/F025.png")} title={"Acompanhamento"} number={"F025"} />
-                <Imagem source={require("@images/F026.png")} title={"Acompanhamento"} number={"F026"} />
-                <Imagem source={require("@images/F027.png")} title={"Acompanhamento"} number={"F027"} />
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="SIM"
-                        onPress={() => navigation.navigate('040-VerrugaAnogenital')}
-                    />
-                    <Botao
-                        title="NÃO"
-                        onPress={() => navigation.navigate('042-VerrugaAnogenital')}
-                    />
-                </View>
 
-            </ScrollView>
+            <Text>
+                Se você chegou aqui, seu paciente apresentou teste rápido reagente para HIV. {"\n"}{"\n"}
 
+                Caso não tenha realizado os outros testes rápidos, pode oferecer. E para isso, clique em <Bold>
+                TESTES RÁPIDOS</Bold> para acessar a seção Testes Rápidos.{"\n"}{"\n"}
 
+                Caso contrário, clique em <Bold>PRÓXIMA</Bold>.{"\n"}
+            </Text>
+
+            <View style={styles.containerBotao}>
+                <Botao 
+                    title="TESTES RÁPIDOS"
+                    onPress={() => {navigation.navigate("063-TestesRapidos")}}
+                />
+                <Botao 
+                    title="PRÓXIMA"
+                    onPress={() => {navigation.navigate("055-HIV")}}
+                />
+            </View>
         </SafeAreaView>
     );
 }

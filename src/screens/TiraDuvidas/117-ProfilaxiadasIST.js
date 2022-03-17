@@ -45,7 +45,7 @@ export default function T117({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao
                     title="PROFILAXIA DAS IST EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                    onPress={() => navigation.navigate('118-ProfilaxiadasIST    ')}
+                    onPress={() => navigation.navigate('118-ProfilaxiadasIST')}
                 />
                 <Botao
                     title="PROFILAXIA DA HEPATITE B EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
