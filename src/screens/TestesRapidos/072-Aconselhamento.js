@@ -45,13 +45,13 @@ export default function Aconselhamento({ navigation }) {
             <View style={styles.containerBotao}>
 
                 <Botao
-                    title="ACEITOU fazer testes rápidos"
+                    title="TESTES RÁPIDOS"
                     onPress={() => navigation.navigate('063-TestesRapidos')}
                 />
 
                 <Botao
-                    title="mesmo assim não aceitou realizar os testes rápidos"
-                    onPress={() => navigation.navigate('044-VerrugaAnogenital')}
+                    title="FINALIZAR"
+                    onPress={() => navigation.popToTop()}
                 />
 
             </View>
