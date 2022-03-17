@@ -33,17 +33,6 @@ export default function T087({ navigation }) {
                     <Parag> Se o paciente se recusar em prosseguir o manejo, aconselhe sobre a importância do tratamento, se ainda sim não concordar, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Notifique todo o processo.</Parag>
                 </View>
 
-                <View style={styles.containerBotao}>
-                    <Botao
-                        title="MANEJO CLÍNICO"
-                        onPress={() => navigation.navigate('002-Manejo Clinico')}
-                    />
-                    <Botao
-                        title="FINALIZAR"
-                        onPress={() => navigation.navigate('001-Inicio')}
-                    />
-                </View>
-
             </ScrollView>
 
             <View style={styles.containerBotao}>

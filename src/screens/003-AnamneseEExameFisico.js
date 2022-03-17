@@ -49,7 +49,7 @@ export default function T003({ navigation })  {
                     />
                     <Botao
                         title = "SÍFILIS"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('045-Sifilis') }
                     />
                     <Botao
                         title = "HIV"

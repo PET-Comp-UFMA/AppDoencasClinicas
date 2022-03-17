@@ -60,6 +60,15 @@ import T042 from "@screens/VerrugaAnogenital/042-VerrugaAnogenital";
 import T043 from "@screens/VerrugaAnogenital/043-VerrugaAnogenital";
 import T044 from "@screens/VerrugaAnogenital/044-VerrugaAnogenital";
 
+import T045 from "@screens/Sifilis/045-Sifilis"
+import T046 from "@screens/Sifilis/046-Sifilis"
+import T047 from "@screens/Sifilis/047-Sifilis"
+import T048 from "@screens/Sifilis/048-Sifilis"
+import T049 from "@screens/Sifilis/049-Aconselhamento"
+import T050 from "@screens/Sifilis/050-Sifilis"
+import T051 from "@screens/Sifilis/051-Sifilis"
+import T053 from "@screens/Sifilis/053-Sifilis"
+
 import T054 from "@screens/HIV/054-HIV";
 import T055 from "@screens/HIV/055-HIV";
 import T056 from "@screens/HIV/056-HIV";
@@ -333,6 +342,46 @@ export default function App() {
 						name='044-VerrugaAnogenital'
 						component={T044}
 						options={{ title: "Verruga Anogenital" }} />
+					
+					<Stack.Screen
+						name='045-Sifilis'
+						component={T045}
+						options={{ title: "Sífilis" }} />
+					
+					<Stack.Screen
+						name='046-Sifilis'
+						component={T046}
+						options={{ title: "Sífilis" }} />
+
+					<Stack.Screen
+						name='047-Sifilis'
+						component={T047}
+						options={{ title: "Sífilis" }} />
+
+					<Stack.Screen
+						name='048-Sifilis'
+						component={T048}
+						options={{ title: "Sífilis" }} />
+					
+					<Stack.Screen
+						name='049-Aconselhamento'
+						component={T049}
+						options={{ title: "Aconselhamento" }} />
+					
+					<Stack.Screen
+						name='050-Sifilis'
+						component={T050}
+						options={{ title: "Sifilis" }} />
+
+					<Stack.Screen
+						name='051-Sifilis'
+						component={T051}
+						options={{ title: "Sifilis" }} />
+					
+					<Stack.Screen
+						name='053-Sifilis'
+						component={T053}
+						options={{ title: "Sifilis" }} />
 
 					<Stack.Screen
 						name='060-HepatiteBeC'
