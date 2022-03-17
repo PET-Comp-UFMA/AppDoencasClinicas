@@ -34,42 +34,43 @@ export default function T102({ navigation }) {
                 </View>
 
 
+                <View style={styles.containerBotao}>
+                    <Botao
+                        title="CORRIMENTO VAGINAL OU URETRAL"
+                        onPress={() => navigation.navigate('103-CandidiaseVulvovaginal')}
+                    />
+                    <Botao
+                        title="ÚLCERA ANOGENITAL"
+                        onPress={() => navigation.navigate('107-LinfogranulamaVenereo')}
+                    />
+                    <Botao
+                        title="VERRUGA ANOGENITAL"
+                        onPress={() => navigation.navigate('111-CondilomaAcuminado')}
+                    />
+                    <Botao
+                        title="SÍFILIS"
+                        onPress={() => navigation.navigate('112-Sifilis')}
+                    />
+                    <Botao
+                        title="HIV"
+                        onPress={() => navigation.navigate('113-HIV')}
+                    />
+                    <Botao
+                        title="HEPATITE B E C"
+                        onPress={() => navigation.navigate('114-HepatiteBeC')}
+                    />
+                    <Botao
+                        title="USO DE PRESERVARTIVOS"
+                        onPress={() => navigation.navigate('115-Preservativos')}
+                    />
+                    <Botao
+                        title="VIOLÊNCIA SEXUAL"
+                        onPress={() => navigation.navigate('116-EntendendoViolenciaSexual')}
+                    />
+                </View>
 
             </ScrollView>
-            <View style={styles.containerBotao}>
-                <Botao
-                    title="CORRIMENTO VAGINAL OU URETRAL"
-                    onPress={() => navigation.navigate('103-CandidiaseVulvovaginal')}
-                />
-                <Botao
-                    title="ÚLCERA ANOGENITAL"
-                    onPress={() => navigation.navigate('107-LinfogranulamaVenereo')}
-                />
-                <Botao
-                    title="VERRUGA ANOGENITAL"
-                    onPress={() => navigation.navigate('111-CondilomaAcuminado')}
-                />
-                <Botao
-                    title="SÍFILIS"
-                    onPress={() => navigation.navigate('112-Sifilis')}
-                />
-                <Botao
-                    title="HIV"
-                    onPress={() => navigation.navigate('113-HIV')}
-                />
-                <Botao
-                    title="HEPATITE B E C"
-                    onPress={() => navigation.navigate('114-HepatiteBeC')}
-                />
-                <Botao
-                    title="USO DE PRESERVARTIVOS"
-                    onPress={() => navigation.navigate('115-Preservativos')}
-                />
-                <Botao
-                    title="VIOLÊNCIA SEXUAL"
-                    onPress={() => navigation.navigate('116-EntendendoViolenciaSexual')}
-                />
-            </View>
+
 
         </SafeAreaView>
     );

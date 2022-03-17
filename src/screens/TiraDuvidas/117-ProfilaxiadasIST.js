@@ -38,41 +38,41 @@ export default function T117({ navigation }) {
                 </View>
 
 
+                <View style={styles.containerBotao}>
+                    <Botao
+                        title="PROFILAXIA DAS IST EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
+                        onPress={() => navigation.navigate('118-ProfilaxiadasIST')}
+                    />
+                    <Botao
+                        title="PROFILAXIA DA HEPATITE B EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
+                        onPress={() => navigation.navigate('119-ProfilaxiadasHepatiteB')}
+                    />
+                    <Botao
+                        title="PROFILAXIA DA INFECÇÃO PELO HIV EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
+                        onPress={() => navigation.navigate('120-ProfilaxiadainfecçãoporHIV')}
+                    />
+                    <Botao
+                        title="PREVENÇÃO DA GRAVIDEZ EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
+                        onPress={() => navigation.navigate('121-PrevencaodaGravidez')}
+                    />
+                    <Botao
+                        title="NOTIFICANDO A VIOLÊNCIA SEXUAL"
+                        onPress={() => navigation.navigate('122-NotificandoaViolenciaSexual')}
+                    />
+                    <Botao
+                        title="Tira Dúvidas"
+                        onPress={() => navigation.navigate('102-TiraDuvidas')}
+                    />
+                    <Botao
+                        title="Finalizar"
+                        onPress={() => navigation.navigate('001-Inicio')}
+                    />
 
+                </View>
 
             </ScrollView>
 
-            <View style={styles.containerBotao}>
-                <Botao
-                    title="PROFILAXIA DAS IST EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                    onPress={() => navigation.navigate('118-ProfilaxiadasIST')}
-                />
-                <Botao
-                    title="PROFILAXIA DA HEPATITE B EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                    onPress={() => navigation.navigate('119-ProfilaxiadasHepatiteB')}
-                />
-                <Botao
-                    title="PROFILAXIA DA INFECÇÃO PELO HIV EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                    onPress={() => navigation.navigate('120-ProfilaxiadainfecçãoporHIV')}
-                />
-                <Botao
-                    title="PREVENÇÃO DA GRAVIDEZ EM SITUAÇÃO DE VIOLÊNCIA SEXUAL"
-                    onPress={() => navigation.navigate('121-PrevencaodaGravidez')}
-                />
-                <Botao
-                    title="NOTIFICANDO A VIOLÊNCIA SEXUAL"
-                    onPress={() => navigation.navigate('122-NotificandoaViolenciaSexual')}
-                />
-                <Botao
-                    title="Tira Dúvidas"
-                    onPress={() => navigation.navigate('102-TiraDuvidas')}
-                />
-                <Botao
-                    title="Finalizar"
-                    onPress={() => navigation.navigate('001-Inicio')}
-                />
 
-            </View>
 
 
         </SafeAreaView>
