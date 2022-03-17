@@ -43,11 +43,7 @@ export default function T068({ navigation }) {
                     
                     <Botao
                         title="REALIZAR RETESTE"
-<<<<<<< HEAD
-                        onPress={() => navigation.navigate('066-RetesteSifilis')}
-=======
                         onPress={() => navigation.navigate('066-RetesteSífilis')}
->>>>>>> a7ea26a78057dbdd289455f29765f9d2b352936c
                     />
 
                     <Botao
