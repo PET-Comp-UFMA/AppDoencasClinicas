@@ -12,10 +12,9 @@ import { useTheme } from '@react-navigation/native';
 import Parag from '@components/Parag';
 import Bold from '@components/Bold';
 import Botao from '@components/Botao';
-import Imagem from "@components/Imagem";
 import Tabela from "@components/Tabela";
 
-export default function T051({ navigation }) {
+export default function T201({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -34,9 +33,11 @@ export default function T051({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Se o teste rápido foi reagente e se o usuário apresenta uma úlcera rica em treponemas, geralmente única e indolor, com borda bem definida e regular, base endurecida e fundo limpo, que ocorre no local de entrada da bactéria (pênis, vulva, vagina, colo uterino, ânus, boca, ou outros locais do tegumento), sendo denominada “cancro duro”.</Parag>
-                    <Parag>Considerar esquema terapêutico para sífilis recente e solicitar VDRL trimestralmente (mensal em gestante):</Parag>
+                    <Parag>Caso apresente apenas teste reagente:</Parag>
+                    <Parag>Considerar esquema terapêutico para sífilis latente e solicitar VDRL trimestralmente (mensal em gestante):</Parag>
+
                     <Tabela tableHead={tableHead} tableData={tableData} />
+
                     <Parag>No caso de sífilis recente em gestantes, alguns experts recomendam uma dose adicional de 2,4 milhões de unidades de penicilina benzatina, IM, uma semana após a primeira dose.</Parag>
                     <Parag>Buscar parceria sexual para investigação.</Parag>
                     <Parag>Após diagnóstico, realizar notificação.</Parag>
@@ -46,16 +47,6 @@ export default function T051({ navigation }) {
             </ScrollView>
             <View style={styles.containerBotao}>
 
-                <Botao
-                    title="USUÁRIO(A) TEM O TESTE RÁPIDO REAGENTE, MAS NÃO SÃO ESSAS CARACTÉRISTICAS"
-                    onPress={() => navigation.navigate('200-Sifilis')}
-                />
-
-                <Botao
-                    title="USUÁRIO(A) TEM APENAS O TESTE RÁPIDO REAGENTE"
-                    onPress={() => navigation.navigate('203-Sifilis')}
-                />
-                
                 <Botao
                     title="FINALIZAR"
                     onPress={() => navigation.navigate('001-Inicio')}
@@ -100,13 +91,12 @@ const tableData = [
     [
         <Text style={styles.textData}>
             <Bold>Sífilis recente</Bold>: Sífilis primária, secundária e latente recente (com até um ano de evolução).
-
         </Text>,
 
         <Text style={styles.textData}>
-            <Bold>Benzilpenicili-na benzatina</Bold> 2,4 milhões UI, IM, dose única (1,2 milhão UI em cada glúteo).
+            <Bold>Benzilpenicili-na benzatina</Bold> 2,4 milhões UI, IM, dose única (1,2 milhão UI em cada glúteo). 
         </Text>,
-        
+
         <Text style={styles.textData}>
             <Bold>Doxiciclina</Bold> 100mg, 12/12h, VO, por 15 dias
         </Text>,

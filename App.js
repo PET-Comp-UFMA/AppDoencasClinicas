@@ -67,7 +67,10 @@ import T048 from "@screens/Sifilis/048-Sifilis"
 import T049 from "@screens/Sifilis/049-Aconselhamento"
 import T050 from "@screens/Sifilis/050-Sifilis"
 import T051 from "@screens/Sifilis/051-Sifilis"
-import T053 from "@screens/Sifilis/053-Sifilis"
+import T200 from "@screens/Sifilis/200-Sifilis"
+import T201 from "@screens/Sifilis/201-Sifilis"
+import T202 from "@screens/Sifilis/202-Sifilis"
+import T203 from "@screens/Sifilis/203-Sifilis"
 
 import T054 from "@screens/HIV/054-HIV";
 import T055 from "@screens/HIV/055-HIV";
@@ -342,12 +345,12 @@ export default function App() {
 						name='044-VerrugaAnogenital'
 						component={T044}
 						options={{ title: "Verruga Anogenital" }} />
-					
+
 					<Stack.Screen
 						name='045-Sifilis'
 						component={T045}
 						options={{ title: "Sífilis" }} />
-					
+
 					<Stack.Screen
 						name='046-Sifilis'
 						component={T046}
@@ -362,12 +365,12 @@ export default function App() {
 						name='048-Sifilis'
 						component={T048}
 						options={{ title: "Sífilis" }} />
-					
+
 					<Stack.Screen
 						name='049-Aconselhamento'
 						component={T049}
 						options={{ title: "Aconselhamento" }} />
-					
+
 					<Stack.Screen
 						name='050-Sifilis'
 						component={T050}
@@ -377,10 +380,25 @@ export default function App() {
 						name='051-Sifilis'
 						component={T051}
 						options={{ title: "Sifilis" }} />
-					
+
 					<Stack.Screen
-						name='053-Sifilis'
-						component={T053}
+						name='200-Sifilis'
+						component={T200}
+						options={{ title: "Sifilis" }} />
+
+					<Stack.Screen
+						name='201-Sifilis'
+						component={T201}
+						options={{ title: "Sifilis" }} />
+
+					<Stack.Screen
+						name='202-Sifilis'
+						component={T202}
+						options={{ title: "Sifilis" }} />
+
+					<Stack.Screen
+						name='203-Sifilis'
+						component={T203}
 						options={{ title: "Sifilis" }} />
 
 					<Stack.Screen
@@ -748,7 +766,7 @@ export default function App() {
 						name='123-Sobre'
 						component={T123}
 						options={{ title: "Sobre" }} />
-					
+
 					<Stack.Screen
 						name='124-Idealizadores'
 						component={T124}
@@ -768,22 +786,22 @@ export default function App() {
 						name='054-HIV'
 						component={T054}
 						options={{ title: "HIV" }} />
-				
+
 					<Stack.Screen
 						name='055-HIV'
 						component={T055}
 						options={{ title: "HIV" }} />
-				
+
 					<Stack.Screen
 						name='056-HIV'
 						component={T056}
 						options={{ title: "HIV" }} />
-				
+
 					<Stack.Screen
 						name='057-HIV-PrEP'
 						component={T057}
 						options={{ title: "HIV - PreP" }} />
-				
+
 					<Stack.Screen
 						name='058-HIV-PEP'
 						component={T058}
