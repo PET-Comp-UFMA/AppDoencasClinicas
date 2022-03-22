@@ -8,10 +8,10 @@ import {
     Text,
     ColorPropType,
 } from 'react-native';
-import Bold from '@components/Bold';
-import Botao from '@components/Botao';
-import Imagem from '@components/Imagem';
-import Tabela from '@components/Tabela';
+import Bold from './src/components/Bold';
+import Botao from './src/components/Botao';
+import Imagem from './src/components/Imagem';
+import Tabela from './src/components/Tabela';
 import { useTheme } from '@react-navigation/native';
 
 export default function T008({ navigation })  {

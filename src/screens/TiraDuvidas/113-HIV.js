@@ -6,10 +6,10 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Bold from '@components/Bold';
-import Parag from '@components/Parag';
-import Botao from '@components/Botao';
-import Tabela from '@components/Tabela';
+import Bold from './src/components/Bold';
+import Parag from './src/components/Parag';
+import Botao from './src/components/Botao';
+import Tabela from './src/components/Tabela';
 import { useTheme } from '@react-navigation/native';
 
 export default function T113({ navigation }) {

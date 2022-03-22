@@ -9,7 +9,7 @@ import {
 import { setStatusBarBackgroundColor, setStatusBarStyle} from 'expo-status-bar';
 
 
-import Fechar from '@icons/close.svg';
+import Fechar from './src/assets/icons/close.svg';
 
 import { BlurView } from 'expo-blur';
 

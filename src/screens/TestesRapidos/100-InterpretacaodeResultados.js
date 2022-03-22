@@ -9,10 +9,10 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
-import Parag from '@components/Parag';
-import Bold from '@components/Bold';
-import Botao from '@components/Botao';
-import Imagem from "@components/Imagem";
+import Parag from './src/components/Parag';
+import Bold from './src/components/Bold';
+import Botao from './src/components/Botao';
+import Imagem from "./src/components/Imagem";
 
 export default function T100({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
@@ -40,17 +40,17 @@ export default function T100({ navigation }) {
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F033.png")} title={"Acompanhamento"} number={"F033"}/>
+                    <Imagem source={require("./src/assets/images/F033.png")} title={"Acompanhamento"} number={"F033"}/>
                     <Parag>Qualquer intensidade de linha colorida na área de teste é considerado como resultado reagente.</Parag>
                 </View>
 
                 <View>
-                    <Imagem source={require("@images/F034.png")} title={"Acompanhamento"} number={"F034"}/>
+                    <Imagem source={require("./src/assets/images/F034.png")} title={"Acompanhamento"} number={"F034"}/>
                     <Parag>Quando aparece somente a linha colorida do controle o resultado é não reagente.</Parag>
                 </View>
 
                 <View>
-                <Imagem source={require("@images/F035.png")} title={"Acompanhamento"} number={"F035"}/>
+                <Imagem source={require("./src/assets/images/F035.png")} title={"Acompanhamento"} number={"F035"}/>
                 <Parag>Caso tenha concluído, clique em <Bold>FINALIZAR</Bold>, e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Ou na seta para a <Bold>ESQUERDA</Bold>, caso precise relembrar algo.</Parag>
                 </View>
 

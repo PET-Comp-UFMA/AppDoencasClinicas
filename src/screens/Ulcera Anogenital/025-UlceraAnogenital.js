@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, SafeAreaView, StyleSheet} from "react-native";
 
-import Botao from '@components/Botao';
+import Botao from './src/components/Botao';
 import { useTheme } from '@react-navigation/native';
 
 export default function T025({navigation}) {

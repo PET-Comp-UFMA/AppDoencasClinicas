@@ -7,7 +7,7 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Botao from '@components/Botao';
+import Botao from './src/components/Botao';
 
 
 

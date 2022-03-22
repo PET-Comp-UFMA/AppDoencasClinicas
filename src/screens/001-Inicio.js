@@ -8,12 +8,12 @@ import {
     Text,
 } from 'react-native';
 
-import Botao from '@components/Botao';
+import Botao from './src/components/Botao';
 
-import Logo from '@icons/Logo.svg';
+import Logo from './src/assets/icons/Logo.svg';
 
 import { useTheme } from '@react-navigation/native';
-import Bold from '@components/Bold'
+import Bold from './src/components/Bold'
 
 
 

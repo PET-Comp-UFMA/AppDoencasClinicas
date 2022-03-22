@@ -8,8 +8,8 @@ import {
     Text,
     ColorPropType,
 } from 'react-native';
-import Botao from '@components/Botao';
-import Imagem from '@components/Imagem';
+import Botao from './src/components/Botao';
+import Imagem from './src/components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
 export default function T013({ navigation })  {
@@ -35,9 +35,9 @@ export default function T013({ navigation })  {
                         <Text>Podendo haver:</Text>
                         <Text>Plurido vulvar, disúria e hiperemia da mucosa</Text>
                         
-                        <Imagem source={require("@images/F007.png")} title={"Corrimento Vaginal"} number={"F007"}/>
-                        <Imagem source={require("@images/F008.png")} title={"Corrimento Vaginal"} number={"F008"}/>
-                        <Imagem source={require("@images/F009.png")} title={"Corrimento Vaginal"} number={"F009"}/>
+                        <Imagem source={require("./src/assets/images/F007.png")} title={"Corrimento Vaginal"} number={"F007"}/>
+                        <Imagem source={require("./src/assets/images/F008.png")} title={"Corrimento Vaginal"} number={"F008"}/>
+                        <Imagem source={require("./src/assets/images/F009.png")} title={"Corrimento Vaginal"} number={"F009"}/>
                     </View>
 
                 </ScrollView>

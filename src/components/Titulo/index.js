@@ -11,7 +11,7 @@ import {useNavigation} from '@react-navigation/native';
 
 import { useTheme } from '@react-navigation/native';
 
-import Seta from '@icons/left.svg';
+import Seta from './src/assets/icons/left.svg';
 
 
 

@@ -6,10 +6,10 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Botao from '@components/Botao';
-import Parag from '@components/Parag';
+import Botao from './src/components/Botao';
+import Parag from './src/components/Parag';
 import { useTheme } from '@react-navigation/native';
-import Imagem from '@components/Imagem';
+import Imagem from './src/components/Imagem';
 
 export default function T039({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
@@ -31,9 +31,9 @@ export default function T039({ navigation }) {
                 <View>
                     <Parag>Seu paciente está apresenta verrugas na vulva, genitália e/ou região perianal?</Parag>
                 </View>
-                <Imagem source={require("@images/F025.png")} title={"Acompanhamento"} number={"F025"} />
-                <Imagem source={require("@images/F026.png")} title={"Acompanhamento"} number={"F026"} />
-                <Imagem source={require("@images/F027.png")} title={"Acompanhamento"} number={"F027"} />
+                <Imagem source={require("./src/assets/images/F025.png")} title={"Acompanhamento"} number={"F025"} />
+                <Imagem source={require("./src/assets/images/F026.png")} title={"Acompanhamento"} number={"F026"} />
+                <Imagem source={require("./src/assets/images/F027.png")} title={"Acompanhamento"} number={"F027"} />
                 <View style={styles.containerBotao}>
                     <Botao
                         title="SIM"

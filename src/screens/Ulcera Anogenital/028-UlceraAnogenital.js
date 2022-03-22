@@ -1,8 +1,8 @@
 import React from "react";
 import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 
-import Botao from "@components/Botao";
-import Imagem from "@components/Imagem";
+import Botao from "./src/components/Botao";
+import Imagem from "./src/components/Imagem";
 import { useTheme } from '@react-navigation/native';
 
 export default function T026({navigation}) {
@@ -29,9 +29,9 @@ export default function T026({navigation}) {
                 </Text>
 
                
-                <Imagem source={require("@images/F016.png")} title={"Acompanhamento"} number={"F016"}/>
-                <Imagem source={require("@images/F017.png")} title={"Acompanhamento"} number={"F017"}/>
-                <Imagem source={require("@images/F018.png")} title={"Acompanhamento"} number={"F018"}/>
+                <Imagem source={require("./src/assets/images/F016.png")} title={"Acompanhamento"} number={"F016"}/>
+                <Imagem source={require("./src/assets/images/F017.png")} title={"Acompanhamento"} number={"F017"}/>
+                <Imagem source={require("./src/assets/images/F018.png")} title={"Acompanhamento"} number={"F018"}/>
 
             </ScrollView>
 

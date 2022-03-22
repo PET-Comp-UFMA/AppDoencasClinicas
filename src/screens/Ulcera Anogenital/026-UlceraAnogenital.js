@@ -1,8 +1,8 @@
 import React from "react";
 import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 
-import Botao from "@components/Botao";
-import Imagem from "@components/Imagem";
+import Botao from "./src/components/Botao";
+import Imagem from "./src/components/Imagem";
 import { useTheme } from '@react-navigation/native';
 
 export default function T026({navigation}) {
@@ -55,9 +55,9 @@ export default function T026({navigation}) {
                 </Text>
 
                
-                <Imagem source={require("@images/F013.png")} title={"Acompanhamento"} number={"F013"}/>
-                <Imagem source={require("@images/F014.png")} title={"Acompanhamento"} number={"F014"}/>
-                <Imagem source={require("@images/F015.png")} title={"Acompanhamento"} number={"F015"}/>
+                <Imagem source={require("./src/assets/images/F013.png")} title={"Acompanhamento"} number={"F013"}/>
+                <Imagem source={require("./src/assets/images/F014.png")} title={"Acompanhamento"} number={"F014"}/>
+                <Imagem source={require("./src/assets/images/F015.png")} title={"Acompanhamento"} number={"F015"}/>
 
                 <Text>
                 Considerar consulta médica para
