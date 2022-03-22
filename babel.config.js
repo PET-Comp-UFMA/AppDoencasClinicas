@@ -9,11 +9,11 @@ module.exports = function(api) {
               root: ['.'],
               extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json', '.svg'],
               alias: {
-                  './src/components': './src/components',
-                  './src/screens': './src/screens',
-                  './src/assets/images': './src/assets/images',
-                  './src/assets/icons': './src/assets/icons',
-                  './src/assets/fonts': './src/assets/fonts'
+                  'src/components': 'src/components',
+                  'src/screens': 'src/screens',
+                  'src/assets/images': 'src/assets/images',
+                  'src/assets/icons': 'src/assets/icons',
+                  'src/assets/fonts': 'src/assets/fonts'
               },
           },
       ]

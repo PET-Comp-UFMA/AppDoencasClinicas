@@ -6,12 +6,12 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Botao from './src/components/Botao';
-import Parag from './src/components/Parag';
+import Botao from 'src/components/Botao';
+import Parag from 'src/components/Parag';
 import { useTheme } from '@react-navigation/native';
-import Imagem from './src/components/Imagem';
-import Tabela from "./src/components/Tabela";
-import Bold from './src/components/Bold';
+import Imagem from 'src/components/Imagem';
+import Tabela from "src/components/Tabela";
+import Bold from 'src/components/Bold';
 
 export default function T040({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
@@ -38,7 +38,7 @@ export default function T040({ navigation }) {
                 <View>
                     <Parag>Considerar consulta médica para diagnóstico diferencial para HPV.</Parag>
                     <Parag>Considere seguir o fluxograma abaixo.</Parag>
-                    <Imagem source={require("./src/assets/images/F028.png")} title={"TITULO"} number={"F028"} />
+                    <Imagem source={require("src/assets/images/F028.png")} title={"TITULO"} number={"F028"} />
                     <Parag>Buscar parceria sexual para investigação.</Parag>
                 </View>
                 <View style={styles.containerBotao}>

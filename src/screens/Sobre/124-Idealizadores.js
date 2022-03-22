@@ -7,9 +7,9 @@ import {
     Text,
     Linking
 } from 'react-native';
-import Botao from './src/components/Botao';
-import Imagem from './src/components/Imagem';
-import Bold from './src/components/Bold';
+import Botao from 'src/components/Botao';
+import Imagem from 'src/components/Imagem';
+import Bold from 'src/components/Bold';
 
 import { useTheme } from '@react-navigation/native';
 import { TouchableRipple } from 'react-native-paper';
@@ -36,7 +36,7 @@ export default function T124({ navigation })  {
                 <ScrollView>
 
                     <View>
-                        <Imagem source={require("./src/assets/images/F043.png")} title={"Ismael Moreira de Sousa"} number={"F007"}/>
+                        <Imagem source={require("src/assets/images/F043.png")} title={"Ismael Moreira de Sousa"} number={"F007"}/>
                         <Text><Bold>Ismael Moreira de Sousa</Bold></Text>
                         <Text>Graduado em Enfermagem pela Faculdade de Ensino e Cultura do Ceará (FAECE).</Text>
                         <Text>Especialista em Saúde da Família pelo Centro Universitário Ateneu.</Text>
@@ -45,7 +45,7 @@ export default function T124({ navigation })  {
                     </View>
 
                     <View>
-                        <Imagem source={require("./src/assets/images/F044.png")} title={"Leilane Barbosa de Sousa"} number={"F007"}/>
+                        <Imagem source={require("src/assets/images/F044.png")} title={"Leilane Barbosa de Sousa"} number={"F007"}/>
                         <Text><Bold>Leilane Barbosa de Sousa</Bold></Text>
                         <Text>Atualmente é professora adjunta do Curso de Graduação em Enfermagem e docente do quadro permamente do Mestrado Acadêmico em Enfermagem, ambos da Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB).</Text>
                         <Text style={styles.hiperlink}onPress={() => {Linking.openURL('http://lattes.cnpq.br/8829820331920241')}}>Lattes: Aperte aqui</Text>

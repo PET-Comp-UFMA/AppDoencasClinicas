@@ -6,10 +6,10 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Bold from './src/components/Bold';
-import Imagem from './src/components/Imagem';
-import Parag from './src/components/Parag';
-import Botao from './src/components/Botao';
+import Bold from 'src/components/Bold';
+import Imagem from 'src/components/Imagem';
+import Parag from 'src/components/Parag';
+import Botao from 'src/components/Botao';
 import { useTheme } from '@react-navigation/native';
 
 export default function T115({ navigation }) {
@@ -34,20 +34,20 @@ export default function T115({ navigation }) {
                     <Parag><Bold>Preservativos Masculinos</Bold></Parag>
                 </View>
                 <View>
-                    <Imagem source={require("./src/assets/images/F039.png")} title={""} number={"F039"} />
+                    <Imagem source={require("src/assets/images/F039.png")} title={""} number={"F039"} />
                 </View>
                 <View>
-                    <Imagem source={require("./src/assets/images/F040.png")} title={""} number={"F040"} />
+                    <Imagem source={require("src/assets/images/F040.png")} title={""} number={"F040"} />
                 </View>
 
                 <View style={{ marginTop: 20 }}>
                     <Parag><Bold>Preservativos Femininos</Bold></Parag>
                 </View>
                 <View>
-                    <Imagem source={require("./src/assets/images/F041.png")} title={""} number={"F041"} />
+                    <Imagem source={require("src/assets/images/F041.png")} title={""} number={"F041"} />
                 </View>
                 <View>
-                    <Imagem source={require("./src/assets/images/F042.png")} title={""} number={"F042"} />
+                    <Imagem source={require("src/assets/images/F042.png")} title={""} number={"F042"} />
                 </View>
 
                 <View>

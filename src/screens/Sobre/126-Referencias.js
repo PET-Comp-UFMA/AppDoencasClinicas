@@ -8,10 +8,10 @@ import {
     Linking
 } from 'react-native';
 
-import Tabela from "./src/components/Tabela";
-import Botao from './src/components/Botao';
-import Imagem from './src/components/Imagem';
-import Bold from './src/components/Bold';
+import Tabela from "src/components/Tabela";
+import Botao from 'src/components/Botao';
+import Imagem from 'src/components/Imagem';
+import Bold from 'src/components/Bold';
 
 import { useTheme } from '@react-navigation/native';
 import { TouchableRipple } from 'react-native-paper';

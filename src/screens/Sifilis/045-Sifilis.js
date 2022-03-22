@@ -9,10 +9,10 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
-import Parag from './src/components/Parag';
-import Bold from './src/components/Bold';
-import Botao from './src/components/Botao';
-import Imagem from "./src/components/Imagem";
+import Parag from 'src/components/Parag';
+import Bold from 'src/components/Bold';
+import Botao from 'src/components/Botao';
+import Imagem from "src/components/Imagem";
 
 export default function T045({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
@@ -34,9 +34,9 @@ export default function T045({ navigation }) {
             <ScrollView>
                 <View>
                     <Parag>Seu paciente apresenta erupções cutâneas, única ou múltiplas, na genitália e/ou palma das mãos e/ou na planta dos pés?</Parag>
-                    <Imagem source={require("./src/assets/images/F030.png")} title={"F030"}/>
-                    <Imagem source={require("./src/assets/images/F031.png")} title={"F031"}/>
-                    <Imagem source={require("./src/assets/images/F032.png")} title={"F032"}/>
+                    <Imagem source={require("src/assets/images/F030.png")} title={"F030"}/>
+                    <Imagem source={require("src/assets/images/F031.png")} title={"F031"}/>
+                    <Imagem source={require("src/assets/images/F032.png")} title={"F032"}/>
                 </View>
 
             </ScrollView>

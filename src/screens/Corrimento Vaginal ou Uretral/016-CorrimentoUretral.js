@@ -8,8 +8,8 @@ import {
     Text,
     ColorPropType,
 } from 'react-native';
-import Botao from './src/components/Botao';
-import Imagem from './src/components/Imagem';
+import Botao from 'src/components/Botao';
+import Imagem from 'src/components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
 export default function T016({ navigation })  {
@@ -33,9 +33,9 @@ export default function T016({ navigation })  {
                         <Text>Se não é corrimento vaginal, pode ser uretral.</Text>
                         <Text>Existe corrimento uretral mucopurulento, com volume variável, associado a dor uretral (independenteda micção), disúria, estrangúria, plurido uretral e eritema de meato uretral?</Text>
                         
-                        <Imagem source={require("./src/assets/images/F010.png")} title={"Corrimento Uretral"} number={"F010"}/>
-                        <Imagem source={require("./src/assets/images/F011.png")} title={"Corrimento Uretral"} number={"F011"}/>
-                        <Imagem source={require("./src/assets/images/F012.png")} title={"Corrimento Uretral"} number={"F012"}/>
+                        <Imagem source={require("src/assets/images/F010.png")} title={"Corrimento Uretral"} number={"F010"}/>
+                        <Imagem source={require("src/assets/images/F011.png")} title={"Corrimento Uretral"} number={"F011"}/>
+                        <Imagem source={require("src/assets/images/F012.png")} title={"Corrimento Uretral"} number={"F012"}/>
                     </View>
 
                 </ScrollView>

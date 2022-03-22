@@ -9,10 +9,10 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
-import Parag from './src/components/Parag';
-import Bold from './src/components/Bold';
-import Botao from './src/components/Botao';
-import Imagem from "./src/components/Imagem";
+import Parag from 'src/components/Parag';
+import Bold from 'src/components/Bold';
+import Botao from 'src/components/Botao';
+import Imagem from "src/components/Imagem";
 
 export default function Aconselhamento({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
@@ -35,7 +35,7 @@ export default function Aconselhamento({ navigation }) {
                 <View>
                     <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
                 </View>
-                <Imagem source={require("./src/assets/images/F029.png")} title={"Acompanhamento"} number={"F029"} />
+                <Imagem source={require("src/assets/images/F029.png")} title={"Acompanhamento"} number={"F029"} />
                 <View>
                     <Parag>Caso seu paciente aceite realizar, clique em <Bold>TESTES RÁPIDOS</Bold>.</Parag>
                     <Parag>Se não, clique em <Bold>FINALIZAR</Bold> e será direcionado ao menu principal.</Parag>

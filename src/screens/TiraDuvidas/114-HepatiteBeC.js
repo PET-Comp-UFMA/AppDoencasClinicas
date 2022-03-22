@@ -6,11 +6,11 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Bold from './src/components/Bold';
-import Imagem from './src/components/Imagem';
-import Parag from './src/components/Parag';
-import Botao from './src/components/Botao';
-import Tabela from './src/components/Tabela';
+import Bold from 'src/components/Bold';
+import Imagem from 'src/components/Imagem';
+import Parag from 'src/components/Parag';
+import Botao from 'src/components/Botao';
+import Tabela from 'src/components/Tabela';
 import { useTheme } from '@react-navigation/native';
 
 export default function T114({ navigation }) {
@@ -48,14 +48,14 @@ export default function T114({ navigation }) {
                     <Parag>Investigação inicial da infecção pelo HBV utilizando TR-HBsAg.</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("./src/assets/images/F037.png")} title={""} number={"F036"} />
+                    <Imagem source={require("src/assets/images/F037.png")} title={""} number={"F036"} />
                 </View>
 
                 <View>
                     <Parag>Investigação o inicial da infecção pelo vírus da hepatite C (HCV) utilizando testes rápidos.</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("./src/assets/images/F038.png")} title={""} number={"F037"} />
+                    <Imagem source={require("src/assets/images/F038.png")} title={""} number={"F037"} />
                 </View>
 
                 <View>

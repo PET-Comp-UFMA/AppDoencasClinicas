@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, SafeAreaView, ScrollView, StyleSheet, Text } from "react-native";
 
-import Tabela from "./src/components/Tabela";
-import Bold from "./src/components/Bold";
-import Botao from './src/components/Botao';
+import Tabela from "src/components/Tabela";
+import Bold from "src/components/Bold";
+import Botao from 'src/components/Botao';
 import { useTheme } from '@react-navigation/native';
 
 export default function T31({navigation}) {

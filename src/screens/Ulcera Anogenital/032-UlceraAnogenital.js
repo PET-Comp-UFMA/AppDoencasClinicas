@@ -1,8 +1,8 @@
 import React from "react";
 import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 
-import Botao from "./src/components/Botao";
-import Imagem from "./src/components/Imagem";
+import Botao from "src/components/Botao";
+import Imagem from "src/components/Imagem";
 import { useTheme } from '@react-navigation/native';
 
 
@@ -28,9 +28,9 @@ export default function T032({navigation}) {
                 <Text>
                 O(a) usuário(a) apresenta lesões dolorosas, geralmente múltiplas, com borda irregular, apresentando contornos eritemato-edematosos e fundo heterogêneo, recoberto por exsudato necrótico, amarelado, com odor fétido?
                 </Text>
-                <Imagem source={require("./src/assets/images/F022.png")} title={"Acompanhamento"} number={"F022"}/>
-                <Imagem source={require("./src/assets/images/F023.png")} title={"Acompanhamento"} number={"F023"}/>
-                <Imagem source={require("./src/assets/images/F024.png")} title={"Acompanhamento"} number={"F024"}/>
+                <Imagem source={require("src/assets/images/F022.png")} title={"Acompanhamento"} number={"F022"}/>
+                <Imagem source={require("src/assets/images/F023.png")} title={"Acompanhamento"} number={"F023"}/>
+                <Imagem source={require("src/assets/images/F024.png")} title={"Acompanhamento"} number={"F024"}/>
             </ScrollView>
 
             <View style={styles.containerBotao}>

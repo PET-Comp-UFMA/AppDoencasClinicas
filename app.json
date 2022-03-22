@@ -4,7 +4,7 @@
     "slug": "AppDoencasClinicas",
     "userInterfaceStyle": "automatic",
     "version": "1.0.0",
-    "icon": "./src/assets/icons/Icon.png",
+    "icon": "src/assets/icons/Icon.png",
     "assetBundlePatterns": [
       "**/*"
     ],
