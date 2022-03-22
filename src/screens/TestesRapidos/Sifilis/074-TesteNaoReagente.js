@@ -9,10 +9,10 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
-import Parag from 'src/components/Parag';
-import Bold from 'src/components/Bold';
-import Botao from 'src/components/Botao';
-import Imagem from "src/components/Imagem";
+import Parag from '../../../components/Parag';
+import Bold from '../../../components/Bold';
+import Botao from '../../../components/Botao';
+import Imagem from "../../../components/Imagem";
 
 export default function T071({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
@@ -35,7 +35,7 @@ export default function T071({ navigation }) {
                 <View >
                     <Parag>Realizar aconselhamento sobre prevenção combinada, e fale da importância do teste.</Parag>
                 </View>
-                <Imagem source={require("src/assets/images/F029.png")} title={"Acompanhamento"} number={"F029"}/>
+                <Imagem source={require("../../../assets/images/F029.png")} title={"Acompanhamento"} number={"F029"}/>
                 <View >
                     <Parag>Mesmo <Bold>NÃO REAGENTE</Bold> e o paciente apresenta manifestações clínicas, é aconselhável soliciar o exame sorológico (VDRL) para maiores esclarecimentos, assim como conversar com profissional médico para decisão de conduta.</Parag>
                     <Parag>Se foi <Bold>NÃO REAGENTE</Bold> e não exista manifestações clínicas, e posteriomente surjam sintomas, oriente procurar o serviço de saúde. Notifique tudo.</Parag>

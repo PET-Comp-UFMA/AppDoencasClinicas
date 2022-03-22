@@ -7,7 +7,7 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Botao from 'src/components/Botao';
+import Botao from '../../components/Botao';
 
 
 import { useTheme } from '@react-navigation/native';

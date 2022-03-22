@@ -10,7 +10,7 @@ import {
 } from "react-native"
 
 
-import ScreenModalImage from "../ScreenModalImage";
+import ScreenModalImage from "./ScreenModalImage";
 
 export default class Imagem extends Component {
 

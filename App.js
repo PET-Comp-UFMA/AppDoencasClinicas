@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { View } from 'react-native';
 
-import Titulo from 'src/components/Titulo';
+import Titulo from './src/components/Titulo';
 
 import { useTheme } from '@react-navigation/native';
 
@@ -19,139 +19,139 @@ import { useColorScheme } from 'react-native';
 
 
 // Telas
-import T001 from 'src/screens/001-Inicio';
-import T002 from 'src/screens/002-ManejoClinico';
-import T003 from 'src/screens/003-AnamneseEExameFisico';
+import T001 from './src/screens/001-Inicio';
+import T002 from './src/screens/002-ManejoClinico';
+import T003 from './src/screens/003-AnamneseEExameFisico';
 
-import T004 from 'src/screens/Corrimento Vaginal ou Uretral/004-CorrimentoVaginalOuUretral';
-import T005 from 'src/screens/Corrimento Vaginal ou Uretral/005-CorrimentoVaginal';
-import T006 from 'src/screens/Corrimento Vaginal ou Uretral/006-CorrimentoVaginal';
-import T007 from 'src/screens/Corrimento Vaginal ou Uretral/007-CorrimentoVaginal';
-import T008 from 'src/screens/Corrimento Vaginal ou Uretral/008-CorrimentoVaginal';
-import T009 from 'src/screens/Corrimento Vaginal ou Uretral/009-CorrimentoVaginal';
-import T010 from 'src/screens/Corrimento Vaginal ou Uretral/010-CorrimentoVaginal';
-import T011 from 'src/screens/Corrimento Vaginal ou Uretral/011-CorrimentoVaginal';
-import T012 from 'src/screens/Corrimento Vaginal ou Uretral/012-CorrimentoVaginal';
-import T013 from 'src/screens/Corrimento Vaginal ou Uretral/013-CorrimentoVaginal';
-import T014 from 'src/screens/Corrimento Vaginal ou Uretral/014-CorrimentoVaginal';
-import T015 from 'src/screens/Corrimento Vaginal ou Uretral/015-CorrimentoUretral';
-import T016 from 'src/screens/Corrimento Vaginal ou Uretral/016-CorrimentoUretral';
-import T017 from 'src/screens/Corrimento Vaginal ou Uretral/017-CorrimentoUretral';
-import T018 from 'src/screens/Corrimento Vaginal ou Uretral/018-CorrimentoUretral';
-import T019 from 'src/screens/Corrimento Vaginal ou Uretral/019-CorrimentoUretral';
-import T023 from 'src/screens/Corrimento Vaginal ou Uretral/023-CorrimentoVaginal';
-import T024 from 'src/screens/Corrimento Vaginal ou Uretral/024-CorrimentoUretral';
+import T004 from './src/screens/Corrimento Vaginal ou Uretral/004-CorrimentoVaginalOuUretral';
+import T005 from './src/screens/Corrimento Vaginal ou Uretral/005-CorrimentoVaginal';
+import T006 from './src/screens/Corrimento Vaginal ou Uretral/006-CorrimentoVaginal';
+import T007 from './src/screens/Corrimento Vaginal ou Uretral/007-CorrimentoVaginal';
+import T008 from './src/screens/Corrimento Vaginal ou Uretral/008-CorrimentoVaginal';
+import T009 from './src/screens/Corrimento Vaginal ou Uretral/009-CorrimentoVaginal';
+import T010 from './src/screens/Corrimento Vaginal ou Uretral/010-CorrimentoVaginal';
+import T011 from './src/screens/Corrimento Vaginal ou Uretral/011-CorrimentoVaginal';
+import T012 from './src/screens/Corrimento Vaginal ou Uretral/012-CorrimentoVaginal';
+import T013 from './src/screens/Corrimento Vaginal ou Uretral/013-CorrimentoVaginal';
+import T014 from './src/screens/Corrimento Vaginal ou Uretral/014-CorrimentoVaginal';
+import T015 from './src/screens/Corrimento Vaginal ou Uretral/015-CorrimentoUretral';
+import T016 from './src/screens/Corrimento Vaginal ou Uretral/016-CorrimentoUretral';
+import T017 from './src/screens/Corrimento Vaginal ou Uretral/017-CorrimentoUretral';
+import T018 from './src/screens/Corrimento Vaginal ou Uretral/018-CorrimentoUretral';
+import T019 from './src/screens/Corrimento Vaginal ou Uretral/019-CorrimentoUretral';
+import T023 from './src/screens/Corrimento Vaginal ou Uretral/023-CorrimentoVaginal';
+import T024 from './src/screens/Corrimento Vaginal ou Uretral/024-CorrimentoUretral';
 
 
-import T025 from 'src/screens/Ulcera Anogenital/025-UlceraAnogenital';
-import T026 from 'src/screens/Ulcera Anogenital/026-UlceraAnogenital';
-import T027 from 'src/screens/Ulcera Anogenital/027-UlceraAnogenital';
-import T028 from 'src/screens/Ulcera Anogenital/028-UlceraAnogenital';
-import T029 from 'src/screens/Ulcera Anogenital/029-UlceraAnogenital';
-import T030 from "src/screens/Ulcera Anogenital/030-UlceraAnogenital";
-import T031 from "src/screens/Ulcera Anogenital/031-UlceraAnogenital";
-import T032 from "src/screens/Ulcera Anogenital/032-UlceraAnogenital";
-import T033 from "src/screens/Ulcera Anogenital/033-UlceraAnogenital";
-import T034 from "src/screens/Ulcera Anogenital/034-UlceraAnogenital";
+import T025 from './src/screens/Ulcera Anogenital/025-UlceraAnogenital';
+import T026 from './src/screens/Ulcera Anogenital/026-UlceraAnogenital';
+import T027 from './src/screens/Ulcera Anogenital/027-UlceraAnogenital';
+import T028 from './src/screens/Ulcera Anogenital/028-UlceraAnogenital';
+import T029 from './src/screens/Ulcera Anogenital/029-UlceraAnogenital';
+import T030 from "./src/screens/Ulcera Anogenital/030-UlceraAnogenital";
+import T031 from "./src/screens/Ulcera Anogenital/031-UlceraAnogenital";
+import T032 from "./src/screens/Ulcera Anogenital/032-UlceraAnogenital";
+import T033 from "./src/screens/Ulcera Anogenital/033-UlceraAnogenital";
+import T034 from "./src/screens/Ulcera Anogenital/034-UlceraAnogenital";
 
-import T039 from "src/screens/VerrugaAnogenital/039-VerrugaAnogenital";
-import T040 from "src/screens/VerrugaAnogenital/040-VerrugaAnogenital";
-import T042 from "src/screens/VerrugaAnogenital/042-VerrugaAnogenital";
-import T043 from "src/screens/VerrugaAnogenital/043-VerrugaAnogenital";
-import T044 from "src/screens/VerrugaAnogenital/044-VerrugaAnogenital";
+import T039 from "./src/screens/VerrugaAnogenital/039-VerrugaAnogenital";
+import T040 from "./src/screens/VerrugaAnogenital/040-VerrugaAnogenital";
+import T042 from "./src/screens/VerrugaAnogenital/042-VerrugaAnogenital";
+import T043 from "./src/screens/VerrugaAnogenital/043-VerrugaAnogenital";
+import T044 from "./src/screens/VerrugaAnogenital/044-VerrugaAnogenital";
 
-import T045 from "src/screens/Sifilis/045-Sifilis"
-import T046 from "src/screens/Sifilis/046-Sifilis"
-import T047 from "src/screens/Sifilis/047-Sifilis"
-import T048 from "src/screens/Sifilis/048-Sifilis"
-import T049 from "src/screens/Sifilis/049-Aconselhamento"
-import T050 from "src/screens/Sifilis/050-Sifilis"
-import T051 from "src/screens/Sifilis/051-Sifilis"
-import T200 from "src/screens/Sifilis/200-Sifilis"
-import T201 from "src/screens/Sifilis/201-Sifilis"
-import T202 from "src/screens/Sifilis/202-Sifilis"
-import T203 from "src/screens/Sifilis/203-Sifilis"
+import T045 from "./src/screens/Sifilis/045-Sifilis"
+import T046 from "./src/screens/Sifilis/046-Sifilis"
+import T047 from "./src/screens/Sifilis/047-Sifilis"
+import T048 from "./src/screens/Sifilis/048-Sifilis"
+import T049 from "./src/screens/Sifilis/049-Aconselhamento"
+import T050 from "./src/screens/Sifilis/050-Sifilis"
+import T051 from "./src/screens/Sifilis/051-Sifilis"
+import T200 from "./src/screens/Sifilis/200-Sifilis"
+import T201 from "./src/screens/Sifilis/201-Sifilis"
+import T202 from "./src/screens/Sifilis/202-Sifilis"
+import T203 from "./src/screens/Sifilis/203-Sifilis"
 
-import T054 from "src/screens/HIV/054-HIV";
-import T055 from "src/screens/HIV/055-HIV";
-import T056 from "src/screens/HIV/056-HIV";
-import T057 from "src/screens/HIV/057-HIV-PrEP";
-import T058 from "src/screens/HIV/058-HIV-PEP";
+import T054 from "./src/screens/HIV/054-HIV";
+import T055 from "./src/screens/HIV/055-HIV";
+import T056 from "./src/screens/HIV/056-HIV";
+import T057 from "./src/screens/HIV/057-HIV-PrEP";
+import T058 from "./src/screens/HIV/058-HIV-PEP";
 
-import T060 from 'src/screens/Hepatite B e C/060-HepatiteBeC';
-import T061 from 'src/screens/Hepatite B e C/061-HepatiteBeC';
-import T062 from 'src/screens/Hepatite B e C/062-HepatiteBeC';
+import T060 from './src/screens/Hepatite B e C/060-HepatiteBeC';
+import T061 from './src/screens/Hepatite B e C/061-HepatiteBeC';
+import T062 from './src/screens/Hepatite B e C/062-HepatiteBeC';
 
-import T063 from 'src/screens/TestesRapidos/063-TestesRapidos';
+import T063 from './src/screens/TestesRapidos/063-TestesRapidos';
 
-import T064 from 'src/screens/TestesRapidos/Sifilis/064-TesteRapidoSifilis';
-import T065 from 'src/screens/TestesRapidos/Sifilis/065-TesteRapidoSifilis';
-import T066 from 'src/screens/TestesRapidos/Sifilis/066-RetesteSifilis';
-import T067 from 'src/screens/TestesRapidos/Sifilis/067-RetesteSifilis';
-import T068 from 'src/screens/TestesRapidos/Sifilis/068-RetesteSifilis';
-import T069 from 'src/screens/TestesRapidos/Sifilis/069-TesteRapidoSifilis';
-import T070 from 'src/screens/TestesRapidos/Sifilis/070-RetesteSifilis';
-import T071 from 'src/screens/TestesRapidos/Sifilis/071-RetesteSifilis';
+import T064 from './src/screens/TestesRapidos/Sifilis/064-TesteRapidoSifilis';
+import T065 from './src/screens/TestesRapidos/Sifilis/065-TesteRapidoSifilis';
+import T066 from './src/screens/TestesRapidos/Sifilis/066-RetesteSifilis';
+import T067 from './src/screens/TestesRapidos/Sifilis/067-RetesteSifilis';
+import T068 from './src/screens/TestesRapidos/Sifilis/068-RetesteSifilis';
+import T069 from './src/screens/TestesRapidos/Sifilis/069-TesteRapidoSifilis';
+import T070 from './src/screens/TestesRapidos/Sifilis/070-RetesteSifilis';
+import T071 from './src/screens/TestesRapidos/Sifilis/071-RetesteSifilis';
 
-import T072 from 'src/screens/TestesRapidos/072-Aconselhamento';
-import T073 from 'src/screens/TestesRapidos/073-Indisponivel';
-import T074 from 'src/screens/TestesRapidos/Sifilis/074-TesteNaoReagente';
+import T072 from './src/screens/TestesRapidos/072-Aconselhamento';
+import T073 from './src/screens/TestesRapidos/073-Indisponivel';
+import T074 from './src/screens/TestesRapidos/Sifilis/074-TesteNaoReagente';
 
-import T076 from 'src/screens/TestesRapidos/HIV/076-TesteRapidoHIV';
-import T077 from 'src/screens/TestesRapidos/HIV/077-TesteRapidoHIV';
-import T078 from 'src/screens/TestesRapidos/HIV/078-RetesteHIV';
-import T079 from 'src/screens/TestesRapidos/HIV/079-RetesteHIV';
-import T080 from 'src/screens/TestesRapidos/HIV/080-RetestesHIV';
-import T081 from 'src/screens/TestesRapidos/HIV/081-TesteRapidoHIV';
-import T082 from 'src/screens/TestesRapidos/HIV/082-RetesteHIV';
-import T083 from 'src/screens/TestesRapidos/HIV/083-RetesteHIV';
+import T076 from './src/screens/TestesRapidos/HIV/076-TesteRapidoHIV';
+import T077 from './src/screens/TestesRapidos/HIV/077-TesteRapidoHIV';
+import T078 from './src/screens/TestesRapidos/HIV/078-RetesteHIV';
+import T079 from './src/screens/TestesRapidos/HIV/079-RetesteHIV';
+import T080 from './src/screens/TestesRapidos/HIV/080-RetestesHIV';
+import T081 from './src/screens/TestesRapidos/HIV/081-TesteRapidoHIV';
+import T082 from './src/screens/TestesRapidos/HIV/082-RetesteHIV';
+import T083 from './src/screens/TestesRapidos/HIV/083-RetesteHIV';
 
-import T084 from 'src/screens/TestesRapidos/HepatiteB/084-TesteRapidoHepatiteB';
-import T085 from 'src/screens/TestesRapidos/HepatiteB/085-RetesteHepatiteB';
-import T086 from 'src/screens/TestesRapidos/HepatiteB/086-RetesteHepatiteB';
-import T087 from 'src/screens/TestesRapidos/HepatiteB/087-RetesteHepatiteB';
-import T088 from 'src/screens/TestesRapidos/HepatiteB/088-RetesteHepatiteB';
-import T089 from 'src/screens/TestesRapidos/HepatiteB/089-RetesteHepatiteB';
-import T090 from 'src/screens/TestesRapidos/HepatiteB/090-RetesteHepatiteB';
-import T091 from 'src/screens/TestesRapidos/HepatiteB/091-RetesteHepatiteB';
+import T084 from './src/screens/TestesRapidos/HepatiteB/084-TesteRapidoHepatiteB';
+import T085 from './src/screens/TestesRapidos/HepatiteB/085-RetesteHepatiteB';
+import T086 from './src/screens/TestesRapidos/HepatiteB/086-RetesteHepatiteB';
+import T087 from './src/screens/TestesRapidos/HepatiteB/087-RetesteHepatiteB';
+import T088 from './src/screens/TestesRapidos/HepatiteB/088-RetesteHepatiteB';
+import T089 from './src/screens/TestesRapidos/HepatiteB/089-RetesteHepatiteB';
+import T090 from './src/screens/TestesRapidos/HepatiteB/090-RetesteHepatiteB';
+import T091 from './src/screens/TestesRapidos/HepatiteB/091-RetesteHepatiteB';
 
-import T092 from 'src/screens/TestesRapidos/HepatiteC/092-TesteRapidoHepatiteC';
-import T093 from 'src/screens/TestesRapidos/HepatiteC/093-RetesteHepatiteC';
-import T094 from 'src/screens/TestesRapidos/HepatiteC/094-RetesteHepatiteC';
-import T095 from 'src/screens/TestesRapidos/HepatiteC/095-RetesteHepatiteC';
-import T096 from 'src/screens/TestesRapidos/HepatiteC/096-RetesteHepatiteC';
-import T097 from 'src/screens/TestesRapidos/HepatiteC/097-RetesteHepatiteC';
-import T098 from 'src/screens/TestesRapidos/HepatiteC/098-RetesteHepatiteC';
-import T099 from 'src/screens/TestesRapidos/HepatiteC/099-RetesteHepatiteC';
-import T100 from 'src/screens/TestesRapidos/100-InterpretacaodeResultados';
-import T101 from 'src/screens/TestesRapidos/101-RecusouTeste';
+import T092 from './src/screens/TestesRapidos/HepatiteC/092-TesteRapidoHepatiteC';
+import T093 from './src/screens/TestesRapidos/HepatiteC/093-RetesteHepatiteC';
+import T094 from './src/screens/TestesRapidos/HepatiteC/094-RetesteHepatiteC';
+import T095 from './src/screens/TestesRapidos/HepatiteC/095-RetesteHepatiteC';
+import T096 from './src/screens/TestesRapidos/HepatiteC/096-RetesteHepatiteC';
+import T097 from './src/screens/TestesRapidos/HepatiteC/097-RetesteHepatiteC';
+import T098 from './src/screens/TestesRapidos/HepatiteC/098-RetesteHepatiteC';
+import T099 from './src/screens/TestesRapidos/HepatiteC/099-RetesteHepatiteC';
+import T100 from './src/screens/TestesRapidos/100-InterpretacaodeResultados';
+import T101 from './src/screens/TestesRapidos/101-RecusouTeste';
 
-import T102 from 'src/screens/TiraDuvidas/102-TiraDuvidas';
-import T103 from 'src/screens/TiraDuvidas/103-CandidiaseVulvovaginal';
-import T104 from 'src/screens/TiraDuvidas/104-VaginoseBacteriana';
-import T105 from 'src/screens/TiraDuvidas/105-Tricomoniase';
-import T106 from 'src/screens/TiraDuvidas/106-ClamidiaeGonorreia';
-import T107 from 'src/screens/TiraDuvidas/107-LinfogranulamaVenereo';
-import T108 from 'src/screens/TiraDuvidas/108-Cancroide';
-import T109 from 'src/screens/TiraDuvidas/109-HerpesGenital';
-import T110 from 'src/screens/TiraDuvidas/110-Donovanose';
-import T111 from 'src/screens/TiraDuvidas/111-CondilomaAcuminado';
-import T112 from 'src/screens/TiraDuvidas/112-Sifilis';
-import T113 from 'src/screens/TiraDuvidas/113-HIV';
-import T114 from 'src/screens/TiraDuvidas/114-HepatiteBeC';
-import T115 from 'src/screens/TiraDuvidas/115-Preservativos';
-import T116 from 'src/screens/TiraDuvidas/116-EntendendoViolenciaSexual';
-import T117 from 'src/screens/TiraDuvidas/117-ProfilaxiadasIST';
-import T118 from 'src/screens/TiraDuvidas/118-ProfilaxiadasIST';
-import T119 from 'src/screens/TiraDuvidas/119-ProfilaxiadasHepatiteB';
-import T120 from 'src/screens/TiraDuvidas/120-ProfilaxiadainfecçãoporHIV';
-import T121 from 'src/screens/TiraDuvidas/121-PrevencaodaGravidez';
-import T122 from 'src/screens/TiraDuvidas/122-NotificandoaViolenciaSexual';
+import T102 from './src/screens/TiraDuvidas/102-TiraDuvidas';
+import T103 from './src/screens/TiraDuvidas/103-CandidiaseVulvovaginal';
+import T104 from './src/screens/TiraDuvidas/104-VaginoseBacteriana';
+import T105 from './src/screens/TiraDuvidas/105-Tricomoniase';
+import T106 from './src/screens/TiraDuvidas/106-ClamidiaeGonorreia';
+import T107 from './src/screens/TiraDuvidas/107-LinfogranulamaVenereo';
+import T108 from './src/screens/TiraDuvidas/108-Cancroide';
+import T109 from './src/screens/TiraDuvidas/109-HerpesGenital';
+import T110 from './src/screens/TiraDuvidas/110-Donovanose';
+import T111 from './src/screens/TiraDuvidas/111-CondilomaAcuminado';
+import T112 from './src/screens/TiraDuvidas/112-Sifilis';
+import T113 from './src/screens/TiraDuvidas/113-HIV';
+import T114 from './src/screens/TiraDuvidas/114-HepatiteBeC';
+import T115 from './src/screens/TiraDuvidas/115-Preservativos';
+import T116 from './src/screens/TiraDuvidas/116-EntendendoViolenciaSexual';
+import T117 from './src/screens/TiraDuvidas/117-ProfilaxiadasIST';
+import T118 from './src/screens/TiraDuvidas/118-ProfilaxiadasIST';
+import T119 from './src/screens/TiraDuvidas/119-ProfilaxiadasHepatiteB';
+import T120 from './src/screens/TiraDuvidas/120-ProfilaxiadainfecçãoporHIV';
+import T121 from './src/screens/TiraDuvidas/121-PrevencaodaGravidez';
+import T122 from './src/screens/TiraDuvidas/122-NotificandoaViolenciaSexual';
 
-import T123 from 'src/screens/Sobre/123-Sobre';
-import T124 from 'src/screens/Sobre/124-Idealizadores';
-import T125 from 'src/screens/Sobre/125-Desenvolvedores';
-import T126 from 'src/screens/Sobre/126-Referencias';
+import T123 from './src/screens/Sobre/123-Sobre';
+import T124 from './src/screens/Sobre/124-Idealizadores';
+import T125 from './src/screens/Sobre/125-Desenvolvedores';
+import T126 from './src/screens/Sobre/126-Referencias';
 
 // Temas
 const darkTheme = {

@@ -8,8 +8,8 @@ import {
     Text,
     ColorPropType,
 } from 'react-native';
-import Botao from 'src/components/Botao';
-import Imagem from 'src/components/Imagem';
+import Botao from '../../components/Botao';
+import Imagem from '../../components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
 export default function T009({ navigation })  {
@@ -35,9 +35,9 @@ export default function T009({ navigation })  {
                         <Text>Podendo haver:</Text>
                         <Text>Dispareunia não muito frequente.</Text>
                         
-                        <Imagem source={require("src/assets/images/F004.png")} title={"Corrimento Vaginal"} number={"F004"}/>
-                        <Imagem source={require("src/assets/images/F005.png")} title={"Corrimento Vaginal"} number={"F005"}/>
-                        <Imagem source={require("src/assets/images/F006.png")} title={"Corrimento Vaginal"} number={"F006"}/>
+                        <Imagem source={require("../../assets/images/F004.png")} title={"Corrimento Vaginal"} number={"F004"}/>
+                        <Imagem source={require("../../assets/images/F005.png")} title={"Corrimento Vaginal"} number={"F005"}/>
+                        <Imagem source={require("../../assets/images/F006.png")} title={"Corrimento Vaginal"} number={"F006"}/>
                     </View>
 
                 </ScrollView>

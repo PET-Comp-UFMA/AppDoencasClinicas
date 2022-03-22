@@ -7,10 +7,10 @@ import {
     Text,
 } from 'react-native';
 
-import Botao from 'src/components/Botao';
-import Bold from 'src/components/Bold';
+import Botao from '../../components/Botao';
+import Bold from '../../components/Bold';
 import { useTheme } from '@react-navigation/native';
-import Tabela from "src/components/Tabela";
+import Tabela from "../../components/Tabela";
 
 export default function T055({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado

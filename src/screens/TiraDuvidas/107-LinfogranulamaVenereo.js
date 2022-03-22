@@ -6,10 +6,10 @@ import {
     ScrollView,
     Text
 } from 'react-native';
-import Bold from 'src/components/Bold';
-import Imagem from 'src/components/Imagem';
-import Parag from 'src/components/Parag';
-import Botao from 'src/components/Botao';
+import Bold from '../../components/Bold';
+import Imagem from '../../components/Imagem';
+import Parag from '../../components/Parag';
+import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 
 export default function T107({ navigation }) {
@@ -38,9 +38,9 @@ export default function T107({ navigation }) {
                 </View>
 
                 <View>
-                    <Imagem source={require("src/assets/images/F013.png")} title={""} number={"F013"} />
-                    <Imagem source={require("src/assets/images/F014.png")} title={""} number={"F014"} />
-                    <Imagem source={require("src/assets/images/F015.png")} title={""} number={"F015"} />
+                    <Imagem source={require("../../assets/images/F013.png")} title={""} number={"F013"} />
+                    <Imagem source={require("../../assets/images/F014.png")} title={""} number={"F014"} />
+                    <Imagem source={require("../../assets/images/F015.png")} title={""} number={"F015"} />
                 </View>
 
 

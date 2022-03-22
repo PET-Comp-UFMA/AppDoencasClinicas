@@ -8,8 +8,8 @@ import {
     Text,
     ColorPropType,
 } from 'react-native';
-import Botao from 'src/components/Botao';
-import Imagem from 'src/components/Imagem';
+import Botao from '../../components/Botao';
+import Imagem from '../../components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
 export default function T005({ navigation })  {
@@ -36,8 +36,8 @@ export default function T005({ navigation })  {
                         <Text>Podendo ou não haver:</Text>
                         <Text>Disuria, dispareunia, hiperenia, edema, vulvar, fissuras e maceração da vulva, placas brancas ou braço-acinzentadas, recobrindo a vagina e o colo uterino(quando realizado exame especular)</Text>
                         
-                        <Imagem source={require("src/assets/images/F002.png")} title={"Corrimento Vaginal"} number={"F002"}/>
-                        <Imagem source={require("src/assets/images/F003.png")} title={"Corrimento Vaginal"} number={"F003"}/>
+                        <Imagem source={require("../..//assets/images/F002.png")} title={"Corrimento Vaginal"} number={"F002"}/>
+                        <Imagem source={require("../..//assets/images/F003.png")} title={"Corrimento Vaginal"} number={"F003"}/>
                     </View>
 
                 </ScrollView>

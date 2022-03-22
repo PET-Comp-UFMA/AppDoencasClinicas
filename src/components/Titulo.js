@@ -4,15 +4,13 @@ import {Component} from 'react';
 import {View, 
     TouchableOpacity, 
     Text,
-    StyleSheet
+    StyleSheet,
+    ImageBackground
 } from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
 
 import { useTheme } from '@react-navigation/native';
-
-import Seta from 'src/assets/icons/left';
-
 
 
 class Titulo extends Component {
@@ -45,17 +43,19 @@ class Titulo extends Component {
         let backbutton;
         // Verifica se pode voltar
         if (this.navigation.canGoBack()) {
+            if (this.props.dark) {
             backbutton = (
                 <TouchableOpacity onPress={this.navigation.goBack}>
-                    <Seta height={25} stroke={this.props.colors.primary}/>
+                    <ImageBackground style={styles.image} source={require("../assets/icons/left_white.png")}/>
                 </TouchableOpacity>
             );
-        } else {
-            backbutton = (
-                <TouchableOpacity>
-                    <Seta height={25} stroke={''} />
-                </TouchableOpacity>
-            );
+            } else {
+                backbutton = (
+                    <TouchableOpacity onPress={this.navigation.goBack}>
+                        <ImageBackground style={styles.image} source={require("../assets/icons/left.png")}/>
+                    </TouchableOpacity>
+                );
+            }
         }
 
 
@@ -77,9 +77,9 @@ class Titulo extends Component {
 export default function (props) {
     const navigation = useNavigation();
 
-    const { colors } = useTheme();
+    const { colors, dark } = useTheme();
 
-    return <Titulo {...props} navigation={navigation} colors={colors}/>
+    return <Titulo {...props} navigation={navigation} colors={colors} dark={dark}/>
 
 }
 
@@ -97,5 +97,9 @@ const styles = StyleSheet.create({
         color             : '#323F4B',
         fontFamily        : 'Mulish_Bold',
         textAlignVertical : 'center'
+    },
+    image: {
+        width: 25,
+        height: 25
     }
 });

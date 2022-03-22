@@ -4,25 +4,27 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  ImageBackground
+  ImageBackground,
+  Image
 } from "react-native";
 import { setStatusBarBackgroundColor, setStatusBarStyle} from 'expo-status-bar';
 
 
-import Fechar from 'src/assets/icons/close.svg';
 
 import { BlurView } from 'expo-blur';
 
 
 export default class ScreenModalImage extends Component {
 
+  // <Fechar height={50} width={50} marginTop={25} marginRight={5} stroke={'#59998D'} />
   render() {
 
     return (
       <TouchableOpacity style={styles.viewModal} activeOpacity={2} onPress={this.props.toggleModal}>
         <BlurView intensity={100} tint="dark" style={styles.viewModal}>
           <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
-            <Fechar height={50} width={50} marginTop={25} marginRight={5} stroke={'#59998D'} />
+            <Image style={styles.closeButton} source={require("../assets/icons/close.png")}/>
+            
           </TouchableOpacity>
 
           <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
@@ -87,5 +89,11 @@ const styles = StyleSheet.create({
     width: 165,
     height: 39,
     backgroundColor: 'rgba(0, 0, 0, 0.4)'
+  },
+  closeButton: {
+    height: 50,
+    width: 50,
+    marginTop: 25,
+    marginRight: 5
   }
 });

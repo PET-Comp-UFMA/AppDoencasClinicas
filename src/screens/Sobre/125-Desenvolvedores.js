@@ -7,9 +7,9 @@ import {
     Text,
     Linking
 } from 'react-native';
-import Botao from 'src/components/Botao';
-import Imagem from 'src/components/Imagem';
-import Bold from 'src/components/Bold';
+import Botao from '../../components/Botao';
+import Imagem from '../../components/Imagem';
+import Bold from '../../components/Bold';
 
 import { useTheme } from '@react-navigation/native';
 import { TouchableRipple } from 'react-native-paper';
@@ -36,7 +36,7 @@ export default function T125({ navigation })  {
                 <ScrollView>
 
                     <View>
-                        <Imagem source={require("src/assets/images/F045.png")} title={"Ismael Moreira de Sousa"} number={"F007"}/>
+                        <Imagem source={require("../../assets/images/F045.png")} title={"Ismael Moreira de Sousa"} number={"F007"}/>
                         <Text><Bold>Luis Jorge Enrique Rivero Cabrejos</Bold></Text>
                         <Text>Doutor em Informática pela Universidade Federal do Amazonas (UFAM).</Text>
                         <Text>Professor Adjunto A do Departamento de Informática da Universidade Federal do Maranhão, onde atua em cursos de graduação.</Text>
@@ -44,7 +44,7 @@ export default function T125({ navigation })  {
                     </View>
 
                     <View>
-                        <Imagem source={require("src/assets/images/F044.png")} title={"Leilane Barbosa de Sousa"} number={"F007"}/>
+                        <Imagem source={require("../../assets/images/F044.png")} title={"Leilane Barbosa de Sousa"} number={"F007"}/>
                         <Text>Leilane Barbosa de Sousa</Text>
                         <Text>Atualmente é professora adjunta do Curso de Graduação em Enfermagem e docente do quadro permamente do Mestrado Acadêmico em Enfermagem, ambos da Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB).</Text>
                         <Text style={styles.hiperlink}onPress={() => {Linking.openURL('http://lattes.cnpq.br/8829820331920241')}}>Lattes: Aperte aqui</Text>
