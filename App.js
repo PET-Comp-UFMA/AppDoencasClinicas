@@ -144,7 +144,7 @@ import T116 from './src/screens/TiraDuvidas/116-EntendendoViolenciaSexual';
 import T117 from './src/screens/TiraDuvidas/117-ProfilaxiadasIST';
 import T118 from './src/screens/TiraDuvidas/118-ProfilaxiadasIST';
 import T119 from './src/screens/TiraDuvidas/119-ProfilaxiadasHepatiteB';
-import T120 from './src/screens/TiraDuvidas/120-ProfilaxiadainfecçãoporHIV';
+import T120 from './src/screens/TiraDuvidas/120-ProfilaxiadainfeccaoporHIV';
 import T121 from './src/screens/TiraDuvidas/121-PrevencaodaGravidez';
 import T122 from './src/screens/TiraDuvidas/122-NotificandoaViolenciaSexual';
 
