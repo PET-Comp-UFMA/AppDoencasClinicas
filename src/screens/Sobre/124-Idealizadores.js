@@ -12,9 +12,6 @@ import Imagem from '../../components/Imagem';
 import Bold from '../../components/Bold';
 
 import { useTheme } from '@react-navigation/native';
-import { TouchableRipple } from 'react-native-paper';
-import { TouchableOpacity } from 'react-native-web';
-
 export default function T124({ navigation })  {
 
     // Atualiza as cores se o modo noturno estiver ligado
