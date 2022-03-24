@@ -5,7 +5,8 @@ import {View,
     TouchableOpacity, 
     Text,
     StyleSheet,
-    ImageBackground
+    ImageBackground,
+    Platform
 } from 'react-native';
 
 import {useNavigation} from '@react-navigation/native';
@@ -43,18 +44,20 @@ class Titulo extends Component {
         let backbutton;
         // Verifica se pode voltar
         if (this.navigation.canGoBack()) {
-            if (this.props.dark) {
-            backbutton = (
-                <TouchableOpacity onPress={this.navigation.goBack}>
-                    <ImageBackground style={styles.image} source={require("../assets/icons/left_white.png")}/>
-                </TouchableOpacity>
-            );
-            } else {
+            if (Platform.OS == "android") {
+                if (this.props.dark) {
                 backbutton = (
                     <TouchableOpacity onPress={this.navigation.goBack}>
-                        <ImageBackground style={styles.image} source={require("../assets/icons/left.png")}/>
+                        <ImageBackground style={styles.image} source={require("../assets/icons/left_white.png")}/>
                     </TouchableOpacity>
                 );
+                } else {
+                    backbutton = (
+                        <TouchableOpacity onPress={this.navigation.goBack}>
+                            <ImageBackground style={styles.image} source={require("../assets/icons/left.png")}/>
+                        </TouchableOpacity>
+                    );
+                }
             }
         }
 
