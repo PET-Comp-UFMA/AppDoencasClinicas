@@ -31,6 +31,18 @@ class Titulo extends Component {
     render() {
 
         // Título da tela
+        // IOS tem tamanho de tela menor
+        if (Platform.OS == "ios") {
+           this.titulostyle = StyleSheet.create({
+            titulo: {
+                        fontSize          : 20,
+                        textAlign         : 'center',
+                        color             : '#323F4B',
+                        fontFamily        : 'Mulish_Bold',
+                        textAlignVertical : 'center',
+                        color             : this.props.colors.text
+                    }});
+        } else {
         this.titulostyle = StyleSheet.create({
             titulo: {
                         fontSize          : 28,
@@ -40,6 +52,7 @@ class Titulo extends Component {
                         textAlignVertical : 'center',
                         color             : this.props.colors.text
                     }});
+        }
 
         let backbutton;
         // Verifica se pode voltar
