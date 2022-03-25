@@ -31,7 +31,7 @@ class Titulo extends Component {
     render() {
 
         // Título da tela
-        // IOS tem tamanho de tela menor
+        // IOS tem tamanho de fonte menor
         if (Platform.OS == "ios") {
            this.titulostyle = StyleSheet.create({
             titulo: {
