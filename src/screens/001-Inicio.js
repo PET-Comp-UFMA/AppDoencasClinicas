@@ -63,6 +63,9 @@ export default function T001({ navigation })  {
                         />
                         
                     </View>
+                    <View style={styles.container}>
+                        <Image style={styles.image2} source={require('../assets/icons/Logo2.png')} />
+                    </View>
                 </ScrollView>
             </SafeAreaView>
         );
@@ -80,7 +83,11 @@ const styles = StyleSheet.create({
         width           : '100%'
     },
     image: {
-        height: 300,
-        width: 300
+        height: 350,
+        width: 400
+    },
+    image2: {
+        height: 50,
+        width: 100
     }
 });
