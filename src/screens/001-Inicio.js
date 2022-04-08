@@ -43,9 +43,9 @@ export default function T001({ navigation })  {
                         <Image style={styles.image} source={require('../assets/icons/Logo.png')} />
                     </View>
 
-                    <View>
+                    <View style={{marginTop: 50}}>
                         <Text style={titulo.titulo}><Bold>Bem Vindo</Bold></Text>
-                        <Text>Colega enfermeiro, escolha uma das opções  abaixo:</Text>
+                        <Text>Colega enfermeiro, escolha uma das opções abaixo:</Text>
                     </View>
 
                     <View style = {styles.containerBotao}>
@@ -77,14 +77,16 @@ const styles = StyleSheet.create({
         alignItems      : 'center',
         flexDirection   : 'column',
         justifyContent  : 'space-between',
+        marginTop: 20
     },
+
     containerBotao: {
         marginTop       : 30,
         width           : '100%'
     },
     image: {
-        height: 350,
-        width: 400
+        height: 160,
+        width: 420
     },
     image2: {
         height: 50,
