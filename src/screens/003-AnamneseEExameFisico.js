@@ -29,7 +29,7 @@ export default function T003({ navigation })  {
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Aqui você irá reconhecer os sinais e sintomas apresentados pelo paciente ou colhidos durante o exame físico, além de poder integrar a oferta dos testes rápidos ao seu atendimento. Escolha uma opção:</Text>
+                        <Text>Agora você poderá escolher uma opção que mais se aproxima daquilo que precisará manejar conforme as queixas do seu paciente e o que está sendo coletado na anamnese e exame físico. Escolha uma opção:</Text>
                     </View>
 
                 </ScrollView>
