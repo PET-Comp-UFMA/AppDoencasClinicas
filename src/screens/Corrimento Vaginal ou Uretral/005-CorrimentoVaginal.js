@@ -31,10 +31,10 @@ export default function T005({ navigation })  {
                 <ScrollView>
                     <View>
                         <Text>Esse corrimento vaginal apresenta as seguintes características:{"\n"}</Text>
-                        <Text>Corrimento branco, grumoso e com aspecto de leite talhado</Text>
-                        <Text>Pluorido vulvovaginal{"\n"}</Text>
+                        <Text>Corrimento branco, grumoso e com aspecto de leite talhado?</Text>
+                        <Text>Plurido vulvovaginal?{"\n"}</Text>
                         <Text>Podendo ou não haver:</Text>
-                        <Text>Disuria, dispareunia, hiperenia, edema, vulvar, fissuras e maceração da vulva, placas brancas ou braço-acinzentadas, recobrindo a vagina e o colo uterino(quando realizado exame especular)</Text>
+                        <Text>Disuria, dispareunia, hiperenia, edema, vulvar, fissuras e maceração da vulva, placas brancas ou braço-acinzentadas, recobrindo a vagina e o colo uterino(quando realizado exame especular)?</Text>
                         
                         <Imagem source={require("../..//assets/images/F002.png")} title={"Corrimento Vaginal"} number={"F002"}/>
                         <Imagem source={require("../..//assets/images/F003.png")} title={"Corrimento Vaginal"} number={"F003"}/>
