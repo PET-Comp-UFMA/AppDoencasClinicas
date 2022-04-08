@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "AppDoencasClinicas",
-    "slug": "AppDoencasClinicas",
+    "name": "IST Nurse",
+    "slug": "ISTNurse",
     "userInterfaceStyle": "automatic",
     "version": "1.0.0",
     "icon": "src/assets/icons/Icon.png",
@@ -9,11 +9,11 @@
       "**/*"
     ],
     "android": {
-      "package": "com.petcompufma.appdoencasclinicas",
+      "package": "com.petcompufma.istnurse",
       "versionCode": 1
     },
     "ios": {
-      "bundleIdentifier": "com.petcompufma.appdoencasclinicas"
+      "bundleIdentifier": "com.petcompufma.istnurse"
     }
   }
 }

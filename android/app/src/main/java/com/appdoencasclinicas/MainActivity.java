@@ -1,4 +1,4 @@
-package com.appdoencasclinicas;
+package com.petcompufma.istnurse;
 
 import android.os.Build;
 import android.os.Bundle;

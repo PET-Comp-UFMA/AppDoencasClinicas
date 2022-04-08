@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appdoencasclinicas">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.petcompufma.istnurse">
 
   <uses-permission android:name="android.permission.INTERNET"/>
   <!-- OPTIONAL PERMISSIONS, REMOVE WHATEVER YOU DO NOT NEED -->
