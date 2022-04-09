@@ -35,7 +35,7 @@ export default function T011({ navigation })  {
                         <Text>Então você deve considerar tratamento medicamentoso para vaginose bacteriana recorrente</Text>
                         <Tabela tableData={tableData}></Tabela>
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
-                        <Text>Se houver fitas para verificar pH vaginal, considere PH normal maior que 4.5.</Text>
+                        <Text>Se houver fitas para verificar pH vaginal, considere pH normal maior que 4.5.</Text>
                         <Text>Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
                         <Text>Tratamento para gestantes e lactantes apenas via terminal.</Text>
                         <Text>Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
