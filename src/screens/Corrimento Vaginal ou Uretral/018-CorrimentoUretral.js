@@ -33,8 +33,8 @@ export default function T018({ navigation })  {
                 <ScrollView>
                     <View>
                         <Text>Se você chegou aqui, é porque é possível coletar matrial para microscopia.</Text>
-                        <Text>Coletar material para microscopia. Saindo do resultado, tratar conforme conclusão diagnóstica. Considerar consulta médica para diagnóstico diferencial.{"\n"}</Text>
-                        <Text>Na ausência de diplococos gramnegativos intracelulares, tratar Chlamydia trachomatis (clamídia). Na presença de diplococos gramnegativos intracelulares, tratr Chlamydia trachomatis (clamídia) e Neisseria gonorrhoeae (gonorréia) </Text>
+                        <Text>Coletar material para microscopia. Saindo o resultado, tratar conforme conclusão diagnóstica. Considerar consulta médica para diagnóstico diferencial.{"\n"}</Text>
+                        <Text>Na ausência de diplococos gram-negativos intracelulares, tratar Chlamydia trachomatis (clamídia). Na presença de diplococos gramnegativos intracelulares, tratr Chlamydia trachomatis (clamídia) e Neisseria gonorrhoeae (gonorréia) </Text>
                         
                         <Tabela tableHead={tableHead_Chlamydia} tableData={tableData_Chlamydia}></Tabela>
                         <Text>{}</Text>
