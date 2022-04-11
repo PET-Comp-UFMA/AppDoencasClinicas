@@ -191,7 +191,7 @@ const tableData = [[
   </Text>,
 
   <Text style={styles.textData}>
-    Em caso de lesões extensas em pacientes com imunossupressão (usuários crônicos de corticoide, pacientes em uso de imunomoduladores, transplantados de órgãos sólidos e PVHIV), pode-se optar pelo tratamento endovenoso
+    Em caso de lesões extensas em pacientes com imunossupressão (pacientes crônicos de corticoide, pacientes em uso de imunomoduladores, transplantados de órgãos sólidos e PVHIV), pode-se optar pelo tratamento endovenoso
   </Text>
 ],
 [

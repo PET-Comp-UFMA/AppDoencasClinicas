@@ -48,7 +48,7 @@ export default function T201({ navigation }) {
             <View style={styles.containerBotao}>
 
                 <Botao
-                    title="USUÁRIO(A) TEM APENAS O TESTE RÁPIDO REAGENTE"
+                    title="PACIENTE TEM APENAS O TESTE RÁPIDO REAGENTE"
                     onPress={() => navigation.navigate('203-Sifilis')}
                 />
                 

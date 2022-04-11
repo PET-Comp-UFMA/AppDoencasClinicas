@@ -34,7 +34,7 @@ export default function T051({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Se o teste rápido foi reagente e se o usuário apresenta uma úlcera rica em treponemas, geralmente única e indolor, com borda bem definida e regular, base endurecida e fundo limpo, que ocorre no local de entrada da bactéria (pênis, vulva, vagina, colo uterino, ânus, boca, ou outros locais do tegumento), sendo denominada “cancro duro”.</Parag>
+                    <Parag>Se o teste rápido foi reagente e se o paciente apresenta uma úlcera rica em treponemas, geralmente única e indolor, com borda bem definida e regular, base endurecida e fundo limpo, que ocorre no local de entrada da bactéria (pênis, vulva, vagina, colo uterino, ânus, boca, ou outros locais do tegumento), sendo denominada “cancro duro”.</Parag>
                     <Parag>Considerar esquema terapêutico para sífilis recente e solicitar VDRL trimestralmente (mensal em gestante):</Parag>
                     <Tabela tableHead={tableHead} tableData={tableData} />
                     <Parag>No caso de sífilis recente em gestantes, alguns experts recomendam uma dose adicional de 2,4 milhões de unidades de penicilina benzatina, IM, uma semana após a primeira dose.</Parag>
@@ -47,12 +47,12 @@ export default function T051({ navigation }) {
             <View style={styles.containerBotao}>
 
                 <Botao
-                    title="USUÁRIO(A) TEM O TESTE RÁPIDO REAGENTE, MAS NÃO SÃO ESSAS CARACTÉRISTICAS"
+                    title="PACIENTE TEM O TESTE RÁPIDO REAGENTE, MAS NÃO SÃO ESSAS CARACTÉRISTICAS"
                     onPress={() => navigation.navigate('200-Sifilis')}
                 />
 
                 <Botao
-                    title="USUÁRIO(A) TEM APENAS O TESTE RÁPIDO REAGENTE"
+                    title="PACIENTE TEM APENAS O TESTE RÁPIDO REAGENTE"
                     onPress={() => navigation.navigate('203-Sifilis')}
                 />
                 

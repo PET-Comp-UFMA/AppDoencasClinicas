@@ -25,7 +25,7 @@ export default function T029({navigation}) {
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>
                 <Text>
-                O(a) usuário(a) apresenta lesões eritemato-papulosas de um a três milímetros de diâmetro, que
+                O(a) paciente(a) apresenta lesões eritemato-papulosas de um a três milímetros de diâmetro, que
                 rapidamente evoluíram para vesículas sobre base eritematosa, muito dolorosas e de localização
                 variável na região genital?
                 </Text>
