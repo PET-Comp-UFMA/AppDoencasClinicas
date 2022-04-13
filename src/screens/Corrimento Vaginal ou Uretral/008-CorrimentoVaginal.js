@@ -36,10 +36,10 @@ export default function T008({ navigation })  {
                         <Tabela tableData={tableData}></Tabela>
                         <Text></Text>
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
-                        <Text>Se houver fitas para verificar pH vaginal, considere pH normal (4.5).</Text>
-                        <Text>Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
-                        <Text>Tratamento para gestantes e lactantes apenas via terminal.</Text>
-                        <Text>Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
+                        <Text>• Se houver fitas para verificar pH vaginal, considere pH normal (4.5).</Text>
+                        <Text>• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
+                        <Text>• Tratamento para gestantes e lactantes apenas via terminal.</Text>
+                        <Text>• Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
                     </View>
                 </ScrollView>
 

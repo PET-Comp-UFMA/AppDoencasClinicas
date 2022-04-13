@@ -35,10 +35,10 @@ export default function T012({ navigation })  {
                         <Text>Então você deve considerar tratamento para vaginose bacteriana</Text>
                         <Tabela tableData={tableData}></Tabela>
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
-                        <Text>Se houver fitas para verificar pH vaginal, considere pH normal maior que 4.5.</Text>
-                        <Text>Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
-                        <Text>A 1ª opção inclui gestantes e lactantes</Text>
-                        <Text>Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
+                        <Text>• Se houver fitas para verificar pH vaginal, considere pH normal maior que 4.5.</Text>
+                        <Text>• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
+                        <Text>• A 1ª opção inclui gestantes e lactantes</Text>
+                        <Text>• Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
                     </View>
                 </ScrollView>
 

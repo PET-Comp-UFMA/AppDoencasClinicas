@@ -35,11 +35,11 @@ export default function T014({ navigation })  {
                         <Text>Então você deve considerar tratamento medicamentoso para tricomoníase</Text>
                         <Tabela tableData={tableData}></Tabela>
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
-                        <Text>Se houver fitas para verificar pH vaginal, considere pH normal maior que 5,0.</Text>
-                        <Text>Se houver KOH 10%, considere: teste de aminas positivo havendo se apresentar odor de peixe podre</Text>
-                        <Text>É necessário tratar parcerias sexuais com o mesmo esquema terapêutico.</Text>
-                        <Text>O esquema terapêutico inclui gestantes e lactantes.</Text>
-                        <Text>Realizar aconselhamento sobre prevenção combinada.</Text>
+                        <Text>• Se houver fitas para verificar pH vaginal, considere pH normal maior que 5,0.</Text>
+                        <Text>• Se houver KOH 10%, considere: teste de aminas positivo havendo se apresentar odor de peixe podre</Text>
+                        <Text>• É necessário tratar parcerias sexuais com o mesmo esquema terapêutico.</Text>
+                        <Text>• O esquema terapêutico inclui gestantes e lactantes.</Text>
+                        <Text>• Realizar aconselhamento sobre prevenção combinada.</Text>
                     </View>
                 </ScrollView>
 
