@@ -30,14 +30,13 @@ export default class ScreenModalImage extends Component {
           </TouchableOpacity>
 
           <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
-
-
-            
+      
             <ImageZoom 
               cropWidth={Dimensions.get('window').width}
               cropHeight={Dimensions.get('window').height}
               imageWidth={345}
               imageHeight={345}
+              minScale={1.0}
             >
 
               <Image
