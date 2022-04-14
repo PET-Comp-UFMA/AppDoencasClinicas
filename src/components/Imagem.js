@@ -9,6 +9,9 @@ import {
   ImageBackground
 } from "react-native"
 
+// import ImageViewer from "react-native-image-zoom-viewer";
+import ImageZoom from 'react-native-image-pan-zoom';
+
 
 import ScreenModalImage from "./ScreenModalImage";
 
@@ -17,7 +20,13 @@ export default class Imagem extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      visible: false
+      visible: false,
+      images: [{
+        url: '',
+        props: {
+          source: require("../assets/images/F039.png")
+        }
+      }]
     }
 
     this.toggleModal = this.toggleModal.bind(this)
@@ -33,12 +42,8 @@ export default class Imagem extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity onPress={this.toggleModal}>
-
-          <ImageBackground
-            source={this.props.source}
-            style={styles.image}>
-          </ImageBackground>
-
+          
+          <Image source={this.props.source} style={styles.image}/>
           <Modal
             visible={this.state.visible}
             animationType={this.props.animation ? this.props.animation : "fade"}

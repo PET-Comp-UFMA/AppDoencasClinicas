@@ -5,10 +5,12 @@ import {
   Text,
   TouchableOpacity,
   ImageBackground,
-  Image
+  Image,
+  Dimensions
 } from "react-native";
 import { setStatusBarBackgroundColor, setStatusBarStyle} from 'expo-status-bar';
 
+import ImageZoom from 'react-native-image-pan-zoom';
 
 
 import { BlurView } from 'expo-blur';
@@ -30,10 +32,20 @@ export default class ScreenModalImage extends Component {
           <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
 
 
-            <ImageBackground
-              source={this.props.source}
-              style={styles.image}>
-            </ImageBackground>
+            
+            <ImageZoom 
+              cropWidth={Dimensions.get('window').width}
+              cropHeight={Dimensions.get('window').height}
+              imageWidth={345}
+              imageHeight={345}
+            >
+
+              <Image
+                source={this.props.source}
+                style={styles.image}>
+              </Image>
+                
+            </ImageZoom>
 
           </View>
         </BlurView>      

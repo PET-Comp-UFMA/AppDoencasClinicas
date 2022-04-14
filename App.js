@@ -190,7 +190,7 @@ export default function App() {
 	let [fontsLoaded] = useFonts({ Mulish_Regular, Mulish_Bold });
 	if (!fontsLoaded) { return <AppLoading />; }
 	return (
-		<NavigationContainer theme={scheme === 'dark' ? darkTheme : lightTheme}>
+		<NavigationContainer  theme={scheme === 'dark' ? darkTheme : lightTheme}>
 
 			<View style={{
 				flex: 1,
@@ -198,7 +198,7 @@ export default function App() {
 			}
 			}>
 
-				<Stack.Navigator initialRouteName='001-Inicio'
+				<Stack.Navigator initialRouteName='045-Sifilis'
 					screenOptions={{
 						headerTitle: (props) => <Titulo {...props} />,
 						headerBackVisible: "no",
