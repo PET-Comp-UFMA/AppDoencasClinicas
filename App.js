@@ -198,7 +198,7 @@ export default function App() {
 			}
 			}>
 
-				<Stack.Navigator initialRouteName='045-Sifilis'
+				<Stack.Navigator initialRouteName='001-Inicio'
 					screenOptions={{
 						headerTitle: (props) => <Titulo {...props} />,
 						headerBackVisible: "no",

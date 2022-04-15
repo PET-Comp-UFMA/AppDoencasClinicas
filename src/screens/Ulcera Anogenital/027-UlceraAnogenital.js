@@ -31,32 +31,33 @@ export default function T27({navigation}) {
             <Tabela tableHead={tableHead} tableData={tableData}/>
             
             <Text>
-                As parcerias sexuais devem ser 
-                tratadas. Se a parceria for sintomática,
+                • As parcerias sexuais devem ser 
+                tratadas.{"\n"}
+                
+                • Se a parceria for sintomática,
                 o tratamento deve ser realizado com
                 os mesmos medicamentos do
-                casoíndice. Se a parceria for
+                casoíndice.{"\n"}
+                
+                • Se a parceria for
                 assintomática, recomenda-se um dos
-                tratamentos abaixo:{"\n"}
+                tratamentos abaixo:{"\n\n"}
 
-                <Bold>Azitromicina</Bold> 500mg, 2 comprimidos,
+                ✓<Bold>Azitromicina</Bold> 500mg, 2 comprimidos,
                 VO, dose única
                 {"\n"}<Bold>OU</Bold>{"\n"}
-                <Bold>Doxiciclinab</Bold> 100mg, 1 comprimido,
-                VO, 2x/ dia, por 7 dias.
-                O prolongamento da terapia pode ser
-                necessário até
-                a resolução da
-                sintomatologia. A antibioticoterapia
-            
-                não tem efeito expressivo na duração
-                da
+                ✓<Bold>Doxiciclinab</Bold> 100mg, 1 comprimido,
+                VO, 2x/ dia, por 7 dias.{"\n\n"}
+                
+                • O prolongamento da terapia pode
+                ser necessário até a resolução da
+                sintomatologia.{"\n"}
+                • A antibioticoterapia
+                não tem efeito expressivo na duração da
                 linfadenopatia inguinal, mas os
                 sintomas agudos são
-                frequentemente
-                erradicados de modo rápido. Os
-            
-                antibióticos não revertem sequelas
+                frequentemente erradicados de modo rápido.{"\n"}
+                • Os antibióticos não revertem sequelas
                 como estenose
                 retal ou elefantíase
                 genital. 

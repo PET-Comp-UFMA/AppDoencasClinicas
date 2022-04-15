@@ -32,7 +32,7 @@ export default function T005({ navigation })  {
                     <View>
                         <Text>Esse corrimento vaginal apresenta as seguintes características:{"\n"}</Text>
                         <Text>Corrimento branco, grumoso e com aspecto de leite talhado?</Text>
-                        <Text>Plurido vulvovaginal?{"\n"}</Text>
+                        <Text>Existe prurido vulvovaginal?{"\n"}</Text>
                         <Text>Podendo ou não haver:</Text>
                         <Text>Disuria, dispareunia, hiperenia, edema, vulvar, fissuras e maceração da vulva, placas brancas ou braço-acinzentadas, recobrindo a vagina e o colo uterino(quando realizado exame especular)?</Text>
                         
