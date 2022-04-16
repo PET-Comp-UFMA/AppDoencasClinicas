@@ -41,14 +41,14 @@ export default function T040({ navigation }) {
                     <Imagem source={require("../../assets/images/F028.png")} title={"TITULO"} number={"F028"} />
                     <Parag>Buscar parceria sexual para investigação.</Parag>
                 </View>
-                <View style={styles.containerBotao}>
+            </ScrollView>
+            
+            <View style={styles.containerBotao}>
                     <Botao
                         title="FINALIZAR"
                         onPress={() => navigation.navigate('001-Inicio')}
                     />
                 </View>
-
-            </ScrollView>
 
 
         </SafeAreaView>

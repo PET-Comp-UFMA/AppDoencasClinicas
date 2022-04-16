@@ -34,7 +34,8 @@ export default function T039({ navigation }) {
                 <Imagem source={require("../../assets/images/F025.png")} title={"Acompanhamento"} number={"F025"} />
                 <Imagem source={require("../../assets/images/F026.png")} title={"Acompanhamento"} number={"F026"} />
                 <Imagem source={require("../../assets/images/F027.png")} title={"Acompanhamento"} number={"F027"} />
-                <View style={styles.containerBotao}>
+            </ScrollView>
+            <View style={styles.containerBotao}>
                     <Botao
                         title="SIM"
                         onPress={() => navigation.navigate('040-VerrugaAnogenital')}
@@ -44,8 +45,6 @@ export default function T039({ navigation }) {
                         onPress={() => navigation.navigate('042-VerrugaAnogenital')}
                     />
                 </View>
-
-            </ScrollView>
 
 
         </SafeAreaView>

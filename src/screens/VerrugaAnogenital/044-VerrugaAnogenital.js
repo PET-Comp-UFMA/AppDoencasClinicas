@@ -35,7 +35,7 @@ export default function Aconselhamento({ navigation }) {
                 <View>
                     <Parag>Se chegou até aqui é porque seu paciente não apresenta nenhuma dessas queixas, ou mesmo depois do aconselhamento não aceitou realizar os testes rápidos.</Parag>
                     <Parag>Se ele recusou realizar os testes mesmo com o aconselhamento, não há mais nada a fazer além da sensibilização. Registre tudo!</Parag>
-                    <Parag>Então, clique em <Bold>MENU PRINCIPAL</Bold> e você será direcionado ao iínicio, ou em <Bold>ANAMNESE E EXAME FÍSICO</Bold> para voltar para o menu dessa seção.</Parag>
+                    <Parag>Então, clique em <Bold>MENU PRINCIPAL</Bold> e você será direcionado ao início, ou em <Bold>ANAMNESE E EXAME FÍSICO</Bold> para voltar para o menu dessa seção.</Parag>
                 </View>
 
             </ScrollView>
