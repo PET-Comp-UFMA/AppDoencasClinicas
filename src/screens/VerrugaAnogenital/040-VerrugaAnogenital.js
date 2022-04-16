@@ -31,7 +31,7 @@ export default function T040({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Considerar os seguintes achados: As lesões costumam ser únicas ou múltiplas, achatadas ou papulosas, mas sempre papilomatosas. Superfície apresenta-se fosca, aveludada ou semelhante à da couve-flor. Apresentam-se da cor da pele, eritematosas ou hiperpigmentadas. Em geral são assintomáticas, mas podem ser pruriginosas, dolorosas, friáveis ou sangrantes.</Parag>
+                    <Parag>Considerar os seguintes achados: {'\n'}• As lesões costumam ser únicas ou múltiplas, achatadas ou papulosas, mas sempre papilomatosas. {'\n'}• Superfície apresenta-se fosca, aveludada ou semelhante à da couve-flor. {'\n'}• Apresentam-se da cor da pele, eritematosas ou hiperpigmentadas. {'\n'}• Em geral são assintomáticas, mas podem ser pruriginosas, dolorosas, friáveis ou sangrantes.</Parag>
                     <Parag>Caso não haja diagnóstico de HPV, considerar vacinação:</Parag>
                 </View>
                 <Tabela tableHead={tableHead} tableData={tableData} />
