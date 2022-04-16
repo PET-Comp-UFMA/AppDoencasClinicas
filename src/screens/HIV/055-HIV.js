@@ -109,7 +109,7 @@ const tableData = [
         </Text>],
     
     [   <Text>
-            2) <Bold>Doxiciclina</Bold>ᵇ 100mg, VO, 1 comprimido, 2x/dia, por 21 dias
+            2) <Bold>Doxiciclina</Bold> 100mg, VO, 1 comprimido, 2x/dia, por 21 dias
         </Text>],
     
     [   <Text>
