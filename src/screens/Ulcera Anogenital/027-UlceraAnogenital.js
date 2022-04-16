@@ -46,7 +46,7 @@ export default function T27({navigation}) {
                 ✓<Bold>Azitromicina</Bold> 500mg, 2 comprimidos,
                 VO, dose única
                 {"\n"}<Bold>OU</Bold>{"\n"}
-                ✓<Bold>Doxiciclinab</Bold> 100mg, 1 comprimido,
+                ✓<Bold>Doxiciclina</Bold> 100mg, 1 comprimido,
                 VO, 2x/ dia, por 7 dias.{"\n\n"}
                 
                 • O prolongamento da terapia pode
@@ -136,7 +136,7 @@ const tableData = [[
     </Text> ,
     
     <Text style={styles.textData}>
-       <Bold>Doxiciclina</Bold>ᵇ 100mg, VO, 1 comprimido, 2x/dia, por 21 dias
+       <Bold>Doxiciclina</Bold> 100mg, VO, 1 comprimido, 2x/dia, por 21 dias
     </Text>,
 
     <Text style={styles.textData}>

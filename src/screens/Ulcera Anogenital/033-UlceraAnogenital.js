@@ -40,9 +40,9 @@ export default function T033({navigation}) {
             <Tabela tableHead={tableHead} tableData={tableData}/>
             
             <Text>
-                O tratamento sistêmico deve ser acompanhado de
-                medidas locais de higiene.
-                O tratamento das parcerias sexuais é recomendado,
+            • O tratamento sistêmico deve ser acompanhado de
+                medidas locais de higiene. {'\n'}
+            • O tratamento das parcerias sexuais é recomendado,
                 mesmo quando assintomáticas. 
             </Text>
             <Text >• Buscar parceria sexual para orientações{"\n"}</Text>
