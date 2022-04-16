@@ -57,7 +57,7 @@ export default function T003({ navigation })  {
                     />
                     <Botao
                         title = "HEPATITES B E C"
-                        onPress = { () => navigation.navigate('') }
+                        onPress = { () => navigation.navigate('060-HepatiteBeC') }
                     />
                 </View>
             </SafeAreaView>
