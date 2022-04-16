@@ -33,10 +33,10 @@ export default function T201({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Então, há alguma dessas características:</Parag>
-                    <Parag>• Cutâneas: lesões gomosas e nodulares, de caráter destrutivo.</Parag>
-                    <Parag>• Ósseas: periostite, osteíte gomosa ou esclerosante, artrites, sinovites e nódulos justa-articulares.</Parag>
-                    <Parag>• Cardiovasculares: estenose de coronárias, aortite e aneurisma da aorta, especialmente da porção torácica.</Parag>
+                    <Parag>Então há alguma dessas características:</Parag>
+                    <Parag>• Cutâneas: lesões gomosas e nodulares, de caráter destrutivo?</Parag>
+                    <Parag>• Ósseas: periostite, osteíte gomosa ou esclerosante, artrites, sinovites e nódulos justa-articulares?</Parag>
+                    <Parag>• Cardiovasculares: estenose de coronárias, aortite e aneurisma da aorta, especialmente da porção torácica?</Parag>
                     <Parag>Se houver, considerar esquema terapêutico para sífilis tardia e solicitar VDRL trimestralmente (mensal em gestante):</Parag>
                     
                     <Tabela tableHead={tableHead} tableData={tableData} />
