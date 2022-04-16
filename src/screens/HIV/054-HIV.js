@@ -29,10 +29,13 @@ export default function T054({ navigation }) {
         <SafeAreaView style={styles.container}>
 
             <Text>
-                Se você chegou aqui, seu paciente apresentou teste rápido reagente para HIV. {"\n"}{"\n"}
+                Se você chegou aqui, está refletindo sobre o que o paciente apresenta (na anamnese, apresentando exames laboratoriais) e associando com a possibilidade de HIV +. {"\n"}{"\n"}
 
-                Caso não tenha realizado os outros testes rápidos, pode oferecer. E para isso, clique em <Bold>
-                TESTES RÁPIDOS</Bold> para acessar a seção Testes Rápidos.{"\n"}{"\n"}
+                Ou ainda, pode ter chegado aqui após o teste rápido ter se apresentado reagente.
+
+
+                Caso não tenha realizados os outros testes rápidos, ofereça-os ao paciente.
+                {'\n'} Para isso, clique em <Bold>TESTES RÁPIDOS</Bold> para acessar essa seção. {"\n"}{"\n"}
 
                 Caso contrário, clique em <Bold>PRÓXIMA</Bold>.{"\n"}
             </Text>
