@@ -35,8 +35,12 @@ export default function T011({ navigation })  {
                         <Text>Então você deve considerar tratamento medicamentoso para vaginose bacteriana recorrente</Text>
                         <Tabela tableData={tableData}></Tabela>
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
-                        <Text>• Se houver fitas para verificar pH vaginal, considere pH normal maior que 4.5.</Text>
-                        <Text>• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
+                        <Text>• Se a microscopia estiver disponível, o diagnóstico é realizado na presença de pelo menos três critérios de Amsel: {'\n'}</Text>
+                        <Text style={styles.littleTextTitle}>✓ Corrimento vaginal homogêneo;</Text>
+                        <Text style={styles.littleTextTitle}>✓ pH maior que 4,5;</Text>
+                        <Text style={styles.littleTextTitle}>✓ Presença de clue cells no exame de lâmina a fresco;</Text>
+                        <Text style={styles.littleTextTitle}>✓ Teste de Whiff positivo(odor fétido das aminas com adição de hidróxido de potássio a 10%).</Text>
+                        <Text>{'\n'}• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
                         <Text>• Tratamento para gestantes e lactantes apenas via terminal.</Text>
                         <Text>• Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
                     </View>
@@ -79,6 +83,13 @@ const styles = StyleSheet.create({
         color: 'black',
         fontFamily: "Mulish_Regular",
     },
+    littleTextTitle: {
+        fontSize: 17,
+        color: 'white',
+        alignSelf: 'center',
+        fontFamily: 'Mulish_Regular',
+        textAlign: 'center'
+    }
 });
 
 const tableData = [[<Text style={styles.textTitle}><Bold>Recorrente</Bold></Text>,
