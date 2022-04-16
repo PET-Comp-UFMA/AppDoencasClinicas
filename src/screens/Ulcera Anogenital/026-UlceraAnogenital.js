@@ -31,7 +31,7 @@ export default function T026({navigation}) {
                 Os seguintes sintomas estão
                 associados?{"\n\n"}
 
-                pápula, pústula ou exulceração indolor,
+                Pápula, pústula ou exulceração indolor,
                 que desaparece sem deixar sequela.{"\n"}
 
                 <Bold>Homem</Bold>: sulco coronal, frênulo e

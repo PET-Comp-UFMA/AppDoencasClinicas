@@ -35,7 +35,7 @@ export default function T055({ navigation }) {
                     Considerar consulta médica para diagnóstico diferencial para HIV.{"\n"}{"\n"}
                     Solicitar exames laboratoriais.{"\n"}{"\n"}
                     Realizar aconselhamento sobre prevenção combinada.{"\n"}{"\n"}
-                    Iniciar a cascata  de cuidado contínuo do HIV.{"\n"}{"\n"}
+                    Iniciar a cascata de cuidado contínuo do HIV.{"\n"}{"\n"}
                 </Text>
 
                 <Tabela tableStyle={styles.tabela} customStyle={styles.textTitle} tableData={tableData}/>

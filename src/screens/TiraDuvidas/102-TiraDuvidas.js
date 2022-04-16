@@ -28,7 +28,7 @@ export default function T102({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Text>Você <Bold>está na </Bold>seção de Tira Dúvidas.</Text>
+                    <Text>Você está na seção de <Bold>Tira Dúvidas.</Bold></Text>
                     <Text>Aqui você encontrará informações mais objetivas acercas das IST.</Text>
                     <Text>Escolha uma opção:</Text>
                 </View>
