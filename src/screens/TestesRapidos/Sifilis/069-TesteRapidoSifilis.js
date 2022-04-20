@@ -42,7 +42,7 @@ export default function T069({ navigation }) {
 
                     <Botao
                         title="MANEJO CLÍNICO"
-                        onPress={() => navigation.navigate('072-Aconselhamento')}
+                        onPress={() => navigation.navigate('051-Sifilis')}
                     />
                     <Botao
                         title="FINALIZAR"

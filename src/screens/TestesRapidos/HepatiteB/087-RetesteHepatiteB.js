@@ -38,7 +38,7 @@ export default function T087({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao
                     title="MANEJO CLÍNICO"
-                    onPress={() => navigation.navigate('002-Manejo Clinico')}
+                    onPress={() => navigation.navigate('060-HepatiteBeC')}
                 />
                 <Botao
                     title="FINALIZAR"
