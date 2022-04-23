@@ -35,7 +35,7 @@ export default function T002({ navigation })  {
 
 
                 <View>
-                    <Text>Aqui você irá reconhecer os sinais e sintomas apresentados pelo paciente ou colhidos durante o exame físico, além de poder integrar a oferta dos testes rápidos ao seu atendimento. Escolha uma opção:</Text>
+                    <Text>Aqui você irá reconhecer os sinais e sintomas apresentados pelo paciente ou colhidos durante o exame físico, além de poder integrar a oferta dos testes rápidos ao seu atendimento. {'\n'} Escolha uma opção:</Text>
                 </View>
 
                 </ScrollView>
