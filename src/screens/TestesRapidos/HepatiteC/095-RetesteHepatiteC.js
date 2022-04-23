@@ -6,9 +6,9 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Botao from '../../../components/Botao';
-import Bold from '../../../components/Bold';
-import Parag from '../../../components/Parag';
+import Botao from '@components/Botao';
+import Bold from '@components/Bold';
+import Parag from '@components/Parag';
 import { useTheme } from '@react-navigation/native';
 
 export default function T095({ navigation }) {
@@ -40,7 +40,7 @@ export default function T095({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao
                     title="MANEJO CLÍNICO"
-                    onPress={() => navigation.navigate('002-Manejo Clinico')}
+                    onPress={() => navigation.navigate('060-HepatiteBeC')}
                 />
                 <Botao
                     title="FINALIZAR"

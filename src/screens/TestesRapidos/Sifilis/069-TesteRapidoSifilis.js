@@ -9,9 +9,9 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
-import Parag from '../../../components/Parag';
-import Bold from '../../../components/Bold';
-import Botao from '../../../components/Botao';
+import Parag from '@components/Parag';
+import Bold from '@components/Bold';
+import Botao from '@components/Botao';
 
 export default function T069({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
@@ -42,7 +42,7 @@ export default function T069({ navigation }) {
 
                     <Botao
                         title="MANEJO CLÍNICO"
-                        onPress={() => navigation.navigate('072-Aconselhamento')}
+                        onPress={() => navigation.navigate('051-Sifilis')}
                     />
                     <Botao
                         title="FINALIZAR"
