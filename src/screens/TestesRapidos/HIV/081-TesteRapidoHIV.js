@@ -42,7 +42,7 @@ export default function T081({ navigation }) {
 
                     <Botao
                         title="MANEJO CLÍNICO"
-                        onPress={() => navigation.navigate('072-Aconselhamento')}
+                        onPress={() => navigation.navigate('054-HIV')}
                     />
                     <Botao
                         title="FINALIZAR"

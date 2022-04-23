@@ -33,6 +33,7 @@ export default function T079({ navigation }) {
             <ScrollView>
                 <View >
                     <Parag>Reteste foi <Bold>REAGENTE</Bold>. Clique em <Bold>MANEJO CLÍNICO</Bold>, e você será direcionado para as possíveis soluções. </Parag>
+                    <Parag>Se o paciente se recusar em prosseguir o manejo, aconselhe sobre a importância do tratamento, se ainda sim não concordar, clique em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Notifique todo o processo.</Parag>
                 </View>
                 
             </ScrollView>
@@ -41,7 +42,7 @@ export default function T079({ navigation }) {
 
                     <Botao
                         title="MANEJO CLÍNICO"
-                        onPress={() => navigation.navigate('002-Manejo Clinico')}
+                        onPress={() => navigation.navigate('054-HIV')}
                     />
                     <Botao
                         title="FINALIZAR"

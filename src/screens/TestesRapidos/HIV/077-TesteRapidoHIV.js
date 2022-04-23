@@ -43,11 +43,11 @@ export default function T077({ navigation }) {
                     />
                     <Botao
                         title="Não realizar reteste"
-                        onPress={() => navigation.navigate('081-TesteRápidoHIV')}
+                        onPress={() => navigation.navigate('081-TesteRapidoHIV')}
                     />
                     <Botao
                         title="Paciente recusou reteste"
-                        onPress={() => navigation.navigate('078-RetesteHIV')}
+                        onPress={() => navigation.navigate('080-RetestesHIV')}
                     />
                     <Botao
                         title="INDISPONÍVEL"

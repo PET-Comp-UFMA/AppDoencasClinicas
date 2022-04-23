@@ -41,7 +41,7 @@ export default function T047({ navigation }) {
 
                 <Botao
                     title="TESTES RÁPIDOS"
-                    onPress={() => navigation.navigate('051-Sifilis')}
+                    onPress={() => navigation.navigate('063-TestesRapidos')}
                 />
 
             </View>
