@@ -6,9 +6,9 @@ import {
     ScrollView,
     Text,
 } from 'react-native';
-import Botao from '@components/Botao';
-import Bold from '@components/Bold';
-import Parag from '@components/Parag';
+import Botao from '../../../components/Botao';
+import Bold from '../../../components/Bold';
+import Parag from '../../../components/Parag';
 import { useTheme } from '@react-navigation/native';
 
 export default function T088({ navigation }) {

@@ -9,9 +9,9 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTheme } from '@react-navigation/native';
-import Parag from '@components/Parag';
-import Bold from '@components/Bold';
-import Botao from '@components/Botao';
+import Botao from '../../../components/Botao';
+import Bold from '../../../components/Bold';
+import Parag from '../../../components/Parag';
 
 export default function T068({ navigation }) {
         // Atualiza as cores se o modo noturno estiver ligado
