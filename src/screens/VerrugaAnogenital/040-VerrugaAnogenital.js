@@ -39,7 +39,7 @@ export default function T040({ navigation }) {
                     <Parag>Considerar consulta médica para diagnóstico diferencial para HPV.</Parag>
                     <Parag>Considere seguir o fluxograma abaixo.</Parag>
                     <Imagem source={require("../../assets/images/F028.png")} title={"TITULO"} number={"F028"} />
-                    <Parag>Buscar parceria sexual para investigação.</Parag>
+                    <Parag>• Buscar parceria sexual para investigação.</Parag>
                 </View>
             </ScrollView>
             
