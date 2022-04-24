@@ -56,6 +56,7 @@ import T034 from "./src/screens/Ulcera Anogenital/034-UlceraAnogenital";
 
 import T039 from "./src/screens/VerrugaAnogenital/039-VerrugaAnogenital";
 import T040 from "./src/screens/VerrugaAnogenital/040-VerrugaAnogenital";
+import T041 from "./src/screens/VerrugaAnogenital/041-VerrugaAnogenital";
 import T042 from "./src/screens/VerrugaAnogenital/042-VerrugaAnogenital";
 import T043 from "./src/screens/VerrugaAnogenital/043-VerrugaAnogenital";
 import T044 from "./src/screens/VerrugaAnogenital/044-VerrugaAnogenital";
@@ -329,6 +330,11 @@ export default function App() {
 					<Stack.Screen
 						name='040-VerrugaAnogenital'
 						component={T040}
+						options={{ title: "Verruga Anogenital" }} />
+
+					<Stack.Screen
+						name='041-VerrugaAnogenital'
+						component={T041}
 						options={{ title: "Verruga Anogenital" }} />
 
 					<Stack.Screen

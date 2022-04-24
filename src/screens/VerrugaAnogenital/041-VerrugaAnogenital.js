@@ -13,7 +13,7 @@ import Imagem from '../../components/Imagem';
 import Tabela from "../../components/Tabela";
 import Bold from '../../components/Bold';
 
-export default function T040({ navigation }) {
+export default function T041({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -31,22 +31,19 @@ export default function T040({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Considerar os seguintes achados: {'\n'}• As lesões costumam ser únicas ou múltiplas, achatadas ou papulosas, mas sempre papilomatosas. {'\n'}• Superfície apresenta-se fosca, aveludada ou semelhante à da couve-flor. {'\n'}• Apresentam-se da cor da pele, eritematosas ou hiperpigmentadas. {'\n'}• Em geral são assintomáticas, mas podem ser pruriginosas, dolorosas, friáveis ou sangrantes.</Parag>
-                    <Parag>Caso não haja diagnóstico de HPV, considerar vacinação:</Parag>
-                </View>
-                <Tabela tableHead={tableHead} tableData={tableData} />
-                <View>
-                    <Parag>Considerar consulta médica para diagnóstico diferencial para HPV.</Parag>
-                    <Parag>Considere seguir o fluxograma abaixo.</Parag>
-                    <Imagem source={require("../../assets/images/F028.png")} title={"TITULO"} number={"F028"} />
-                    <Parag>• Buscar parceria sexual para investigação.</Parag>
+                    <Text>Ofereça ao seu paciente os testes rápidos e para mulheres oferte também o citológico de colo uterino.{'\n'}</Text>
+                    <Text>Se seu paciente aceitou realizar os testes. Clique em ACEITOU REALIZAR OS TESTES. {'\n'}Caso contrário, clique em NÃO ACEITOU REALIZAR OS TESTES.</Text>
                 </View>
             </ScrollView>
             
             <View style={styles.containerBotao}>
                     <Botao
-                        title="Próximo"
-                        onPress={() => navigation.navigate('041-VerrugaAnogenital')}
+                        title="ACEITOU FAZER OS TESTES"
+                        onPress={() => navigation.navigate('063-TestesRapidos')}
+                    />
+                    <Botao
+                        title="NÃO ACEITOU FAZER OS TESTES"
+                        onPress={() => navigation.navigate('043-VerrugaAnogenital')}
                     />
                 </View>
 

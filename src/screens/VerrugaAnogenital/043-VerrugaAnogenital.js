@@ -50,7 +50,7 @@ export default function T043({ navigation }) {
                     onPress={() => navigation.navigate('063-TestesRapidos')}
                 />
                 <Botao
-                    title="mesmo assim não aceitou realizar os testes rápidos"
+                    title="Mesmo assim não aceitou realizar os testes rápidos"
                     onPress={() => navigation.navigate('044-VerrugaAnogenital')}
                 />
 
