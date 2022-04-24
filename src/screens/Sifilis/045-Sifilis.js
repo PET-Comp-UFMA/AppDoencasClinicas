@@ -49,7 +49,7 @@ export default function T045({ navigation }) {
 
                 <Botao
                     title="NAO"
-                    onPress={() => navigation.navigate('')}
+                    onPress={() => navigation.navigate('001-Inicio')}
                 />
 
             </View>
