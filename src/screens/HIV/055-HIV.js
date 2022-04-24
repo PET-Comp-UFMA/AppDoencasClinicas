@@ -109,18 +109,18 @@ const tableData = [
         </Text>],
     
     [   <Text>
-            2) <Bold>Doxiciclina</Bold> 100mg, VO, 1 comprimido, 2x/dia, por 21 dias
+            2) <Bold>Vinculação</Bold> do indivíduo HIV positivo a um serviço de saúde
         </Text>],
     
     [   <Text>
-            3) <Bold>Azitromicina</Bold> 500mg, 2 comprimidos, VO, 1x/semana, por 21 dias <Bold>(preferencial nas gestantes)</Bold>
+            3) Sua <Bold>retenção</Bold> no segmento, por meio de acompanhamento e realização de exames periódicos
         </Text>],
     
     [   <Text>
-            4) <Bold>Azitromicina</Bold> 500mg, 2 comprimidos, VO, 1x/semana, por 21 dias <Bold>(preferencial nas gestantes)</Bold>
+            4) Início da TARV e sua promoção para uma boa <Bold>adesão ao tratamento</Bold>, a fim de alcançar os objetivos finais do cuidado
         </Text>],
 
     [   <Text>
-            5) <Bold>Azitromicina</Bold> 500mg, 2 comprimidos, VO, 1x/semana, por 21 dias <Bold>(preferencial nas gestantes)</Bold>
+            5) A <Bold>supressão da carga viral</Bold> e o alcance de uma qualidade de vida comparável a das pessoas que não possuem o HIV
         </Text>]   
 ];
