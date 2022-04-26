@@ -43,16 +43,25 @@ export default function T108({ navigation }) {
                     <Imagem source={require("../../assets/images/F024.png")} title={""} number={"F024"} />
                 </View>
 
+                <View>
+                    <Parag>Caso tenha concluído, clique em <Bold>FINALIZAR</Bold>, e será direcionado ao menu principal.</Parag>
+                    <Parag>Ou, se preferir, clique na seta para a <Bold>ESQUERDA</Bold> para relembrar algumas informações.</Parag>
+                    <Parag>Ou ainda você poderá clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção.</Parag>
+                </View>
+
 
 
             </ScrollView>
 
             <View style={styles.containerBotao}>
                 <Botao
-                    title="Próximo"
-                    onPress={() => navigation.navigate('109-HerpesGenital')}
+                    title="Tira Dúvidas"
+                    onPress={() => navigation.navigate('102-TiraDuvidas')}
                 />
-
+                <Botao
+                    title="Finalizar"
+                    onPress={() => navigation.navigate('001-Inicio')}
+                />
             </View>
 
 

@@ -41,7 +41,7 @@ export default function T102({ navigation }) {
                     />
                     <Botao
                         title="ÚLCERA ANOGENITAL"
-                        onPress={() => navigation.navigate('107-LinfogranulamaVenereo')}
+                        onPress={() => navigation.navigate('102_2-UlceraAnogenital')}
                     />
                     <Botao
                         title="VERRUGA ANOGENITAL"

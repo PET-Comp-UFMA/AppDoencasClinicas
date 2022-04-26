@@ -129,6 +129,7 @@ import T101 from './src/screens/TestesRapidos/101-RecusouTeste';
 
 import T102 from './src/screens/TiraDuvidas/102-TiraDuvidas';
 import T102_1 from './src/screens/TiraDuvidas/102_1-CorrimentoVaginalOuUteral';
+import T102_2 from './src/screens/TiraDuvidas/102_2-UlceraAnogenital';
 import T103 from './src/screens/TiraDuvidas/103-CandidiaseVulvovaginal';
 import T104 from './src/screens/TiraDuvidas/104-VaginoseBacteriana';
 import T105 from './src/screens/TiraDuvidas/105-Tricomoniase';
@@ -623,6 +624,11 @@ export default function App() {
 						name='102_1-CorrimentoVaginalOuUteral'
 						component={T102_1}
 						options={{ title: "Corrimento Vaginal ou Uteral" }} />
+					
+					<Stack.Screen
+						name='102_2-UlceraAnogenital'
+						component={T102_2}
+						options={{ title: "Úlcera Anogenital" }} />
 
 					<Stack.Screen
 						name='103-CandidiaseVulvovaginal'
