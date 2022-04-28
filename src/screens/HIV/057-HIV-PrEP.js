@@ -43,7 +43,7 @@ export default function T057({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao 
                     title="Finalizar"
-                    onPress={() => {navigation.navigate("001-Inicio.js")}}
+                    onPress={() => {navigation.navigate("001-Inicio")}}
                 />
             </View>
         </SafeAreaView>

@@ -33,7 +33,7 @@ export default function T120({ navigation }) {
                     <Parag>A Profilaxia Pós-Exposição (PEP) de risco à infecção pelo HIV consiste no uso de antirretrovirais, por 28 dias, para reduzir o risco de adquirir essa infecção</Parag>
                     <Parag>O atendimento após a exposição ao HIV é uma urgência. A PEP deve ser iniciada o mais precocemente possível, tendo como limite as 72 horas subsequentes à exposição.</Parag>
                     <Parag>Nos casos em que o atendimento ocorrer após 72 horas da exposição, a PEP não está mais indicada.</Parag>
-                    <Parag>Mais informações sobre a Profilaxia Pós-Exposição ao HIV, ir para a tela 129.</Parag>
+                    <Parag>Mais informações sobre a Profilaxia Pós-Exposição ao HIV, <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold></Parag>
                     <Parag>Você poderá escolher uma das opções abaixo. E ainda, clicar em <Bold>TIRA DÚVIDAS</Bold> para ir ao menu dessa seção, ou em <Bold>FINALIZAR</Bold> e ser direcionado ao <Bold>MENU PRINCIPAL</Bold>.</Parag>
                 </View>
 

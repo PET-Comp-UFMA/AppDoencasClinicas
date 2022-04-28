@@ -31,7 +31,7 @@ export default function T121({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>De acordo com o Decreto-Lei nº 2.848, de 7 de dezembro de 1940, artigo 128, inciso II do Código Penal brasileiro314, o abortamento é permitido quando a gravidez resulta de estupro, risco de morte da gestante ou anencefalia.</Parag>
+                    <Parag>De acordo com o Decreto-Lei nº 2.848, de 7 de dezembro de 1940, artigo 128, inciso II do Código Penal brasileiro 314, o abortamento é permitido quando a gravidez resulta de estupro, risco de morte da gestante ou anencefalia.</Parag>
                     <Parag>O método mais adequado para a anticoncepção de emergência consiste na utilização de levonorgestrel.</Parag>
                 </View>
 
