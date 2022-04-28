@@ -11,6 +11,7 @@ import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
 import Tabela from '../../components/Tabela';
 import { useTheme } from '@react-navigation/native';
+import { DataTable } from 'react-native-paper';
 
 export default function T121({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
@@ -36,7 +37,37 @@ export default function T121({ navigation }) {
                 </View>
 
                 <View>
-                    <Tabela tableData={tableData} tableHead={tableHead}></Tabela>
+                    <DataTable flex={1}>
+                        <DataTable.Header style={styles.header}>
+                            <Text style={styles.tableHeadText}>
+                                Classificação
+                            </Text>
+                            <Text style={styles.tableHeadText}>
+                                Subclassificação
+                            </Text>
+                        </DataTable.Header>
+                        
+                        <DataTable.Row>
+                            <View style={styles.tableData} flex={1}>
+                                <Text style={styles.textTitle}> Comprimidos de 0,75mg (cartela com 2 comprimidos) e 1,5mg de levornogestrel (cartela com 1 comprimido)</Text>
+                            </View>
+
+                            <View flex={2}>
+                                <View flex={1} flexDirection={'row'}>
+                                        <View style={styles.tableData} flex={1}>
+                                            <Text style={styles.textTitle}><Bold>1ª opção:</Bold> comprimido de 1,5mg VO ou 2 comprimidos de 0,75mg, dose única, até 5 dias após a relação sexual</Text>
+                                        </View>
+                                
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                        <View style={styles.tableData} flex={1}>
+                                            <Text style={styles.textTitle}> <Bold>2ª opção:</Bold> 1 comprimido de 0,75mg, VO de 12/12 horas, no total de 2 comprimidos, até 5 dias após a relação sexual</Text>
+                                        </View>
+                                       
+                                </View>
+                            </View>
+                        </DataTable.Row>
+                    </DataTable>
                 </View>
 
                 <View>
@@ -83,11 +114,11 @@ const styles = StyleSheet.create({
 
     },
     textTitle: {
-
+        fontSize: 11,
         margin: 6,
         alignSelf: 'center',
         color: 'black',
-        fontFamily: "Mulish_Regular",
+        fontFamily: "Mulish_Regular"
     },
 
     tabela: {
@@ -107,32 +138,48 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
         fontSize: 18
+    },
+    tableCell: {
+        flex: 1
+    },
+    header: {
+        backgroundColor: '#59998D',
+        marginHorizontal:16,
+        paddingHorizontal: 0,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
+        borderBottomColor: "#59998D"
+    },
+    tableHeadText: {
+        fontSize: 12, 
+        alignSelf: 'center',
+        color: '#FFFFFF',
+        fontFamily: "Mulish_Bold",
+        flex:1,
+        textAlignVertical:'center',
+        textAlign: 'center'
+    },
+    tableData: {
+        borderWidth: 1, 
+        borderColor: '#59998D',
+        
+    },
+    tableRow: {
+        marginHorizontal:16,
+        paddingHorizontal:0,
+        borderWidth: 1, 
+        borderColor: '#59998D',
+    },
+    borderTopLeft: {
+        borderTopLeftRadius: 10
+    },
+    borderTopRight: {
+        borderTopRightRadius: 10
+    },
+    borderBottomLeft: {
+        borderBottomLeftRadius: 10
+    },
+    borderBottomRight: {
+        borderBottomRightRadius: 10
     }
 });
-
-const tableHead = [
-    <Text style={styles.textHead}>Apresentação</Text>,
-    <Text style={styles.textHead}>Posologia</Text>,
-]
-const tableData = [
-    [
-        <Text style={styles.textTitle}>
-            Comprimidos de 0,75mg (cartela com 2 comprimidos) e 1,5mg de levornogestrel (cartela com 1 comprimido)
-        </Text>,
-
-        <Text style={styles.textData}>
-            <Bold>1ª opção:</Bold> comprimido de 1,5mg VO ou 2 comprimidos de 0,75mg, dose única, até 5 dias após a relação sexual
-        </Text>,
-    ],
-
-    [
-
-        <Text style={styles.textData}>
-            <Bold>2ª opção:</Bold> 1 comprimido de 0,75mg, VO de 12/12 horas, no total de 2 comprimidos, até 5 dias após a relação sexual
-        </Text>,
-    ],
-
-
-];
-
-
