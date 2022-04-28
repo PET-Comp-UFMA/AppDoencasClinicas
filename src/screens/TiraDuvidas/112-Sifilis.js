@@ -28,6 +28,15 @@ export default function T112({ navigation }) {
         textAlign: 'center',
         lineHeight: 35
     }
+
+    var style = {
+        fontSize: 11,
+        margin: 6,
+        alignSelf: 'center',
+        color: colors.text,
+        fontFamily: "Mulish_Regular"
+    }
+
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -35,7 +44,6 @@ export default function T112({ navigation }) {
                     <Parag><Bold>Agente causador:</Bold> bactéria Treponema pallidum.</Parag>
                     <Parag><Bold>Diagnóstico diferencial:</Bold> sífilis, cancroide, tuberculose cutânea, amebíase cutânea, neoplasias ulceradas, leishmaniose tegumentar americana e outras doenças cutâneas ulcerativas e granulomatosas.</Parag>
                 </View>
-
 
                 <View>
                     <DataTable flex={1}>
@@ -53,56 +61,56 @@ export default function T112({ navigation }) {
                         
                         <DataTable.Row>
                             <View style={styles.tableData} flex={1}>
-                                <Text style={styles.textTitle}><Bold>Sífilis recente (até 1 ano de evolução)</Bold></Text>
+                                <Text style={style}><Bold>Sífilis recente (até 1 ano de evolução)</Bold></Text>
                             </View>
 
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Primária(10-90 dias)</Text>
+                                            <Text style={style}>Primária(10-90 dias)</Text>
                                         </View>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Úlcera rica em treponemas, geralmente única  e indolor, com borda bem definida e regular, base endurecida e fundo limpo, que ocorre no local de entrada da bactéria.</Text>
-                                        </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                        <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Secundária(6 semanas a 6 meses)</Text>
-                                        </View>
-                                        <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Erupção macular eritematosa pouco visível (roséola), principalmente no tronco e raiz dos membros. Habitualmente, atingem a região plantar e palmar.</Text>
+                                            <Text style={style}>Úlcera rica em treponemas, geralmente única  e indolor, com borda bem definida e regular, base endurecida e fundo limpo, que ocorre no local de entrada da bactéria.</Text>
                                         </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Latente Recente</Text>
+                                            <Text style={style}>Secundária(6 semanas a 6 meses)</Text>
                                         </View>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Período em que não se observa nenhum sinal ou sintoma. O diagnóstico faz-se exclusivamente pela reatividade dos testes treponêmicos e não treponêmico.</Text>
+                                            <Text style={style}>Erupção macular eritematosa pouco visível (roséola), principalmente no tronco e raiz dos membros. Habitualmente, atingem a região plantar e palmar.</Text>
+                                        </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                        <View style={styles.tableData} flex={1}>
+                                            <Text style={style}>Latente Recente</Text>
+                                        </View>
+                                        <View style={styles.tableData} flex={1}>
+                                            <Text style={style}>Período em que não se observa nenhum sinal ou sintoma. O diagnóstico faz-se exclusivamente pela reatividade dos testes treponêmicos e não treponêmico.</Text>
                                         </View>
                                 </View>
                             </View>
                         </DataTable.Row>
                         <DataTable.Row>
                             <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
-                                <Text style={styles.textTitle}><Bold>Sífilis tardia (mais de 1 ano de evolução)</Bold></Text>
+                                <Text style={style}><Bold>Sífilis tardia (mais de 1 ano de evolução)</Bold></Text>
                             </View>
 
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Latente Tardia</Text>
+                                            <Text style={style}>Latente Tardia</Text>
                                         </View>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}>Período em que não se observa nenhum sinal ou sintoma. O diagnóstico faz-se exclusivamente pela reatividade dos testes treponêmicos e não treponêmico.</Text>
+                                            <Text style={style}>Período em que não se observa nenhum sinal ou sintoma. O diagnóstico faz-se exclusivamente pela reatividade dos testes treponêmicos e não treponêmico.</Text>
                                         </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
                                         <View style={styles.tableData} flex={1} >
-                                            <Text style={styles.textTitle}>Terciária (1-40 anos)</Text>
+                                            <Text style={style}>Terciária (1-40 anos)</Text>
                                         </View>
                                         <View style={[styles.tableData,styles.borderBottomRight]} flex={1}>
-                                            <Text style={styles.textTitle}> É comum o acometimento do sistema nervoso e do sistema cardiovascular. Além disso, verifica-se a formação de gomas sifilíticas (tumorações com tendência a liquefação) na pele, mucosas, ossos ou qualquer tecido. As lesões podem causar desfiguração, incapacidade e até morte.</Text>
+                                            <Text style={style}> É comum o acometimento do sistema nervoso e do sistema cardiovascular. Além disso, verifica-se a formação de gomas sifilíticas (tumorações com tendência a liquefação) na pele, mucosas, ossos ou qualquer tecido. As lesões podem causar desfiguração, incapacidade e até morte.</Text>
                                         </View>
                                 </View>
                             </View>
@@ -153,13 +161,6 @@ const styles = StyleSheet.create({
     texto: {
         marginBottom: 10,
 
-    },
-    textTitle: {
-        fontSize: 11,
-        margin: 6,
-        alignSelf: 'center',
-        color: 'black',
-        fontFamily: "Mulish_Regular"
     },
 
     tabela: {
