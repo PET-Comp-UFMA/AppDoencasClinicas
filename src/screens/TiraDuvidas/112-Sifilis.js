@@ -116,7 +116,10 @@ export default function T112({ navigation }) {
                     <Imagem source={require("../../assets/images/F032.png")} title={""} number={"F032"} />
                 </View> 
 
-
+                <View>
+                    <Parag>Caso tenha concluído, clique em <Bold>FINALIZAR</Bold>, e será direcionado ao menu principal.</Parag>
+                    <Parag>Ou, se preferir, clique na seta para a <Bold>ESQUERDA</Bold> para relembrar algumas informações.</Parag>
+                </View>
 
             </ScrollView>
 

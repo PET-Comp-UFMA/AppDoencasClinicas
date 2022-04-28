@@ -30,7 +30,7 @@ export default function T106({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag><Bold>Agente causador:</Bold> Chlamydia trachomatis (clamídia).</Parag>
+                    <Parag><Bold>Agente causador:</Bold> Chlamydia trachomatis (clamídia), Neisseria gonorrhoeae (gonorreia).</Parag>
                     <Parag><Bold>Período de incubação:</Bold> clamídia (aproximadamente 15 dias) e gonorreia (2 a 5 dias, podendo variar de 1 a 10 dias).</Parag>
                     <Parag><Bold>Manifestações clínicas:</Bold> na grande maioria das vezes são cervicites assintomáticas, mas quando existem sintomas podem ser disúria, sangramento intermenstrual, dispareunia, podendo estar associado a corrimento vaginal, polaciúria, dor pélvica e/ou corimento uretral. Dor à manipulação do colo, muco cervical turvo ou amarelado e friabilidade cervical.</Parag>
                     <Parag><Bold>Diagnóstico diferencial:</Bold> para clamídia (gonorreia, tricomoniase) e para gonorreia (clamídia, tricomoníase, vaginose bacteriana).</Parag>
