@@ -27,6 +27,16 @@ export default function T121({ navigation }) {
         textAlign: 'center',
         lineHeight: 35
     }
+
+    var style = {
+        fontSize: 11,
+        margin: 6,
+        alignSelf: 'center',
+        color: colors.text,
+        fontFamily: "Mulish_Regular"
+    }
+
+
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -49,19 +59,19 @@ export default function T121({ navigation }) {
                         
                         <DataTable.Row>
                             <View style={styles.tableData} flex={1}>
-                                <Text style={styles.textTitle}> Comprimidos de 0,75mg (cartela com 2 comprimidos) e 1,5mg de levornogestrel (cartela com 1 comprimido)</Text>
+                                <Text style={style}> Comprimidos de 0,75mg (cartela com 2 comprimidos) e 1,5mg de levornogestrel (cartela com 1 comprimido)</Text>
                             </View>
 
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}><Bold>1ª opção:</Bold> comprimido de 1,5mg VO ou 2 comprimidos de 0,75mg, dose única, até 5 dias após a relação sexual</Text>
+                                            <Text style={style}><Bold>1ª opção:</Bold> comprimido de 1,5mg VO ou 2 comprimidos de 0,75mg, dose única, até 5 dias após a relação sexual</Text>
                                         </View>
                                 
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
                                         <View style={styles.tableData} flex={1}>
-                                            <Text style={styles.textTitle}> <Bold>2ª opção:</Bold> 1 comprimido de 0,75mg, VO de 12/12 horas, no total de 2 comprimidos, até 5 dias após a relação sexual</Text>
+                                            <Text style={style}> <Bold>2ª opção:</Bold> 1 comprimido de 0,75mg, VO de 12/12 horas, no total de 2 comprimidos, até 5 dias após a relação sexual</Text>
                                         </View>
                                        
                                 </View>
