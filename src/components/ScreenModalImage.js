@@ -24,11 +24,6 @@ export default class ScreenModalImage extends Component {
     return (
       <TouchableOpacity style={styles.viewModal} activeOpacity={2} onPress={this.props.toggleModal}>
         <BlurView intensity={100} tint="dark" style={styles.viewModal}>
-          <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
-            <Image style={styles.closeButton} source={require("../assets/icons/close.png")}/>
-            
-          </TouchableOpacity>
-
           <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
       
             <ImageZoom 
@@ -48,6 +43,10 @@ export default class ScreenModalImage extends Component {
 
           </View>
         </BlurView>      
+        <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
+            <Image style={styles.closeButton} source={require("../assets/icons/close.png")}/>
+            
+        </TouchableOpacity>
       </TouchableOpacity>
     )
   }
