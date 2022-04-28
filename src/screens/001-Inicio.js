@@ -38,11 +38,11 @@ export default function T001({ navigation })  {
     
         return(
             <SafeAreaView style = {styles.container}> 
-                <ScrollView>   
-                    <View style={styles.container}>
+                <ScrollView>
+                       
+                    <View style={styles.containerImage}>
                         <Image style={styles.image} source={require('../assets/icons/Logo.png')} />
                     </View>
-
                     <View style={{marginTop: 50}}>
                         <Text style={titulo.titulo}><Bold>Bem Vindo</Bold></Text>
                         <Text>Colega enfermeiro, escolha uma das opções abaixo:</Text>
@@ -79,14 +79,18 @@ const styles = StyleSheet.create({
         justifyContent  : 'space-between',
         marginTop: 20
     },
-
+    containerImage: {
+        justifyContent  : 'center', 
+        alignItems      : 'center', 
+        flexDirection   : 'column'
+    },
     containerBotao: {
         marginTop       : 30,
         width           : '100%'
     },
     image: {
         height: 160,
-        width: 420
+        width: 300
     },
     image2: {
         height: 50,
