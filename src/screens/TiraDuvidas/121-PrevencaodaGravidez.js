@@ -50,10 +50,10 @@ export default function T121({ navigation }) {
                     <DataTable flex={1}>
                         <DataTable.Header style={styles.header}>
                             <Text style={styles.tableHeadText}>
-                                Classificação
+                                APREENTAÇÃO
                             </Text>
                             <Text style={styles.tableHeadText}>
-                                Subclassificação
+                                POSOLOGIA
                             </Text>
                         </DataTable.Header>
                         
