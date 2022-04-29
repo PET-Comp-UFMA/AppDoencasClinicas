@@ -32,10 +32,12 @@ class Titulo extends Component {
 
         // Título da tela
         // IOS tem tamanho de fonte menor
+        let flexsize;
         if (Platform.OS == "ios") {
+           flexsize = 0.74;
            this.titulostyle = StyleSheet.create({
             titulo: {
-                        fontSize          : 20,
+                        fontSize          : 18,
                         textAlign         : 'center',
                         color             : '#323F4B',
                         fontFamily        : 'Mulish_Bold',
@@ -43,7 +45,8 @@ class Titulo extends Component {
                         color             : this.props.colors.text
                     }});
         } else {
-        this.titulostyle = StyleSheet.create({
+            flexsize=0.85;
+            this.titulostyle = StyleSheet.create({
             titulo: {
                         fontSize          : 28,
                         textAlign         : 'center',
@@ -79,7 +82,7 @@ class Titulo extends Component {
             <View style={styles.view} >
                 {backbutton}
                 <View
-                    flex={0.85} // Por algum motivo o react tem uma borda no header
+                    flex={flexsize} // Por algum motivo o react tem uma borda no header
                 >
                     <Text style={this.titulostyle.titulo}>    
                         {this.titulo}
