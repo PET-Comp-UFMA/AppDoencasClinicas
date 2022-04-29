@@ -62,7 +62,7 @@ export default function T121({ navigation }) {
                                 <Text style={style}> Comprimidos de 0,75mg (cartela com 2 comprimidos) e 1,5mg de levornogestrel (cartela com 1 comprimido)</Text>
                             </View>
 
-                            <View flex={2}>
+                            <View flex={1}>
                                 <View flex={1} flexDirection={'row'}>
                                         <View style={styles.tableData} flex={1}>
                                             <Text style={style}><Bold>1ª opção:</Bold> comprimido de 1,5mg VO ou 2 comprimidos de 0,75mg, dose única, até 5 dias após a relação sexual</Text>
