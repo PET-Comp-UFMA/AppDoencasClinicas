@@ -27,29 +27,32 @@ export default function T054({ navigation }) {
     }
     return (
         <SafeAreaView style={styles.container}>
+            <ScrollView>
+                <Text>
+                    Se você chegou aqui, está refletindo sobre o que o paciente apresenta (na anamnese, apresentando exames laboratoriais) e associando com a possibilidade de HIV +. {"\n"}{"\n"}
 
-            <Text>
-                Se você chegou aqui, está refletindo sobre o que o paciente apresenta (na anamnese, apresentando exames laboratoriais) e associando com a possibilidade de HIV +. {"\n"}{"\n"}
-
-                Ou ainda, pode ter chegado aqui após o teste rápido ter se apresentado reagente.
+                    Ou ainda, pode ter chegado aqui após o teste rápido ter se apresentado reagente.
 
 
-                Caso não tenha realizados os outros testes rápidos, ofereça-os ao paciente.
-                {'\n'} Para isso, clique em <Bold>TESTES RÁPIDOS</Bold> para acessar essa seção. {"\n"}{"\n"}
+                    Caso não tenha realizados os outros testes rápidos, ofereça-os ao paciente.
+                    {'\n'} Para isso, clique em <Bold>TESTES RÁPIDOS</Bold> para acessar essa seção. {"\n"}{"\n"}
 
-                Caso contrário, clique em <Bold>PRÓXIMA</Bold>.{"\n"}
-            </Text>
+                    Caso contrário, clique em <Bold>PRÓXIMA</Bold>.{"\n"}
+                </Text>
+
+                
+            </ScrollView>
 
             <View style={styles.containerBotao}>
-                <Botao 
-                    title="TESTES RÁPIDOS"
-                    onPress={() => {navigation.navigate("063-TestesRapidos")}}
-                />
-                <Botao 
-                    title="PRÓXIMA"
-                    onPress={() => {navigation.navigate("055-HIV")}}
-                />
-            </View>
+                    <Botao
+                        title="TESTES RÁPIDOS"
+                        onPress={() => { navigation.navigate("063-TestesRapidos") }}
+                    />
+                    <Botao
+                        title="PRÓXIMA"
+                        onPress={() => { navigation.navigate("055-HIV") }}
+                    />
+                </View>
         </SafeAreaView>
     );
 }
