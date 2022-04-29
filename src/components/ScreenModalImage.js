@@ -8,12 +8,13 @@ import {
   Image,
   Dimensions
 } from "react-native";
-import { setStatusBarBackgroundColor, setStatusBarStyle } from 'expo-status-bar';
+import { setStatusBarBackgroundColor, setStatusBarStyle} from 'expo-status-bar';
 
 import ImageZoom from 'react-native-image-pan-zoom';
+
+
 import { BlurView } from 'expo-blur';
 
-import Botao from './Botao';
 
 export default class ScreenModalImage extends Component {
 
@@ -24,8 +25,8 @@ export default class ScreenModalImage extends Component {
       <TouchableOpacity style={styles.viewModal} activeOpacity={2} onPress={this.props.toggleModal}>
         <BlurView intensity={100} tint="dark" style={styles.viewModal}>
           <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
-
-            <ImageZoom
+      
+            <ImageZoom 
               cropWidth={Dimensions.get('window').width}
               cropHeight={Dimensions.get('window').height}
               imageWidth={345}
@@ -37,17 +38,15 @@ export default class ScreenModalImage extends Component {
                 source={this.props.source}
                 style={styles.image}>
               </Image>
-
+                
             </ImageZoom>
 
           </View>
-        </BlurView>
-
-        <Botao
-          title="Fechar"
-          onPress={this.props.toggleModal}
-        />
-
+        </BlurView>      
+        <TouchableOpacity style={styles.buttonCloseModal} onPress={this.props.toggleModal}>
+            <Image style={styles.closeButton} source={require("../assets/icons/close.png")}/>
+            
+        </TouchableOpacity>
       </TouchableOpacity>
     )
   }
@@ -106,9 +105,5 @@ const styles = StyleSheet.create({
     width: 50,
     marginTop: 25,
     marginRight: 5
-  },
-  containerBotao: {
-    marginTop: 30,
-    width: '100%'
-  },
+  }
 });

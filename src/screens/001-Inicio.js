@@ -61,10 +61,6 @@ export default function T001({ navigation })  {
                             title = "Sobre"
                             onPress = { () => navigation.navigate('123-Sobre') }
                         />
-                        <Botao
-                            title = "Sobre"
-                            onPress = { () => navigation.navigate('123-Sobre') }
-                        />
                         
                     </View>
                     <View style={styles.container}>
