@@ -31,6 +31,7 @@ export default class ScreenModalImage extends Component {
               imageWidth={345}
               imageHeight={345}
               minScale={1.0}
+              style={styles.viewModal}
             >
 
               <Image
@@ -40,13 +41,18 @@ export default class ScreenModalImage extends Component {
 
             </ImageZoom>
 
+
           </View>
+
         </BlurView>
 
-        <Botao
-          title="Fechar"
-          onPress={this.props.toggleModal}
-        />
+        <View style={styles.containerBotao}>
+          <Botao
+            title="Fechar"
+            onPress={this.props.toggleModal}
+          />
+        </View>
+
 
       </TouchableOpacity>
     )
@@ -108,7 +114,7 @@ const styles = StyleSheet.create({
     marginRight: 5
   },
   containerBotao: {
-    marginTop: 30,
+    
     width: '100%'
   },
 });
