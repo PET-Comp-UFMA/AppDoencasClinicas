@@ -36,7 +36,7 @@ export default function T008({ navigation })  {
                         <Tabela tableData={tableData}></Tabela>
                         <Text></Text>
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
-                        <Text>• Se houver fitas para verificar pH vaginal, considere pH normal (4.5).</Text>
+                        <Text>• Se houver fitas para verificar pH vaginal, considere CVV se pH ({'<'}4,5).</Text>
                         <Text>• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
                         <Text>• Tratamento para gestantes e lactantes apenas via terminal.</Text>
                         <Text>• Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
@@ -90,5 +90,5 @@ const tableData = [[<Text style={styles.textTitle}><Bold>Primeira Opção</Bold>
     [<Text style={styles.textTitle}><Bold>Segunda Opção</Bold></Text>,
     <Text style={styles.textData}><Bold>Fluconazol</Bold> 150mg, VO, dose única {"\n"}
     <Bold>OU{"\n"}</Bold>
-    <Bold>Itraconazol</Bold> 100mg, 2 comprimidos, VO, 2x/dia, por dia
+    <Bold>Itraconazol</Bold> 100mg, 2 comprimidos, VO, 2x/dia, por 1 dia
     </Text>]];

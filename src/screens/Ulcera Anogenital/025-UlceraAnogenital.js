@@ -22,7 +22,7 @@ export default function T025({navigation}) {
         <SafeAreaView style={styles.container}>
 
             <Text> 
-                O paciente está apresentando {"\n"}
+                O(a) paciente está apresentando {"\n"}
                 linfadenopatia inguinal e/ou femoral?
             </Text>
 

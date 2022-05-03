@@ -31,15 +31,15 @@ export default function T026({navigation}) {
                 Os seguintes sintomas estão
                 associados?{"\n\n"}
 
-                Pápula, pústula ou exulceração indolor,
-                que desaparece sem deixar sequela.{"\n"}
+                • Pápula, pústula ou exulceração indolor,
+                que desaparece sem deixar sequela?{"\n"}
 
-                <Bold>Homem</Bold>: sulco coronal, frênulo e
-                prepúcio{"\n"}
+                • <Bold>Homem</Bold>: sulco coronal, frênulo e
+                prepúcio?{"\n"}
 
-                <Bold>Mulher</Bold>: parede vaginal posterior, colo
+                • <Bold>Mulher</Bold>: parede vaginal posterior, colo
                 uterino, fúrcula e outras partes da
-                genitália externa{"\n\n"}
+                genitália externa?{"\n\n"}
 
 
                 Comprometimento ganglionar evolui

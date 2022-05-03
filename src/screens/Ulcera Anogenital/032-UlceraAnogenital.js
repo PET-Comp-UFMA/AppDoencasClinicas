@@ -26,7 +26,7 @@ export default function T032({navigation}) {
         <SafeAreaView style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={true}>
                 <Text>
-                O(a) paciente(a) apresenta lesões dolorosas, geralmente múltiplas, com borda irregular, apresentando contornos eritemato-edematosos e fundo heterogêneo, recoberto por exsudato necrótico, amarelado, com odor fétido?
+                O(a) paciente apresenta lesões dolorosas, geralmente múltiplas, com borda irregular, apresentando contornos eritemato-edematosos e fundo heterogêneo, recoberto por exsudato necrótico, amarelado, com odor fétido?
                 </Text>
                 <Imagem source={require("../../assets/images/F022.png")} title={"Acompanhamento"} number={"F022"}/>
                 <Imagem source={require("../../assets/images/F023.png")} title={"Acompanhamento"} number={"F023"}/>

@@ -31,7 +31,7 @@ export default function T016({ navigation })  {
                 <ScrollView>
                     <View>
                         <Text>Se não é corrimento vaginal, pode ser uretral.</Text>
-                        <Text>Existe corrimento uretral mucopurulento, com volume variável, associado a dor uretral (independenteda micção), disúria, estrangúria, plurido uretral e eritema de meato uretral?</Text>
+                        <Text>• Existe corrimento uretral mucopurulento, com volume variável, associado a dor uretral (independente da micção), disúria, estrangúria, prurido uretral e eritema de meato uretral?</Text>
                         
                         <Imagem source={require("../../assets/images/F010.png")} title={"Corrimento Uretral"} number={"F010"}/>
                         <Imagem source={require("../../assets/images/F011.png")} title={"Corrimento Uretral"} number={"F011"}/>
