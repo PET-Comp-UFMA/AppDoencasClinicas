@@ -32,7 +32,7 @@ export default function T026({navigation}) {
                 associados?{"\n\n"}
 
                 Pápula, pústula ou exulceração indolor,
-                que desaparece sem deixar sequela.{"\n"}
+                que desaparece sem deixar sequela.{"\n\n"}
 
                 <Bold>Homem</Bold>: sulco coronal, frênulo e
                 prepúcio{"\n"}

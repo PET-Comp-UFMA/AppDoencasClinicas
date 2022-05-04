@@ -34,7 +34,7 @@ export default function T066({ navigation }) {
                 <View >
                 <Parag>Repita o procedimento para realizar o teste novamente.</Parag>
                 <Parag> Conforme o resultado, escolha uma opção.</Parag>
-                <Parag><Bold>Atenção</Bold>.: Se o resultado do reteste for <Bold>INVÁLIDO</Bold>, considere realizar novamente. Pode ter sido um erro em alguma etapa do procedimento.</Parag>
+                <Parag><Bold>Atenção</Bold>: Se o resultado do reteste for <Bold>INVÁLIDO</Bold>, considere realizar novamente. Pode ter sido um erro em alguma etapa do procedimento.</Parag>
                 <Parag>Se for REAGENTE, não esqueça de notificar.</Parag>
                 </View>
                 
