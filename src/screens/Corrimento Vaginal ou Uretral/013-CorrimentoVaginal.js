@@ -31,9 +31,9 @@ export default function T013({ navigation })  {
                 <ScrollView>
                     <View>
                         <Text>Esse corrimento vaginal apresenta as seguintes características:{"\n"}</Text>
-                        <Text>Corrimento abundante, amarelado ou amarelo esverdeado e por vezes acizentado, bolhoso{"\n"}</Text>
-                        <Text>Podendo haver:</Text>
-                        <Text>Plurido vulvar, disúria e hiperemia da mucosa</Text>
+                        <Text>• Corrimento abundante, amarelado ou amarelo esverdeado e por vezes acizentado, bolhoso?{"\n"}</Text>
+                        <Text>Podendo haver:{"\n"}</Text>
+                        <Text>• Prurido vulvar, disúria e hiperemia da mucosa?</Text>
                         
                         <Imagem source={require("../../assets/images/F007.png")} title={"Corrimento Vaginal"} number={"F007"}/>
                         <Imagem source={require("../../assets/images/F008.png")} title={"Corrimento Vaginal"} number={"F008"}/>

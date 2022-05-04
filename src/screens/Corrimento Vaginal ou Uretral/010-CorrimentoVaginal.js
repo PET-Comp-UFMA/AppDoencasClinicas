@@ -30,7 +30,7 @@ export default function T010({ navigation })  {
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Esses sintomas são recorrentes(4 ou mais episódios por ano)?</Text>
+                        <Text>Esses sintomas são recorrentes (4 ou mais episódios por ano)?</Text>
                     </View>
 
                 </ScrollView>

@@ -31,9 +31,9 @@ export default function T009({ navigation })  {
                 <ScrollView>
                     <View>
                         <Text>Esse corrimento vaginal apresenta as seguintes características:{"\n"}</Text>
-                        <Text>Corrimento vaginal fétido, branco-acinzentado, de aspecto fluido ou cremoso, algumas vezes bolhoso{"\n"}</Text>
+                        <Text>• Corrimento vaginal fétido, branco-acinzentado, de aspecto fluido ou cremoso, algumas vezes bolhoso?{"\n"}</Text>
                         <Text>Podendo haver:</Text>
-                        <Text>Dispareunia não muito frequente.</Text>
+                        <Text>• Dispareunia não muito frequente?</Text>
                         
                         <Imagem source={require("../../assets/images/F004.png")} title={"Corrimento Vaginal"} number={"F004"}/>
                         <Imagem source={require("../../assets/images/F005.png")} title={"Corrimento Vaginal"} number={"F005"}/>

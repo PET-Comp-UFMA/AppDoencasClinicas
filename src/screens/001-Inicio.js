@@ -44,8 +44,8 @@ export default function T001({ navigation })  {
                         <Image style={styles.image} source={require('../assets/icons/Logo.png')} />
                     </View>
                     <View style={{marginTop: 50}}>
-                        <Text style={titulo.titulo}><Bold>Bem Vindo</Bold></Text>
-                        <Text>Colega enfermeiro, escolha uma das opções abaixo:</Text>
+                        <Text style={titulo.titulo}><Bold>Bem Vindo (a)</Bold></Text>
+                        <Text>Enfermeiro (a), escolha uma das opções abaixo:</Text>
                     </View>
 
                     <View style = {styles.containerBotao}>

@@ -30,7 +30,7 @@ export default function T006({ navigation })  {
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
                     <View>
-                        <Text>Esses sintomas são recorrentes(4 ou mais episódios por ano) e/ou há comprometimento imunológico(diabetes, gravidez, imunossupressão)?</Text>
+                        <Text>Esses sintomas são recorrentes (4 ou mais episódios por ano) e/ou há comprometimento imunológico (diabetes, gravidez, imunossupressão)?</Text>
                     </View>
 
                 </ScrollView>
