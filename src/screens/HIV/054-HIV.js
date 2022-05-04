@@ -31,7 +31,7 @@ export default function T054({ navigation }) {
                 <Text>
                     Se você chegou aqui, está refletindo sobre o que o paciente apresenta (na anamnese, apresentando exames laboratoriais) e associando com a possibilidade de HIV +. {"\n"}{"\n"}
 
-                    Ou ainda, pode ter chegado aqui após o teste rápido ter se apresentado reagente.
+                    Ou ainda, pode ter chegado aqui após o teste rápido ter se apresentado reagente.{'\n'}{'\n'}
 
 
                     Caso não tenha realizados os outros testes rápidos, ofereça-os ao paciente.

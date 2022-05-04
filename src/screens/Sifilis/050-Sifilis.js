@@ -44,7 +44,7 @@ export default function T050({ navigation }) {
 
                 <Botao
                     title="REALIZAR TESTE RÁPIDO"
-                    onPress={() => navigation.navigate('051-Sifilis')}
+                    onPress={() => navigation.navigate('063-TestesRapidos')}
                 />
 
                 <Botao

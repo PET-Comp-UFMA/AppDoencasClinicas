@@ -34,7 +34,7 @@ export default function T201({ navigation }) {
             <ScrollView>
                 <View>
                     <Parag>Caso apresente teste reagente essas características:</Parag>
-                    <Parag>• Neurológicas: meningite, gomas do cérebro ou da medula, atrofia do nervo óptico, lesão do sétimo par craniano, manifestações psiquiátricas, tabes dorsalis e quadros demenciais como o da paralisia geral.</Parag>
+                    <Parag>• Neurológicas: meningite, gomas do cérebro ou da medula, atrofia do nervo óptico, lesão do sétimo par craniano, manifestações psiquiátricas, tabes dorsalis e quadros demenciais como o da paralisia geral ?</Parag>
                     <Parag>Considerar esquema terapêutico para neurosífilis e solicitar exame de LCR de 6/6 meses até normalização:</Parag>
                     
                     <Tabela tableHead={tableHead} tableData={tableData} />

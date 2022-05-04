@@ -142,11 +142,11 @@ const tableData = [[
     </Text>,
 
     <Text style={styles.textData}>
-        <Bold>Doxiclina</Bold>ᵇ 100mg, 1 comprimido, VO, 2x/dia, por pelo menos 21 dias ou até o desaparecimento completo das lesões {"\n\n"}
+        <Bold>Doxiclina</Bold> 100mg, 1 comprimido, VO, 2x/dia, por pelo menos 21 dias ou até o desaparecimento completo das lesões {"\n\n"}
         
         <Bold>OU{"\n\n"}</Bold>
         
-        <Bold>Ciprofloxacino</Bold>ᵃ 500mg, ¹/₂ comprimido, VO, 2x/dia, por pelo menos 21 dias, ou até a cicatrização das lesões (dose total: 750mg) {"\n\n"}
+        <Bold>Ciprofloxacino</Bold> 500mg, ¹/₂ comprimido, VO, 2x/dia, por pelo menos 21 dias, ou até a cicatrização das lesões (dose total: 750mg) {"\n\n"}
         
         <Bold>OU{"\n\n"}</Bold>
 

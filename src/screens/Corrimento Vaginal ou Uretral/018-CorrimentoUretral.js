@@ -93,7 +93,7 @@ const tableData_Chlamydia = [[<Text style={styles.textTitle}><Bold>Infecção po
 
 const tableHead_Neisseria = [<Text>Neisseria gonorrhoeae</Text>]
 const tableData_Neisseria = [[<Text style={styles.textTitle}><Bold>Infecção gonocócica NÃO complicada (uretra, colo de útero, reto e faringe)</Bold></Text>,
-    <Text style={styles.textData}><Bold>Ceftriaxoma</Bold> 500mg, dose única{"\n"}
+    <Text style={styles.textData}><Bold>Ceftriaxoma</Bold> 500mg, IM, dose única{"\n"}
     <Bold>MAIS{"\n"}</Bold>
     <Bold>Azitromicina</Bold> 500mg, 2 comprimidos, VO, dose única{"\n"}
     </Text>],

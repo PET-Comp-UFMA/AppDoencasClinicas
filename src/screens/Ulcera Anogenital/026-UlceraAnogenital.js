@@ -4,6 +4,7 @@ import { SafeAreaView, View, Text, ScrollView, StyleSheet } from "react-native";
 import Botao from "../../components/Botao";
 import Imagem from "../../components/Imagem";
 import Bold from "../../components/Bold";
+import Underline from "../../components/Underline";
 
 import { useTheme } from '@react-navigation/native';
 
@@ -34,10 +35,10 @@ export default function T026({navigation}) {
                 • Pápula, pústula ou exulceração indolor,
                 que desaparece sem deixar sequela?{"\n"}
 
-                • <Bold>Homem</Bold>: sulco coronal, frênulo e
+                • <Bold><Underline>Homem</Underline></Bold>: sulco coronal, frênulo e
                 prepúcio?{"\n"}
 
-                • <Bold>Mulher</Bold>: parede vaginal posterior, colo
+                • <Bold><Underline>Mulher</Underline></Bold>: parede vaginal posterior, colo
                 uterino, fúrcula e outras partes da
                 genitália externa?{"\n\n"}
 
