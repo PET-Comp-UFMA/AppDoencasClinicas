@@ -36,10 +36,10 @@ export default function T012({ navigation })  {
                         <Tabela tableData={tableData}></Tabela>
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
                         <Text>• Se a microscopia estiver disponível, o diagnóstico é realizado na presença de pelo menos três critérios de Amsel: {'\n'}</Text>
-                        <Text style={styles.littleTextTitle}>✓ Corrimento vaginal homogêneo;</Text>
-                        <Text style={styles.littleTextTitle}>✓ pH {'>'} 4,5;</Text>
-                        <Text style={styles.littleTextTitle}>✓ Presença de clue cells no exame de lâmina a fresco;</Text>
-                        <Text style={styles.littleTextTitle}>✓ Teste de Whiff positivo (odor fétido das aminas com adição de hidróxido de potássio a 10%).</Text>
+                        <Text style={[styles.littleTextTitle, {color: colors.text}]}>✓ Corrimento vaginal homogêneo;</Text>
+                        <Text style={[styles.littleTextTitle, {color: colors.text}]}>✓ pH {'>'} 4,5;</Text>
+                        <Text style={[styles.littleTextTitle, {color: colors.text}]}>✓ Presença de clue cells no exame de lâmina a fresco;</Text>
+                        <Text style={[styles.littleTextTitle, {color: colors.text}]}>✓ Teste de Whiff positivo (odor fétido das aminas com adição de hidróxido de potássio a 10%).</Text>
                         <Text>{'\n'}• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
                         <Text>• Tratamento para gestantes e lactantes apenas via terminal.</Text>
                         <Text>• Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
