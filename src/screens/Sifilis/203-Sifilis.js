@@ -38,9 +38,9 @@ export default function T201({ navigation }) {
 
                     <Tabela tableHead={tableHead} tableData={tableData} />
 
-                    <Parag>No caso de sífilis recente em gestantes, alguns experts recomendam uma dose adicional de 2,4 milhões de unidades de penicilina benzatina, IM, uma semana após a primeira dose.</Parag>
-                    <Parag>Buscar parceria sexual para investigação.</Parag>
-                    <Parag>Após diagnóstico, realizar notificação.</Parag>
+                    <Parag>• No caso de sífilis recente em gestantes, alguns experts recomendam uma dose adicional de 2,4 milhões de unidades de penicilina benzatina, IM, uma semana após a primeira dose.</Parag>
+                    <Parag>• Buscar parceria sexual para investigação.</Parag>
+                    <Parag>• Após diagnóstico, realizar notificação.</Parag>
                     <Parag>Escolha uma das duas primeiras opções, ou caso tenha chegado ao seu objetivo, pode clicar em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. </Parag>
                 </View>
 

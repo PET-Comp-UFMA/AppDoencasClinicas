@@ -36,9 +36,9 @@ export default function T051({ navigation }) {
                     <Parag>Se existir erupção macular eritematosa pouco visível (roséola), principalmente no tronco e raiz dos membros, sendo comum placas mucosas, assim como lesões acinzentadas e pouco visíveis nas mucosas, ou ainda papulosas eritemato-acastanhadas, que podem atingir todo o tegumento, sendo frequentes nos genitais. Habitualmente, atingem a região plantar e palmar, com um colarinho de escamação característico, em geral não pruriginosa.</Parag>
                     <Parag>Considerar esquema terapêutico para sífilis recente e solicitar VDRL trimestralmente (mensal em gestante):</Parag>
                     <Tabela tableHead={tableHead} tableData={tableData} />
-                    <Parag>No caso de sífilis recente em gestantes, alguns experts recomendam uma dose adicional de 2,4 milhões de unidades de penicilina benzatina, IM, uma semana após a primeira dose.</Parag>
-                    <Parag>Buscar parceria sexual para investigação.</Parag>
-                    <Parag>Após diagnóstico, realizar notificação.</Parag>
+                    <Parag>• No caso de sífilis recente em gestantes, alguns experts recomendam uma dose adicional de 2,4 milhões de unidades de penicilina benzatina, IM, uma semana após a primeira dose.</Parag>
+                    <Parag>• Buscar parceria sexual para investigação.</Parag>
+                    <Parag>• Após diagnóstico, realizar notificação.</Parag>
                     <Parag>Escolha uma das duas primeiras opções, ou caso tenha chegado ao seu objetivo, pode clicar em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. </Parag>
                 </View>
 

@@ -41,8 +41,8 @@ export default function T201({ navigation }) {
                     
                     <Tabela tableHead={tableHead} tableData={tableData} />
                     
-                    <Parag>Buscar parceria sexual para investigação.</Parag>
-                    <Parag>Após diagnóstico, realizar notificação.</Parag>
+                    <Parag>• Buscar parceria sexual para investigação.</Parag>
+                    <Parag>• Após diagnóstico, realizar notificação.</Parag>
                     <Parag>Escolha uma das duas primeiras opções, ou caso tenha chegado ao seu objetivo, pode clicar em <Bold>FINALIZAR</Bold> e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. </Parag>
                 </View>
 
