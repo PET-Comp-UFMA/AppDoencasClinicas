@@ -10,6 +10,7 @@ import {
 import Botao from '../../components/Botao';
 import Imagem from '../../components/Imagem';
 import Bold from '../../components/Bold';
+import Underline from '../../components/Underline';
 
 import { useTheme } from '@react-navigation/native';
 
@@ -29,6 +30,9 @@ export default function T125({ navigation })  {
   		lineHeight        : 35
 	}
 
+    
+
+
     return(
             <SafeAreaView style = {styles.container}> 
                 <ScrollView>
@@ -38,14 +42,13 @@ export default function T125({ navigation })  {
                         <Text><Bold>Luis Jorge Enrique Rivero Cabrejos</Bold></Text>
                         <Text>Doutor em Informática pela Universidade Federal do Amazonas (UFAM).</Text>
                         <Text>Professor Adjunto A do Departamento de Informática da Universidade Federal do Maranhão, onde atua em cursos de graduação.</Text>
-                        <Text style={styles.hiperlink}onPress={() => {Linking.openURL('http://lattes.cnpq.br/8534667641706692')}}>Lattes: Aperte aqui</Text>
+                        <Text style={[styles.hiperlink, {color: colors.notification}]}onPress={() => {Linking.openURL('http://lattes.cnpq.br/8534667641706692')}}><Underline>Lattes: Aperte aqui</Underline></Text>
                     </View>
 
                     <View>
-                        <Imagem source={require("../../assets/images/F044.png")} title={"Leilane Barbosa de Sousa"} number={"F007"}/>
-                        <Text>Leilane Barbosa de Sousa</Text>
-                        <Text>Atualmente é professora adjunta do Curso de Graduação em Enfermagem e docente do quadro permamente do Mestrado Acadêmico em Enfermagem, ambos da Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB).</Text>
-                        <Text style={styles.hiperlink}onPress={() => {Linking.openURL('http://lattes.cnpq.br/8829820331920241')}}>Lattes: Aperte aqui</Text>
+                        <Imagem source={require("../../assets/images/F044.png")} title={"Equipe PETComp"} number={"F007"}/>
+                        <Text>Equipe PETComp UFMA</Text>
+                        <Text style={[styles.hiperlink, {color: colors.notification}]}onPress={() => {Linking.openURL('https://petcompufma.org')}}><Underline>Site Oficial</Underline></Text>
                     </View>
 
                 </ScrollView>

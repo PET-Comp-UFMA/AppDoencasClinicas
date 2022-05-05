@@ -165,7 +165,7 @@ const darkTheme = {
 		card: 'rgb(255, 255, 255)',
 		text: 'rgb(255, 255, 255)',
 		border: 'rgb(199, 199, 204)',
-		notification: 'rgb(255, 69, 58)',
+		notification: 'cyan',
 	}
 }
 const lightTheme = {
@@ -176,7 +176,7 @@ const lightTheme = {
 		card: 'rgb(255, 255, 255)',
 		text: '#00172E',
 		border: 'rgb(199, 199, 204)',
-		notification: 'rgb(255, 69, 58)',
+		notification: 'blue',
 	}
 }
 

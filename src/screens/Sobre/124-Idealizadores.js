@@ -10,6 +10,7 @@ import {
 import Botao from '../../components/Botao';
 import Imagem from '../../components/Imagem';
 import Bold from '../../components/Bold';
+import Underline from '../../components/Underline';
 
 import { useTheme } from '@react-navigation/native';
 export default function T124({ navigation })  {
@@ -38,7 +39,7 @@ export default function T124({ navigation })  {
                         <Text>Graduado em Enfermagem pela Faculdade de Ensino e Cultura do Ceará (FAECE).</Text>
                         <Text>Especialista em Saúde da Família pelo Centro Universitário Ateneu.</Text>
                         <Text>Mestrando em Enfermagem pela Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB).</Text>
-                        <Text style={styles.hiperlink}onPress={() => {Linking.openURL('http://lattes.cnpq.br/9080502953872172')}}>Lattes: Aperte aqui</Text>
+                        <Text style={[styles.hiperlink, {color: colors.notification}]} onPress={() => {Linking.openURL('http://lattes.cnpq.br/9080502953872172')}}><Underline>Lattes: Aperte aqui</Underline></Text>
                     </View>
 
                 </ScrollView>
