@@ -37,7 +37,7 @@ export default function T27({navigation}) {
                 • Se a parceria for sintomática,
                 o tratamento deve ser realizado com
                 os mesmos medicamentos do
-                casoíndice.{"\n"}
+                caso índice.{"\n"}
                 
                 • Se a parceria for
                 assintomática, recomenda-se um dos

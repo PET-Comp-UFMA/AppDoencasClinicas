@@ -91,7 +91,7 @@ const tableData_Chlamydia = [[<Text style={styles.textTitle}><Bold>Infecção po
     <Bold>Doxiciclina</Bold> 100mg, VO, 2x/dia, por 7 dias (exceto gestantes){"\n"}
     </Text>]];
 
-const tableHead_Neisseria = [<Text>Neisseria gonorrhoeae</Text>]
+const tableHead_Neisseria = [<Text>Neisseria gonorrhoeae (gonorreia)</Text>]
 const tableData_Neisseria = [[<Text style={styles.textTitle}><Bold>Infecção gonocócica NÃO complicada (uretra, colo de útero, reto e faringe)</Bold></Text>,
     <Text style={styles.textData}><Bold>Ceftriaxoma</Bold> 500mg, IM, dose única{"\n"}
     <Bold>MAIS{"\n"}</Bold>
