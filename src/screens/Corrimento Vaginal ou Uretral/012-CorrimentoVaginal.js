@@ -83,6 +83,13 @@ const styles = StyleSheet.create({
         color: 'black',
         fontFamily: "Mulish_Regular",
     },
+    littleTextTitle: {
+        fontSize: 17,
+        color: 'black',
+        alignSelf: 'center',
+        fontFamily: 'Mulish_Regular',
+        textAlign: 'center'
+    }
 });
 
 const tableData = [[<Text style={styles.textTitle}><Bold>Primeira Opção (incluindo gestantes e lactantes)</Bold></Text>,

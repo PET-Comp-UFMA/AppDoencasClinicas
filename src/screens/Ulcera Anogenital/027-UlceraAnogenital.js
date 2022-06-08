@@ -132,7 +132,7 @@ const tableHead = [
 ]
 const tableData = [[
     <Text style={styles.textTitle}>
-        <Bold>Linfogra-nuloma venéreo(LGV)</Bold>
+        <Bold>Linfogranuloma venéreo(LGV)</Bold>
     </Text> ,
     
     <Text style={styles.textData}>
