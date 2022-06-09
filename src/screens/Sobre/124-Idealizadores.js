@@ -42,6 +42,13 @@ export default function T124({ navigation })  {
                         <Text style={[styles.hiperlink, {color: colors.notification}]} onPress={() => {Linking.openURL('http://lattes.cnpq.br/9080502953872172')}}><Underline>Lattes: Aperte aqui</Underline></Text>
                     </View>
 
+                    <View>
+                        <Imagem source={require("../../assets/images/F046.png")} title={"Leilane Barbosa de Sousa"} number={"F007"}/>
+                        <Text><Bold>Leilane Barbosa de Sousa</Bold></Text>
+                        <Text>Atualmente é professora adjunta do Curso de Graduação em Enfermagem e docente do quadro permamente do Mestrado Acadêmico em Enfermagem, ambos da Universidade da Integração Internacional da Lusofonia Afro-Brasileira (UNILAB).</Text>
+                        <Text style={[styles.hiperlink, {color: colors.notification}]} onPress={() => {Linking.openURL('http://lattes.cnpq.br/8829820331920241')}}><Underline>Lattes: Aperte aqui</Underline></Text>
+                    </View>
+
                 </ScrollView>
 
                 <View style = {styles.containerBotao}>
