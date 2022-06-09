@@ -78,6 +78,7 @@ import T055 from "./src/screens/HIV/055-HIV";
 import T056 from "./src/screens/HIV/056-HIV";
 import T057 from "./src/screens/HIV/057-HIV-PrEP";
 import T058 from "./src/screens/HIV/058-HIV-PEP";
+import T059 from "./src/screens/HIV/059-TesteNaoReagente";
 
 import T060 from './src/screens/Hepatite B e C/060-HepatiteBeC';
 import T061 from './src/screens/Hepatite B e C/061-HepatiteBeC';
@@ -824,6 +825,11 @@ export default function App() {
 						name='058-HIV-PEP'
 						component={T058}
 						options={{ title: "HIV - PEP" }} />
+					
+					<Stack.Screen
+						name='059-TesteNaoReagente'
+						component={T059}
+						options={{ title: "HIV" }} />
 
 				</Stack.Navigator>
 			</View>

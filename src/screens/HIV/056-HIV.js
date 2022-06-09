@@ -49,7 +49,7 @@ export default function T056({ navigation }) {
                 />
                 <Botao 
                     title="ACONSELHAMENTO"
-                    onPress={() => {navigation.navigate("074-TesteNaoReagente")}}
+                    onPress={() => {navigation.navigate("059-TesteNaoReagente")}}
                 />
             </View>
         </SafeAreaView>
