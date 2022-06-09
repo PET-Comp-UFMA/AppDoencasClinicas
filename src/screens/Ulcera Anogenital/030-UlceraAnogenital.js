@@ -37,19 +37,19 @@ export default function T30({navigation}) {
             <Tabela tableHead={tableHead} tableData={tableData}/>
             
             <Text>
-                Não havendo resposta na aparência da lesão nos primeiros dias de tratamento com ciprofloxacino, recomenda-se adicionar um aminoglicosídeo, como gentamicina 1mg/kg/dia, EV, 3x/dia, por pelo menos três semanas, ou até cicatrização das lesões.
+                • Não havendo resposta na aparência da lesão nos primeiros dias de tratamento com ciprofloxacino, recomenda-se adicionar um aminoglicosídeo, como gentamicina 1mg/kg/dia, EV, 3x/dia, por pelo menos três semanas, ou até cicatrização das lesões. {"\n"}
             </Text>
             
             <Text>
-                Em PVHIV, sugerem-se os mesmos esquemas terapêuticos; o uso de terapia parenteral com a gentamicina deve ser considerado nos casos mais graves.    
+                • Em PVHIV, sugerem-se os mesmos esquemas terapêuticos; o uso de terapia parenteral com a gentamicina deve ser considerado nos casos mais graves. {"\n"}
             </Text>
             
             <Text>
-                O critério de cura é o desaparecimento da lesão, não tendo sido relatada infecção congênita. As sequelas da destruição tecidual ou obstrução linfática podem exigir correção cirúrgica.    
+                • O critério de cura é o desaparecimento da lesão, não tendo sido relatada infecção congênita. As sequelas da destruição tecidual ou obstrução linfática podem exigir correção cirúrgica. {"\n"}
             </Text>
             
             <Text>
-                Devido à baixa infectividade, não é necessário tratar as parcerias sexuais
+                • Devido à baixa infectividade, não é necessário tratar as parcerias sexuais {"\n"}
             </Text>
             
             <Text>• Buscar parceria sexual para orientações{"\n"}</Text>
