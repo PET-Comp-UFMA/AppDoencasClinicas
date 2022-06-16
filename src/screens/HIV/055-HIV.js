@@ -52,7 +52,7 @@ export default function T055({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao 
                     title="PRÓXIMA"
-                    onPress={() => {navigation.navigate("074-TesteNaoReagente")}}
+                    onPress={() => {navigation.navigate("059-TesteNaoReagente")}}
                 />
                 <Botao 
                     title="FINALIZAR"

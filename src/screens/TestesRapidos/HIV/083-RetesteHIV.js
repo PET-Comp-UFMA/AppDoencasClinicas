@@ -40,11 +40,11 @@ export default function T083({ navigation }) {
 
                     <Botao
                         title="NÃO REAGENTE, MAS APRESENTA MANIFESTAÇÕES CLÍNICAS"
-                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
+                        onPress={() => navigation.navigate('059-TesteNaoReagente')}
                     />
                     <Botao
                         title="NÃO REAGENTE, E NÃO APRESENTA MANIFESTAÇÕES CLÍNICAS"
-                        onPress={() => navigation.navigate('074-TesteNaoReagente')}
+                        onPress={() => navigation.navigate('059-TesteNaoReagente')}
                     />
                     
                 </View>
