@@ -29,7 +29,7 @@ export default function T039({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Parag>Seu paciente está apresenta verrugas na vulva, genitália e/ou região perianal?</Parag>
+                    <Parag>Seu paciente está apresentando verrugas na vulva, genitália e/ou região perianal?</Parag>
                 </View>
                 <Imagem source={require("../../assets/images/F025.png")} title={"Acompanhamento"} number={"F025"} />
                 <Imagem source={require("../../assets/images/F026.png")} title={"Acompanhamento"} number={"F026"} />

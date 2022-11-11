@@ -37,7 +37,7 @@ export default function T007({ navigation })  {
                         <Text><Bold>OBSERVAÇÕES:</Bold></Text>
                         <Text>• Se houver fitas para verificar pH vaginal, considere CVV se pH ({'<'}4,5).</Text>
                         <Text>• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
-                        <Text>• Tratamento para gestantes e lactantes apenas via terminal.</Text>
+                        <Text>• Tratamento para gestantes e lactantes apenas via vaginal.</Text>
                         <Text>• Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
                     </View>
 

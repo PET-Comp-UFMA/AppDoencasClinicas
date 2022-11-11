@@ -41,7 +41,7 @@ export default function T011({ navigation })  {
                         <Text style={[styles.littleTextTitle, {color: colors.text}]}>✓ Presença de clue cells no exame de lâmina a fresco;</Text>
                         <Text style={[styles.littleTextTitle, {color: colors.text}]}>✓ Teste de Whiff positivo (odor fétido das aminas com adição de hidróxido de potássio a 10%).</Text>
                         <Text>{'\n'}• Não é necessário tratar parcerias sexuais, exceto as assintomáticas.</Text>
-                        <Text>• Tratamento para gestantes e lactantes apenas via terminal.</Text>
+                        <Text>• Tratamento para gestantes e lactantes apenas via vaginal.</Text>
                         <Text>• Realizar aconselhamento sobre prevenção combinada e higiene.</Text>
                     </View>
                 </ScrollView>

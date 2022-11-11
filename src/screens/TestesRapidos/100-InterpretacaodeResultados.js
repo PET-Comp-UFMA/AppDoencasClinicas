@@ -36,7 +36,7 @@ export default function T100({ navigation }) {
                     <Parag>O teste rápido inclui um sistema de controle interno de migração, representado por um linha coloriada, que aparece na área de controle (C), essa linha confirma que o resultado obtido é válido.</Parag>
                     <Parag>Cada teste exige uma quantidade “X” de amostra (sangue), de tampão e tempo necessário para a leitura.</Parag>
                     <Parag>Obedeça o que recomenda cada laboratório.</Parag>
-                    <Parag>Se a linha de controle (C) não aparecer dentro do tempo máximo determiado pelo fabricante, o teste será conseiderdo inválido, mesmo que a linha colorida apareça na área de teste (T).</Parag>
+                    <Parag>Se a linha de controle (C) não aparecer dentro do tempo máximo determiado pelo fabricante, o teste será considero inválido, mesmo que a linha colorida apareça na área de teste (T).</Parag>
                 </View>
 
                 <View>
