@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
 
 const tableData = [
     [<Text onPress={() => {Linking.openURL('http://conitec.gov.br/images/Relatorios/2021/20210422_Relatorio_PCDT_IST_SECRETARIO_588_2021.pdf')}}>
-        BRASIL. Ministério da Saúde (2021). Relatório de Recomendação - Protocolo Clínico e Diretrizes Terapêuticas: Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST). Brasília - DF, 2021. Disponível em: http://conitec.gov.br/images/Relatorios/2021/20210422_Relatorio_PCDT_IST_SECRETARIO_588_2021.pdf. 184 p.
+        Brasil. Ministério da Saúde, Secretaria de Vigilância em Saúde, Departamento de Doenças de Condições Crônicas e Infecções Sexualmente Transmissíveis. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis - IST [recurso eletrônico] - Brasília: Ministério da Saúde, 2022. 211 p. Disponível em: https://www.gov.br/aids/pt-br/centrais-de-conteudo/pcdts/2022/ist/pcdt-ist-2022_isbn-1.pdf/@@download/file/pcdt-ist-2022_isbn.pdf. Acesso em 27 setembro de 2022.
     </Text>],
     [<Text onPress={() => {Linking.openURL('http://www.aids.gov.br/pt-br/pcdt-hepatites')}}>
         BRASIL. Ministério da Saúde. Secretaria de Vigilância em Saúde. Departamento de DST, Aids e Hepatites Virais.
