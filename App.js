@@ -152,11 +152,22 @@ import T119 from './src/screens/TiraDuvidas/119-ProfilaxiadasHepatiteB';
 import T120 from './src/screens/TiraDuvidas/120-ProfilaxiadainfeccaoporHIV';
 import T121 from './src/screens/TiraDuvidas/121-PrevencaodaGravidez';
 import T122 from './src/screens/TiraDuvidas/122-NotificandoaViolenciaSexual';
+import T127 from './src/screens/TiraDuvidas/127-PepProfissional'
+import T128 from './src/screens/TiraDuvidas/128-CuidadosLocais'
+import T129 from './src/screens/TiraDuvidas/129-Acolhimento'
+import T130 from './src/screens/TiraDuvidas/130-Testagem'
+import T131 from './src/screens/TiraDuvidas/131-CondutaAposTestagem'
+import T132 from './src/screens/TiraDuvidas/132-IndicacaoProfilaxia'
+import T133 from './src/screens/TiraDuvidas/133-IndicacaoPEP'
+import T134 from './src/screens/TiraDuvidas/134-IndicacaoPepB'
 
 import T123 from './src/screens/Sobre/123-Sobre';
 import T124 from './src/screens/Sobre/124-Idealizadores';
 import T125 from './src/screens/Sobre/125-Desenvolvedores';
 import T126 from './src/screens/Sobre/126-Referencias';
+
+
+
 
 // Temas
 const darkTheme = {
@@ -836,6 +847,38 @@ export default function App() {
 						name='059-TesteNaoReagente'
 						component={T059}
 						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='127-PepProfissional'
+						component={T127}
+						options={{ title: "PEP PROFISSIONAL" }} />
+					<Stack.Screen
+						name='128-CuidadosLocais'
+						component={T128}
+						options={{ title: "Cuidados Locais" }} />
+					<Stack.Screen
+						name='129-Acolhimento'
+						component={T129}
+						options={{ title: "Acolhimento" }} />
+					<Stack.Screen
+						name='130-Testagem'
+						component={T130}
+						options={{ title: "Testeagem" }} />
+					<Stack.Screen
+						name='131-CondutaAposTestagem'
+						component={T131}
+						options={{ title: "Conduta Apos Testagem" }} />
+					<Stack.Screen
+						name='132-IndicacaoProfilaxia'
+						component={T132}
+						options={{ title: "Indicação Proxilaxia" }} />
+					<Stack.Screen
+						name='133-IndicacaoPEP'
+						component={T133}
+						options={{ title: "Indicação PEP" }} />
+					<Stack.Screen
+						name='134-IndicacaoPepB'
+						component={T134}
+						options={{ title: "Indicação PEP" }} />
 
 				</Stack.Navigator>
 			</View>

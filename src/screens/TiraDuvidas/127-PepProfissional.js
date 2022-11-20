@@ -10,7 +10,7 @@ import Botao from '../../components/Botao';
 import Bold from '../../components/Bold';
 import { useTheme } from '@react-navigation/native';
 
-export default function T102({ navigation }) {
+export default function T127({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -36,23 +36,23 @@ export default function T102({ navigation }) {
                 <View style={styles.containerBotao}>
                     <Botao
                         title="CUIDADOS LOCAIS"
-                        onPress={() => navigation.navigate('124-CuidadosLocais')}
+                        onPress={() => navigation.navigate('128-CuidadosLocais')}
                     />
                     <Botao
                         title="ACOLHIMENTO/ACONSELHAMENTO"
-                        onPress={() => navigation.navigate('125-Acolhimento')}
+                        onPress={() => navigation.navigate('129-Acolhimento')}
                     />
                     <Botao
                         title="TESTAGEM"
-                        onPress={() => navigation.navigate('126-Testagem')}
+                        onPress={() => navigation.navigate('130-Testagem')}
                     />
                     <Botao
                         title="CONDUTA APÓS TESTAGEM"
-                        onPress={() => navigation.navigate('127-ConduataAposTestagem')}
+                        onPress={() => navigation.navigate('131-CondutaAposTestagem')}
                     />
                     <Botao
                         title="INDICAÇÃO DE PROFILAXIA"
-                        onPress={() => navigation.navigate('128-IndicacaoProfilaxia')}
+                        onPress={() => navigation.navigate('132-IndicacaoProfilaxia')}
                     />
                     <Botao
                         title="FINALIZAR"

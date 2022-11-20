@@ -11,7 +11,7 @@ import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T116({ navigation }) {
+export default function T129({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -41,7 +41,7 @@ export default function T116({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao
                     title="PRÓXIMO"
-                    onPress={() => navigation.navigate('130-IndicacaoPepB')}
+                    onPress={() => navigation.navigate('134-IndicacaoPepB')}
                 />
                 <Botao
                     title="FINALIZAR"

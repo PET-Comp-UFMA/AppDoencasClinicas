@@ -11,7 +11,7 @@ import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T116({ navigation }) {
+export default function T130({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -30,15 +30,11 @@ export default function T116({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>• Após exposição ao material biológico de risco, os cuidados locais com a área exposta devem ser imediatamente iniciados.</Parag>
-                    <Parag>• Recomenda-se lavagem exaustiva com água e sabão em caso de exposição percutânea ou cutânea.</Parag>
-                    <Parag>• Após exposição em mucosas, é recomendada a lavagem exaustiva com água ou solução fisiológica.</Parag>
-                    <Parag>• Procedimentos que aumentem a área exposta (cortes, injeções locais) e a utilização de soluções irritantes como éter, hipoclorito ou glutaraldeído são contraindicados.</Parag>
-                    <Parag>• Não realizar expressão da ferida (não apertar a lesão).</Parag>
+                    <Parag><Bold>INDICAÇÃO PEP HEPATITE B</Bold></Parag>
+                    <Parag>As recomendações vão depender do status sorológico da fonte e dos níveis de anti-HBs do acidentado.</Parag>
+                    <Parag>Caso ocorra exposição aos materiais biológicos com risco conhecido ou provável de infecção pelo HBV, o indivíduo não imunizado ou não-respondedor à vacina deve utilizar a imunoglobulina hiperimune anti-hepatite B (IGHAHB).</Parag>
+                    <Parag>Existe maior eficácia na profilaxia pós-exposição quando a imunoglobulina e a vacina são utilizadas dentro das primeiras 24 a 72 horas após o acidente. Não existe benefício comprovado após uma semana de exposição.</Parag>
                 </View>
-
-
-
 
             </ScrollView>
 

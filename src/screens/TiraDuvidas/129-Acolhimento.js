@@ -11,7 +11,7 @@ import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T116({ navigation }) {
+export default function T125({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -30,9 +30,10 @@ export default function T116({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>• Após resultado dos testes rápidos, o médico da unidade fará avaliação da necessidade de profilaxia contra HIV ou hepatite B, e procederá os encaminhamentos necessários.</Parag>
-                    <Parag>• De acordo com a avaliação da necessidade de profilaxia(s), o exposto será encaminhado para uma das Unidades de Avaliação de Risco para receber a profilaxia para HIV e/ou para a Unidade de Referência para imunoglobulina anti-hepatite B para receber profilaxia pós exposição contra hepatite B.</Parag>
-                    <Parag>• Independente da conduta adotada nesse momento inicial, o exposto será orientado a agendar atendimento em um dos Locais de Referência para Acompanhamento Clínico-Sorológico.</Parag>
+                    <Parag>O exposto e a fonte (se conhecida) devem passar por uma abordagem quanto à necessidade de realização dos testes sorológicos e informações sobre a natureza dos exames, suas implicações e resultados.</Parag>
+                    <Parag>• O aconselhador deve ser um profissional de saúde de nível superior.</Parag>
+                    <Parag>• O aconselhador deve conversar com a fonte e o acidentado em lugar reservado, explicando a necessidade de conduzir a exposição a material biológico como urgência médica e as implicações da testagem sorológica</Parag>
+                    <Parag>• Se a fonte for bem orientada sobre a importância destes exames para o acidentado, bem como da garantia do sigilo dos resultados, dificilmente haverá recusa para a realização destes exames. Entretanto, no caso de recusa, o acidente deverá ser tratado como de “fonte desconhecida”.</Parag>  
                 </View>
 
             </ScrollView>

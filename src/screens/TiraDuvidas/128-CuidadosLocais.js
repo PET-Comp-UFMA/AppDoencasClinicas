@@ -11,7 +11,7 @@ import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T116({ navigation }) {
+export default function T124({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -30,13 +30,15 @@ export default function T116({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>Os testes rápidos estão disponíveis nos serviços de saúde e podem ser empregados no diagnóstico das infecções pelo HIV, HBV e HCV, sendo de grande utilidade no caso de acidentes com material biológico, pois permitem conhecer rapidamente o estado sorológico do acidentado e da fonte, auxiliando na análise de indicação de profilaxia para HIV e hepatite B.</Parag>
-                    <Parag>• O aconselhador solicitará os testes rápidos para HIV, hepatite B e hepatite C da fonte e do acidentado, hoje disponíveis nos serviços de saúde.</Parag>
-                    <Parag>• Para os expostos com anti-HBs desconhecido e com fonte HBsAg + ou desconhecida, solicitar anti-HBc-total e anti-HBs, com urgência nos resultados.</Parag>
-                    <Parag>• Caso o exposto ou a fonte tenha resultado reagente, deverá ser acolhido na unidade de origem e encaminhado para serviço especializado de infectologia.</Parag>
-                    <Parag>• Os resultados dos testes rápidos deverão ser disponibilizados para os usuários em formulário próprio.</Parag>
-                    <Parag>• O profissional que executar o teste rápido deverá registrar no prontuário eletrônico o resultado, para que possa ser acessado nas unidades de acompanhamento.</Parag>
+                    <Parag>• Após exposição ao material biológico de risco, os cuidados locais com a área exposta devem ser imediatamente iniciados.</Parag>
+                    <Parag>• Recomenda-se lavagem exaustiva com água e sabão em caso de exposição percutânea ou cutânea.</Parag>
+                    <Parag>• Após exposição em mucosas, é recomendada a lavagem exaustiva com água ou solução fisiológica.</Parag>
+                    <Parag>• Procedimentos que aumentem a área exposta (cortes, injeções locais) e a utilização de soluções irritantes como éter, hipoclorito ou glutaraldeído são contraindicados.</Parag>
+                    <Parag>• Não realizar expressão da ferida (não apertar a lesão).</Parag>
                 </View>
+
+
+
 
             </ScrollView>
 

@@ -69,7 +69,7 @@ export default function T102({ navigation }) {
                     />
                     <Botao
                         title="PEP PROFISSIONAL"
-                        onPress={() => navigation.navegate('123-PepProfissional')}
+                        onPress={() => navigation.navigate('127-PepProfissional')}
                     />
                 </View>
 
