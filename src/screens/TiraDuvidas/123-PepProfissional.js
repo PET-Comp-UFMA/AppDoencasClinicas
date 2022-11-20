@@ -28,48 +28,35 @@ export default function T102({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
                 <View>
-                    <Text>Você está na seção de <Bold>Tira Dúvidas.</Bold></Text>
-                    <Text>Aqui você encontrará informações mais objetivas acercas das IST.</Text>
-                    <Text>Escolha uma opção:</Text>
+                    <Text>Em casos de acidentes com material biológico que oferecem riscos de exposição ao HIV, hepatite B e hepatite C.</Text>
+                    <Text>Tendo em vista isso, selecione uma opção:</Text>
                 </View>
 
 
                 <View style={styles.containerBotao}>
                     <Botao
-                        title="CORRIMENTO VAGINAL OU URETRAL"
-                        onPress={() => navigation.navigate('102_1-CorrimentoVaginalOuUteral')}
+                        title="CUIDADOS LOCAIS"
+                        onPress={() => navigation.navigate('124-CuidadosLocais')}
                     />
                     <Botao
-                        title="ÚLCERA ANOGENITAL"
-                        onPress={() => navigation.navigate('102_2-UlceraAnogenital')}
+                        title="ACOLHIMENTO/ACONSELHAMENTO"
+                        onPress={() => navigation.navigate('125-Acolhimento')}
                     />
                     <Botao
-                        title="VERRUGA ANOGENITAL"
-                        onPress={() => navigation.navigate('111-CondilomaAcuminado')}
+                        title="TESTAGEM"
+                        onPress={() => navigation.navigate('126-Testagem')}
                     />
                     <Botao
-                        title="SÍFILIS"
-                        onPress={() => navigation.navigate('112-Sifilis')}
+                        title="CONDUTA APÓS TESTAGEM"
+                        onPress={() => navigation.navigate('127-ConduataAposTestagem')}
                     />
                     <Botao
-                        title="HIV"
-                        onPress={() => navigation.navigate('113-HIV')}
+                        title="INDICAÇÃO DE PROFILAXIA"
+                        onPress={() => navigation.navigate('128-IndicacaoProfilaxia')}
                     />
                     <Botao
-                        title="HEPATITE B E C"
-                        onPress={() => navigation.navigate('114-HepatiteBeC')}
-                    />
-                    <Botao
-                        title="USO DE PRESERVARTIVOS"
-                        onPress={() => navigation.navigate('115-Preservativos')}
-                    />
-                    <Botao
-                        title="VIOLÊNCIA SEXUAL"
-                        onPress={() => navigation.navigate('116-EntendendoViolenciaSexual')}
-                    />
-                    <Botao
-                        title="PEP PROFISSIONAL"
-                        onPress={() => navigation.navegate('123-PepProfissional')}
+                        title="FINALIZAR"
+                        onPress={() => navigation.navigate('001-Inicio')}
                     />
                 </View>
 
