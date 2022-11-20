@@ -48,7 +48,10 @@ export default function T201({ navigation }) {
 
             </ScrollView>
             <View style={styles.containerBotao}>
-
+                <Botao
+                    title="IMPORTANTE"
+                    onPress={() => navigation.navigate('204-Sifilis')}
+                />
                 <Botao
                     title="PACIENTE TEM O TESTE RÁPIDO REAGENTE, MAS NÃO SÃO ESSAS CARACTÉRISTICAS"
                     onPress={() => navigation.navigate('202-Sifilis')}

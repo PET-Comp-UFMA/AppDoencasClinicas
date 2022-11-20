@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     },
 
     botao: {
-        height: 62,
+        height: 64,
         width: "88%",
         marginHorizontal: 15,
         marginVertical: 8,
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
 
     titulo: {
         color: "#FFF",
-        fontSize: 16,
+        fontSize: 15,
         textAlign: 'center',
         letterSpacing: 0.5,
         fontFamily: "Mulish_Bold"

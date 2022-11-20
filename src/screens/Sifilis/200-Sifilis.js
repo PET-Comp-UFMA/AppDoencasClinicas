@@ -46,6 +46,11 @@ export default function T051({ navigation }) {
             <View style={styles.containerBotao}>
 
                 <Botao
+                    title="IMPORTANTE"
+                    onPress={() => navigation.navigate('204-Sifilis')}
+                />
+
+                <Botao
                     title="PACIENTE TEM O TESTE RÁPIDO REAGENTE, MAS NÃO SÃO ESSAS CARACTÉRISTICAS"
                     onPress={() => navigation.navigate('201-Sifilis')}
                 />

@@ -73,6 +73,7 @@ import T200 from "./src/screens/Sifilis/200-Sifilis"
 import T201 from "./src/screens/Sifilis/201-Sifilis"
 import T202 from "./src/screens/Sifilis/202-Sifilis"
 import T203 from "./src/screens/Sifilis/203-Sifilis"
+import T204 from "./src/screens/Sifilis/204-Sifilis"
 
 import T054 from "./src/screens/HIV/054-HIV";
 import T055 from "./src/screens/HIV/055-HIV";
@@ -425,6 +426,11 @@ export default function App() {
 					<Stack.Screen
 						name='203-Sifilis'
 						component={T203}
+						options={{ title: "Sifilis" }} />
+
+					<Stack.Screen
+						name='204-Sifilis'
+						component={T204}
 						options={{ title: "Sifilis" }} />
 
 					<Stack.Screen
