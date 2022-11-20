@@ -90,10 +90,12 @@ const styles = StyleSheet.create({
     },
     image: {
         height: 160,
-        width: 300
+        width: 300,
+        resizeMode: 'contain',
     },
     image2: {
-        height: 50,
-        width: 100
+        height: 70,
+        width: 120,
+        resizeMode: 'contain',
     }
 });
