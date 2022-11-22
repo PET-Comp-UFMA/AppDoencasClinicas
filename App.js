@@ -85,6 +85,8 @@ import T059 from "./src/screens/HIV/059-TesteNaoReagente";
 import T060 from './src/screens/Hepatite B e C/060-HepatiteBeC';
 import T061 from './src/screens/Hepatite B e C/061-HepatiteBeC';
 import T062 from './src/screens/Hepatite B e C/062-HepatiteBeC';
+import T301 from './src/screens/Hepatite B e C/301-HepatiteB';
+import T302 from './src/screens/Hepatite B e C/302-HepatiteB';
 
 import T063 from './src/screens/TestesRapidos/063-TestesRapidos';
 
@@ -885,6 +887,15 @@ export default function App() {
 						name='134-IndicacaoPepB'
 						component={T134}
 						options={{ title: "Indicação PEP" }} />
+					<Stack.Screen
+						name='301-HepatiteB'
+						component={T301}
+						options={{ title: "Hepatite B" }} />
+					<Stack.Screen
+						name='302-HepatiteB'
+						component={T302}
+						options={{ title: "Hepatite B" }} />
+
 
 				</Stack.Navigator>
 			</View>
