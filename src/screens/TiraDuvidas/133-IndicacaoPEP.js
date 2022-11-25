@@ -31,9 +31,9 @@ export default function T129({ navigation }) {
 
                 <View>
                     <Parag><Bold>ESQUEMA PREFERENCIAL PARA PEP HIV</Bold></Parag>
-                    <Parag>Tenofovir/Lamivudina 300/300 mg - 1 comprimido 1 x ao dia + Dolutegravir 50 mg – 1 comprimido 1 x ao dia * Duração = 28 dias</Parag>
+                    <Parag>Tenofovir/Lamivudina 300/300 mg - 1 comprimido 1 x ao dia {'\n'} + {'\n'}Dolutegravir 50 mg – 1 comprimido 1 x ao dia {'\n'}* Duração = 28 dias</Parag>
                     <Parag><Bold>ESQUEMA ALTERNATIVO PEP HIV</Bold></Parag>
-                    <Parag>Tenofovir/Lamivudina 300/300 mg - 1 comprimido 1 x ao dia + Atazanavir 300 mg – 1 comprimido 1 x ao dia + Ritonavir 100 mg – 1 comprimido 1 x ao dia * Duração = 28 dias</Parag>
+                    <Parag>Tenofovir/Lamivudina 300/300 mg - 1 comprimido 1 x ao dia{'\n'} + {'\n'}Atazanavir 300 mg – 1 comprimido 1 x ao dia{'\n'} + {'\n'}Ritonavir 100 mg – 1 comprimido 1 x ao dia {'\n'}* Duração = 28 dias</Parag>
                 </View>
 
             </ScrollView>
