@@ -53,7 +53,7 @@ export default function T015({ navigation }) {
 
                 <Botao
                     title="Hepatite c"
-                    onPress={() => navigation.navigate('062-HepatiteBeC')}
+                    onPress={() => navigation.navigate('306-HepatiteC')}
                 />
 
             </View>

@@ -9,9 +9,10 @@ import {
 import Bold from '../../components/Bold';
 import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
+import Imagem from '../../components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
-export default function T302({ navigation }) {
+export default function T304({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -30,20 +31,17 @@ export default function T302({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>Critérios de inclusão para tratamento da hepatite B sem agente Delta:</Parag>
-                    <Parag>• Paciente com HBeAg reagente e ALT {'>'} 2x limite superior da normalidade (LSN);</Parag>
-                    <Parag>• Adulto maior de 30 anos (3, 32) com HBeAg reagente;</Parag>
-                    <Parag>• Paciente com HBeAg não reagente, HBV-DNA {'>'}2.000 UI/mL e ALT {'>'} 2x LSN.</Parag>
-                    <Parag>Outros critérios de inclusão para tratamento independentemente dos resultados de HBeAg, HBV-DNA e ALT para hepatite B sem agente Delta:</Parag>
-                    <Parag>• História familiar de CHC;</Parag>
+                    <Parag>Fluxograma para o tratamento da hepatite B crônica HBEAG reagente</Parag>
                 </View>
-
+                <View>
+                    <Imagem source={require("../../assets/images/F048.svg")} title={"Fluxograma para o tratamento da hepatite B crônica HBEAG reagente"} number={"F048"} />
+                </View>
             </ScrollView>
 
             <View style={styles.containerBotao}>
             <Botao
                     title="PROXÍMO"
-                    onPress={() => navigation.navigate('303-HepatiteB')}
+                    onPress={() => navigation.navigate('305-HepatiteB')}
                 />
                 <Botao
                     title="FINALIZAR"

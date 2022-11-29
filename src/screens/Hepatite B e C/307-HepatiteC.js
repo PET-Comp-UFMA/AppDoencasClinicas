@@ -49,13 +49,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Anti-HAV IgG
+                                                Teste rápido – hepatite B, sífilis, HIV
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            Para definir imunização
+                                            Detecção de possíveis coinfecções
                                         </Text>
                                     </View>
                                 </View>
@@ -63,41 +63,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Anti-HDV
+                                                Vacina para hepatites A e B
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 12 meses
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Anti-HCV E Anti-HIV
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            Identificar coinfecção. Esses exames devem ser repetidos pelo menos a cada 12 meses
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                HBsAg/Anti-HBs/HBeAg/Anti-HBe
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                        Identificar a fase de infecção pelo HBV. Devem ser repetidos conforme diagnóstico e tratamento instituído
+                                            CRIE (vacina hepatite A); vacina hepatite B, 3 doses (UBS)
                                         </Text>
                                     </View>
                                 </View>
@@ -111,7 +83,7 @@ export default function T301({ navigation }) {
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 6 meses (mulheres em idade reprodutiva)
+                                            A ser realizado ANTES da indicação do tratamento
                                         </Text>
                                     </View>
                                 </View>
@@ -119,13 +91,27 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Endoscopia digestiva alta (EDA)
+                                                Endoscopia digestiva alta em pacientes com evidência de doença avançada
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 2-3 anos – sem cirrose ou cirrose Child A. A cada 12 meses – cirrose Child B ou C 
+                                            Individualizar
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                Ultrassonografia de abdome superior
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 6 meses, na vigência de cirrose
                                         </Text>
                                     </View>
                                 </View>
@@ -161,19 +147,154 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                            Hemograma
-                                            Razão normalizada internacional (INR)
-                                            AST/TGO (aspartato aminotransferase),
-                                            ALT/TGP (alanina aminotransferase)
-                                            Fosfatase alcalina /gama glutamil transferase/bilirrubina total e frações
-                                            Glicemia de jejum
-                                            Proteína total/albumina
+                                                APRI
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 3-6 meses, conforme atividade da doença ou cirrose hepática
+                                            Individualizar
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                FIB 4
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            Individualizar
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                HEMOGRAMA
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                COAGULOGRAMA
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                Na (sódio)/K (potássio)
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                Ureia/creatinina (clearance estimado de creatinina)
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                AST/TGO (aspartato aminotransferase){'\n'}
+                                                ALT/TGP (alanina aminotransferase)
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                Fosfatase alcalina (FAL)/Gama glutamil transferase (GGT)/Bilirrubina total e frações (BT+F)
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                Glicemia de jejum
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                Proteína total/Albumina
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
+                                        </Text>
+                                    </View>
+                                </View>
+                                <View flex={1} flexDirection={'row'}>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            <Bold>
+                                                Urina tipo 1
+                                            </Bold>
+                                        </Text>
+                                    </View>
+                                    <View style={[styles.tableData]} flex={1}>
+                                        <Text style={style}>
+                                            A cada 3-6 meses
                                         </Text>
                                     </View>
                                 </View>
@@ -187,7 +308,7 @@ export default function T301({ navigation }) {
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 12 meses ou conforme tratamento instituído
+                                            A cada 12 meses ou conforme tratamento instituído, de forma individualizada
                                         </Text>
                                     </View>
                                 </View>
@@ -195,16 +316,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Na/K/ureia/creatinina
-                                                Urina tipo 1
-                                                Clearance de creatinina
+                                                HCV-RNA quantitativo (CV-HCV)
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 6 meses (alto risco de lesão renal)
-                                            A cada 12 meses (baixo risco de lesão renal) 
+                                            Na confirmação do diagnóstico, no pré tratamento e após o tratamento, conforme a modalidade escolhida, para avaliação da RVS conforme definido neste PCDT
                                         </Text>
                                     </View>
                                 </View>
@@ -212,43 +330,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                HBV-DNA
+                                                Lipídios (colesterol total e frações, triglicérides) e ferritina
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 6 meses no portador inativo e a cada 12 meses conforme diagnóstico e tratamento instituído
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Lipídios (colesterol total e frações, triglicérides), ferritina/ferro sérico/saturação transferrina
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            A cada 12 meses para os pacientes em uso de tenofovir e nos casos de descompensação hepática e cirrose
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Densitometria óssea
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            A cada 48 meses (mulheres acima de 40 anos em transição menopausal; homens acima dos 50 anos com risco de perda óssea){'\n'}
-
-                                            Individualizar em pacientes em uso de tenofovir ou com antecedentes relevantes
+                                            Individualizar
                                         </Text>
                                     </View>
                                 </View>
@@ -262,7 +350,7 @@ export default function T301({ navigation }) {
             <View style={styles.containerBotao}>
             <Botao
                     title="PROXÍMO"
-                    onPress={() => navigation.navigate('302-HepatiteB')}
+                    onPress={() => navigation.navigate('308-HepatiteC')}
                 />
                 <Botao
                     title="FINALIZAR"

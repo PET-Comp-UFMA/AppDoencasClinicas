@@ -9,9 +9,10 @@ import {
 import Bold from '../../components/Bold';
 import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
+import Imagem from '../../components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
-export default function T302({ navigation }) {
+export default function T307({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -30,20 +31,19 @@ export default function T302({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>Critérios de inclusão para tratamento da hepatite B sem agente Delta:</Parag>
-                    <Parag>• Paciente com HBeAg reagente e ALT {'>'} 2x limite superior da normalidade (LSN);</Parag>
-                    <Parag>• Adulto maior de 30 anos (3, 32) com HBeAg reagente;</Parag>
-                    <Parag>• Paciente com HBeAg não reagente, HBV-DNA {'>'}2.000 UI/mL e ALT {'>'} 2x LSN.</Parag>
-                    <Parag>Outros critérios de inclusão para tratamento independentemente dos resultados de HBeAg, HBV-DNA e ALT para hepatite B sem agente Delta:</Parag>
-                    <Parag>• História familiar de CHC;</Parag>
+                    <Parag>Se você chegou aqui, o seu paciente apresentou teste rápido para Hepatite C reagente.</Parag>
+                    <Parag>Considerar o cuidado articulado para o diagnóstico.</Parag>
+                    <Parag>Após diagnóstico, realizar notificação.</Parag>
                 </View>
-
+                <View>
+                    <Imagem source={require("../../assets/images/F050.svg")} title={""} number={"F050"} />
+                </View>
             </ScrollView>
 
             <View style={styles.containerBotao}>
             <Botao
                     title="PROXÍMO"
-                    onPress={() => navigation.navigate('303-HepatiteB')}
+                    onPress={() => navigation.navigate('307-HepatiteC')}
                 />
                 <Botao
                     title="FINALIZAR"

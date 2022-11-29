@@ -11,7 +11,7 @@ import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 
-export default function T302({ navigation }) {
+export default function T303({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -30,12 +30,13 @@ export default function T302({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>Critérios de inclusão para tratamento da hepatite B sem agente Delta:</Parag>
-                    <Parag>• Paciente com HBeAg reagente e ALT {'>'} 2x limite superior da normalidade (LSN);</Parag>
-                    <Parag>• Adulto maior de 30 anos (3, 32) com HBeAg reagente;</Parag>
-                    <Parag>• Paciente com HBeAg não reagente, HBV-DNA {'>'}2.000 UI/mL e ALT {'>'} 2x LSN.</Parag>
-                    <Parag>Outros critérios de inclusão para tratamento independentemente dos resultados de HBeAg, HBV-DNA e ALT para hepatite B sem agente Delta:</Parag>
-                    <Parag>• História familiar de CHC;</Parag>
+                    <Parag>• Manifestações extra-hepáticas com acometimento motor incapacitante, artrite, vasculites, glomerulonefrite e poliarterite nodosa;</Parag>
+                    <Parag>• Coinfecção HIV/HBV ou HCV/HBV;</Parag>
+                    <Parag>• Hepatite aguda grave (coagulopatias ou icterícia por mais de 14 dias);</Parag>
+                    <Parag>• Reativação de hepatite B crônica;</Parag>
+                    <Parag>• Cirrose/insuficiência hepática;</Parag>
+                    <Parag>• Biópsia hepática METAVIR ≥ A2F2 ou elastografia hepática {'>'} 7,0 kPa;</Parag>
+                    <Parag>• Prevenção de reativação viral em pacientes que irão receber terapia imunossupressora (IMSS) ou quimioterapia (QT).</Parag>
                 </View>
 
             </ScrollView>
@@ -43,7 +44,7 @@ export default function T302({ navigation }) {
             <View style={styles.containerBotao}>
             <Botao
                     title="PROXÍMO"
-                    onPress={() => navigation.navigate('303-HepatiteB')}
+                    onPress={() => navigation.navigate('304-HepatiteB')}
                 />
                 <Botao
                     title="FINALIZAR"

@@ -12,7 +12,7 @@ import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 import { DataTable } from 'react-native-paper';
 
-export default function T301({ navigation }) {
+export default function T308({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -37,25 +37,36 @@ export default function T301({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
 
-                <View>
-                    <Parag>Exames complementares comuns a todos os pacientes portadores de hepatite B crônica que devem ser solicitados em primeira consulta e durante acompanhamento ambulatorial.</Parag>
-                </View>
+            <View>
+
+                    <Parag>Posologia dos medicamentos para hepatite C</Parag>
+
+            </View>
 
                 <View>
                     <DataTable flex={1}>
+                    <DataTable.Header style={styles.header}>
+                            <Text style={styles.tableHeadText}>
+                                Medicamento
+                            </Text>
+                            <Text style={styles.tableHeadText}>
+                                Posologia
+                            </Text>
+                        </DataTable.Header>
+
                         <DataTable.Row>
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Anti-HAV IgG
+                                                Alfapeginterferona 2a
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            Para definir imunização
+                                            180µg/1,73m², por via subcutânea, uma vez por semana (crianças)
                                         </Text>
                                     </View>
                                 </View>
@@ -63,13 +74,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Anti-HDV
+                                                Daclatasvir 60mg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 12 meses
+                                            1 comprimido uma vez ao dia, por via oral
                                         </Text>
                                     </View>
                                 </View>
@@ -77,13 +88,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Anti-HCV E Anti-HIV
+                                                Daclatasvir 30mg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            Identificar coinfecção. Esses exames devem ser repetidos pelo menos a cada 12 meses
+                                            1 comprimido uma vez ao dia, por via oral
                                         </Text>
                                     </View>
                                 </View>
@@ -91,13 +102,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                HBsAg/Anti-HBs/HBeAg/Anti-HBe
+                                                Sofosbuvir 400mg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                        Identificar a fase de infecção pelo HBV. Devem ser repetidos conforme diagnóstico e tratamento instituído
+                                            1 comprimido uma vez ao dia, por via oral
                                         </Text>
                                     </View>
                                 </View>
@@ -105,13 +116,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                β-HCG
+                                                Glecaprevir 100mg/pibrentasvir 40mg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 6 meses (mulheres em idade reprodutiva)
+                                            3 comprimidos uma vez ao dia, por via oral
                                         </Text>
                                     </View>
                                 </View>
@@ -119,13 +130,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Endoscopia digestiva alta (EDA)
+                                                Velpatasvir 100mg/sofosbuvir
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 2-3 anos – sem cirrose ou cirrose Child A. A cada 12 meses – cirrose Child B ou C 
+                                            1 comprimido uma vez ao dia, por via oral
                                         </Text>
                                     </View>
                                 </View>
@@ -133,13 +144,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Biópsia hepática
+                                                Ledipasvir 90 mg/sofosbuvir 400mg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            Individualizar
+                                            1 comprimido uma vez ao dia, por via oral
                                         </Text>
                                     </View>
                                 </View>
@@ -147,13 +158,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Elastografia hepática
+                                                Elbasvir 50mg/grazoprevir 100mg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            Individualizar
+                                            1 comprimido uma vez ao dia, por via oral
                                         </Text>
                                     </View>
                                 </View>
@@ -161,19 +172,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                            Hemograma
-                                            Razão normalizada internacional (INR)
-                                            AST/TGO (aspartato aminotransferase),
-                                            ALT/TGP (alanina aminotransferase)
-                                            Fosfatase alcalina /gama glutamil transferase/bilirrubina total e frações
-                                            Glicemia de jejum
-                                            Proteína total/albumina
+                                                Ribavirina 250mg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 3-6 meses, conforme atividade da doença ou cirrose hepática
+                                            11mg/kg/dia ou 1g ({'<'}75kg) e 1,25g ({'>'}75 kg) via oral(adultos) e 15 mg/kg/dia (crianças)
                                         </Text>
                                     </View>
                                 </View>
@@ -181,13 +186,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                TSH/T4L
+                                                Alfaepoetina 10.000 UI
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 12 meses ou conforme tratamento instituído
+                                            10.000 UI a 40.000 UI, por via subcutânea, uma vez por semana, a critério clínico
                                         </Text>
                                     </View>
                                 </View>
@@ -195,60 +200,13 @@ export default function T301({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Na/K/ureia/creatinina
-                                                Urina tipo 1
-                                                Clearance de creatinina
+                                                Filgrastim 300mcg
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            A cada 6 meses (alto risco de lesão renal)
-                                            A cada 12 meses (baixo risco de lesão renal) 
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                HBV-DNA
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            A cada 6 meses no portador inativo e a cada 12 meses conforme diagnóstico e tratamento instituído
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Lipídios (colesterol total e frações, triglicérides), ferritina/ferro sérico/saturação transferrina
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            A cada 12 meses para os pacientes em uso de tenofovir e nos casos de descompensação hepática e cirrose
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Densitometria óssea
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            A cada 48 meses (mulheres acima de 40 anos em transição menopausal; homens acima dos 50 anos com risco de perda óssea){'\n'}
-
-                                            Individualizar em pacientes em uso de tenofovir ou com antecedentes relevantes
+                                            300mcg, por via subcutânea, uma ou duas vezes por semana
                                         </Text>
                                     </View>
                                 </View>
@@ -262,7 +220,7 @@ export default function T301({ navigation }) {
             <View style={styles.containerBotao}>
             <Botao
                     title="PROXÍMO"
-                    onPress={() => navigation.navigate('302-HepatiteB')}
+                    onPress={() => navigation.navigate('309-HepatiteB')}
                 />
                 <Botao
                     title="FINALIZAR"

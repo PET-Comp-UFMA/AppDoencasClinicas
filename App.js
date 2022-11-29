@@ -87,6 +87,14 @@ import T061 from './src/screens/Hepatite B e C/061-HepatiteBeC';
 import T062 from './src/screens/Hepatite B e C/062-HepatiteBeC';
 import T301 from './src/screens/Hepatite B e C/301-HepatiteB';
 import T302 from './src/screens/Hepatite B e C/302-HepatiteB';
+import T303 from './src/screens/Hepatite B e C/303-HepatiteB';
+import T304 from './src/screens/Hepatite B e C/304-HepatiteB';
+import T305 from './src/screens/Hepatite B e C/305-HepatiteB';
+import T306 from './src/screens/Hepatite B e C/306-HepatiteC';
+import T307 from './src/screens/Hepatite B e C/307-HepatiteC';
+import T308 from './src/screens/Hepatite B e C/308-HepatiteC';
+import T309 from './src/screens/Hepatite B e C/309-HepatiteC';
+
 
 import T063 from './src/screens/TestesRapidos/063-TestesRapidos';
 
@@ -895,6 +903,42 @@ export default function App() {
 						name='302-HepatiteB'
 						component={T302}
 						options={{ title: "Hepatite B" }} />
+					<Stack.Screen
+							name='303-HepatiteB'
+							component={T303}
+							options={{ title: "Hepatite B" }} />
+					
+					<Stack.Screen
+							name='304-HepatiteB'
+							component={T304}
+							options={{ title: "Hepatite B" }} />
+					
+					<Stack.Screen
+							name='305-HepatiteB'
+							component={T305}
+							options={{ title: "Hepatite B" }} />
+					
+					<Stack.Screen
+							name='306-HepatiteC'
+							component={T306}
+							options={{ title: "Hepatite C" }} />
+					
+					<Stack.Screen
+							name='307-HepatiteC'
+							component={T307}
+							options={{ title: "Hepatite C" }} />
+					
+					<Stack.Screen
+							name='308-HepatiteC'
+							component={T308}
+							options={{ title: "Hepatite C" }} />
+					<Stack.Screen
+							name='309-HepatiteB'
+							component={T309}
+							options={{ title: "Hepatite C" }} />
+						
+
+						
 
 
 				</Stack.Navigator>

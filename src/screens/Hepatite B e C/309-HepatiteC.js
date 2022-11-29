@@ -4,14 +4,16 @@ import {
     StyleSheet,
     SafeAreaView,
     ScrollView,
-    Text
+    Text,
+    Linking
 } from 'react-native';
 import Bold from '../../components/Bold';
 import Parag from '../../components/Parag';
 import Botao from '../../components/Botao';
+import Imagem from '../../components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
-export default function T302({ navigation }) {
+export default function T309({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -30,21 +32,16 @@ export default function T302({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>Critérios de inclusão para tratamento da hepatite B sem agente Delta:</Parag>
-                    <Parag>• Paciente com HBeAg reagente e ALT {'>'} 2x limite superior da normalidade (LSN);</Parag>
-                    <Parag>• Adulto maior de 30 anos (3, 32) com HBeAg reagente;</Parag>
-                    <Parag>• Paciente com HBeAg não reagente, HBV-DNA {'>'}2.000 UI/mL e ALT {'>'} 2x LSN.</Parag>
-                    <Parag>Outros critérios de inclusão para tratamento independentemente dos resultados de HBeAg, HBV-DNA e ALT para hepatite B sem agente Delta:</Parag>
-                    <Parag>• História familiar de CHC;</Parag>
+                        <Parag>Os pacientes devem realizar hemograma, teste de creatinina (ou clearance de creatinina estimado) e exame de função hepática ao início de tratamento e, sempre que clinicamente indicado, devem repetir esses exames durante o tratamento.</Parag>
+                        <Parag>Pacientes em uso de ribavirina devem realizar hemograma e teste de creatinina nas semanas 4, 8 e 12 para avaliar anemia, ou com maior frequência, caso necessário.</Parag>
+                        <Parag>Os medicamentos utilizados para o tratamento da hepatite C aguda e crônica são teratogênicos ou não possuem dados que comprovem segurança na gestação; por isso, são contraindicados durante esse período.</Parag>
+                        <Parag><Text onPress={() => {Linking.openURL('https://www.gov.br/aids/pt-br/centrais-de-conteudo/pcdts/2017/hepatites-virais/pcdt_hepatite_c_06_2019_isbn.pdf/@@download/file/pcdt_hepatite_c_06_2019_isbn.pdf')}}>
+                        Mais informações, acesse:{'\n'} https://www.gov.br/aids/pt-br/centrais-de-conteudo/pcdts/2017/hepatites-virais/pcdt_hepatite_c_06_2019_isbn.pdf/@@download/file/pcdt_hepatite_c_06_2019_isbn.pdf
+                    </Text></Parag>
                 </View>
-
             </ScrollView>
 
             <View style={styles.containerBotao}>
-            <Botao
-                    title="PROXÍMO"
-                    onPress={() => navigation.navigate('303-HepatiteB')}
-                />
                 <Botao
                     title="FINALIZAR"
                     onPress={() => navigation.navigate('001-Inicio')}
@@ -100,6 +97,14 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
         fontSize: 18
+    },
+    hiperlink: {
+        color: "blue",
+        fontFamily        : 'Mulish_Regular',
+        fontSize          : 20,
+        marginHorizontal  : 20,
+        textAlign         : 'center',
+        lineHeight        : 35
     }
 });
 

@@ -43,15 +43,22 @@ export default function T055({ navigation }) {
                 <Text>
                     Após diagnóstico, realizar notificação. Registre tudo!{"\n"}{"\n"}
 
-                    Pronto?{"\n"}
-                    Se sim, é so clicar em <Bold>FINALIZAR</Bold> e será direcionado para o <Bold>MENU PRINCIPAL</Bold>    
+                    Agora você tem as seguintes opções:{"\n"}{"\n"}
                 </Text>
             
             </ScrollView>
 
             <View style={styles.containerBotao}>
                 <Botao 
-                    title="PRÓXIMA"
+                    title="ANAMNESE E EXAME FÍSICO"
+                    onPress={() => {navigation.navigate("")}}
+                />
+                <Botao 
+                    title="EXAMES COMPLEMENTARES"
+                    onPress={() => {navigation.navigate("")}}
+                />
+                <Botao 
+                    title="TRATAMENTO"
                     onPress={() => {navigation.navigate("059-TesteNaoReagente")}}
                 />
                 <Botao 
