@@ -51,11 +51,11 @@ export default function T055({ navigation }) {
             <View style={styles.containerBotao}>
                 <Botao 
                     title="ANAMNESE E EXAME FÍSICO"
-                    onPress={() => {navigation.navigate("")}}
+                    onPress={() => {navigation.navigate("310-HIV")}}
                 />
                 <Botao 
                     title="EXAMES COMPLEMENTARES"
-                    onPress={() => {navigation.navigate("")}}
+                    onPress={() => {navigation.navigate("313-HIV")}}
                 />
                 <Botao 
                     title="TRATAMENTO"

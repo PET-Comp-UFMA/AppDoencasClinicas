@@ -32,7 +32,7 @@ export default function T003({ navigation })  {
                         <Text>Agora você poderá escolher uma opção que mais se aproxima daquilo que precisará manejar conforme as queixas do seu paciente e o que está sendo coletado na anamnese e exame físico. Escolha uma opção:</Text>
                     </View>
 
-                </ScrollView>
+                
 
                 <View style = {styles.containerBotao}>
                     <Botao
@@ -60,6 +60,7 @@ export default function T003({ navigation })  {
                         onPress = { () => navigation.navigate('060-HepatiteBeC') }
                     />
                 </View>
+                </ScrollView>
             </SafeAreaView>
         );
 }

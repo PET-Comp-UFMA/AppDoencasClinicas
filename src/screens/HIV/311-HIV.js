@@ -4,6 +4,7 @@ import {
     StyleSheet,
     SafeAreaView,
     ScrollView,
+    Image,
     Text
 } from 'react-native';
 import Bold from '../../components/Bold';
@@ -12,7 +13,7 @@ import Botao from '../../components/Botao';
 import Imagem from '../../components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
-export default function T304({ navigation }) {
+export default function T311({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -31,21 +32,18 @@ export default function T304({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>Fluxograma para o tratamento da hepatite B crônica HBEAG reagente</Parag>
+                    <Parag>O EXAME FÍSICO DEVE SEGUIR A ROTINA PROPEDÊUTICA</Parag>
+                    <Parag>Sinais clínicos que podem estar relacionados à infecção pelo HIV e que devem ser investigados no exame físico inicial</Parag>
                 </View>
-                <View>
-                    <Imagem source={require("../../assets/images/F048.jpg")} title={"Fluxograma para o tratamento da hepatite B crônica HBEAG reagente"} number={"F048"} />
+                <View style={styles.containerImage}>
+                    <Imagem source={require("../../assets/images/F051.png")} title={""} number={"F051"} />
                 </View>
             </ScrollView>
 
             <View style={styles.containerBotao}>
             <Botao
-                    title="PROXÍMO"
-                    onPress={() => navigation.navigate('305-HepatiteB')}
-                />
-                <Botao
-                    title="FINALIZAR"
-                    onPress={() => navigation.navigate('001-Inicio')}
+                    title="MENU ANTERIOR"
+                    onPress={() => navigation.navigate('310-HIV')}
                 />
             </View>
 
@@ -98,6 +96,16 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
         fontSize: 18
+    },    
+    containerImage: {
+        justifyContent  : 'center', 
+        alignItems      : 'center', 
+        flexDirection   : 'column'
+    },
+    image: {
+        height: 238,
+        width: 415,
+        resizeMode: 'contain'
     }
 });
 

@@ -36,7 +36,7 @@ export default function T307({ navigation }) {
                     <Parag>Após diagnóstico, realizar notificação.</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("../../assets/images/F050.svg")} title={""} number={"F050"} />
+                    <Imagem source={require("../../assets/images/F050.jpg")} title={""} number={"F050"} />
                 </View>
             </ScrollView>
 

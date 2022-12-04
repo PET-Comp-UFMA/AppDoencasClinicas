@@ -34,7 +34,7 @@ export default function T305({ navigation }) {
                     <Parag>Fluxograma para o tratamento da hepatite B crônica HBEAG não reagente</Parag>
                 </View>
                 <View>
-                    <Imagem source={require("../../assets/images/F049.svg")} title={"Fluxograma para o tratamento da hepatite B crônica HBEAG não reagente"} number={"F049"} />
+                    <Imagem source={require("../../assets/images/F049.jpg")} title={"Fluxograma para o tratamento da hepatite B crônica HBEAG não reagente"} number={"F049"} />
                 </View>
             </ScrollView>
 

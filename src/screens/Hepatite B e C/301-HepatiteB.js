@@ -46,14 +46,14 @@ export default function T301({ navigation }) {
                         <DataTable.Row>
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderTopLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Anti-HAV IgG
                                             </Bold>
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderTopRight]} flex={1}>
                                         <Text style={style}>
                                             Para definir imunização
                                         </Text>
@@ -237,14 +237,14 @@ export default function T301({ navigation }) {
                                     </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Densitometria óssea
                                             </Bold>
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                             A cada 48 meses (mulheres acima de 40 anos em transição menopausal; homens acima dos 50 anos com risco de perda óssea){'\n'}
 

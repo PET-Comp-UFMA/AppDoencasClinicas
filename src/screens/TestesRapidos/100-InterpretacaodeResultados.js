@@ -3,6 +3,7 @@ import {
     View,
     StyleSheet,
     Text,
+    Image,
     SafeAreaView,
     ScrollView,
 } from 'react-native';
@@ -39,18 +40,18 @@ export default function T100({ navigation }) {
                     <Parag>Se a linha de controle (C) não aparecer dentro do tempo máximo determiado pelo fabricante, o teste será considero inválido, mesmo que a linha colorida apareça na área de teste (T).</Parag>
                 </View>
 
-                <View>
-                    <Imagem source={require("../../assets/images/F033.png")} title={"Acompanhamento"} number={"F033"}/>
+                <View style={styles.containerImage}>
+                    <Image style={styles.image} source={require("../../assets/images/F033.png")} title={"Acompanhamento"} number={"F033"}/>
                     <Parag>Qualquer intensidade de linha colorida na área de teste é considerado como resultado reagente.</Parag>
                 </View>
 
-                <View>
-                    <Imagem source={require("../../assets/images/F034.png")} title={"Acompanhamento"} number={"F034"}/>
+                <View style={styles.containerImage}>
+                    <Image style={styles.image} source={require("../../assets/images/F034.png")} title={"Acompanhamento"} number={"F034"}/>
                     <Parag>Quando aparece somente a linha colorida do controle o resultado é não reagente.</Parag>
                 </View>
 
-                <View>
-                <Imagem source={require("../../assets/images/F035.png")} title={"Acompanhamento"} number={"F035"}/>
+                <View style={styles.containerImage}>
+                <Image style={styles.image} source={require("../../assets/images/F035.png")} title={"Acompanhamento"} number={"F035"}/>
                 <Parag>Caso tenha concluído, clique em <Bold>FINALIZAR</Bold>, e será direcionado ao <Bold>MENU PRINCIPAL</Bold>. Ou na seta para a <Bold>ESQUERDA</Bold>, caso precise relembrar algo.</Parag>
                 </View>
 
@@ -87,5 +88,14 @@ const styles = StyleSheet.create({
     texto: {
         marginBottom: 10,
     },
-
+    containerImage: {
+        justifyContent  : 'center', 
+        alignItems      : 'center', 
+        flexDirection   : 'column'
+    },
+    image: {
+        height: 200,
+        width: 280,
+        resizeMode: 'contain'
+    }
 });

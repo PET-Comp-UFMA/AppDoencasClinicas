@@ -12,7 +12,7 @@ import Botao from '../../components/Botao';
 import Imagem from '../../components/Imagem';
 import { useTheme } from '@react-navigation/native';
 
-export default function T304({ navigation }) {
+export default function T313({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -31,21 +31,31 @@ export default function T304({ navigation }) {
             <ScrollView>
 
                 <View>
-                    <Parag>Fluxograma para o tratamento da hepatite B crônica HBEAG reagente</Parag>
-                </View>
-                <View>
-                    <Imagem source={require("../../assets/images/F048.jpg")} title={"Fluxograma para o tratamento da hepatite B crônica HBEAG reagente"} number={"F048"} />
+                    <Parag>EXAMES COMPLEMENTARES</Parag>
+                    <Parag>Você pode solicitar os seguintes exames complementares para abordagem inicial:</Parag>
+                    <Parag>• Contagem de LT-CD4+ e exame de CV-HIV</Parag>
+                    <Parag>• Genotipagem pré-tratamento</Parag>
+                    <Parag>• Hemograma completo</Parag>
+                    <Parag>• Glicemia de jejum</Parag>
+                    <Parag>• Dosagem de lipídios (colesterol total, HDL, LDL, triglicerídeos)</Parag>
+                    <Parag>• Avaliação hepática e renal (AST, ALT, FA, BT e frações, Cr, exame básico de urina)</Parag>
+                    <Parag>• Teste imunológico para sífilis</Parag>
+                    <Parag>• Testes para hepatites virais (anti-HAV, anti-HCV, HBsAg, anti-HBc total e anti-HBs para verificação de imunização)</Parag>
+                    <Parag>• IgG para toxoplasmose</Parag>
+                    <Parag>• Sorologia para HTLV I e II e Chagas</Parag>
+                    <Parag>• Prova tuberculínica (PT)</Parag>
+                    <Parag>• Radiografia de tórax</Parag>
                 </View>
             </ScrollView>
 
             <View style={styles.containerBotao}>
             <Botao
-                    title="PROXÍMO"
-                    onPress={() => navigation.navigate('305-HepatiteB')}
+                    title="PRÓXIMO"
+                    onPress={() => navigation.navigate('314-HIV')}
                 />
-                <Botao
-                    title="FINALIZAR"
-                    onPress={() => navigation.navigate('001-Inicio')}
+            <Botao
+                    title="MENU ANTERIOR"
+                    onPress={() => navigation.navigate('055-HIV')}
                 />
             </View>
 

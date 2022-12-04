@@ -81,6 +81,15 @@ import T056 from "./src/screens/HIV/056-HIV";
 import T057 from "./src/screens/HIV/057-HIV-PrEP";
 import T058 from "./src/screens/HIV/058-HIV-PEP";
 import T059 from "./src/screens/HIV/059-TesteNaoReagente";
+import T310 from "./src/screens/HIV/310-HIV";
+import T311 from "./src/screens/HIV/311-HIV";
+import T312 from "./src/screens/HIV/312-HIV";
+import T313 from "./src/screens/HIV/313-HIV";
+import T314 from "./src/screens/HIV/314-HIV";
+import T315 from "./src/screens/HIV/315-HIV";
+import T316 from "./src/screens/HIV/316-HIV";
+import T317 from "./src/screens/HIV/317-HIV";
+import T318 from "./src/screens/HIV/318-HIV";
 
 import T060 from './src/screens/Hepatite B e C/060-HepatiteBeC';
 import T061 from './src/screens/Hepatite B e C/061-HepatiteBeC';
@@ -451,7 +460,7 @@ export default function App() {
 					<Stack.Screen
 						name='061-HepatiteBeC'
 						component={T061}
-						options={{ title: "Hepatite B e C" }} />
+						options={{ title: "Hepatite B" }} />
 
 					<Stack.Screen
 						name='062-HepatiteBeC'
@@ -936,9 +945,42 @@ export default function App() {
 							name='309-HepatiteB'
 							component={T309}
 							options={{ title: "Hepatite C" }} />
-						
-
-						
+					<Stack.Screen
+						name='310-HIV'
+						component={T310}
+						options={{ title: "HIV" }} />				
+					<Stack.Screen
+						name='311-HIV'
+						component={T311}
+						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='312-HIV'
+						component={T312}
+						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='313-HIV'
+						component={T313}
+						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='314-HIV'
+						component={T314}
+						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='315-HIV'
+						component={T315}
+						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='316-HIV'
+						component={T316}
+						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='317-HIV'
+						component={T317}
+						options={{ title: "HIV" }} />
+					<Stack.Screen
+						name='318-HIV'
+						component={T318}
+						options={{ title: "HIV" }} />
 
 
 				</Stack.Navigator>

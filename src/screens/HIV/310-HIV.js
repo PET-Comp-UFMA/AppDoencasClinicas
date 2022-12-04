@@ -12,7 +12,7 @@ import Botao from '../../components/Botao';
 import { useTheme } from '@react-navigation/native';
 import { DataTable } from 'react-native-paper';
 
-export default function T308({ navigation }) {
+export default function T310({ navigation }) {
     // Atualiza as cores se o modo noturno estiver ligado
     const { colors } = useTheme();
 
@@ -37,34 +37,29 @@ export default function T308({ navigation }) {
         <SafeAreaView style={styles.container}>
             <ScrollView>
 
-            <View>
-                <Parag>Posologia dos medicamentos para hepatite C</Parag>
-            </View>
+                <View>
+                    <Parag>ROTEIRO PARA ABORDAGEM INICIAL PARA PVHIV</Parag>
+                </View>
 
                 <View>
                     <DataTable flex={1}>
-                    <DataTable.Header style={styles.header}>
-                            <Text style={styles.tableHeadText}>
-                                Medicamento
-                            </Text>
-                            <Text style={styles.tableHeadText}>
-                                Posologia
-                            </Text>
-                        </DataTable.Header>
-
                         <DataTable.Row>
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Alfapeginterferona 2a
+                                                Informações específicas sobre a infecção pelo HIV
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            180µg/1,73m², por via subcutânea, uma vez por semana (crianças)
+                                            Explicar a doença: transmissão, história natural, signifi cado da contagem de LT-CD4+ e do exame de carga viral, impacto da terapia antirretroviral(TARV) na morbimortalidade{'\n'}{'\n'}
+                                            • Discutir o tempo provável de soropositividade{'\n'}
+                                            • Fazer revisão e documentação do primeiro exame anti-HIV{'\n'}
+                                            • Checar se há contagens de LT-CD4+ e exames de CV-HIV anteriores{'\n'}
+                                            • Discutir uso de ARV e se houve eventos adversos prévios (ex.: com uso de PEP e PrEP)
                                         </Text>
                                     </View>
                                 </View>
@@ -72,13 +67,19 @@ export default function T308({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Daclatasvir 60mg
+                                                História médica atual e passada
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            1 comprimido uma vez ao dia, por via oral
+                                        Avaliar:{'\n'}{'\n'}
+                                        • História de tuberculose, prova tuberculínica, profilaxia e/ou tratamento prévio{'\n'}
+                                        • História de doença mental{'\n'}
+                                        • IO prévia ou atual e necessidade de profilaxia para IO{'\n'}
+                                        • Outras infecções ou comorbidades atuais e/ou pregressas{'\n'}
+                                        • Histórico de imunizações{'\n'}
+                                        • Uso de medicamentos, práticas complementares e/ou alternativas
                                         </Text>
                                     </View>
                                 </View>
@@ -86,13 +87,18 @@ export default function T308({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Daclatasvir 30mg
+                                                Riscos e vulnerabilidades
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            1 comprimido uma vez ao dia, por via oral
+                                        Avaliar:{'\n'}{'\n'}
+                                        • Parcerias e práticas sexuais{'\n'}
+                                        • Utilização de preservativos e outros métodos de prevenção{'\n'}
+                                        • História de sífilis e outras IST{'\n'}
+                                        • Uso de tabaco, álcool e outras drogas{'\n'}
+                                        • Interesse em reduzir os danos à saúde
                                         </Text>
                                     </View>
                                 </View>
@@ -100,13 +106,17 @@ export default function T308({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Sofosbuvir 400mg
+                                                História psicossocial
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            1 comprimido uma vez ao dia, por via oral
+                                        Avaliar:{'\n'}{'\n'}
+                                        • Reação emocional ao diagnóstico{'\n'}
+                                        • Análise da rede de apoio social (família, amigos, organizações não governamentais){'\n'}
+                                        • Nível educacional{'\n'}
+                                        • Condições de trabalho, domicílio e alimentação
                                         </Text>
                                     </View>
                                 </View>
@@ -114,13 +124,16 @@ export default function T308({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Glecaprevir 100mg/pibrentasvir 40mg
+                                                Saúde reprodutiva
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            3 comprimidos uma vez ao dia, por via oral
+                                        Discutir/avaliar:{'\n'}{'\n'}
+                                        • Desejo de ter filhos{'\n'}
+                                        • Métodos contraceptivos{'\n'}
+                                        • Estado sorológico da(s) parceria(s) e filho(s)
                                         </Text>
                                     </View>
                                 </View>
@@ -128,83 +141,17 @@ export default function T308({ navigation }) {
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
-                                                Velpatasvir 100mg/sofosbuvir
+                                                História familiar
                                             </Bold>
                                         </Text>
                                     </View>
                                     <View style={[styles.tableData]} flex={1}>
                                         <Text style={style}>
-                                            1 comprimido uma vez ao dia, por via oral
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Ledipasvir 90 mg/sofosbuvir 400mg
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            1 comprimido uma vez ao dia, por via oral
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Elbasvir 50mg/grazoprevir 100mg
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            1 comprimido uma vez ao dia, por via oral
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Ribavirina 250mg
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            11mg/kg/dia ou 1g ({'<'}75kg) e 1,25g ({'>'}75 kg) via oral(adultos) e 15 mg/kg/dia (crianças)
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Alfaepoetina 10.000 UI
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            10.000 UI a 40.000 UI, por via subcutânea, uma vez por semana, a critério clínico
-                                        </Text>
-                                    </View>
-                                </View>
-                                <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            <Bold>
-                                                Filgrastim 300mcg
-                                            </Bold>
-                                        </Text>
-                                    </View>
-                                    <View style={[styles.tableData]} flex={1}>
-                                        <Text style={style}>
-                                            300mcg, por via subcutânea, uma ou duas vezes por semana
+                                        Revisar o histórico de:{'\n'}{'\n'}
+                                        • Doenças cardiovasculares e hipertensão{'\n'}
+                                        • Dislipidemias{'\n'}
+                                        • Diabetes{'\n'}
+                                        • Neoplasias
                                         </Text>
                                     </View>
                                 </View>
@@ -217,12 +164,16 @@ export default function T308({ navigation }) {
 
             <View style={styles.containerBotao}>
             <Botao
-                    title="PROXÍMO"
-                    onPress={() => navigation.navigate('309-HepatiteB')}
+                    title="EXAME FÍSICO"
+                    onPress={() => navigation.navigate('311-HIV')}
                 />
                 <Botao
-                    title="FINALIZAR"
-                    onPress={() => navigation.navigate('001-Inicio')}
+                    title="PERIODICIDADE DAS CONSULTAS"
+                    onPress={() => navigation.navigate('312-HIV')}
+                />
+                <Botao
+                    title="MENU ANTERIOR"
+                    onPress={() => navigation.navigate('055-HIV')}
                 />
             </View>
 
