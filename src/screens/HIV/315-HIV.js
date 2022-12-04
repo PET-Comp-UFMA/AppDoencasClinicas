@@ -96,7 +96,7 @@ export default function T315({ navigation }) {
                                     </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Confirmação de falha virológica
@@ -108,7 +108,7 @@ export default function T315({ navigation }) {
                                             Após 4 semanas da primeira CV-HIV detectável
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                             Confirmar falha virológica e necessidade de solicitação de exame de genotipagem
                                         </Text>

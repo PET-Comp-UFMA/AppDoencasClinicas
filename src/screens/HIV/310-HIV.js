@@ -46,14 +46,14 @@ export default function T310({ navigation }) {
                         <DataTable.Row>
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderTopLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Informações específicas sobre a infecção pelo HIV
                                             </Bold>
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderTopRight]} flex={1}>
                                         <Text style={style}>
                                             Explicar a doença: transmissão, história natural, signifi cado da contagem de LT-CD4+ e do exame de carga viral, impacto da terapia antirretroviral(TARV) na morbimortalidade{'\n'}{'\n'}
                                             • Discutir o tempo provável de soropositividade{'\n'}
@@ -138,14 +138,14 @@ export default function T310({ navigation }) {
                                     </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 História familiar
                                             </Bold>
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                         Revisar o histórico de:{'\n'}{'\n'}
                                         • Doenças cardiovasculares e hipertensão{'\n'}

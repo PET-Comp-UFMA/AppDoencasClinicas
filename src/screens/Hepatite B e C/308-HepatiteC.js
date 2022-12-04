@@ -195,14 +195,14 @@ export default function T308({ navigation }) {
                                     </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Filgrastim 300mcg
                                             </Bold>
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                             300mcg, por via subcutânea, uma ou duas vezes por semana
                                         </Text>

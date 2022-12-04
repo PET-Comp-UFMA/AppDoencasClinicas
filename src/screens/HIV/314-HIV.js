@@ -82,7 +82,7 @@ export default function T313({ navigation }) {
                                     </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                             PVHIV que NÃO apresentem as condições acima, tais como:{'\n'}
@@ -97,7 +97,7 @@ export default function T313({ navigation }) {
                                             Qualquer valor de LT-CD4+
                                         </Text> 
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                             A CADA 6 MESES
                                         </Text>

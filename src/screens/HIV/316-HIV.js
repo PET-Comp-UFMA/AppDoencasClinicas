@@ -292,7 +292,7 @@ export default function T316({ navigation }) {
                                 </View> 
                                 </View> 
                                 <View flex={1} flexDirection={'row'}>
-                                <View style={[styles.tableData]} flex={1}>
+                                <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                     <Text style={style}>
                                         <Bold>
                                             Avaliação cardiovascular (escala de risco de Framingham)
@@ -304,7 +304,7 @@ export default function T316({ navigation }) {
                                         ANUAL
                                     </Text>
                                 </View>
-                                <View style={[styles.tableData]} flex={1}>
+                                <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                     <Text style={style}>
                                         Frequências maiores conforme risco inicial e TARV em uso
                                     </Text>

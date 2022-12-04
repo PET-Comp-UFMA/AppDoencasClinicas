@@ -134,7 +134,7 @@ export default function T310({ navigation }) {
                                     </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 PVHIV que ainda não iniciou TARV
@@ -146,7 +146,7 @@ export default function T310({ navigation }) {
                                             Individualizar
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                             Avaliar motivos de recusa da TARV e abordar benefícios do uso{'\n'}Avaliar e investigar sintomas{'\n'}Fortalecer vínculo com equipe e serviço de saúde
                                         </Text>

@@ -110,7 +110,7 @@ export default function T317({ navigation }) {
 
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Coinfecção TB-HIV com um ou mais dos critérios de gravidade{'\n'}
@@ -131,7 +131,7 @@ export default function T317({ navigation }) {
                                             (300mg/300mg) “2 x 1” 1x/dia + 400mg 12/12h
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                             Concluído o tratamento completo de TB, deverá ser feita a mudança (switch) do RAL para DTG em até 3 meses
                                         </Text>

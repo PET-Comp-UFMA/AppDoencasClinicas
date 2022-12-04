@@ -47,14 +47,14 @@ export default function T318({ navigation }) {
                         <DataTable.Row>
                             <View flex={2}>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderTopLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Adulto Intolerância ou contraindicação ao DTG
                                             </Bold>
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderTopRight]} flex={1}>
                                         <Text style={style}>
                                             Substituir o DTG por EFV
                                         </Text>
@@ -76,14 +76,14 @@ export default function T318({ navigation }) {
                                     </View>
                                 </View>
                                 <View flex={1} flexDirection={'row'}>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                         <Text style={style}>
                                             <Bold>
                                                 Intolerância ao EFV na coinfecção TB-HIV
                                             </Bold>
                                         </Text>
                                     </View>
-                                    <View style={[styles.tableData]} flex={1}>
+                                    <View style={[styles.tableData, styles.borderBottomRight]} flex={1}>
                                         <Text style={style}>
                                             Substituir o EFV por RAL
                                         </Text>

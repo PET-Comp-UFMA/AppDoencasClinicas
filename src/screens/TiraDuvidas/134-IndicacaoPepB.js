@@ -187,7 +187,7 @@ export default function T130({ navigation }) {
 
                                 <View flex={2}>
                                     <View flex={1} flexDirection={'row'}>
-                                        <View style={[styles.tableData, styles.borderBottomRight, styles.borderBottomLeft]} flex={1}>
+                                        <View style={[styles.tableData, styles.borderBottomLeft]} flex={1}>
                                             <Text style={style}><Bold>Com resposta vacinal desconhecida</Bold></Text>
                                         </View>
                                         <View style = {[styles.tableData]} flex={1}>
@@ -202,7 +202,7 @@ export default function T130({ navigation }) {
                                                 Iniciar nova série de vacina (três doses)
                                             </Text>
                                         </View>
-                                        <View style = {[styles.tableData]} flex={1}>
+                                        <View style = {[styles.tableData, styles.borderBottomRight]} flex={1}>
                                             <Text style={style}>
                                                 Iniciar nova série de vacina (três doses)
                                             </Text>

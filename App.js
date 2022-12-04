@@ -96,7 +96,6 @@ import T061 from './src/screens/Hepatite B e C/061-HepatiteBeC';
 import T062 from './src/screens/Hepatite B e C/062-HepatiteBeC';
 import T301 from './src/screens/Hepatite B e C/301-HepatiteB';
 import T302 from './src/screens/Hepatite B e C/302-HepatiteB';
-import T303 from './src/screens/Hepatite B e C/303-HepatiteB';
 import T304 from './src/screens/Hepatite B e C/304-HepatiteB';
 import T305 from './src/screens/Hepatite B e C/305-HepatiteB';
 import T306 from './src/screens/Hepatite B e C/306-HepatiteC';
@@ -912,11 +911,6 @@ export default function App() {
 						name='302-HepatiteB'
 						component={T302}
 						options={{ title: "Hepatite B" }} />
-					<Stack.Screen
-							name='303-HepatiteB'
-							component={T303}
-							options={{ title: "Hepatite B" }} />
-					
 					<Stack.Screen
 							name='304-HepatiteB'
 							component={T304}
